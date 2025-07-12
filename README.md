@@ -1,8 +1,17 @@
 # Sitenano Web Project
 
-This project is a modern, multi-page, SEO-friendly website developed for **Sitenano**, a company specializing in websites, AI tools, e-commerce platforms, custom web & mobile applications, and online ordering systems.
-
-The goal is to create high-quality, Turkish-language pages optimized for search engines and user conversion, guiding visitors to get in touch via targeted, topic-specific pages.
+> **Not:** Bu proje, modern Next.js (App Router), Tailwind CSS ve TypeScript ile, SEO uyumlu ve responsive olarak, Türkçe içeriklerle ve ajans kalitesinde bir tasarımla hazırlanmıştır. Tüm ana sayfa ve hizmet sayfaları, SEO meta verileri ve yapısal veri (JSON-LD) ile birlikte eksiksiz çalışır durumdadır. 
+>
+> **Yapıyı Korumak İçin:**
+> - Projeyi bir git deposunda tutun ve düzenli commit atın (şu an ilk commit atıldı).
+> - Büyük değişikliklerden önce yeni bir branch açın veya dosya yedeği alın.
+> - README ve dokümantasyonu güncel tutun.
+> - Gerekirse harici yedek alın.
+>
+> **Son Durum:**
+> - Tüm sayfalar ve ana tasarım bozulmadan, SEO ve responsive kurallara uygun şekilde çalışıyor.
+> - Ana sayfa, hizmetler, iletişim ve diğer sayfalar Türkçe ve modern tasarımla hazır.
+> - Kodun tamamı commitlendi ve korunuyor.
 
 ---
 
