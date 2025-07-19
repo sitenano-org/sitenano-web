@@ -76,7 +76,7 @@ export default function YapayZekaPage() {
     <>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-600 to-purple-700 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <div className="absolute inset-0 bg-secondary opacity-20"></div>
         <div className="container-custom relative z-10 section-padding">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">

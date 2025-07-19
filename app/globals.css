@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:wght@300;400;500;700&family=Sora:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,7 +12,7 @@
     font-family: 'DM Sans', sans-serif;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1:not(.font-sora), h2:not(.font-sora), h3:not(.font-sora), h4:not(.font-sora), h5:not(.font-sora), h6:not(.font-sora) {
     font-family: 'Barlow Condensed', sans-serif;
   }
 }
@@ -39,11 +39,11 @@
   }
   
   .gradient-bg {
-    background: linear-gradient(135deg, #23b6bc 0%, #1a8a8f 100%);
+    background: linear-gradient(135deg, #0a9f97 0%, #077a73 100%);
   }
   
   .text-gradient {
-    background: linear-gradient(135deg, #23b6bc 0%, #1a8a8f 100%);
+    background: linear-gradient(135deg, #0a9f97 0%, #077a73 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

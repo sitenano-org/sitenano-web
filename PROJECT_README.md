@@ -42,18 +42,34 @@ sitenano-web-platform/
 ## 🎨 Tasarım Sistemi
 
 ### Renkler
-- **Primary**: `#23b6bc` (Ana renk)
-- **Secondary**: `#333646` (Koyu aksan)
-- **Primary Dark**: `#1a8a8f` (Hover durumu)
+- **Primary**: `#10B981` (Emerald green - Ana renk)
+- **Secondary**: `#1F2937` (Dark gray - Koyu aksan)
+- **Primary Dark**: `#059669` (Hover durumu)
 
 ### Fontlar
-- **Headings**: Barlow Condensed (Google Fonts)
-- **Body Text**: DM Sans (Google Fonts)
+- **Hero & Headings**: Sora (Google Fonts)
+  - Font weight: 400 (normal)
+  - Letter spacing: 0.5px
+  - Line height: 1.4
+  - Font size: 45px (hero başlığı)
+- **Navigation**: Manrope (Google Fonts)
+  - Font weight: 500 (medium)
+  - Letter spacing: 0.2px
+  - Word spacing: 0.5px
+  - Font size: 16px
+- **Body Text**: System font stack (16px, weight 400)
 
 ### Responsive Breakpoints
 - Mobile: `< 768px`
 - Tablet: `768px - 1024px`
 - Desktop: `> 1024px`
+
+### Component Guidelines (Bileşen Kuralları)
+- **Hero Section**: 4-line text layout, responsive width (100%, max-width 700px), 700px fixed height
+- **Navigation**: Hover effects with color transitions, no background, Manrope font
+- **Buttons**: Rounded corners (rounded-lg), hover scale effects, px-8 py-4 spacing
+- **Cards**: Gradient backgrounds, rounded-2xl corners, p-8 spacing
+- **Typography**: Sora for headings, Manrope for navigation, system fonts for body text
 
 ## 📄 Sayfalar
 

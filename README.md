@@ -12,6 +12,54 @@
 > - Tüm sayfalar ve ana tasarım bozulmadan, SEO ve responsive kurallara uygun şekilde çalışıyor.
 > - Ana sayfa, hizmetler, iletişim ve diğer sayfalar Türkçe ve modern tasarımla hazır.
 > - Kodun tamamı commitlendi ve korunuyor.
+> - **Güncel Tasarım Sistemi:** Sora font ailesi hero bölümünde, Manrope font ailesi navbar'da kullanılıyor.
+> - **Tipografi:** Hero başlığı 45px, letter-spacing: 0.5px, line-height: 1.4 ile optimize edildi.
+
+---
+
+## Design System (Tasarım Sistemi)
+
+### Typography (Tipografi)
+
+#### Font Families
+- **Sora Font**: Hero bölümleri ve ana başlıklar için kullanılır
+  - Font weight: 400 (normal)
+  - Letter spacing: 0.5px
+  - Line height: 1.4
+  - Font size: 45px (hero başlığı)
+
+- **Manrope Font**: Navigasyon menüsü için kullanılır
+  - Font weight: 500 (medium)
+  - Letter spacing: 0.2px
+  - Word spacing: 0.5px
+  - Font size: 16px
+
+#### Typography Hierarchy
+- **H1 (Hero)**: Sora, 45px, weight 400, letter-spacing 0.5px, line-height 1.4
+- **H2**: Sora, 36px, weight 600
+- **H3**: Sora, 24px, weight 500
+- **Body Text**: System font stack, 16px, weight 400
+- **Navigation**: Manrope, 16px, weight 500
+
+### Color Palette (Renk Paleti)
+- **Primary**: #10B981 (Emerald green)
+- **Primary Dark**: #059669
+- **Secondary**: #1F2937 (Dark gray)
+- **White**: #FFFFFF
+- **Gray Light**: #F3F4F6
+- **Gray Dark**: #374151
+
+### Spacing System (Boşluk Sistemi)
+- **Hero Section**: 700px fixed height, responsive padding
+- **Button Spacing**: px-8 py-4 (32px horizontal, 16px vertical)
+- **Card Spacing**: p-8 (32px all around)
+- **Section Spacing**: py-24 (96px vertical)
+
+### Component Guidelines (Bileşen Kuralları)
+- **Hero Section**: 4-line text layout, responsive width (100%, max-width 700px)
+- **Navigation**: Hover effects with color transitions, no background
+- **Buttons**: Rounded corners (rounded-lg), hover scale effects
+- **Cards**: Gradient backgrounds, rounded-2xl corners
 
 ---
 

@@ -8,15 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#23b6bc',
-        secondary: '#333646',
-        'primary-dark': '#1a8a8f',
-        'secondary-light': '#4a5568',
+        primary: '#0a9f97',
+        secondary: '#1d1e20',
+        'primary-dark': '#077a73',
+        'secondary-light': '#2a2b2d',
       },
       fontFamily: {
         'heading': ['"Barlow Condensed"', 'sans-serif'],
         'subheading': ['"Barlow Condensed"', 'sans-serif'],
         'body': ['"DM Sans"', 'sans-serif'],
+        'roboto': ['"Roboto"', 'sans-serif'],
+        'sora': ['Sora', 'sans-serif'],
       },
       fontSize: {
         'xs': ['0.75rem', { lineHeight: '1rem' }],
