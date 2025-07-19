@@ -169,9 +169,6 @@ export default function HomePage() {
 
       {/* Features Section - Updated 2024 */}
       <section className="bg-white relative overflow-hidden" style={{ height: '740px' }}>
-        {/* Background gradient - Updated */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-blue-50 via-white to-purple-50 opacity-60"></div>
-        
         <div className="container-custom relative z-10 h-full flex flex-col justify-center">
           <div className="mb-16">
             <div className="text-sm font-medium text-gray-600 mb-4 uppercase tracking-wider">
@@ -482,38 +479,210 @@ export default function HomePage() {
       </section>
 
       {/* Neural Network Section - Updated 2024 */}
-      <section className="bg-white relative overflow-hidden" style={{ height: '890px' }}>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 h-full">
+      <section className="bg-white relative" style={{ height: '890px', marginTop: '30px', overflow: 'visible' }}>
+        <div className="flex h-full" style={{ overflow: 'visible' }}>
           
           {/* Left Column - Vector Image - Updated */}
-          <div className="relative h-full">
+          <div className="relative h-full" style={{ width: '700px', marginLeft: '-60px' }}>
             <Image
-              src="/images/Vector-13 (1).png"
+              src="/images/Vector-13.png"
               alt="Neural Network Background"
-              fill
-              className="object-cover"
+              width={700}
+              height={800}
+              className="object-contain"
               priority
+              style={{
+                position: 'absolute',
+                left: '-30px',
+                top: '-50px',
+                width: '700px',
+                height: '800px'
+              }}
             />
           </div>
 
           {/* Right Column - Text Content - Updated */}
-          <div className="flex items-center justify-center p-8 lg:p-16">
-            <div className="w-full max-w-2xl">
-              <h2 
-                className="text-gray-900 leading-tight"
-                style={{
+          <div className="flex flex-col justify-start" style={{ marginLeft: '70px', flex: '1', paddingTop: '0px' }}>
+            <h2 
+              className="text-gray-900 leading-tight mb-20"
+              style={{
+                fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                fontSize: '85px',
+                fontStyle: 'normal',
+                fontWeight: 400,
+                letterSpacing: '-1.2px',
+                lineHeight: '95px',
+                overflowWrap: 'break-word',
+                position: 'relative',
+                textAlign: 'left',
+                textSizeAdjust: '100%',
+                textTransform: 'none',
+                width: 'calc(100% - 90px)',
+                maxWidth: '1110px',
+                wordSpacing: '0px',
+                minHeight: '475px'
+              }}
+            >
+              Experiment with a{' '}
+              <span style={{ 
+                background: 'linear-gradient(135deg, #10B981, #00BCD4, #00D4AA)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>Neural Network</span>{' '}
+              <br />
+              directly in your browser.{' '}
+              <br />
+              No worries, you can't break{' '}
+              <span>it—we promise</span>
+            </h2>
+            
+            {/* Demo Logos */}
+            <div className="flex items-center space-x-12">
+              {/* MINIMIZE INTERIOR */}
+              <div className="flex flex-col items-start" style={{ width: '220px' }}>
+                <div className="font-bold text-2xl tracking-wider" style={{ color: '#B2B2B2' }}>M'N'MIZE</div>
+                <div className="text-base" style={{ color: '#B2B2B2' }}>INTERIOR</div>
+              </div>
+              
+              {/* ND2 Nordyne Defense Dynamics */}
+              <div className="flex items-center space-x-4" style={{ width: '220px' }}>
+                <div className="w-14 h-14 flex items-center justify-center" style={{ backgroundColor: '#B2B2B2' }}>
+                  <span className="text-white font-bold text-lg">ND2</span>
+                </div>
+                <div className="flex flex-col text-sm" style={{ color: '#B2B2B2' }}>
+                  <span>Nordyne</span>
+                  <span>Defense</span>
+                  <span>Dynamics</span>
+                </div>
+              </div>
+              
+              {/* Metriks Data Center */}
+              <div className="flex items-center space-x-4" style={{ width: '220px' }}>
+                <div className="w-20 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: '#B2B2B2' }}>
+                  <span className="text-white font-semibold text-sm">Metriks</span>
+                </div>
+                <div className="flex flex-col text-sm" style={{ color: '#B2B2B2' }}>
+                  <span>Data</span>
+                  <span>Center</span>
+                </div>
+              </div>
+              
+              {/* QUO LEGAL FIRM */}
+              <div className="flex items-center space-x-4" style={{ width: '220px' }}>
+                <div className="font-bold text-3xl" style={{ color: '#B2B2B2' }}>QUO</div>
+                <div className="flex flex-col text-sm" style={{ color: '#B2B2B2' }}>
+                  <span>LEGAL</span>
+                  <span>FIRM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Cards Section - New 2024 */}
+      <section className="bg-white relative" style={{ height: '960px', paddingTop: '60px', paddingBottom: '100px' }}>
+        {/* Header Section - Independent Container */}
+        <div className="container-custom relative z-10">
+          <div className="mb-16">
+            <div className="text-sm font-medium text-gray-600 mb-4 uppercase tracking-wider">
+              [hizmetler]
+            </div>
+            <div className="flex justify-between items-start">
+              <div className="flex-1">
+                <h2 className="text-gray-900 mb-4" style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '60px',
+                  fontStyle: 'normal',
                   fontWeight: 400,
-                  letterSpacing: '-2px',
-                  lineHeight: '1.2',
-                  textAlign: 'left'
-                }}
-              >
-                Experiment with a{' '}
-                <span style={{ color: '#00BCD4' }}>Neural Network</span>{' '}
-                directly in your browser. no worries, you can't break it—we promise
-              </h2>
+                  letterSpacing: '-3px',
+                  lineHeight: '69.9996px',
+                  textAlign: 'left',
+                  width: '100%',
+                  wordSpacing: '8px'
+                }}>
+                  Özel sinir ağı özellikleri ile hizmetleriniz için
+                </h2>
+                <p className="text-gray-600 text-lg" style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '18px',
+                  fontWeight: 500,
+                  lineHeight: '28px'
+                }}>
+                  İşletmenize yardımcı olmak için tüm hizmetlere sahibiz
+                </p>
+              </div>
+              <div className="ml-8">
+                <button className="px-8 py-3 border border-gray-900 rounded-full text-gray-900 font-medium hover:bg-gray-900 hover:text-white transition-all duration-300 flex items-center space-x-2">
+                  <span>Daha fazla keşfet</span>
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Cards Grid - Independent Container */}
+        <div className="relative z-10" style={{ maxWidth: '1900px', margin: '0 auto', padding: '0 20px' }}>
+          <div className="flex space-x-5">
+            {/* Card 1: Robotic Process Automation */}
+            <div className="bg-white rounded-3xl shadow-lg relative overflow-hidden" style={{ width: '414px', height: '596px' }}>
+              <div className="absolute top-6 left-6">
+                <svg className="w-8 h-8 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="absolute bottom-6 left-6">
+                <h3 className="text-gray-900 font-semibold text-lg mb-2">Robotic Process Automation (RPA)</h3>
+                <button className="bg-gray-900 text-white p-2 rounded-lg hover:bg-gray-700 transition-colors">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </button>
+              </div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-gray-100 to-gray-200 rounded-full transform translate-x-16 -translate-y-16 opacity-60"></div>
+            </div>
+
+            {/* Card 2: Data Analysis and Visualization */}
+            <div className="bg-gradient-to-b from-blue-400 to-blue-600 rounded-3xl shadow-lg relative overflow-hidden" style={{ width: '414px', height: '596px' }}>
+              <div className="absolute top-6 left-6">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <div className="absolute bottom-6 left-6">
+                <h3 className="text-white font-semibold text-lg mb-2">Veri Analizi ve Görselleştirme</h3>
+                <button className="bg-white text-gray-900 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </button>
+              </div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-300 to-blue-500 rounded-full transform translate-x-16 -translate-y-16 opacity-60"></div>
+            </div>
+
+            {/* Card 3: Market Research */}
+            <div className="bg-gradient-to-b from-purple-400 to-purple-600 rounded-3xl shadow-lg relative overflow-hidden" style={{ width: '996px', height: '596px' }}>
+              <div className="absolute top-6 left-6">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <div className="absolute bottom-6 left-6">
+                <h3 className="text-white font-semibold text-lg mb-2">Stratejik iş kararları için içgörülü pazar araştırması</h3>
+                <button className="bg-white text-gray-900 p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7V17" />
+                  </svg>
+                </button>
+              </div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-300 to-purple-500 rounded-full transform translate-x-16 -translate-y-16 opacity-60"></div>
+              <div className="absolute top-20 left-20 w-4 h-4 bg-white rounded-full opacity-30"></div>
+              <div className="absolute top-32 left-40 w-2 h-2 bg-white rounded-full opacity-30"></div>
+              <div className="absolute top-48 left-24 w-3 h-3 bg-white rounded-full opacity-30"></div>
             </div>
           </div>
         </div>

@@ -42,7 +42,7 @@ sitenano-web-platform/
 ## 🎨 Tasarım Sistemi
 
 ### Renkler
-- **Primary**: `#10B981` (Emerald green - Ana renk)
+- **Primary**: `#1EBBBC` (Turkuaz - Ana renk)
 - **Secondary**: `#1F2937` (Dark gray - Koyu aksan)
 - **Primary Dark**: `#059669` (Hover durumu)
 

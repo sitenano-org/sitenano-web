@@ -12,8 +12,9 @@
 > - Tüm sayfalar ve ana tasarım bozulmadan, SEO ve responsive kurallara uygun şekilde çalışıyor.
 > - Ana sayfa, hizmetler, iletişim ve diğer sayfalar Türkçe ve modern tasarımla hazır.
 > - Kodun tamamı commitlendi ve korunuyor.
-> - **Güncel Tasarım Sistemi:** Sora font ailesi hero bölümünde, Manrope font ailesi navbar'da kullanılıyor.
+> - **Güncel Tasarım Sistemi:** Sora font ailesi hero bölümünde, Manrope font ailesi navbar ve features bölümünde kullanılıyor.
 > - **Tipografi:** Hero başlığı 45px, letter-spacing: 0.5px, line-height: 1.4 ile optimize edildi.
+> - **Features Section:** Tek satır başlık, optimize edilmiş spacing ve font sistemi.
 
 ---
 
@@ -28,38 +29,55 @@
   - Line height: 1.4
   - Font size: 45px (hero başlığı)
 
-- **Manrope Font**: Navigasyon menüsü için kullanılır
-  - Font weight: 500 (medium)
-  - Letter spacing: 0.2px
-  - Word spacing: 0.5px
-  - Font size: 16px
+- **Manrope Font**: Navigasyon menüsü ve features bölümü için kullanılır
+  - Font weight: 500 (medium) - navbar
+  - Font weight: 600 (semibold) - feature başlıkları
+  - Font weight: 500 (medium) - feature alt metinleri
+  - Letter spacing: normal
+  - Line height: 28px (başlıklar), 30px (alt metinler)
+  - Font size: 16px (navbar), 20px (feature başlıkları), 16px (feature alt metinleri)
 
 #### Typography Hierarchy
 - **H1 (Hero)**: Sora, 45px, weight 400, letter-spacing 0.5px, line-height 1.4
-- **H2**: Sora, 36px, weight 600
-- **H3**: Sora, 24px, weight 500
-- **Body Text**: System font stack, 16px, weight 400
+- **H2 (Features)**: Sora, 60px, weight 400, letter-spacing -3px, line-height 70px, tek satır
+- **H3 (Feature Cards)**: Manrope, 20px, weight 600, line-height 28px
+- **Feature Body Text**: Manrope, 16px, weight 500, line-height 30px, color rgb(51, 51, 51)
 - **Navigation**: Manrope, 16px, weight 500
+- **Body Text**: System font stack, 16px, weight 400
 
 ### Color Palette (Renk Paleti)
-- **Primary**: #10B981 (Emerald green)
+- **Primary**: #1EBBBC (Turkuaz)
 - **Primary Dark**: #059669
 - **Secondary**: #1F2937 (Dark gray)
 - **White**: #FFFFFF
 - **Gray Light**: #F3F4F6
 - **Gray Dark**: #374151
+- **Feature Text**: rgb(51, 51, 51) - alt metinler için
+- **Feature Headings**: rgb(17, 17, 17) - başlıklar için
 
 ### Spacing System (Boşluk Sistemi)
 - **Hero Section**: 700px fixed height, responsive padding
+- **Features Section**: 740px fixed height, container-custom padding
+- **Grid Gap**: gap-16 (64px) - features grid için
+- **Icon Spacing**: mb-8 (32px) - icon ile başlık arası
 - **Button Spacing**: px-8 py-4 (32px horizontal, 16px vertical)
 - **Card Spacing**: p-8 (32px all around)
 - **Section Spacing**: py-24 (96px vertical)
 
 ### Component Guidelines (Bileşen Kuralları)
 - **Hero Section**: 4-line text layout, responsive width (100%, max-width 700px)
+- **Features Section**: Tek satır başlık, 4 sütun grid, gap-16, container-custom
+- **Feature Cards**: Icon (48px), başlık (Manrope 20px), alt metin (Manrope 16px, 280px genişlik)
 - **Navigation**: Hover effects with color transitions, no background
 - **Buttons**: Rounded corners (rounded-lg), hover scale effects
 - **Cards**: Gradient backgrounds, rounded-2xl corners
+
+### Layout Specifications (Düzen Özellikleri)
+- **Container**: max-w-7xl, mx-auto, px-4 sm:px-6 lg:px-2
+- **Features Grid**: grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16
+- **Feature Text Width**: 280px (alt metinler için)
+- **Feature Text Height**: 90px (alt metinler için)
+- **Icon Size**: 48px (w-12 h-12)
 
 ---
 
