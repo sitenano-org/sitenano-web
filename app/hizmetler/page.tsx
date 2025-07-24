@@ -20,12 +20,39 @@ export default function HizmetlerPage() {
               Sitenano\'nun sunduğu tüm dijital çözümler.
             </p>
           </div>
-          <div className="ml-8">
+          <div className="ml-8 flex gap-4">
             <Link 
               href="/iletisim" 
               className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300"
             >
               Teklif Al
+            </Link>
+            <Link
+              href="#hizmetler"
+              className="relative inline-block px-8 py-3 font-medium rounded-lg transition-all duration-300 group"
+              style={{
+                background: 'white',
+              }}
+            >
+              <span
+                className="absolute inset-0 rounded-lg p-[2px] group-hover:bg-gradient-to-r group-hover:from-[#10B981] group-hover:via-[#00BCD4] group-hover:to-[#00D4AA]"
+                style={{
+                  background: 'linear-gradient(90deg, #10B981, #00BCD4, #00D4AA)',
+                  zIndex: 0,
+                  transition: 'background 0.3s',
+                }}
+                aria-hidden="true"
+              ></span>
+              <span
+                className="relative z-10 block bg-white group-hover:bg-gradient-to-r group-hover:from-[#10B981] group-hover:via-[#00BCD4] group-hover:to-[#00D4AA] group-hover:text-white transition-all duration-300 px-8 py-3 rounded-lg"
+                style={{
+                  border: '2px solid transparent',
+                  backgroundClip: 'padding-box',
+                  fontSize: '16px', // 2 punto küçültüldü
+                }}
+              >
+                Daha fazla keşfet
+              </span>
             </Link>
           </div>
         </div>

@@ -26,7 +26,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-secondary text-white relative overflow-hidden" style={{ height: '760px' }}>
+    <footer className="bg-secondary text-white relative overflow-hidden" style={{ height: '760px', margin: '0 15px 20px 15px', borderRadius: '0 0 32px 32px' }}>
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/footer-bg.jpg)' }}></div>
       {/* Black Overlay */}
@@ -111,22 +111,26 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-300 text-sm">
-              © {currentYear} Sitenano. Tüm hakları saklıdır.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
-                Anasayfa
-              </Link>
-              <Link href="/iletisim" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
-                İletişim
-              </Link>
-              <Link href="/gizlilik-politikasi" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
-                Gizlilik Politikası
-              </Link>
-              <Link href="/kullanim-kosullari" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
-                Kullanım Koşulları
-              </Link>
+            <div style={{display: 'flex', alignItems: 'center', width: '100%'}}>
+              <p className="text-gray-300 text-sm" style={{marginBottom: '80px'}}>
+                © {currentYear} Sitenano. Tüm hakları saklıdır.
+              </p>
+              <div style={{flex: 1}} />
+              <div className="flex space-x-6 mt-4 md:mt-0">
+                <Link href="/" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
+                  Anasayfa
+                </Link>
+                <Link href="/iletisim" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
+                  İletişim
+                </Link>
+                <Link href="/gizlilik-politikasi" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
+                  Gizlilik Politikası
+                </Link>
+                <Link href="/kullanim-kosullari" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
+                  Kullanım Koşulları
+                </Link>
+              </div>
+              <div style={{width: '60px'}} />
             </div>
           </div>
         </div>

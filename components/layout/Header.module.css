@@ -1,0 +1,13 @@
+.header-nav-link {
+  position: relative;
+  color: #111 !important;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-nav-link:hover {
+  color: #111 !important;
+  transform: scale(1.05);
+} 
