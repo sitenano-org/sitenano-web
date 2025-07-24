@@ -247,7 +247,7 @@ export default function HakkimizdaPage() {
         </div>
       </section>
       {/* ALTINA MARGIN EKLE */}
-      <div style={{ marginBottom: '120px' }} />
+      <div style={{ marginBottom: '200px' }} />
 
       {/* YENİ BÖLÜM - GÖRSELDEKİ GİBİ */}
       <section
@@ -296,10 +296,9 @@ export default function HakkimizdaPage() {
             <button
               className="teklif-iste-btn"
               style={{
-                border: '2px solid',
-                borderImage: 'linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%) 1',
-                borderRadius: '30px',
-                background: 'none',
+                border: '2px solid transparent',
+                borderRadius: '15px',
+                background: 'linear-gradient(#0D0D0C, #0D0D0C) padding-box, linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%) border-box',
                 color: '#fff',
                 fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                 fontSize: '14px',
