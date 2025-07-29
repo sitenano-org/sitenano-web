@@ -117,12 +117,6 @@ const Footer = () => {
               </p>
               <div style={{flex: 1}} />
               <div className="flex space-x-6 mt-4 md:mt-0">
-                <Link href="/" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
-                  Anasayfa
-                </Link>
-                <Link href="/iletisim" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
-                  İletişim
-                </Link>
                 <Link href="/gizlilik-politikasi" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
                   Gizlilik Politikası
                 </Link>

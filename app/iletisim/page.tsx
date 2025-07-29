@@ -66,8 +66,16 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="relative text-white overflow-hidden" style={{ minHeight: '100vh', backgroundColor: '#333646', marginTop: '100px' }}>
-        <div className="container-custom relative z-10 h-full flex items-center py-20">
+      <section className="relative text-white overflow-hidden" style={{ 
+        minHeight: '100vh', 
+        backgroundColor: '#333646', 
+        marginTop: '60px',
+        marginLeft: '20px',
+        marginRight: '20px',
+        marginBottom: '100px',
+        borderRadius: '20px'
+      }}>
+        <div className="container-custom relative z-10 h-full flex items-center py-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
             
             {/* Left Column - Contact Information */}
@@ -382,6 +390,98 @@ export default function ContactPage() {
               </form>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ALTINA MARGIN EKLE */}
+      <div style={{ marginBottom: '200px' }} />
+
+      {/* YENİ BÖLÜM - GÖRSELDEKİ GİBİ */}
+      <section
+        style={{
+          background: '#0D0D0C',
+          width: 'auto',
+          margin: '120px 15px 0 15px',
+          height: '490px',
+          borderTopLeftRadius: '40px',
+          borderTopRightRadius: '40px',
+          borderBottomLeftRadius: '0px',
+          borderBottomRightRadius: '0px',
+          display: 'flex',
+          alignItems: 'center',
+          position: 'relative',
+        }}
+      >
+        <div className="container-custom" style={{ width: '100%', position: 'relative' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+            {/* Sol: Başlık */}
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1 }}>
+              <h2
+                style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '80px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  height: '180px',
+                  letterSpacing: '-2.4px',
+                  lineHeight: '90px',
+                  color: 'transparent',
+                  background: 'linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  margin: 0,
+                  width: '840px',
+                  textAlign: 'left',
+                  display: 'block',
+                }}
+              >
+                Projenizi hayata geçirelim!<br />Hemen teklif alın
+              </h2>
+            </div>
+            {/* Sağ: Teklif İste Butonu */}
+            <button
+              className="teklif-iste-btn"
+              style={{
+                border: '2px solid transparent',
+                borderRadius: '15px',
+                background: 'linear-gradient(#0D0D0C, #0D0D0C) padding-box, linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%) border-box',
+                color: '#fff',
+                fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                fontSize: '14px',
+                fontStyle: 'normal',
+                fontWeight: 500,
+                height: '55px',
+                minWidth: '70px',
+                letterSpacing: '0.12px',
+                lineHeight: '27px',
+                padding: '0 32px',
+                cursor: 'pointer',
+                transition: 'background 0.3s',
+                position: 'relative',
+                outline: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
+              }}
+            >
+              Teklif Al
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{ marginLeft: '4px' }}>
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          {/* Yatay çizgi - butonun sonuna kadar uzanan */}
+          <div style={{ 
+            position: 'absolute', 
+            left: 0, 
+            right: 0, 
+            height: '1px', 
+            background: 'rgba(255,255,255,0.7)', 
+            top: 'calc(50% + 90px)', 
+            marginTop: '48px' 
+          }} />
         </div>
       </section>
 
