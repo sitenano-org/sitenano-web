@@ -19,11 +19,12 @@ const Header = () => {
     { name: 'Projeler', href: '/projeler' },
   ]
 
-  const isHakkimizda = pathname === '/hakkimizda';
+  // Yeni kontrol: sadece ana sayfa farklı, diğer tüm sayfalarda hakkımızda navbarı
+  const isInnerPage = pathname !== '/';
 
   return (
-    <header className={(pathname === '/' ? 'absolute top-0 left-0 right-0 z-50' : 'relative z-50')} style={{background: 'none', marginTop: isHakkimizda ? '0px' : '12px'}}>
-      {isHakkimizda && (
+    <header className={(pathname === '/' ? 'absolute top-0 left-0 right-0 z-50' : 'relative z-50')} style={{background: 'none', marginTop: isInnerPage ? '0px' : '12px'}}>
+      {isInnerPage && (
         <div
           style={{
             marginLeft: '20px',
@@ -59,7 +60,7 @@ const Header = () => {
           </span>
         </div>
       )}
-      {isHakkimizda ? (
+      {isInnerPage ? (
         <div
           className="flex items-center justify-between"
           style={{
@@ -70,7 +71,7 @@ const Header = () => {
             borderRadius: '20px',
             border: '0.3px solid #C8C8C8 !important',
             background: 'none',
-            marginTop: isHakkimizda ? '0px' : '24px',
+            marginTop: isInnerPage ? '0px' : '24px',
             marginBottom: '15px',
             marginLeft: '20px',
             marginRight: '20px',
@@ -126,7 +127,6 @@ const Header = () => {
                 </Link>
               ))}
             </nav>
-            
             {/* Bize Ulaşın Butonu */}
             <div className="hidden lg:flex items-center" style={{ position: 'absolute', right: '50px', top: '50%', transform: 'translateY(-50%)', zIndex: 10 }}>
               <Link 

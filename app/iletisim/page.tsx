@@ -22,9 +22,51 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <>
-      {/* Hero Section */}
-      <section className="relative text-white overflow-hidden" style={{ minHeight: '100vh', backgroundColor: '#333646' }}>
+    <main className="min-h-screen bg-white">
+      {/* HERO BÖLÜMÜ */}
+      <section
+        className="relative w-full flex items-center overflow-hidden"
+        style={{ minHeight: '520px', height: '520px', background: 'none', position: 'relative', marginTop: '12px' }}
+      >
+        {/* Arka plan görseli */}
+        <img
+          src="/images/top-hero-bg.jpg"
+          alt="İletişim Hero Background"
+          className="object-cover absolute top-0 z-0"
+          style={{ 
+            objectFit: 'cover', 
+            objectPosition: 'center', 
+            opacity: 0.85, 
+            minHeight: '520px', 
+            height: '520px',
+            width: 'calc(100% - 40px)',
+            left: '20px',
+            right: '20px',
+            borderRadius: '20px'
+          }}
+        />
+        <div className="w-full h-full flex items-center justify-center relative z-10">
+          <h1
+            className="text-white drop-shadow-lg"
+            style={{
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '80px',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              height: '90px',
+              letterSpacing: '-2.4px',
+              lineHeight: '90px',
+              textAlign: 'center',
+              textShadow: '0 2px 16px rgba(0,0,0,0.25)'
+            }}
+          >
+            / İletişim /
+          </h1>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="relative text-white overflow-hidden" style={{ minHeight: '100vh', backgroundColor: '#333646', marginTop: '100px' }}>
         <div className="container-custom relative z-10 h-full flex items-center py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
             
@@ -380,6 +422,6 @@ export default function ContactPage() {
           })
         }}
       />
-    </>
+    </main>
   )
 } 
