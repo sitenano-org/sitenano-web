@@ -409,19 +409,20 @@ export default function ProjelerPage() {
       {/* YENİ PROJELER BÖLÜMÜ */}
       <section style={{
         background: '#1a1a1a',
-        height: '2260px',
-        padding: '80px 20px 40px 20px',
+        height: '2400px',
+        padding: '150px 20px 120px 20px',
         position: 'relative',
         borderRadius: '20px',
         margin: '0px 20px 120px 20px'
       }}>
         <div style={{
           marginLeft: '0px',
-          marginRight: '0px'
+          marginRight: '0px',
+          paddingBottom: '120px' // alt padding artırıldı
         }}>
           {/* Başlık Bölümü */}
           <div style={{
-            marginBottom: '72px'
+            marginBottom: '120px'
           }}>
             <div style={{
               color: '#909090',
