@@ -19,16 +19,13 @@ sitenano-web-platform/
 │   ├── globals.css              # Global stiller
 │   ├── layout.tsx               # Root layout
 │   ├── page.tsx                 # Ana sayfa
-│   ├── yapay-zeka/              # Yapay Zeka sayfası
-│   ├── web-tasarim/             # Web Tasarım sayfası
-│   ├── e-ticaret/               # E-Ticaret sayfası
-│   ├── online-siparis-sistemi/  # Online Sipariş sayfası
+│   ├── hakkimizda/              # Hakkımızda sayfası
 │   ├── hizmetler/               # Hizmetler sayfası
 │   ├── projeler/                # Projeler sayfası
 │   └── iletisim/                # İletişim sayfası
 ├── components/
 │   └── layout/
-│       ├── Header.tsx           # Header bileşeni
+│       ├── Header.tsx           # Header bileşeni (Unified navbar)
 │       └── Footer.tsx           # Footer bileşeni
 ├── public/                      # Statik dosyalar
 │   ├── robots.txt              # SEO robots
@@ -38,6 +35,20 @@ sitenano-web-platform/
 ├── tsconfig.json               # TypeScript konfigürasyonu
 └── package.json                # Bağımlılıklar
 ```
+
+## 🧭 Navigasyon Yapısı
+
+### Navbar Özellikleri
+- **Unified Structure**: Tüm sayfalarda aynı navbar yapısı
+- **Black Contact Bar**: Telefon ve e-posta bilgileri
+- **Framed Design**: Yuvarlatılmış köşeli çerçeve
+- **Contact Button**: "BİZE ULAŞIN" butonu sağ tarafta
+
+### Navigasyon Linkleri
+- **ANASAYFA** (`/`) - Ana sayfa
+- **HAKKIMIZDA** (`/hakkimizda`) - Hakkımızda sayfası
+- **HİZMETLER** (`/hizmetler`) - Hizmetler sayfası
+- **PROJELER** (`/projeler`) - Projeler sayfası
 
 ## 🎨 Tasarım Sistemi
 
@@ -78,42 +89,32 @@ sitenano-web-platform/
 - Hizmetler önizlemesi
 - Özellikler
 - Call-to-action
+- **Unified navbar structure**
 
-### 2. Yapay Zeka (`/yapay-zeka`)
-- AI hizmetleri
-- Avantajlar
-- Çalışma süreci
-- CTA bölümü
+### 2. Hakkımızda (`/hakkimizda`)
+- Şirket hakkında bilgiler
+- Misyon ve vizyon
+- Ekip bilgileri
+- Referanslar
 
-### 3. Web Tasarım (`/web-tasarim`)
-- Web tasarım hizmetleri
-- Teknolojiler
-- Süreç
-
-### 4. E-Ticaret (`/e-ticaret`)
-- E-ticaret platformları
-- Özellikler
-- Entegrasyonlar
-
-### 5. Online Sipariş Sistemi (`/online-siparis-sistemi`)
-- Sipariş sistemi özellikleri
-- Mobil uygulama
-- Yönetim paneli
-
-### 6. Hizmetler (`/hizmetler`)
+### 3. Hizmetler (`/hizmetler`)
 - Tüm hizmetlerin listesi
 - Detaylı açıklamalar
+- Hizmet kategorileri
+- Teknoloji stack
 
-### 7. Projeler (`/projeler`)
+### 4. Projeler (`/projeler`)
 - Tamamlanan projeler
 - Referanslar
 - Portföy
+- Proje detayları
 
-### 8. İletişim (`/iletisim`)
+### 5. İletişim (`/iletisim`)
+- Hero section with "/ İletişim /" text
 - İletişim formu
 - Şirket bilgileri
-- Harita
-- Sosyal medya
+- Call-to-action section
+- Harita ve sosyal medya
 
 ## 🔧 Kurulum
 
@@ -125,7 +126,7 @@ sitenano-web-platform/
 
 1. **Projeyi klonlayın**
 ```bash
-git clone <repository-url>
+git clone <https://github.com/sitenanogit/sitenano-web.git>
 cd sitenano-web-platform
 ```
 

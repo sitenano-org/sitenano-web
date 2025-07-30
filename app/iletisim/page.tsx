@@ -72,10 +72,10 @@ export default function ContactPage() {
         marginTop: '60px',
         marginLeft: '20px',
         marginRight: '20px',
-        marginBottom: '100px',
+        marginBottom: '20px',
         borderRadius: '20px'
       }}>
-        <div className="container-custom relative z-10 h-full flex items-center py-10">
+        <div className="container-custom relative z-10 h-full flex items-center py-10" style={{ paddingBottom: '120px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
             
             {/* Left Column - Contact Information */}
@@ -394,14 +394,14 @@ export default function ContactPage() {
       </section>
 
       {/* ALTINA MARGIN EKLE */}
-      <div style={{ marginBottom: '200px' }} />
+      <div style={{ marginBottom: '60px' }} />
 
       {/* YENİ BÖLÜM - GÖRSELDEKİ GİBİ */}
       <section
         style={{
           background: '#0D0D0C',
           width: 'auto',
-          margin: '120px 15px 0 15px',
+          margin: '60px 15px 0 15px',
           height: '490px',
           borderTopLeftRadius: '40px',
           borderTopRightRadius: '40px',

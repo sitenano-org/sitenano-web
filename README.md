@@ -69,8 +69,42 @@
 - **Features Section**: Tek satır başlık, 4 sütun grid, gap-16, container-custom
 - **Feature Cards**: Icon (48px), başlık (Manrope 20px), alt metin (Manrope 16px, 280px genişlik)
 - **Navigation**: Hover effects with color transitions, no background
-- **Buttons**: Rounded corners (rounded-lg), hover scale effects
 - **Cards**: Gradient backgrounds, rounded-2xl corners
+
+### Button Design Guidelines (Buton Tasarım Kuralları)
+
+#### Gradient Border Buttons (Gradient Çerçeveli Butonlar)
+**DOĞRU YÖNTEM (Çalışan):**
+```css
+background: 'linear-gradient(transparent, transparent) padding-box, linear-gradient(45deg, #00D4AA, #00B4D8, #0096C7) border-box',
+border: '2px solid transparent',
+borderRadius: '20px'
+```
+
+**YANLIŞ YÖNTEM (Çalışmayan):**
+```css
+borderImage: 'linear-gradient(45deg, #00D4AA, #00B4D8, #0096C7) 1',
+border: '2px solid',
+borderRadius: '20px' /* Bu çalışmaz! */
+```
+
+#### Buton Hover Efektleri
+```javascript
+onMouseEnter={(e) => {
+  (e.target as HTMLDivElement).style.background = 'linear-gradient(45deg, #00D4AA, #00B4D8, #0096C7)';
+  (e.target as HTMLDivElement).style.color = 'white';
+}}
+onMouseLeave={(e) => {
+  (e.target as HTMLDivElement).style.background = 'linear-gradient(transparent, transparent) padding-box, linear-gradient(45deg, #00D4AA, #00B4D8, #0096C7) border-box';
+  (e.target as HTMLDivElement).style.color = '#606060';
+}}
+```
+
+#### Önemli Notlar:
+- `borderImage` ile `borderRadius` uyumlu değildir
+- Gradient border için `background` ile `padding-box` ve `border-box` kullanın
+- `border: '2px solid transparent'` ile birlikte kullanın
+- TypeScript'te event target'ı `HTMLDivElement` olarak cast edin
 
 ### Layout Specifications (Düzen Özellikleri)
 - **Container**: max-w-7xl, mx-auto, px-4 sm:px-6 lg:px-2
@@ -105,15 +139,18 @@ All pages must follow a consistent layout and design style. Components, layout g
 
 ## Navbar (Navigasyon Menüsü)
 
-The global navigation bar should include the following links:
+The global navigation bar includes the following links:
 
-- Yapay Zeka
-- Web Tasarım
-- Online Sipariş Sistemi
-- E-ticaret
-- Hizmetler
-- Projeler
-- İletişim
+- ANASAYFA (Homepage)
+- HAKKIMIZDA (About)
+- HİZMETLER (Services)
+- PROJELER (Projects)
+
+The navbar features:
+- Black contact section with phone and email information
+- Framed navbar with rounded corners
+- "BİZE ULAŞIN" (Contact Us) button positioned on the right
+- Unified structure across all pages including homepage
 
 Clicking the logo should always redirect to the homepage.
 
