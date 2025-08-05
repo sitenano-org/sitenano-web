@@ -25,18 +25,18 @@ export default function ContactPage() {
     <main className="min-h-screen bg-white">
       {/* HERO BÖLÜMÜ */}
       <section
-        className="relative w-full flex items-center overflow-hidden"
+        className="hero-section relative w-full flex items-center overflow-hidden"
         style={{ minHeight: '520px', height: '520px', background: 'none', position: 'relative', marginTop: '12px' }}
       >
         {/* Arka plan görseli */}
         <img
-          src="/images/top-hero-bg.jpg"
+          src="/images/hero-iletisim-bg.jpg"
           alt="İletişim Hero Background"
-          className="object-cover absolute top-0 z-0"
+          className="hero-image object-cover absolute top-0 z-0"
           style={{ 
             objectFit: 'cover', 
             objectPosition: 'center', 
-            opacity: 0.85, 
+            opacity: 1, 
             minHeight: '520px', 
             height: '520px',
             width: 'calc(100% - 40px)',
@@ -45,9 +45,20 @@ export default function ContactPage() {
             borderRadius: '20px'
           }}
         />
+        {/* Siyah overlay */}
+        <div
+          className="absolute top-0 left-0 w-full h-full bg-black z-0"
+          style={{
+            width: 'calc(100% - 40px)',
+            left: '20px',
+            right: '20px',
+            borderRadius: '20px',
+            opacity: 0.5
+          }}
+        />
         <div className="w-full h-full flex items-center justify-center relative z-10">
           <h1
-            className="text-white drop-shadow-lg"
+            className="hero-title text-white drop-shadow-lg text-4xl md:text-6xl lg:text-8xl"
             style={{
               fontFamily: 'Sora, Arial, Helvetica, sans-serif',
               fontSize: '80px',
@@ -66,23 +77,21 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="relative text-white overflow-hidden" style={{ 
+      <section className="contact-section relative text-white overflow-hidden px-4 md:px-8" style={{ 
         minHeight: '100vh', 
         backgroundColor: '#333646', 
         marginTop: '60px',
-        marginLeft: '20px',
-        marginRight: '20px',
         marginBottom: '20px',
         borderRadius: '20px'
       }}>
-        <div className="container-custom relative z-10 h-full flex items-center py-10" style={{ paddingBottom: '120px' }}>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
+        <div className="contact-container container-custom relative z-10 h-full flex items-center py-6 md:py-10" style={{ paddingBottom: '120px' }}>
+          <div className="contact-grid grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-center w-full">
             
             {/* Left Column - Contact Information */}
             <div className="space-y-8">
               <div>
                 <h1 
-                  className="text-6xl md:text-7xl lg:text-8xl font-heading font-black leading-tight mb-4 uppercase tracking-widest"
+                  className="contact-title text-4xl md:text-6xl lg:text-8xl font-heading font-black leading-tight mb-4 uppercase tracking-widest text-center md:text-left"
                   style={{
                     fontFamily: '"Barlow Condensed", sans-serif',
                     fontSize: '80px',
@@ -101,32 +110,44 @@ export default function ContactPage() {
               </div>
               
               <div className="space-y-6">
+                <h2 
+                  className="contact-title text-white leading-relaxed text-center md:text-left"
+                  style={{
+                    fontFamily: '"Barlow Condensed", sans-serif',
+                    fontSize: '32px',
+                    fontWeight: 700,
+                    marginBottom: '20px'
+                  }}
+                >
+                  PROJENİZ İÇİN BUGÜN BAŞLANGIÇ OLABİLİR.
+                </h2>
+                <h3 
+                  className="contact-title text-white leading-relaxed text-center md:text-left"
+                  style={{
+                    fontFamily: '"DM Sans", sans-serif',
+                    fontSize: '32px',
+                    fontWeight: 700,
+                    marginBottom: '20px'
+                  }}
+                >
+                  Bir projeniz mi var, bir mesajınız ile adım atın.
+                </h3>
                 <p 
-                  className="text-gray-300 leading-relaxed"
+                  className="contact-text text-gray-300 leading-relaxed text-base md:text-lg text-center md:text-left"
                   style={{
                     fontFamily: '"DM Sans", sans-serif',
                     fontSize: '20px',
                     fontWeight: 400
                   }}
                 >
-                  Sayfamızı ziyaret ettiğiniz için teşekkür ederiz.
-                </p>
-                <p 
-                  className="text-gray-300 leading-relaxed"
-                  style={{
-                    fontFamily: '"DM Sans", sans-serif',
-                    fontSize: '20px',
-                    fontWeight: 400
-                  }}
-                >
-                  İletişim formunu kullanarak bize ulaşabilir, detaylı bilgi alabilirsiniz. En kısa sürede size geri dönüş yapacağız.
+                  Projeleriniz hakkında konuşmaya hazırız! İhtiyaçlarınızı ve hedeflerinizi bizimle paylaşın, size özel çözümler üretelim. İletişim formunu doldurarak bizimle ilk adımı atın.
                 </p>
               </div>
               
               <div className="space-y-12">
-                <div className="text-gray-300 mb-8">
+                <div className="text-gray-300 mb-8 text-center md:text-left">
                   <p 
-                    className="mb-1"
+                    className="address-text mb-1 text-sm md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -136,7 +157,7 @@ export default function ContactPage() {
                     Ege Baskı Tasarım Amb. San. ve Dış Tic. Ltd. Şti.
                   </p>
                   <p 
-                    className="mb-1"
+                    className="address-text mb-1 text-sm md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -146,6 +167,7 @@ export default function ContactPage() {
                     Yakuplu Mah. 194. Sk. No:1 D:183
                   </p>
                   <p 
+                    className="address-text text-sm md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -157,7 +179,7 @@ export default function ContactPage() {
                 </div>
                 <a 
                   href="mailto:info@cmsnano.com"
-                  className="flex items-center space-x-3 cursor-pointer transition-all duration-300 ease group"
+                  className="contact-link flex items-center space-x-3 cursor-pointer transition-all duration-300 ease group justify-center md:justify-start text-lg md:text-xl"
                   style={{
                     fontFamily: '"Barlow Condensed", sans-serif',
                     fontSize: '28px',
@@ -177,7 +199,7 @@ export default function ContactPage() {
                 </a>
                 <a 
                   href="mailto:info@sitenano.com"
-                  className="flex items-center space-x-3 cursor-pointer transition-all duration-300 ease group"
+                  className="contact-link flex items-center space-x-3 cursor-pointer transition-all duration-300 ease group justify-center md:justify-start text-lg md:text-xl"
                   style={{
                     fontFamily: '"Barlow Condensed", sans-serif',
                     fontSize: '28px',
@@ -197,7 +219,7 @@ export default function ContactPage() {
                 </a>
                 <a 
                   href="tel:02122129990"
-                  className="flex items-center space-x-3 cursor-pointer transition-all duration-300 ease group"
+                  className="contact-link flex items-center space-x-3 cursor-pointer transition-all duration-300 ease group justify-center md:justify-start text-lg md:text-xl"
                   style={{
                     fontFamily: '"Barlow Condensed", sans-serif',
                     fontSize: '28px',
@@ -219,11 +241,11 @@ export default function ContactPage() {
             </div>
             
             {/* Right Column - Contact Form */}
-            <div className="p-8" style={{ marginTop: '150px' }}>
-              <form className="space-y-6">
+            <div className="p-4 md:p-8" style={{ marginTop: '150px' }}>
+              <form className="space-y-4 md:space-y-6">
                 <div>
                   <label 
-                    className="block text-white mb-2"
+                    className="form-label block text-white mb-2 text-base md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -234,7 +256,7 @@ export default function ContactPage() {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 bg-transparent border-b border-gray-600 text-white focus:border-primary focus:outline-none transition-colors"
+                    className="form-input w-full px-4 py-3 bg-transparent border-b border-gray-600 text-white focus:border-primary focus:outline-none transition-colors text-base md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -245,7 +267,7 @@ export default function ContactPage() {
                 
                 <div>
                   <label 
-                    className="block text-white mb-2"
+                    className="form-label block text-white mb-2 text-base md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -256,7 +278,7 @@ export default function ContactPage() {
                   </label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 bg-transparent border-b border-gray-600 text-white focus:border-primary focus:outline-none transition-colors"
+                    className="form-input w-full px-4 py-3 bg-transparent border-b border-gray-600 text-white focus:border-primary focus:outline-none transition-colors text-base md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -267,7 +289,7 @@ export default function ContactPage() {
                 
                 <div>
                   <label 
-                    className="block text-white mb-2"
+                    className="form-label block text-white mb-2 text-base md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -278,7 +300,7 @@ export default function ContactPage() {
                   </label>
                   <input
                     type="tel"
-                    className="w-full px-4 py-3 bg-transparent border-b border-gray-600 text-white focus:border-primary focus:outline-none transition-colors"
+                    className="form-input w-full px-4 py-3 bg-transparent border-b border-gray-600 text-white focus:border-primary focus:outline-none transition-colors text-base md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -289,7 +311,7 @@ export default function ContactPage() {
                 
                 <div>
                   <label 
-                    className="block text-white mb-2"
+                    className="form-label block text-white mb-2 text-base md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -300,7 +322,7 @@ export default function ContactPage() {
                   </label>
                   <textarea
                     rows={4}
-                    className="w-full px-4 py-3 bg-transparent border-b border-gray-600 text-white focus:border-primary focus:outline-none transition-colors resize-none"
+                    className="form-input w-full px-4 py-3 bg-transparent border-b border-gray-600 text-white focus:border-primary focus:outline-none transition-colors resize-none text-base md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -311,7 +333,7 @@ export default function ContactPage() {
                 
                 <div className="space-y-4">
                   <h3 
-                    className="text-white"
+                    className="form-label text-white text-base md:text-lg"
                     style={{
                       fontFamily: '"DM Sans", sans-serif',
                       fontSize: '20px',
@@ -324,7 +346,7 @@ export default function ContactPage() {
                     <label className="flex items-center space-x-3 cursor-pointer">
                       <input type="checkbox" className="w-4 h-4 text-primary bg-transparent border-gray-600 rounded focus:ring-primary" />
                       <span 
-                        className="text-white"
+                        className="form-checkbox-text text-white text-sm md:text-lg"
                         style={{
                           fontFamily: '"DM Sans", sans-serif',
                           fontSize: '20px',
@@ -337,7 +359,7 @@ export default function ContactPage() {
                     <label className="flex items-center space-x-3 cursor-pointer">
                       <input type="checkbox" className="w-4 h-4 text-primary bg-transparent border-gray-600 rounded focus:ring-primary" />
                       <span 
-                        className="text-white"
+                        className="form-checkbox-text text-white text-sm md:text-lg"
                         style={{
                           fontFamily: '"DM Sans", sans-serif',
                           fontSize: '20px',
@@ -350,7 +372,7 @@ export default function ContactPage() {
                     <label className="flex items-center space-x-3 cursor-pointer">
                       <input type="checkbox" className="w-4 h-4 text-primary bg-transparent border-gray-600 rounded focus:ring-primary" />
                       <span 
-                        className="text-white"
+                        className="form-checkbox-text text-white text-sm md:text-lg"
                         style={{
                           fontFamily: '"DM Sans", sans-serif',
                           fontSize: '20px',
@@ -363,7 +385,7 @@ export default function ContactPage() {
                     <label className="flex items-center space-x-3 cursor-pointer">
                       <input type="checkbox" className="w-4 h-4 text-primary bg-transparent border-gray-600 rounded focus:ring-primary" />
                       <span 
-                        className="text-white"
+                        className="form-checkbox-text text-white text-sm md:text-lg"
                         style={{
                           fontFamily: '"DM Sans", sans-serif',
                           fontSize: '20px',
@@ -378,7 +400,7 @@ export default function ContactPage() {
                 
                 <button
                   type="submit"
-                  className="py-3 px-8 bg-primary hover:bg-primary-dark text-white rounded-lg transition-all duration-300 transform hover:scale-105"
+                  className="submit-button py-3 px-8 bg-primary hover:bg-primary-dark text-white rounded-lg transition-all duration-300 transform hover:scale-105 text-base md:text-lg w-full md:w-auto"
                   style={{
                     fontFamily: '"DM Sans", sans-serif',
                     fontSize: '20px',
@@ -398,6 +420,7 @@ export default function ContactPage() {
 
       {/* YENİ BÖLÜM - GÖRSELDEKİ GİBİ */}
       <section
+        className="quote-section"
         style={{
           background: '#0D0D0C',
           width: 'auto',
@@ -413,10 +436,11 @@ export default function ContactPage() {
         }}
       >
         <div className="container-custom" style={{ width: '100%', position: 'relative' }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+          <div className="quote-container flex flex-col md:flex-row items-center justify-center md:justify-between w-full gap-6 md:gap-0" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             {/* Sol: Başlık */}
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1 }}>
+            <div className="quote-title-container text-center md:text-left" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1 }}>
               <h2
+                className="quote-title text-3xl md:text-5xl lg:text-8xl"
                 style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '80px',
@@ -440,8 +464,10 @@ export default function ContactPage() {
               </h2>
             </div>
             {/* Sağ: Teklif İste Butonu */}
-            <button
-              className="teklif-iste-btn"
+            <div className="quote-button-container">
+            <a
+              href="mailto:info@sitenano.com?subject=Proje Teklifi Talebi&body=Merhaba,%0D%0A%0D%0AProjemiz hakkında detaylı bilgi almak istiyoruz.%0D%0A%0D%0AProje detayları:%0D%0A- Proje türü:%0D%0A- Bütçe aralığı:%0D%0A- Zaman çizelgesi:%0D%0A- Özel gereksinimler:%0D%0A%0D%0Aİletişim bilgilerimiz:%0D%0A- Ad Soyad:%0D%0A- Telefon:%0D%0A- Şirket:%0D%0A%0D%0AEn kısa sürede dönüş yapmanızı bekliyoruz.%0D%0A%0D%0ATeşekkürler"
+              className="quote-button teklif-iste-btn text-xs md:text-sm w-full md:w-auto"
               style={{
                 border: '2px solid transparent',
                 borderRadius: '15px',
@@ -464,13 +490,15 @@ export default function ContactPage() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: '8px',
+                textDecoration: 'none'
               }}
             >
               Teklif Al
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{ marginLeft: '4px' }}>
                 <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-            </button>
+            </a>
+            </div>
           </div>
           {/* Yatay çizgi - butonun sonuna kadar uzanan */}
           <div style={{ 

@@ -107,7 +107,7 @@ onMouseLeave={(e) => {
 - TypeScript'te event target'ı `HTMLDivElement` olarak cast edin
 
 ### Layout Specifications (Düzen Özellikleri)
-- **Container**: max-w-7xl, mx-auto, px-4 sm:px-6 lg:px-2
+- **Container**: max-w-7xl, mx-auto, px-4 sm:px-6 lg:px-8
 - **Features Grid**: grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16
 - **Feature Text Width**: 280px (alt metinler için)
 - **Feature Text Height**: 90px (alt metinler için)
@@ -203,12 +203,161 @@ All schema must pass validation in Google Rich Results test and schema.org
 
 
 ### Advanced SEO & Technical Best Practices
-## Responsive Design
-- The website must be fully responsive on mobile, tablet, and desktop.
-- Use flexible layouts and relative units (em, %, vw, vh).
-- Avoid fixed-width containers and absolute positioning.
-- Set viewport properly:
+## Responsive Design (Mobil Responsive Ayarları)
+
+### 📐 Breakpoint Temelli Görünürlük Kontrolleri
+
+Breakpoints (kırılma noktaları) sayesinde belirli ekran boyutlarında elementleri gösterebilir veya gizleyebilirsiniz. Tailwind varsayılan olarak `sm`, `md`, `lg`, `xl`, `2xl` isimli 5 breakpoint tanımlar.
+
+**Mobil Öncelikli Yaklaşım:**
+- Unprefixed (önek almayan) sınıflar tüm cihazlara uygulanır
+- Prefix'li sınıflar belirtilen boyut ve üzerinde geçerli olur
+
+```html
+<!-- Mobilde görünür (block), orta ve üzeri ekranlarda gizlenir (md:hidden) -->
+<div class="block md:hidden">Mobil Menu Ikonu</div>
+
+<!-- Mobilde gizli (hidden), orta ve üzeri ekranlarda görünür (md:block) -->
+<div class="hidden md:block">Geniş Ekran Menü</div>
+```
+
+### 📦 Padding ve Margin Ayarları
+
+Responsive tasarımda boşluk değerlerini ekran boyutuna göre ayarlamak önemlidir:
+
+```html
+<div class="p-4 md:p-8">
+  <!-- İçerik: Padding küçük ekranda 1rem, md ve üzeri için 2rem olur -->
+</div>
+
+<div class="mt-2 md:mt-6">
+  <!-- Margin: Küçük ekranda 0.5rem, md ve üzeri için 1.5rem -->
+</div>
+
+<!-- Yatay/Dikey ayarlar -->
+<section class="px-2 md:px-6">
+  <!-- Küçük ekranda yanlardan 0.5rem, md ve üstünde 1.5rem boşluk -->
+</section>
+```
+
+### 📏 Öğeler Arası Boşluklar
+
+**Grid veya Flex için:**
+```html
+<div class="grid grid-cols-2 gap-4">...</div>
+```
+
+**Aralarındaki boşluk (space-x / space-y):**
+```html
+<ul class="flex flex-col space-y-3">
+  <li>Birinci madde</li>
+  <li>İkinci madde</li>
+  <li>Üçüncü madde</li>
+</ul>
+```
+
+### ✍️ Tipografi (Başlık, Metin)
+
+```html
+<h1 class="text-2xl md:text-4xl font-bold">Başlık</h1>
+<p class="text-base md:text-lg leading-relaxed">Alt metin</p>
+```
+
+**Önemli Sınıflar:**
+- `text-*` → font size
+- `leading-*` → line-height
+- `font-bold`, `font-semibold` gibi ağırlıklarla birlikte kullanılabilir
+
+### 📄 Metin Hizalama
+
+```html
+<p class="text-center md:text-left">Responsive hizalama</p>
+```
+
+### 🖼️ Görsel Boyutlandırma
+
+```html
+<img class="w-full aspect-video object-cover" src="..." />
+```
+
+**Önemli Sınıflar:**
+- `w-full`: konteyneri kapla
+- `aspect-video`: oran koru
+- `object-cover`: taşmadan hizala
+
+### 🧱 Flex / Grid Dönüşümleri
+
+```html
+<!-- Mobilde alt alta, masaüstünde yan yana -->
+<div class="flex flex-col md:flex-row">...</div>
+
+<!-- Grid sütun sayısı değişimi -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">...</div>
+```
+
+### 📦 Container & max-w
+
+```html
+<div class="container mx-auto px-4">...</div>
+<div class="max-w-xl mx-auto">...</div>
+```
+
+### 🚫 Taşmayı Engelleme
+
+```html
+<div class="overflow-x-auto">...</div>
+<p class="break-words">Uzun kelimeler kırılır</p>
+```
+
+### 👆 Touch Target (Tıklanabilir Alan)
+
+```html
+<button class="w-11 h-11">🔍</button>
+```
+
+**Önemli Kurallar:**
+- Minimum 44px × 44px önerilir (`w-11`, `h-11` = 44px)
+- Metinli butonlar için `py-3 px-4` yeterli olur
+
+### 🛡️ ÖNEMLİ KURAL: Masaüstü Ayarları Asla Değiştirilmemeli
+
+**Responsive düzenleme = sadece küçük ekranlara özel ekleme yapmak demektir.**
+
+✅ **Doğru Yaklaşım:**
+```html
+<h1 class="text-4xl sm:text-2xl">Başlık</h1>
+```
+- `text-4xl` → Masaüstü için korunur
+- `sm:text-2xl` → Küçük ekranlar için eklenir
+
+❌ **Yanlış Yaklaşım:**
+```html
+<h1 class="text-2xl">Başlık</h1>
+```
+- Masaüstü ayarı yanlışlıkla değiştirilmiş olur
+
+**🛡️ Kural Özeti:**
+- 🔒 [KURAL] Masaüstü layout (padding, font-size, margin vb.) korunur
+- ✅ Yapılacak: `sm:/md:/lg:` ile responsive sınıf EKLENİR
+- 🚫 Yapılmayacak: Mevcut sınıflar silinerek düzen yapılmaz
+
+### Responsive Düzenleme Notu
+
+Sayfa, mobil uyumluluk için yeniden yapılandırıldı.  
+Mobil ve masaüstü bileşenler aynı dosyada yer almakta ve görünürlükleri Tailwind sınıfları (`block md:hidden`, `hidden md:block`) ile yönetilmektedir.  
+Bu yöntem sayesinde bileşenler DOM'da yer almaya devam eder, SEO dostudur ve performans kaybı yaşanmaz.
+
+Üst yapısal elementlere dokunulmamış, düzenlemeler sadece component düzeyinde yapılmıştır.
+
+### Viewport Ayarları
+
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+### Responsive Tasarım Rehberi
+
+Mobil öncelikli yaklaşımla farklı ekran boyutlarına uyum sağlayan (responsive) arayüzler oluşturmak için yukarıdaki CSS yapı taşlarını kullanabilirsiniz. Her bölümde, ilgili Tailwind CSS yardımcı sınıfları ve örnek kullanımlar sade bir dille açıklanmıştır.
 
 ## Language & Localization
 - HTML lang="tr" must be defined.
@@ -368,6 +517,171 @@ By applying these strategies, your content:
 - Is more likely to be **cited or linked** in AI-generated responses
 - May appear in **zero-click summaries** or **source panels**
 - Gains visibility in new AI-driven search models that prioritize clarity, trust, and structured data
+
+---
+
+## 📁 Proje Yapısı
+
+```
+sitenano-web-platform/
+├── app/                          # Next.js App Router
+│   ├── globals.css              # Global stiller
+│   ├── layout.tsx               # Root layout
+│   ├── page.tsx                 # Ana sayfa
+│   ├── hakkimizda/              # Hakkımızda sayfası
+│   ├── hizmetler/               # Hizmetler sayfası
+│   ├── projeler/                # Projeler sayfası
+│   └── iletisim/                # İletişim sayfası
+├── components/
+│   └── layout/
+│       ├── Header.tsx           # Header bileşeni (Unified navbar)
+│       └── Footer.tsx           # Footer bileşeni
+├── public/                      # Statik dosyalar
+│   ├── robots.txt              # SEO robots
+│   └── site.webmanifest        # PWA manifest
+├── tailwind.config.js          # Tailwind konfigürasyonu
+├── next.config.js              # Next.js konfigürasyonu
+├── tsconfig.json               # TypeScript konfigürasyonu
+└── package.json                # Bağımlılıklar
+```
+
+## 🧭 Navigasyon Yapısı
+
+### Navbar Özellikleri
+- **Unified Structure**: Tüm sayfalarda aynı navbar yapısı
+- **Black Contact Bar**: Telefon ve e-posta bilgileri
+- **Framed Design**: Yuvarlatılmış köşeli çerçeve
+- **Contact Button**: "BİZE ULAŞIN" butonu sağ tarafta
+
+### Navigasyon Linkleri
+- **ANASAYFA** (`/`) - Ana sayfa
+- **HAKKIMIZDA** (`/hakkimizda`) - Hakkımızda sayfası
+- **HİZMETLER** (`/hizmetler`) - Hizmetler sayfası
+- **PROJELER** (`/projeler`) - Projeler sayfası
+
+## 📄 Sayfalar
+
+### 1. Ana Sayfa (`/`)
+- Hero section
+- Hizmetler önizlemesi
+- Özellikler
+- Call-to-action
+- **Unified navbar structure**
+
+### 2. Hakkımızda (`/hakkimizda`)
+- Şirket hakkında bilgiler
+- Misyon ve vizyon
+- Ekip bilgileri
+- Referanslar
+
+### 3. Hizmetler (`/hizmetler`)
+- Tüm hizmetlerin listesi
+- Detaylı açıklamalar
+- Hizmet kategorileri
+- Teknoloji stack
+
+### 4. Projeler (`/projeler`)
+- Tamamlanan projeler
+- Referanslar
+- Portföy
+- Proje detayları
+
+### 5. İletişim (`/iletisim`)
+- Hero section with "/ İletişim /" text
+- İletişim formu
+- Şirket bilgileri
+- Call-to-action section
+- Harita ve sosyal medya
+
+## 🔧 Kurulum
+
+### Gereksinimler
+- Node.js 18+ 
+- npm veya yarn
+
+### Adımlar
+
+1. **Projeyi klonlayın**
+```bash
+git clone <https://github.com/sitenanogit/sitenano-web.git>
+cd sitenano-web-platform
+```
+
+2. **Bağımlılıkları yükleyin**
+```bash
+npm install
+# veya
+yarn install
+```
+
+3. **Geliştirme sunucusunu başlatın**
+```bash
+npm run dev
+# veya
+yarn dev
+```
+
+4. **Tarayıcıda açın**
+```
+http://localhost:3000
+```
+
+## 🚀 Production Build
+
+```bash
+# Production build
+npm run build
+
+# Production sunucusunu başlatın
+npm start
+```
+
+## 📧 İletişim Formu
+
+İletişim formu şu alanları içerir:
+- Ad ve Soyad
+- E-posta
+- Telefon
+- Hizmet türü
+- Mesaj
+
+Form gönderimi için backend entegrasyonu gereklidir.
+
+## 🔧 Özelleştirme
+
+### Renk Değişikliği
+`tailwind.config.js` dosyasında renk değerlerini güncelleyin:
+
+```javascript
+colors: {
+  primary: '#YOUR_COLOR',
+  secondary: '#YOUR_COLOR',
+}
+```
+
+### Font Değişikliği
+`app/globals.css` dosyasında font importlarını güncelleyin.
+
+### İçerik Güncelleme
+Her sayfa dosyasında metadata ve içerik bölümlerini güncelleyin.
+
+## 📄 Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır.
+
+## 🤝 Katkıda Bulunma
+
+1. Fork edin
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Commit edin (`git commit -m 'Add amazing feature'`)
+4. Push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
+
+## 📞 Destek
+
+Herhangi bir sorunuz için:
+- E-posta: info@sitenano.com
+- Telefon: +90 (212) 555 0123
 
 
 

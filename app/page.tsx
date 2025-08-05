@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
-import Head from 'next/head';
+
 
 // ICON COMPONENTS
 const GearIcon = ({ stroke = '#909090' }) => (
@@ -65,18 +65,19 @@ function TabsV2() {
   const [active, setActive] = useState(0);
   return (
     <div>
-      <div className="flex gap-6 mb-6">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-6 mb-6">
         {tabs.map((tab, idx) => (
           <button
             key={tab.label}
             onClick={() => setActive(idx)}
-            className={`rounded-2xl font-medium transition-all duration-200 focus:outline-none flex items-center justify-start px-10 ${active === idx ? 'text-white' : 'text-gray-300'}`}
+            className={`rounded-2xl font-medium transition-all duration-200 focus:outline-none flex items-center justify-start px-6 lg:px-10 w-full lg:w-auto ${active === idx ? 'text-white' : 'text-gray-300'}`}
             style={{
               background: active === idx ? 'linear-gradient(135deg, #10B981, #00BCD4, #00D4AA, #282828)' : '#282828',
-              height: '148px',
-              width: '434px',
+              height: 'clamp(80px, 15vh, 148px)',
+              width: '100%',
+              maxWidth: '434px',
               fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-              fontSize: '20px',
+              fontSize: 'clamp(14px, 4vw, 20px)',
               fontWeight: 400,
               textAlign: 'left',
               boxShadow: active === idx ? '0 4px 24px 0 rgba(0,0,0,0.18)' : 'none',
@@ -96,21 +97,21 @@ function TabsV2() {
             }}
           >
             {React.createElement(tab.icon, { stroke: active === idx ? '#fff' : '#909090' })}
-            {tab.label}
+            <span className="ml-3 lg:ml-0">{tab.label}</span>
           </button>
         ))}
       </div>
-      <div className="flex flex-col md:flex-row gap-12 items-center" style={{ background: '#282828', borderRadius: '16px', padding: '12px 15px 12px 15px', border: '1px solid #3F3F3F' }}>
-        <img src={tabs[active].image} alt={tabs[active].title} className="rounded-xl object-cover" style={{ width: '526px', height: '626px' }} />
-        <div className="flex-1 flex flex-col justify-between h-full">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start lg:items-center" style={{ background: '#282828', borderRadius: '16px', padding: 'clamp(16px, 4vw, 24px)', border: '1px solid #3F3F3F' }}>
+        <img src={tabs[active].image} alt={tabs[active].title} className="rounded-xl object-cover w-full lg:w-auto" style={{ width: '100%', maxWidth: '526px', height: 'clamp(300px, 50vh, 626px)' }} />
+        <div className="flex-1 flex flex-col justify-between h-full w-full">
           <div>
-            <h3 className="text-3xl md:text-4xl mb-6" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', color: '#fff', letterSpacing: '-0.5px', fontWeight: 400 }}>{tabs[active].title}</h3>
-            <p className="text-base mb-4" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '16px', lineHeight: '1.7', color: '#fff' }}>{tabs[active].content[0]}</p>
-            <p className="text-base mb-8" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '16px', lineHeight: '1.7', color: '#fff' }}>{tabs[active].content[1]}</p>
+            <h3 className="text-2xl lg:text-3xl xl:text-4xl mb-4 lg:mb-6" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', color: '#fff', letterSpacing: '-0.5px', fontWeight: 400 }}>{tabs[active].title}</h3>
+            <p className="text-sm lg:text-base mb-3 lg:mb-4" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3.5vw, 16px)', lineHeight: '1.6', color: '#fff' }}>{tabs[active].content[0]}</p>
+            <p className="text-sm lg:text-base mb-6 lg:mb-8" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3.5vw, 16px)', lineHeight: '1.6', color: '#fff' }}>{tabs[active].content[1]}</p>
           </div>
-          <button className="relative inline-block px-8 py-3 font-medium rounded-xl transition-all duration-300 group overflow-hidden text-white" style={{ background: 'linear-gradient(90deg, #10B981, #00BCD4, #00D4AA)', border: 'none', outline: 'none', fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '16px', width: 'fit-content', textAlign: 'left', display: 'flex', alignItems: 'center', gap: '10px' }}>
+          <button className="relative inline-block px-6 lg:px-8 py-3 font-medium rounded-xl transition-all duration-300 group overflow-hidden text-white w-full lg:w-fit mt-4" style={{ background: 'linear-gradient(90deg, #10B981, #00BCD4, #00D4AA)', border: 'none', outline: 'none', fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3.5vw, 16px)', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
             <span className="relative z-10 block">Daha fazla keşfet</span>
-            <svg className="relative z-10" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg className="relative z-10" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
         </div>
       </div>
@@ -121,43 +122,6 @@ function TabsV2() {
 export default function HomePage() {
   return (
     <>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebPage",
-              "name": "Sitenano - Modern Web Çözümleri ve Yapay Zeka Araçları",
-              "description": "Sitenano, modern web tasarımı, e-ticaret platformları, yapay zeka araçları ve online sipariş sistemleri konusunda uzmanlaşmış bir teknoloji şirketidir.",
-              "url": "https://sitenano.com/",
-              "inLanguage": "tr",
-              "publisher": {
-                "@type": "Organization",
-                "name": "Sitenano",
-                "url": "https://sitenano.com/",
-                "logo": {
-                  "@type": "ImageObject",
-                  "url": "https://sitenano.com/images/logos/sitenano-logo-beyaz-yesil.svg"
-                },
-                "contactPoint": {
-                  "@type": "ContactPoint",
-                  "telephone": "+90 212 212 9990",
-                  "contactType": "customer service",
-                  "email": "info@sitenano.com"
-                },
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Yakuplu Mh. 194 Sk. No:1 D:183",
-                  "addressLocality": "Beylikdüzü",
-                  "addressRegion": "İstanbul",
-                  "addressCountry": "TR"
-                }
-              }
-            })
-          }}
-        />
-      </Head>
       <main className="min-h-screen">
       {/* Hero Section - Updated 2024 */}
       <section
@@ -165,7 +129,8 @@ export default function HomePage() {
         style={{ background: '#fff', position: 'relative' }}
       >
         <div className="w-full h-full">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 h-full">
+          {/* Desktop Hero Layout */}
+          <div className="hidden lg:grid grid-cols-1 lg:grid-cols-2 gap-0 h-full">
             
             {/* Left Column - Updated */}
             <div className="flex items-center justify-center p-8 lg:p-16">
@@ -313,44 +278,192 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+
+          {/* Mobile Hero Layout */}
+          <div className="block lg:hidden" style={{ height: 'auto', paddingBottom: '20px' }}>
+            <div className="flex flex-col" style={{ height: 'auto' }}>
+              {/* Mobile Hero Content */}
+              <div className="flex flex-col justify-center px-6 py-4" style={{ minHeight: 'auto' }}>
+                <div className="container-custom" style={{position: 'relative', zIndex: 2}}>
+                  <div className="mb-6">
+                    <h1
+                      className="text-black"
+                      style={{
+                        display: 'block',
+                        fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                        fontSize: '32px',
+                        fontWeight: 400,
+                        letterSpacing: '0.5px',
+                        lineHeight: '1.3',
+                        textAlign: 'left',
+                        width: '100%',
+                        maxWidth: '100%'
+                      }}
+                    >
+                      Yapay zeka ile sektörleri<br />
+                      dönüştürüyor, işletmeleri<br />
+                      güçlendiriyor, geleceği<br />
+                      şekillendiriyoruz
+                    </h1>
+                  </div>
+                  <div className="mb-6">
+                    <Link 
+                      href="/iletisim" 
+                      className="inline-flex items-center justify-center w-full px-6 py-4 bg-primary hover:bg-primary-dark text-white font-normal rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg font-sora"
+                    >
+                      <span>Keşfet</span>
+                      <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7V17" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile Impact Cards */}
+              <div className="px-6 pb-4">
+                <div className="flex flex-col gap-4">
+                  {/* First Card - Mobile */}
+                  <div
+                    className="rounded-2xl text-white relative overflow-hidden font-sora"
+                    style={{
+                      background: 'linear-gradient(135deg, #E1BEE7 0%, #BBDEFB 100%)',
+                      height: '200px'
+                    }}
+                  >
+                    <div className="relative z-10 px-6 h-full flex flex-col justify-center">
+                      <h3
+                        className="text-white mb-4"
+                        style={{
+                          fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                          fontSize: '20px',
+                          fontWeight: 400,
+                          lineHeight: '28px'
+                        }}
+                      >
+                        Nasıl etki yaratıyoruz
+                      </h3>
+                      <div className="text-3xl font-bold text-purple-600 mb-2">500K</div>
+                      <p
+                        style={{
+                          color: '#fff',
+                          fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                          fontSize: '14px',
+                          fontWeight: 500
+                        }}
+                      >
+                        Her gün aktif kullanıcı
+                      </p>
+                    </div>
+                    {/* Background Elements - Mobile */}
+                    <div className="absolute top-0 right-0 w-16 h-16 bg-blue-400 rounded-full opacity-20 translate-x-8 -translate-y-8"></div>
+                    <div className="absolute bottom-0 left-0 w-12 h-12 bg-purple-400 rounded-full opacity-20 -translate-x-6 translate-y-6"></div>
+                  </div>
+                  
+                  {/* Second Card - Mobile */}
+                  <div
+                    className="rounded-2xl p-6 text-white relative overflow-hidden font-sora"
+                    style={{
+                      background: 'linear-gradient(135deg, #80CBC4 0%, #A5D6A7 100%)',
+                      height: '200px'
+                    }}
+                  >
+                    <div className="relative z-10 h-full flex flex-col justify-center">
+                      <h3
+                        className="text-white mb-4"
+                        style={{
+                          fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                          fontSize: '20px',
+                          fontWeight: 400,
+                          lineHeight: '28px'
+                        }}
+                      >
+                        Aiero Startup ile düşünme şeklinizi dönüştürüyoruz
+                      </h3>
+                      <Link 
+                        href="/yapay-zeka"
+                        className="inline-flex items-center text-white transition-all duration-300 hover:text-primary"
+                        style={{
+                          fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                          fontSize: '14px',
+                          fontWeight: 500,
+                          textDecoration: 'underline'
+                        }}
+                      >
+                        <span>Daha fazla keşfet</span>
+                        <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile Hero Image */}
+              <div className="px-6 pb-4">
+                <div className="relative" style={{ height: '400px' }}>
+                  <Image
+                    src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Yapay zeka ve teknoloji"
+                    fill
+                    priority
+                    className="object-cover rounded-2xl shadow-2xl"
+                  />
+                  <div className="absolute bottom-6 left-6 text-white">
+                    <div className="text-2xl font-bold leading-tight">
+                      <div>Innovating</div>
+                      <div>with Neural</div>
+                      <div>Networks</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* Mobile Bottom Spacing */}
+              <div className="h-8"></div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Features Section - Updated 2024 */}
-      <section className="bg-white relative overflow-hidden" style={{ height: '740px' }}>
-        <div className="container-custom relative z-10 h-full flex flex-col justify-center">
+      <section className="bg-white relative overflow-hidden features-section" style={{ height: 'auto', minHeight: '740px' }}>
+        <div className="container-custom relative z-10 h-full flex flex-col justify-center" style={{ minHeight: '740px' }}>
+          {/* Mobile Top Spacing */}
+          <div className="block lg:hidden h-4"></div>
           <div className="mb-16">
-            <div className="text-sm font-medium text-gray-600 mb-4 uppercase tracking-wider">
+            <div className="text-sm font-medium text-gray-600 mb-4 uppercase tracking-wider" style={{ fontSize: 'clamp(14px, 3vw, 14px)', paddingLeft: 'clamp(16px, 4vw, 0px)' }}>
               [özellikler]
             </div>
             <h2 className="text-gray-900" style={{
               color: 'rgb(17, 17, 17)',
               display: 'block',
               fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-              fontSize: '60px',
+              fontSize: 'clamp(28px, 5vw, 60px)',
               fontStyle: 'normal',
               fontWeight: 400,
               height: 'auto',
               letterSpacing: '-3px',
-              lineHeight: '69.9996px',
+              lineHeight: '1.2',
               overflowWrap: 'break-word',
               position: 'relative',
               textAlign: 'left',
               textSizeAdjust: '100%',
               textTransform: 'none',
               width: '100%',
-              wordSpacing: '8px'
+              wordSpacing: '8px',
+              paddingLeft: 'clamp(16px, 4vw, 0px)'
             }}>
               Yapay zeka ile güçlendirin ve yükseltin Sitenano Startup
             </h2>
           </div>
 
           {/* Features Grid - Updated 2024 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16 mb-12 lg:mb-24" style={{ paddingLeft: 'clamp(16px, 4vw, 0px)', paddingRight: 'clamp(16px, 4vw, 0px)' }}>
             {/* Feature 1: AI Technology - Updated */}
-            <div className="text-left space-y-8">
-              <div className="w-12 h-12 relative mb-8">
-                <svg className="w-12 h-12 text-gray-900" viewBox="0 0 24 24" fill="none">
+            <div className="text-left space-y-4 lg:space-y-8">
+              <div className="relative mb-8" style={{ width: 'clamp(40px, 8vw, 48px)', height: 'clamp(40px, 8vw, 48px)' }}>
+                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" style={{ width: '100%', height: '100%' }}>
                   <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="1" fill="none"/>
                   <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="1" fill="none"/>
                   <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="1" fill="none"/>
@@ -363,12 +476,12 @@ export default function HomePage() {
                 cursor: 'pointer',
                 display: 'inline',
                 fontFamily: 'Manrope, sans-serif',
-                fontSize: '20px',
+                fontSize: 'clamp(20px, 4vw, 20px)',
                 fontStyle: 'normal',
                 fontWeight: 600,
                 height: 'auto',
                 letterSpacing: 'normal',
-                lineHeight: '28px',
+                lineHeight: '1.4',
                 overflowWrap: 'break-word',
                 textAlign: 'left',
                 textDecorationColor: 'rgb(17, 17, 17)',
@@ -389,12 +502,13 @@ export default function HomePage() {
                 color: 'rgb(51, 51, 51)',
                 display: 'block',
                 fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
-                fontSize: '16px',
+                fontSize: 'clamp(16px, 3vw, 16px)',
                 fontStyle: 'normal',
                 fontWeight: 500,
-                height: '90px',
+                height: 'auto',
+                minHeight: '90px',
                 letterSpacing: 'normal',
-                lineHeight: '30px',
+                lineHeight: '1.5',
                 marginBottom: '0px',
                 marginLeft: '0px',
                 marginRight: '0px',
@@ -408,7 +522,8 @@ export default function HomePage() {
                 transitionProperty: 'color',
                 transitionTimingFunction: 'ease',
                 unicodeBidi: 'isolate',
-                width: '280px',
+                width: '100%',
+                maxWidth: '280px',
                 wordSpacing: '0px'
               }}>
                 Sinir ağları geliştirme ve uygulama konusundaki uzmanlığımızı ve bilgi birikimimizi vurguluyoruz
@@ -416,9 +531,9 @@ export default function HomePage() {
             </div>
 
             {/* Feature 2: Tailored solutions - Updated */}
-            <div className="text-left space-y-8">
-              <div className="w-12 h-12 relative mb-8">
-                <svg className="w-12 h-12 text-gray-900" viewBox="0 0 24 24" fill="none">
+            <div className="text-left space-y-4 lg:space-y-8">
+              <div className="relative mb-8" style={{ width: 'clamp(40px, 8vw, 48px)', height: 'clamp(40px, 8vw, 48px)' }}>
+                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" style={{ width: '100%', height: '100%' }}>
                   <path d="M9 12L11 14L15 10" stroke="currentColor" strokeWidth="1" fill="none"/>
                   <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="1" fill="none"/>
                 </svg>
@@ -430,12 +545,12 @@ export default function HomePage() {
                 cursor: 'pointer',
                 display: 'inline',
                 fontFamily: 'Manrope, sans-serif',
-                fontSize: '20px',
+                fontSize: 'clamp(20px, 4vw, 20px)',
                 fontStyle: 'normal',
                 fontWeight: 600,
                 height: 'auto',
                 letterSpacing: 'normal',
-                lineHeight: '28px',
+                lineHeight: '1.4',
                 overflowWrap: 'break-word',
                 textAlign: 'left',
                 textDecorationColor: 'rgb(17, 17, 17)',
@@ -456,12 +571,13 @@ export default function HomePage() {
                 color: 'rgb(51, 51, 51)',
                 display: 'block',
                 fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
-                fontSize: '16px',
+                fontSize: 'clamp(16px, 3vw, 16px)',
                 fontStyle: 'normal',
                 fontWeight: 500,
-                height: '90px',
+                height: 'auto',
+                minHeight: '90px',
                 letterSpacing: 'normal',
-                lineHeight: '30px',
+                lineHeight: '1.5',
                 marginBottom: '0px',
                 marginLeft: '0px',
                 marginRight: '0px',
@@ -475,7 +591,8 @@ export default function HomePage() {
                 transitionProperty: 'color',
                 transitionTimingFunction: 'ease',
                 unicodeBidi: 'isolate',
-                width: '280px',
+                width: '100%',
+                maxWidth: '280px',
                 wordSpacing: '0px'
               }}>
                 Belirli iş gereksinimlerine göre çözümleri özelleştirme yeteneğimizi gösteriyoruz
@@ -483,9 +600,9 @@ export default function HomePage() {
             </div>
 
             {/* Feature 3: Cutting-edge technology - Updated */}
-            <div className="text-left space-y-8">
-              <div className="w-12 h-12 relative mb-8">
-                <svg className="w-12 h-12 text-gray-900" viewBox="0 0 24 24" fill="none">
+            <div className="text-left space-y-4 lg:space-y-8">
+              <div className="relative mb-8" style={{ width: 'clamp(40px, 8vw, 48px)', height: 'clamp(40px, 8vw, 48px)' }}>
+                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" style={{ width: '100%', height: '100%' }}>
                   <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" strokeWidth="2" fill="none"/>
                 </svg>
               </div>
@@ -496,12 +613,12 @@ export default function HomePage() {
                 cursor: 'pointer',
                 display: 'inline',
                 fontFamily: 'Manrope, sans-serif',
-                fontSize: '20px',
+                fontSize: 'clamp(20px, 4vw, 20px)',
                 fontStyle: 'normal',
                 fontWeight: 600,
                 height: 'auto',
                 letterSpacing: 'normal',
-                lineHeight: '28px',
+                lineHeight: '1.4',
                 overflowWrap: 'break-word',
                 textAlign: 'left',
                 textDecorationColor: 'rgb(17, 17, 17)',
@@ -522,12 +639,13 @@ export default function HomePage() {
                 color: 'rgb(51, 51, 51)',
                 display: 'block',
                 fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
-                fontSize: '16px',
+                fontSize: 'clamp(16px, 3vw, 16px)',
                 fontStyle: 'normal',
                 fontWeight: 500,
-                height: '90px',
+                height: 'auto',
+                minHeight: '90px',
                 letterSpacing: 'normal',
-                lineHeight: '30px',
+                lineHeight: '1.5',
                 marginBottom: '0px',
                 marginLeft: '0px',
                 marginRight: '0px',
@@ -541,7 +659,8 @@ export default function HomePage() {
                 transitionProperty: 'color',
                 transitionTimingFunction: 'ease',
                 unicodeBidi: 'isolate',
-                width: '240px',
+                width: '100%',
+                maxWidth: '240px',
                 wordSpacing: '0px'
               }}>
                 Sinir ağı geliştirmede en son araçları ve teknikleri kullanımımızı vurguluyoruz
@@ -549,9 +668,9 @@ export default function HomePage() {
             </div>
 
             {/* Feature 4: Modern development - Updated */}
-            <div className="text-left space-y-8">
-              <div className="w-12 h-12 relative mb-8">
-                <svg className="w-12 h-12 text-gray-900" viewBox="0 0 24 24" fill="none">
+            <div className="text-left space-y-4 lg:space-y-8">
+              <div className="relative mb-8" style={{ width: 'clamp(40px, 8vw, 48px)', height: 'clamp(40px, 8vw, 48px)' }}>
+                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" style={{ width: '100%', height: '100%' }}>
                   <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" stroke="currentColor" strokeWidth="2" fill="none"/>
                   <path d="M12 6V12L16 14" stroke="currentColor" strokeWidth="2" fill="none"/>
                 </svg>
@@ -563,12 +682,12 @@ export default function HomePage() {
                 cursor: 'pointer',
                 display: 'inline',
                 fontFamily: 'Manrope, sans-serif',
-                fontSize: '20px',
+                fontSize: 'clamp(20px, 4vw, 20px)',
                 fontStyle: 'normal',
                 fontWeight: 600,
                 height: 'auto',
                 letterSpacing: 'normal',
-                lineHeight: '28px',
+                lineHeight: '1.4',
                 overflowWrap: 'break-word',
                 textAlign: 'left',
                 textDecorationColor: 'rgb(17, 17, 17)',
@@ -589,12 +708,13 @@ export default function HomePage() {
                 color: 'rgb(51, 51, 51)',
                 display: 'block',
                 fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
-                fontSize: '16px',
+                fontSize: 'clamp(16px, 3vw, 16px)',
                 fontStyle: 'normal',
                 fontWeight: 500,
-                height: '90px',
+                height: 'auto',
+                minHeight: '90px',
                 letterSpacing: 'normal',
-                lineHeight: '30px',
+                lineHeight: '1.5',
                 marginBottom: '0px',
                 marginLeft: '0px',
                 marginRight: '0px',
@@ -608,7 +728,8 @@ export default function HomePage() {
                 transitionProperty: 'color',
                 transitionTimingFunction: 'ease',
                 unicodeBidi: 'isolate',
-                width: '240px',
+                width: '100%',
+                maxWidth: '240px',
                 wordSpacing: '0px'
               }}>
                 Hizmetlerimizin etkinliğini gösteren başarılı vaka çalışmaları ve müşteri referanslarımızı sergiliyoruz
@@ -628,8 +749,9 @@ export default function HomePage() {
       </section>
 
       {/* Neural Network Section - Updated 2024 */}
-      <section className="bg-white relative" style={{ height: '890px', marginTop: '30px', overflow: 'visible' }}>
-        <div className="flex h-full" style={{ overflow: 'visible' }}>
+      <section className="bg-white relative neural-network-section" style={{ height: 'auto', minHeight: '890px', marginTop: '30px', overflow: 'visible' }}>
+        {/* Desktop Layout */}
+        <div className="hidden lg:flex h-full" style={{ overflow: 'visible' }}>
           
           {/* Left Column - Vector Image - Updated */}
           <div className="relative h-full" style={{ width: '700px', marginLeft: '-60px' }}>
@@ -728,41 +850,121 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+
+        {/* Mobile Layout */}
+        <div className="block lg:hidden px-6 py-2">
+          <div className="text-center mb-8">
+                          <h2 
+                className="text-gray-900 leading-tight mb-8"
+              style={{
+                fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                fontSize: 'clamp(32px, 8vw, 48px)',
+                fontStyle: 'normal',
+                fontWeight: 400,
+                letterSpacing: '-1px',
+                lineHeight: '1.2',
+                overflowWrap: 'break-word',
+                position: 'relative',
+                textAlign: 'center',
+                textSizeAdjust: '100%',
+                textTransform: 'none',
+                width: '100%',
+                wordSpacing: '0px'
+              }}
+            >
+              Experiment with a{' '}
+              <span style={{ 
+                background: 'linear-gradient(135deg, #10B981, #00BCD4, #00D4AA)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text'
+              }}>Neural Network</span>{' '}
+              <br />
+              directly in your browser.{' '}
+              <br />
+              No worries, you can't break{' '}
+              <span>it—we promise</span>
+            </h2>
+          </div>
+          
+          {/* Mobile Demo Logos */}
+          <div className="grid grid-cols-2 gap-6 mt-8">
+            {/* MINIMIZE INTERIOR */}
+            <div className="flex flex-col items-center">
+              <div className="font-bold text-xl tracking-wider mb-4" style={{ color: '#B2B2B2' }}>M'N'MIZE</div>
+              <div className="text-sm" style={{ color: '#B2B2B2' }}>INTERIOR</div>
+            </div>
+            
+            {/* ND2 Nordyne Defense Dynamics */}
+            <div className="flex flex-col items-center">
+              <div className="w-12 h-12 flex items-center justify-center mb-4" style={{ backgroundColor: '#B2B2B2' }}>
+                <span className="text-white font-bold text-base">ND2</span>
+              </div>
+              <div className="flex flex-col text-xs text-center" style={{ color: '#B2B2B2' }}>
+                <span>Nordyne</span>
+                <span>Defense</span>
+                <span>Dynamics</span>
+              </div>
+            </div>
+            
+            {/* Metriks Data Center */}
+            <div className="flex flex-col items-center">
+              <div className="w-16 h-8 rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: '#B2B2B2' }}>
+                <span className="text-white font-semibold text-xs">Metriks</span>
+              </div>
+              <div className="flex flex-col text-xs text-center" style={{ color: '#B2B2B2' }}>
+                <span>Data</span>
+                <span>Center</span>
+              </div>
+            </div>
+            
+            {/* QUO LEGAL FIRM */}
+            <div className="flex flex-col items-center">
+              <div className="font-bold text-2xl mb-4" style={{ color: '#B2B2B2' }}>QUO</div>
+              <div className="flex flex-col text-xs text-center" style={{ color: '#B2B2B2' }}>
+                <span>LEGAL</span>
+                <span>FIRM</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Services Cards Section - New 2024 */}
-      <section className="bg-white relative" style={{ height: '960px', paddingTop: '60px', paddingBottom: '100px' }}>
+      <section className="bg-white relative services-section" style={{ height: 'auto', minHeight: '960px', paddingTop: 'clamp(10px, 2vw, 60px)', paddingBottom: 'clamp(150px, 20vw, 100px)' }}>
+        {/* Mobile Top Spacing */}
+        <div className="block lg:hidden h-20"></div>
         {/* Header Section - Independent Container */}
         <div className="container-custom relative z-10">
-          <div className="mb-16">
-            <div className="text-sm font-medium text-gray-600 mb-4 uppercase tracking-wider">
+          <div className="mb-4 lg:mb-16">
+            <div className="text-sm font-medium text-gray-600 mb-1 lg:mb-4 uppercase tracking-wider" style={{ fontSize: 'clamp(14px, 3vw, 14px)', paddingLeft: 'clamp(16px, 4vw, 0px)' }}>
               [hizmetler]
             </div>
-            <div className="flex justify-between items-start">
-              <div className="flex-1">
-                <h2 className="text-gray-900 mb-4" style={{
+            <div className="flex flex-col lg:flex-row justify-between items-start">
+              <div className="flex-1 mb-6 lg:mb-0" style={{ paddingLeft: 'clamp(16px, 4vw, 0px)', paddingRight: 'clamp(16px, 4vw, 0px)' }}>
+                <h2 className="text-gray-900 mb-3 lg:mb-4" style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-                  fontSize: '60px',
+                  fontSize: 'clamp(28px, 7vw, 60px)',
                   fontStyle: 'normal',
                   fontWeight: 400,
-                  letterSpacing: '-3px',
-                  lineHeight: '69.9996px',
+                  letterSpacing: '-2px',
+                  lineHeight: '1.2',
                   textAlign: 'left',
                   width: '100%',
-                  wordSpacing: '8px'
+                  wordSpacing: '6px'
                 }}>
                   Özel sinir ağı özellikleri ile hizmetleriniz için
                 </h2>
-                <p className="text-gray-600 text-lg" style={{
+                <p className="text-gray-600 text-lg mb-6" style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
-                  fontSize: '18px',
+                  fontSize: 'clamp(16px, 4vw, 18px)',
                   fontWeight: 500,
-                  lineHeight: '28px'
+                  lineHeight: '1.5'
                 }}>
                   İşletmenize yardımcı olmak için tüm hizmetlere sahibiz
                 </p>
               </div>
-              <div className="ml-8">
+              <div className="lg:ml-8" style={{ paddingLeft: 'clamp(16px, 4vw, 0px)', paddingRight: 'clamp(16px, 4vw, 0px)' }}>
                 <div className="relative rounded-xl p-[1px] overflow-hidden" style={{
                   background: 'linear-gradient(90deg, #10B981, #00BCD4, #00D4AA)',
                   display: 'inline-block',
@@ -773,7 +975,7 @@ export default function HomePage() {
                       border: 'none',
                       outline: 'none',
                       borderRadius: '0.75rem',
-                      fontSize: '16px', // 2 punto küçültüldü
+                      fontSize: 'clamp(14px, 2.5vw, 16px)',
                     }}
                     onMouseOver={e => {
                       e.currentTarget.style.background = '#111827';
@@ -798,26 +1000,26 @@ export default function HomePage() {
         </div>
 
         {/* Cards Grid - Independent Container */}
-        <div className="relative z-10" style={{ maxWidth: '1900px', margin: '0 auto', padding: '0 20px' }}>
-          <div className="flex space-x-5">
+        <div className="relative z-10" style={{ maxWidth: '1900px', margin: '0 auto', padding: '0 20px', marginTop: 'clamp(10px, 2vw, 0px)' }}>
+          <div className="flex flex-col lg:flex-row space-y-12 lg:space-y-0 lg:space-x-5">
             {/* Card 1: Robotic Process Automation */}
-            <div className="bg-white rounded-3xl shadow-lg relative overflow-hidden" style={{ width: '414px', height: '596px' }}>
+            <div className="bg-white rounded-3xl shadow-lg relative overflow-hidden" style={{ width: '100%', maxWidth: '414px', height: 'clamp(400px, 60vh, 596px)', margin: '0 auto' }}>
               {/* Sol alt yazı */}
-              <div className="absolute" style={{ left: '50px', bottom: '80px', width: '336.984px', height: '70px', textAlign: 'left', display: 'block' }}>
+              <div className="absolute" style={{ left: 'clamp(20px, 5vw, 50px)', bottom: 'clamp(40px, 8vw, 80px)', width: 'calc(100% - clamp(40px, 10vw, 100px))', height: 'auto', textAlign: 'left', display: 'block' }}>
                 <span style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-                  fontSize: '25px',
+                  fontSize: 'clamp(18px, 4vw, 25px)',
                   fontStyle: 'normal',
                   fontWeight: 400,
-                  height: '70px',
+                  height: 'auto',
                   letterSpacing: '-0.75px',
-                  lineHeight: '35px',
+                  lineHeight: '1.3',
                   overflowWrap: 'break-word',
                   position: 'relative',
                   textAlign: 'left',
                   textSizeAdjust: '100%',
                   textTransform: 'none',
-                  width: '336.984px',
+                  width: '100%',
                   wordSpacing: '0px',
                   display: 'block',
                 }}>
@@ -830,23 +1032,23 @@ export default function HomePage() {
             </div>
 
             {/* Card 2: Data Analysis and Visualization */}
-            <div className="bg-gradient-to-b from-blue-400 to-blue-600 rounded-3xl shadow-lg relative overflow-hidden" style={{ width: '414px', height: '596px' }}>
+            <div className="bg-gradient-to-b from-blue-400 to-blue-600 rounded-3xl shadow-lg relative overflow-hidden" style={{ width: '100%', maxWidth: '414px', height: 'clamp(400px, 60vh, 596px)', margin: '0 auto' }}>
               {/* Sol alt yazı */}
-              <div className="absolute" style={{ left: '50px', bottom: '80px', width: '336.984px', height: '70px', textAlign: 'left', display: 'block' }}>
+              <div className="absolute" style={{ left: 'clamp(20px, 5vw, 50px)', bottom: 'clamp(40px, 8vw, 80px)', width: 'calc(100% - clamp(40px, 10vw, 100px))', height: 'auto', textAlign: 'left', display: 'block' }}>
                 <span style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-                  fontSize: '25px',
+                  fontSize: 'clamp(18px, 4vw, 25px)',
                   fontStyle: 'normal',
                   fontWeight: 400,
-                  height: '70px',
+                  height: 'auto',
                   letterSpacing: '-0.75px',
-                  lineHeight: '35px',
+                  lineHeight: '1.3',
                   overflowWrap: 'break-word',
                   position: 'relative',
                   textAlign: 'left',
                   textSizeAdjust: '100%',
                   textTransform: 'none',
-                  width: '336.984px',
+                  width: '100%',
                   wordSpacing: '0px',
                   display: 'block',
                   color: '#fff',
@@ -860,23 +1062,23 @@ export default function HomePage() {
             </div>
 
             {/* Card 3: Market Research */}
-            <div className="bg-gradient-to-b from-purple-400 to-purple-600 rounded-3xl shadow-lg relative overflow-hidden" style={{ width: '996px', height: '596px' }}>
+            <div className="bg-gradient-to-b from-purple-400 to-purple-600 rounded-3xl shadow-lg relative overflow-hidden" style={{ width: '100%', maxWidth: '996px', height: 'clamp(400px, 60vh, 596px)', margin: '0 auto' }}>
               {/* Sol alt yazı */}
-              <div className="absolute" style={{ left: '50px', bottom: '80px', width: '336.984px', height: '70px', textAlign: 'left', display: 'block' }}>
+              <div className="absolute" style={{ left: 'clamp(20px, 5vw, 50px)', bottom: 'clamp(40px, 8vw, 80px)', width: 'calc(100% - clamp(40px, 10vw, 100px))', height: 'auto', textAlign: 'left', display: 'block' }}>
                 <span style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-                  fontSize: '25px',
+                  fontSize: 'clamp(18px, 4vw, 25px)',
                   fontStyle: 'normal',
                   fontWeight: 400,
-                  height: '70px',
+                  height: 'auto',
                   letterSpacing: '-0.75px',
-                  lineHeight: '35px',
+                  lineHeight: '1.3',
                   overflowWrap: 'break-word',
                   position: 'relative',
                   textAlign: 'left',
                   textSizeAdjust: '100%',
                   textTransform: 'none',
-                  width: '336.984px',
+                  width: '100%',
                   wordSpacing: '0px',
                   display: 'block',
                   color: '#fff',
@@ -896,54 +1098,59 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Mobile Extra Spacing */}
+      <div className="block lg:hidden h-32"></div>
+
       {/* HİZMETLER BÖLÜMÜNÜN ALTINA YENİ SEKME YAPISI (belirtilen ölçülerle) */}
-      <div style={{ width: '1865px', margin: '0 auto', background: '#1F1F1F', borderRadius: '32px', minHeight: '1400px', paddingLeft: '28px', paddingRight: '28px' }}>
-        <div style={{ height: '140px' }} />
-        <div className="max-w-7xl mx-auto w-full" >
+      <div className="mobile-section-spacing" style={{ width: 'clamp(320px, 95vw, 1865px)', margin: '0 auto', background: '#1F1F1F', borderRadius: '32px', minHeight: 'clamp(150px, 25vh, 1400px)', paddingLeft: 'clamp(16px, 4vw, 28px)', paddingRight: 'clamp(16px, 4vw, 28px)', marginTop: 'clamp(0px, 0vw, 0px)', paddingTop: 'clamp(0px, 0vw, 0px)', paddingBottom: 'clamp(0px, 0vw, 0px)' }}>
+        <div className="block lg:hidden h-32"></div>
+        <div className="hidden lg:block" style={{ height: '140px' }} />
+        <div className="max-w-7xl mx-auto w-full" style={{ paddingLeft: 'clamp(16px, 4vw, 0px)', paddingRight: 'clamp(16px, 4vw, 0px)' }}>
           <div className="mb-8">
-            <div className="text-sm font-medium text-gray-400 mb-4 uppercase tracking-wider">[possibilities]</div>
-            <h2 className="text-4xl md:text-5xl text-white mb-8" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontWeight: 400, letterSpacing: '-1px', lineHeight: '1.2', fontSize: '60px' }}>
+            <div className="text-sm font-medium text-gray-400 mb-4 uppercase tracking-wider" style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>[possibilities]</div>
+            <h2 className="text-4xl md:text-5xl text-white mb-8" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontWeight: 400, letterSpacing: '-1px', lineHeight: '1.2', fontSize: 'clamp(32px, 8vw, 60px)' }}>
               Cutting-edge capabilities<br />of our AI solutions
             </h2>
             <TabsV2 />
           </div>
         </div>
-        <div style={{ height: '160px' }} />
+        <div className="block lg:hidden h-32"></div>
+        <div className="hidden lg:block" style={{ height: '160px' }} />
       </div>
 
       {/* YENİ BÖLÜM: AI SYSTEMS BLOCKS */}
       <section
-        className="relative w-full flex items-center justify-center bg-white"
-        style={{ height: '854px', marginTop: '60px' }}
+        className="relative w-full flex items-center justify-center bg-white mobile-section-spacing ai-systems-blocks"
+        style={{ height: 'clamp(600px, 80vh, 854px)', marginTop: 'clamp(160px, 20vw, 60px)', marginBottom: '80px' }}
       >
-        <div className="w-full flex flex-col items-start" style={{ maxWidth: '1310px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: '32px', paddingRight: '16px' }}>
-          <div className="mb-16">
-            <div className="text-sm font-medium text-gray-600 mb-4 uppercase tracking-wider">[how it works]</div>
+        <div className="w-full flex flex-col items-start" style={{ maxWidth: '1310px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: 'clamp(16px, 4vw, 32px)', paddingRight: 'clamp(16px, 4vw, 16px)', paddingTop: 'clamp(40px, 8vw, 0px)' }}>
+          <div className="mb-8 lg:mb-16">
+            <div className="text-sm font-medium text-gray-600 mb-2 lg:mb-4 uppercase tracking-wider" style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>[how it works]</div>
             <h2
               className="text-gray-900"
               style={{
                 color: 'rgb(17, 17, 17)',
                 display: 'block',
                 fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-                fontSize: '60px',
+                fontSize: 'clamp(28px, 7vw, 60px)',
                 fontStyle: 'normal',
                 fontWeight: 400,
-                letterSpacing: '-3px',
-                lineHeight: '69.9996px',
+                letterSpacing: '-2px',
+                lineHeight: '1.2',
                 textAlign: 'left',
                 width: '100%',
-                wordSpacing: '8px',
+                wordSpacing: '6px',
                 marginBottom: '0px',
               }}
             >
               Essential building blocks<br />of artificial intelligence<br />(AI) systems
             </h2>
           </div>
-          <div className="flex flex-row w-full" style={{maxWidth: '1310px'}}>
+          <div className="flex flex-col lg:flex-row w-full gap-8 lg:gap-0" style={{maxWidth: '1310px'}}>
             {/* 1. Sütun */}
-            <div className="flex-1 flex flex-col justify-start items-start px-8 py-8" style={{minWidth: '0'}}>
+            <div className="flex-1 flex flex-col justify-start items-start px-4 lg:px-8 py-6 lg:py-8" style={{minWidth: '0'}}>
               {/* İKON */}
-              <svg width="64" height="64" viewBox="0 0 48 48" fill="none" style={{marginBottom: '80px', display: 'block'}}>
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
                 <defs>
                   <linearGradient id="icon-gradient-1" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#10B981" />
@@ -954,16 +1161,16 @@ export default function HomePage() {
                 <circle cx="24" cy="24" r="20" stroke="url(#icon-gradient-1)" strokeWidth="1.5" fill="none" />
                 <path d="M24 14v10l7 7" stroke="url(#icon-gradient-1)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
               </svg>
-              <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '20px', fontWeight: 600, lineHeight: '28px', marginBottom: '18px', textAlign: 'left', width: '100%' }}>Activation Function</h3>
-              <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '16px', fontWeight: 400, lineHeight: '26px', width: '95%', textAlign: 'left' }}>
+              <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: 'clamp(16px, 4vw, 20px)', fontWeight: 600, lineHeight: '1.3', marginBottom: '12px', textAlign: 'left', width: '100%' }}>Activation Function</h3>
+              <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3.5vw, 16px)', fontWeight: 400, lineHeight: '1.5', width: '100%', textAlign: 'left' }}>
                 Each neuron applies an activation function to the weighted sum of its inputs and produces an output
               </p>
             </div>
-            {/* Dikey çizgi */}
-            <div style={{height: '300px', alignSelf: 'center', width: '1px', background: '#E5E7EB'}} />
+            {/* Dikey çizgi - Mobilde gizli */}
+            <div className="hidden lg:block" style={{height: '300px', alignSelf: 'center', width: '1px', background: '#E5E7EB'}} />
             {/* 2. Sütun */}
-            <div className="flex-1 flex flex-col justify-start items-start px-8 py-8" style={{minWidth: '0'}}>
-              <svg width="64" height="64" viewBox="0 0 48 48" fill="none" style={{marginBottom: '80px', display: 'block'}}>
+            <div className="flex-1 flex flex-col justify-start items-start px-4 lg:px-8 py-6 lg:py-8" style={{minWidth: '0'}}>
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
                 <defs>
                   <linearGradient id="icon-gradient-2" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#10B981" />
@@ -975,15 +1182,16 @@ export default function HomePage() {
                 <path d="M16 24h16" stroke="url(#icon-gradient-2)" strokeWidth="1.5" strokeLinecap="round" />
                 <path d="M24 16v16" stroke="url(#icon-gradient-2)" strokeWidth="1.5" strokeLinecap="round" />
               </svg>
-              <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '20px', fontWeight: 600, lineHeight: '28px', marginBottom: '18px', textAlign: 'left', width: '100%' }}>Feedforward Process</h3>
-              <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '16px', fontWeight: 400, lineHeight: '26px', width: '95%', textAlign: 'left' }}>
+              <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: 'clamp(16px, 4vw, 20px)', fontWeight: 600, lineHeight: '1.3', marginBottom: '12px', textAlign: 'left', width: '100%' }}>Feedforward Process</h3>
+              <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3.5vw, 16px)', fontWeight: 400, lineHeight: '1.5', width: '100%', textAlign: 'left' }}>
                 The inputs are multiplied by their respective weights, summed up, and passed through the activation function.
               </p>
             </div>
-            <div style={{height: '300px', alignSelf: 'center', width: '1px', background: '#E5E7EB'}} />
+            {/* Dikey çizgi - Mobilde gizli */}
+            <div className="hidden lg:block" style={{height: '300px', alignSelf: 'center', width: '1px', background: '#E5E7EB'}} />
             {/* 3. Sütun */}
-            <div className="flex-1 flex flex-col justify-start items-start px-8 py-8" style={{minWidth: '0'}}>
-              <svg width="64" height="64" viewBox="0 0 48 48" fill="none" style={{marginBottom: '80px', display: 'block'}}>
+            <div className="flex-1 flex flex-col justify-start items-start px-4 lg:px-8 py-6 lg:py-8" style={{minWidth: '0'}}>
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
                 <defs>
                   <linearGradient id="icon-gradient-3" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#10B981" />
@@ -994,15 +1202,16 @@ export default function HomePage() {
                 <polygon points="24,8 40,40 8,40" stroke="url(#icon-gradient-3)" strokeWidth="1.5" fill="none" />
                 <path d="M24 20v8" stroke="url(#icon-gradient-3)" strokeWidth="1.5" strokeLinecap="round" />
               </svg>
-              <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '20px', fontWeight: 600, lineHeight: '28px', marginBottom: '18px', textAlign: 'left', width: '100%' }}>Payment method</h3>
-              <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '16px', fontWeight: 400, lineHeight: '26px', width: '95%', textAlign: 'left' }}>
+              <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: 'clamp(16px, 4vw, 20px)', fontWeight: 600, lineHeight: '1.3', marginBottom: '12px', textAlign: 'left', width: '100%' }}>Payment method</h3>
+              <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3.5vw, 16px)', fontWeight: 400, lineHeight: '1.5', width: '100%', textAlign: 'left' }}>
                 And passed through the activation function. The inputs are multiplied by their respective weights, summed up
               </p>
             </div>
-            <div style={{height: '300px', alignSelf: 'center', width: '1px', background: '#E5E7EB'}} />
+            {/* Dikey çizgi - Mobilde gizli */}
+            <div className="hidden lg:block" style={{height: '300px', alignSelf: 'center', width: '1px', background: '#E5E7EB'}} />
             {/* 4. Sütun */}
-            <div className="flex-1 flex flex-col justify-start items-start px-8 py-8" style={{minWidth: '0'}}>
-              <svg width="64" height="64" viewBox="0 0 48 48" fill="none" style={{marginBottom: '80px', display: 'block'}}>
+            <div className="flex-1 flex flex-col justify-start items-start px-4 lg:px-8 py-6 lg:py-8" style={{minWidth: '0'}}>
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
                 <defs>
                   <linearGradient id="icon-gradient-4" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#10B981" />
@@ -1013,8 +1222,8 @@ export default function HomePage() {
                 <ellipse cx="24" cy="24" rx="16" ry="10" stroke="url(#icon-gradient-4)" strokeWidth="1.5" fill="none" />
                 <path d="M24 14v20" stroke="url(#icon-gradient-4)" strokeWidth="1.5" strokeLinecap="round" />
               </svg>
-              <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '20px', fontWeight: 600, lineHeight: '28px', marginBottom: '18px', textAlign: 'left', width: '100%' }}>Activation Function</h3>
-              <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '16px', fontWeight: 400, lineHeight: '26px', width: '95%', textAlign: 'left' }}>
+              <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: 'clamp(16px, 4vw, 20px)', fontWeight: 600, lineHeight: '1.3', marginBottom: '12px', textAlign: 'left', width: '100%' }}>Activation Function</h3>
+              <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3.5vw, 16px)', fontWeight: 400, lineHeight: '1.5', width: '100%', textAlign: 'left' }}>
                 Each neuron applies an activation function to the weighted sum of its inputs and produces an output
               </p>
             </div>
@@ -1023,12 +1232,12 @@ export default function HomePage() {
       </section>
 
       {/* TESTIMONIALS BÖLÜMÜ */}
-      <section className="w-full flex justify-center items-center" style={{paddingLeft: '32px', paddingRight: '16px', marginTop: '60px'}}>
+      <section className="w-full flex justify-center items-center mobile-section-spacing" style={{paddingLeft: '32px', paddingRight: '16px', marginTop: '160px', paddingTop: '60px', paddingBottom: '60px'}}>
         <div className="flex flex-row gap-[20px] w-full" style={{maxWidth: '1865px'}}>
           {/* Sol kutu */}
           <div style={{width: '1112px', height: '720px', background: '#232323', borderRadius: '32px', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative'}}>
             <div style={{paddingLeft: '130px', paddingRight: '150px'}}>
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style={{marginBottom: '32px'}}>
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style={{marginBottom: '32px', marginTop: '40px'}}>
                 <path d="M16 24C16 17.3726 21.3726 12 28 12" stroke="#fff" strokeWidth="3" strokeLinecap="round"/>
                 <circle cx="16" cy="32" r="2.5" fill="#fff" />
                 <path d="M32 24C32 17.3726 37.3726 12 44 12" stroke="#fff" strokeWidth="3" strokeLinecap="round"/>
@@ -1037,7 +1246,7 @@ export default function HomePage() {
               <p style={{color: '#fff', fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '25px', fontWeight: 400, lineHeight: '1.3', marginBottom: '40px'}}>
                 Working with Aiero has been a game-changer for our business. Their AI solutions have revolutionized our operations, enabling us to automate repetitive tasks and make data-driven decisions with ease. We couldn't be happier with the results."
               </p>
-              <div style={{color: '#fff', fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '18px', fontWeight: 400, marginTop: '24px'}}>
+              <div style={{color: '#fff', fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '18px', fontWeight: 400, marginTop: '24px', marginBottom: '40px'}}>
                 - John Anderson, CEO of XYZ Company
               </div>
             </div>
@@ -1045,11 +1254,11 @@ export default function HomePage() {
           {/* Sağ kutu */}
           <div style={{width: '735px', height: '720px', borderRadius: '32px', background: 'linear-gradient(120deg, #2e3192 0%, #1bffff 100%)', position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', overflow: 'hidden'}}>
             <div style={{padding: '0 60px'}}>
-              <div className="text-sm font-medium text-white mb-4 uppercase tracking-wider" style={{fontFamily: 'Manrope, Arial, Helvetica, sans-serif'}}>[ testimonials ]</div>
+              <div className="text-sm font-medium text-white mb-4 uppercase tracking-wider" style={{fontFamily: 'Manrope, Arial, Helvetica, sans-serif', marginTop: '40px'}}>[ testimonials ]</div>
               <h2 className="text-white" style={{fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '54px', fontWeight: 400, lineHeight: '1.1', marginBottom: '40px', textAlign: 'left', width: '100%', maxWidth: '600px'}}>
                 Discover what our clients have to say about our AI solutions
               </h2>
-              <div style={{display: 'flex', alignItems: 'flex-end', gap: '24px', marginTop: '60px'}}>
+              <div style={{display: 'flex', alignItems: 'flex-end', gap: '24px', marginTop: '60px', marginBottom: '40px'}}>
                 <span style={{fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '80px', fontWeight: 400, lineHeight: '1', color: 'rgba(255,255,255,0.8)'}}>250+</span>
                 <span style={{fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '22px', fontWeight: 400, color: 'rgba(255,255,255,0.9)', marginBottom: '12px'}}>Happy clients</span>
               </div>
@@ -1057,10 +1266,17 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <div style={{marginBottom: '80px'}} />
+      <div style={{marginBottom: '120px'}} />
 
       {/* BLOG/ARTICLES BÖLÜMÜ */}
-      <section className="w-full flex flex-col items-center justify-center" style={{height: '976px', marginTop: '80px', marginBottom: '80px'}}>
+      <section className="w-full flex flex-col items-center justify-center mobile-section-spacing" style={{height: '976px', marginTop: '120px', marginBottom: '80px'}}>
+        {/* Mobil için başlık - sadece mobilde görünür */}
+        <div className="block lg:hidden" style={{textAlign: 'center', marginBottom: '20px', padding: '0 20px', marginTop: '40px'}}>
+          <div className="text-sm font-medium text-gray-600 mb-4 uppercase tracking-wider" style={{fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(12px, 3vw, 14px)'}}>[ blog ]</div>
+          <h2 style={{fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: 'clamp(20px, 5vw, 40px)', fontWeight: 400, lineHeight: '1.3', color: '#111', marginBottom: '20px'}}>
+            Exploring the world of<br />artificial intelligence<br />with Aiero blogging
+          </h2>
+        </div>
         <div className="w-full flex flex-row items-start justify-between" style={{maxWidth: '1400px', margin: '0 auto', paddingLeft: '32px', paddingRight: '16px', marginBottom: '60px'}}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
             <div className="text-sm font-medium text-gray-600 mb-4 uppercase tracking-wider" style={{fontFamily: 'Manrope, Arial, Helvetica, sans-serif', textAlign: 'left'}}>[ blog ]</div>
@@ -1105,7 +1321,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA HERO BÖLÜMÜ - Footer üstü */}
-      <section style={{height: '662px', background: 'linear-gradient(120deg, #2e3192 0%, #1bffff 100%)', borderRadius: '32px 32px 0 0', margin: '0 15px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 0}}>
+      <section className="mobile-section-spacing" style={{height: '662px', background: 'linear-gradient(120deg, #2e3192 0%, #1bffff 100%)', borderRadius: '32px 32px 0 0', margin: '0 15px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 0}}>
         <div style={{width: '100%', maxWidth: '1866px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '100%'}}>
           <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', height: '100%', paddingLeft: '260px'}}>
             <div className="text-sm font-medium text-white mb-4 uppercase tracking-wider" style={{fontFamily: 'Manrope, Arial, Helvetica, sans-serif', textAlign: 'left'}}>[ cta ]</div>
@@ -1155,6 +1371,605 @@ export default function HomePage() {
           -webkit-text-fill-color: transparent;
           background-clip: text;
           text-fill-color: transparent;
+        }
+        
+        /* Mobile responsive adjustments */
+        @media (max-width: 1024px) {
+          .features-section {
+            min-height: 400px !important;
+          }
+          .features-section .container-custom {
+            min-height: 400px !important;
+          }
+          .neural-network-section {
+            min-height: 500px !important;
+          }
+          .services-section {
+            min-height: 600px !important;
+          }
+          .mobile-section-spacing {
+            margin-top: 80px !important;
+            margin-bottom: 80px !important;
+          }
+          /* Services Cards Section'dan sonraki bölümler arası boşluk */
+          .services-section + .mobile-section-spacing {
+            margin-top: 120px !important;
+          }
+          /* AI Systems Blocks bölümü mobil ayarları */
+          .mobile-section-spacing[style*="height: clamp(600px, 80vh, 854px)"] {
+            margin-top: 100px !important;
+            margin-bottom: 100px !important;
+          }
+          /* Services Cards Section mobil alt boşluk */
+          .services-section {
+            padding-bottom: 150px !important;
+          }
+          /* Tüm bölümler arası genel boşluk */
+          section + section {
+            margin-top: 80px !important;
+          }
+          /* Services Cards Section'dan sonraki ilk bölüm */
+          .services-section + div {
+            margin-top: 120px !important;
+          }
+          /* Services Cards Section içindeki kartlar arası boşluk */
+          .services-section .space-y-12 > * + * {
+            margin-top: 48px !important;
+          }
+          /* AI Systems Blocks bölümü mobil üst boşluk */
+          .ai-systems-blocks {
+            margin-top: 320px !important;
+          }
+          .ai-systems-blocks .mb-8 {
+            margin-bottom: 40px !important;
+          }
+          .ai-systems-blocks h2 {
+            font-size: clamp(24px, 6vw, 60px) !important;
+            line-height: 1.1 !important;
+          }
+          /* Possibilities bölümü mobil responsive ayarları - Yeni Yaklaşım */
+          @media (max-width: 1024px) {
+            /* Ana container */
+            div[style*="width: clamp(320px, 95vw, 1865px)"] {
+              min-height: 200px !important;
+              padding-top: 2px !important;
+              padding-bottom: 2px !important;
+              margin-top: 0px !important;
+            }
+            /* Üst boşluk div */
+            div[style*="width: clamp(320px, 95vw, 1865px)"] .h-32 {
+              height: 2px !important;
+            }
+            /* Alt boşluk div */
+            div[style*="width: clamp(320px, 95vw, 1865px)"] .hidden.lg\\:block {
+              height: 20px !important;
+            }
+            /* Tüm margin'ları sıfırla */
+            div[style*="width: clamp(320px, 95vw, 1865px)"] * {
+              margin-top: 0px !important;
+              margin-bottom: 0px !important;
+            }
+            /* Sadece gerekli margin'ları ekle */
+            div[style*="width: clamp(320px, 95vw, 1865px)"] .mb-8 {
+              margin-bottom: 5px !important;
+            }
+            div[style*="width: clamp(320px, 95vw, 1865px)"] .mb-4 {
+              margin-bottom: 2px !important;
+            }
+            div[style*="width: clamp(320px, 95vw, 1865px)"] .mb-6 {
+              margin-bottom: 3px !important;
+            }
+            /* Gap ayarları */
+            div[style*="width: clamp(320px, 95vw, 1865px)"] .gap-4 {
+              gap: 2px !important;
+            }
+            div[style*="width: clamp(320px, 95vw, 1865px)"] .gap-8 {
+              gap: 4px !important;
+            }
+            /* TabsV2 content padding */
+            div[style*="width: clamp(320px, 95vw, 1865px)"] .flex.flex-col.lg\\:flex-row {
+              padding: 2px !important;
+            }
+            /* Buton margin */
+            div[style*="width: clamp(320px, 95vw, 1865px)"] .mt-4 {
+              margin-top: 2px !important;
+            }
+          }
+          
+          /* [testimonials] bölümü mobil responsive ayarları - Alternatif Yaklaşım */
+          @media (max-width: 1024px) {
+            /* Ana container ayarları - daha genel selector */
+            section {
+              padding-left: 16px !important;
+              padding-right: 16px !important;
+              margin-top: 20px !important;
+              width: 100% !important;
+              max-width: 100% !important;
+            }
+            /* Flex container ayarları - daha genel selector */
+            section .flex.flex-row {
+              flex-direction: column !important;
+              gap: 16px !important;
+              width: 100% !important;
+              max-width: 100% !important;
+            }
+            /* Flex container içindeki div genişlik ayarları */
+            section .flex.flex-row > div {
+              width: 100% !important;
+              max-width: 100% !important;
+            }
+            /* Sol kutu ayarları - daha genel selector */
+            section > div > div:first-child {
+              width: 100% !important;
+              max-width: 100% !important;
+              height: auto !important;
+              min-height: 300px !important;
+            }
+            section > div > div:first-child > div {
+              padding-left: 20px !important;
+              padding-right: 20px !important;
+              padding-top: 40px !important;
+              padding-bottom: 40px !important;
+            }
+            /* Sol kutu içindeki yazı genişlik ayarları - daha genel selector */
+            section > div > div:first-child > div > p {
+              width: 100% !important;
+              max-width: 100% !important;
+            }
+            section > div > div:first-child > div > div {
+              width: 100% !important;
+              max-width: 100% !important;
+            }
+            /* Sol kutu içindeki yazı font boyutları */
+            section > div > div:first-child p {
+              font-size: clamp(16px, 4vw, 25px) !important;
+              line-height: 1.4 !important;
+              margin-bottom: 20px !important;
+            }
+            section > div > div:first-child > div > div {
+              font-size: clamp(14px, 3.5vw, 18px) !important;
+              margin-top: 16px !important;
+            }
+            /* Sağ kutu ayarları */
+            section > div > div:last-child {
+              width: 100% !important;
+              max-width: 100% !important;
+              height: auto !important;
+              min-height: 250px !important;
+            }
+            section > div > div:last-child > div {
+              padding: 20px !important;
+            }
+            /* Sağ kutu içindeki yazı font boyutları */
+            section > div > div:last-child .text-sm {
+              font-size: clamp(12px, 3vw, 14px) !important;
+              margin-bottom: 16px !important;
+            }
+            section > div > div:last-child h2 {
+              font-size: clamp(24px, 6vw, 54px) !important;
+              line-height: 1.2 !important;
+              margin-bottom: 20px !important;
+              width: 100% !important;
+              max-width: 100% !important;
+            }
+            section > div > div:last-child span:first-of-type {
+              font-size: clamp(40px, 8vw, 80px) !important;
+            }
+            section > div > div:last-child span:last-of-type {
+              font-size: clamp(16px, 4vw, 22px) !important;
+              margin-bottom: 8px !important;
+            }
+            /* İkon boyutları */
+            section svg {
+              width: 32px !important;
+              height: 32px !important;
+              margin-bottom: 16px !important;
+            }
+          }
+          
+          /* [how it works] bölümü mobil responsive ayarları - [özellikler] ile tutarlı */
+          @media (max-width: 1024px) {
+            /* Ana container ayarları */
+            .ai-systems-blocks {
+              height: auto !important;
+              min-height: 300px !important;
+              margin-top: 20px !important;
+            }
+            /* Sayfa sağ-sol ayarları - [özellikler] ile aynı */
+            .ai-systems-blocks .w-full.flex.flex-col.items-start {
+              padding-left: clamp(16px, 4vw, 0px) !important;
+              padding-right: clamp(16px, 4vw, 0px) !important;
+              padding-top: 16px !important;
+            }
+            /* [how it works] label font boyutu - [özellikler] ile aynı */
+            .ai-systems-blocks .text-sm.font-medium.text-gray-600 {
+              font-size: clamp(14px, 3vw, 14px) !important;
+              margin-bottom: 6px !important;
+              padding-left: clamp(16px, 4vw, 0px) !important;
+            }
+            /* Ana başlık font boyutu - [özellikler] ile aynı */
+            .ai-systems-blocks h2 {
+              font-size: clamp(28px, 5vw, 60px) !important;
+              line-height: 1.2 !important;
+              margin-bottom: 16px !important;
+              letter-spacing: -3px !important;
+              word-spacing: 8px !important;
+              padding-left: clamp(16px, 4vw, 0px) !important;
+            }
+            /* İkon boyutları - [özellikler] ile aynı */
+            .ai-systems-blocks svg {
+              width: clamp(40px, 8vw, 48px) !important;
+              height: clamp(40px, 8vw, 48px) !important;
+              margin-bottom: 0px !important;
+              margin-right: 12px !important;
+            }
+            /* İkon ve başlık aynı satırda */
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start {
+              display: flex !important;
+              flex-direction: column !important;
+            }
+            /* İkon ve başlık yan yana - mobilde */
+            .ai-systems-blocks svg {
+              display: inline-block !important;
+              margin-bottom: 0px !important;
+              margin-right: 12px !important;
+              vertical-align: middle !important;
+            }
+            .ai-systems-blocks h3 {
+              display: inline-block !important;
+              margin-bottom: 8px !important;
+              vertical-align: middle !important;
+            }
+            /* İkon ve başlık container'ı - daha spesifik */
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start {
+              display: flex !important;
+              flex-direction: column !important;
+            }
+            /* İkon ve başlık yan yana - flexbox ile */
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start > svg {
+              order: 1 !important;
+              margin-bottom: 0px !important;
+              margin-right: 12px !important;
+            }
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start > h3 {
+              order: 2 !important;
+              margin-bottom: 8px !important;
+            }
+            /* İkon ve başlık wrapper */
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start > svg,
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start > h3 {
+              display: inline-block !important;
+              vertical-align: middle !important;
+            }
+            /* İkon ve başlık yan yana - agresif override */
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start {
+              display: block !important;
+            }
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start > svg {
+              float: left !important;
+              margin-right: 12px !important;
+              margin-bottom: 0px !important;
+              display: inline-block !important;
+            }
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start > h3 {
+              overflow: hidden !important;
+              margin-bottom: 8px !important;
+              display: inline-block !important;
+              float: left !important;
+            }
+            /* İkon ve başlık wrapper - CSS Grid yaklaşımı */
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start {
+              display: grid !important;
+              grid-template-columns: auto 1fr !important;
+              grid-template-rows: auto auto !important;
+              gap: 0 12px !important;
+              align-items: start !important;
+            }
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start > svg {
+              grid-column: 1 !important;
+              grid-row: 1 !important;
+              margin: 0 !important;
+            }
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start > h3 {
+              grid-column: 2 !important;
+              grid-row: 1 !important;
+              margin: 0 0 8px 0 !important;
+            }
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start > p {
+              grid-column: 1 / -1 !important;
+              grid-row: 2 !important;
+              margin: 0 !important;
+            }
+            /* Alt başlık font boyutu - [özellikler] ile aynı */
+            .ai-systems-blocks h3 {
+              font-size: clamp(20px, 4vw, 20px) !important;
+              line-height: 1.4 !important;
+              margin-bottom: 6px !important;
+              font-weight: 600 !important;
+            }
+            /* Alt metin font boyutu - [özellikler] ile aynı */
+            .ai-systems-blocks p {
+              font-size: clamp(16px, 3vw, 16px) !important;
+              line-height: 1.5 !important;
+              font-weight: 500 !important;
+            }
+            /* Sütunlar arası mesafe */
+            .ai-systems-blocks .flex.flex-col.lg\\:flex-row {
+              gap: 12px !important;
+            }
+            /* Sütun içi padding */
+            .ai-systems-blocks .flex-1.flex.flex-col.justify-start.items-start {
+              padding: 8px !important;
+            }
+            /* Başlık-ikon-alt metin arası mesafeler */
+            .ai-systems-blocks .mb-8.lg\\:mb-16 {
+              margin-bottom: 12px !important;
+            }
+            .ai-systems-blocks .mb-2.lg\\:mb-4 {
+              margin-bottom: 4px !important;
+            }
+          }
+          /* TabsV2 component mobil ayarları */
+          @media (max-width: 1024px) {
+            .mobile-section-spacing .flex {
+              flex-direction: column !important;
+              gap: 16px !important;
+            }
+            .mobile-section-spacing .flex > button {
+              width: 100% !important;
+              max-width: 100% !important;
+              height: auto !important;
+              min-height: 80px !important;
+              font-size: clamp(14px, 4vw, 20px) !important;
+            }
+            .mobile-section-spacing .flex.flex-col {
+              gap: 24px !important;
+            }
+          }
+          /* [testimonials] bölümü mobil responsive ayarları - blog bölümü ile aynı yaklaşım */
+          @media (max-width: 1024px) {
+            /* Ana container ayarları */
+            section[style*="paddingLeft: '32px'"] {
+              padding-left: 16px !important;
+              padding-right: 16px !important;
+              margin-top: 20px !important;
+              width: 100% !important;
+              max-width: 100% !important;
+              position: relative !important;
+              z-index: 1 !important;
+            }
+            /* Flex container ayarları */
+            section[style*="paddingLeft: '32px'"] .flex.flex-row {
+              flex-direction: column !important;
+              gap: 16px !important;
+              width: 100% !important;
+              max-width: 100% !important;
+            }
+            /* Flex container içindeki div genişlik ayarları */
+            section[style*="paddingLeft: '32px'"] .flex.flex-row > div {
+              width: 100% !important;
+              max-width: 100% !important;
+            }
+            /* Sol kutu ayarları */
+            section[style*="paddingLeft: '32px'"] > div > div:first-child {
+              width: 100% !important;
+              max-width: 100% !important;
+              height: auto !important;
+              min-height: 300px !important;
+            }
+            section[style*="paddingLeft: '32px'"] > div > div:first-child > div {
+              padding-left: 20px !important;
+              padding-right: 20px !important;
+              padding-top: 40px !important;
+              padding-bottom: 40px !important;
+            }
+            /* Sol kutu içindeki yazı genişlik ayarları */
+            section[style*="paddingLeft: '32px'"] > div > div:first-child > div > p {
+              width: 100% !important;
+              max-width: 100% !important;
+            }
+            section[style*="paddingLeft: '32px'"] > div > div:first-child > div > div {
+              width: 100% !important;
+              max-width: 100% !important;
+            }
+            /* Sol kutu içindeki yazı font boyutları */
+            section[style*="paddingLeft: '32px'"] > div > div:first-child p {
+              font-size: clamp(16px, 4vw, 25px) !important;
+              line-height: 1.4 !important;
+              margin-bottom: 20px !important;
+            }
+            section[style*="paddingLeft: '32px'"] > div > div:first-child > div > div {
+              font-size: clamp(14px, 3.5vw, 18px) !important;
+              margin-top: 16px !important;
+            }
+            /* Sağ kutu ayarları */
+            section[style*="paddingLeft: '32px'"] > div > div:last-child {
+              width: 100% !important;
+              max-width: 100% !important;
+              height: auto !important;
+              min-height: 250px !important;
+            }
+            section[style*="paddingLeft: '32px'"] > div > div:last-child > div {
+              padding: 20px !important;
+            }
+            /* Sağ kutu içindeki yazı font boyutları */
+            section[style*="paddingLeft: '32px'"] > div > div:last-child .text-sm {
+              font-size: clamp(12px, 3vw, 14px) !important;
+              margin-bottom: 16px !important;
+            }
+            section[style*="paddingLeft: '32px'"] > div > div:last-child h2 {
+              font-size: clamp(24px, 6vw, 54px) !important;
+              line-height: 1.2 !important;
+              margin-bottom: 20px !important;
+              width: 100% !important;
+              max-width: 100% !important;
+            }
+            section[style*="paddingLeft: '32px'"] > div > div:last-child span:first-of-type {
+              font-size: clamp(40px, 8vw, 80px) !important;
+            }
+            section[style*="paddingLeft: '32px'"] > div > div:last-child span:last-of-type {
+              font-size: clamp(16px, 4vw, 22px) !important;
+              margin-bottom: 8px !important;
+            }
+            /* İkon boyutları */
+            section[style*="paddingLeft: '32px'"] svg {
+              width: 32px !important;
+              height: 32px !important;
+              margin-bottom: 16px !important;
+            }
+          }
+          /* [blog] bölümü mobil responsive ayarları */
+          @media (max-width: 1024px) {
+            /* Ana container ayarları */
+            section[style*="height: '976px'"],
+            section.mobile-section-spacing[style*="height: '976px'"] {
+              height: auto !important;
+              min-height: auto !important;
+              margin-top: 120px !important;
+              margin-bottom: 40px !important;
+              padding: 20px !important;
+              position: relative !important;
+              z-index: 5 !important;
+            }
+            /* Blog başlıkları için agresif override */
+            section[style*="height: '976px'"] *,
+            section.mobile-section-spacing[style*="height: '976px'"] * {
+              display: block !important;
+              visibility: visible !important;
+              opacity: 1 !important;
+            }
+            /* Üst başlık ve buton container ayarları */
+            section[style*="height: '976px'"] > div:first-child,
+            section[style*="height: '976px'"] .w-full.flex.flex-row.items-start.justify-between,
+            section[style*="height: '976px'"] div[style*="maxWidth: '1400px'"],
+            section[style*="height: '976px'"] > div:first-child {
+              flex-direction: column !important;
+              align-items: center !important;
+              text-align: center !important;
+              margin-bottom: 40px !important;
+              gap: 20px !important;
+              margin-top: 80px !important;
+              padding-top: 20px !important;
+              display: flex !important;
+              visibility: visible !important;
+              opacity: 1 !important;
+              position: relative !important;
+              z-index: 10 !important;
+            }
+            /* Parent container ayarları */
+            section[style*="height: '976px'"] > div:first-child > div:first-child {
+              display: flex !important;
+              flex-direction: column !important;
+              align-items: center !important;
+              visibility: visible !important;
+              opacity: 1 !important;
+              position: relative !important;
+              z-index: 50 !important;
+            }
+            /* Başlık parent container ayarları */
+            section[style*="height: '976px'"] > div:first-child > div:first-child > div:first-child {
+              display: flex !important;
+              flex-direction: column !important;
+              align-items: flex-start !important;
+              visibility: visible !important;
+              opacity: 1 !important;
+              position: relative !important;
+              z-index: 75 !important;
+            }
+            /* Üst küçük başlık ayarları */
+            section[style*="height: '976px'"] [style*="[ blog ]"],
+            section[style*="height: '976px'"] .text-sm.font-medium.text-gray-600,
+            section[style*="height: '976px'"] > div:first-child > div:first-child > div:first-child,
+            section[style*="height: '976px'"] div[style*="fontFamily: 'Manrope'"],
+            section[style*="height: '976px'"] > div:first-child > div:first-child > div:first-child,
+            section[style*="height: '976px'"] > div:first-child > div:first-child,
+            section[style*="height: '976px'"] > div:first-child > div:first-child > div:first-child > div:first-child {
+              font-size: clamp(12px, 3vw, 14px) !important;
+              margin-bottom: 8px !important;
+              text-align: center !important;
+              display: block !important;
+              visibility: visible !important;
+              opacity: 1 !important;
+              position: relative !important;
+              z-index: 100 !important;
+              color: #6b7280 !important;
+              font-weight: 500 !important;
+            }
+            /* Alt büyük başlık ayarları */
+            section[style*="height: '976px'"] h2,
+            section[style*="height: '976px'"] [style*="fontSize: '60px'"],
+            section[style*="height: '976px'"] > div:first-child > div:first-child > h2,
+            section[style*="height: '976px'"] div[style*="fontFamily: 'Sora'"],
+            section[style*="height: '976px'"] > div:first-child > div:first-child > h2,
+            section[style*="height: '976px'"] > div:first-child > div:first-child > div:first-child > h2 {
+              font-size: clamp(28px, 7vw, 60px) !important;
+              line-height: 1.2 !important;
+              text-align: center !important;
+              margin-bottom: 12px !important;
+              max-width: 100% !important;
+              display: block !important;
+              visibility: visible !important;
+              opacity: 1 !important;
+              position: relative !important;
+              z-index: 100 !important;
+              color: #111 !important;
+              font-weight: 400 !important;
+            }
+            /* Buton ayarları */
+            section[style*="height: '976px'"] button {
+              width: 100% !important;
+              max-width: 300px !important;
+              height: 56px !important;
+              font-size: clamp(16px, 4vw, 18px) !important;
+              margin-top: 0 !important;
+              left: 0 !important;
+              position: relative !important;
+              z-index: 100 !important;
+            }
+            /* Blog kartları container ayarları */
+            section[style*="height: '976px'"] > div:last-child {
+              flex-direction: column !important;
+              gap: 24px !important;
+              width: 100% !important;
+              max-width: 100% !important;
+              position: relative !important;
+              z-index: 1 !important;
+            }
+            /* Blog kartları ayarları */
+            section[style*="height: '976px'"] > div:last-child > div {
+              width: 100% !important;
+              max-width: 100% !important;
+              height: auto !important;
+              min-height: 400px !important;
+              position: relative !important;
+              z-index: 1 !important;
+            }
+            /* Blog kartları içindeki resim ayarları */
+            section[style*="height: '976px'"] > div:last-child > div img {
+              width: 100% !important;
+              height: 200px !important;
+            }
+            /* Blog kartları içindeki içerik ayarları */
+            section[style*="height: '976px'"] > div:last-child > div > div {
+              padding: 20px !important;
+            }
+            /* Blog kartları içindeki küçük başlık ayarları */
+            section[style*="height: '976px'"] > div:last-child > div > div > div:first-child {
+              font-size: clamp(12px, 3vw, 15px) !important;
+              margin-bottom: 12px !important;
+            }
+            /* Blog kartları içindeki büyük başlık ayarları */
+            section[style*="height: '976px'"] > div:last-child > div > div > div:nth-child(2) {
+              font-size: clamp(18px, 4vw, 23px) !important;
+              line-height: 1.3 !important;
+              margin-bottom: 16px !important;
+            }
+            /* Blog kartları içindeki etiket ayarları */
+            section[style*="height: '976px'"] > div:last-child > div > div > div:last-child {
+              font-size: clamp(12px, 3vw, 15px) !important;
+              margin-bottom: 16px !important;
+            }
+          }
         }
       `}</style>
     </main>
