@@ -895,3 +895,12 @@
 		margin-right: auto !important;
 	}
 } 
+
+@media (max-width: 768px) {
+	/* Services brochure card: match hero side gutters (20px per side). Parent has 12px padding; add 8px margins */
+	.hizmetler-content-section > div:first-child .services-brochure-card {
+		width: calc(100% - 16px) !important;
+		margin-left: 8px !important;
+		margin-right: 8px !important;
+	}
+} 
