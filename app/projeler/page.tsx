@@ -33,12 +33,12 @@ export default function ProjelerPage() {
                 fontSize: '80px',
                 fontStyle: 'normal',
                 fontWeight: 400,
-                height: '270px',
+                height: 'auto',
                 letterSpacing: '-2.4px',
                 lineHeight: '90px',
                 margin: 0,
                 marginTop: '40px',
-                marginBottom: '40px',
+                marginBottom: '60px',
                 textAlign: 'center',
                 display: 'block',
                 width: '100%',
@@ -48,9 +48,11 @@ export default function ProjelerPage() {
                 backgroundClip: 'text',
               }}
             >
-              Bridging top talent with<br />
-              innovative opportunities at the Sitenano
+              Veriden değere, fikirden sonuca uzanan dönüşümler.
             </h1>
+            <div style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '30px', fontStyle: 'normal', fontWeight: 600, lineHeight: '38px', margin: '-25px 0 30px 0', textAlign: 'center', background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              Fikirden sonuca tüm süreci uçtan uca kurguluyoruz.
+            </div>
             <p
               className="text-gray-600"
               style={{
@@ -60,8 +62,8 @@ export default function ProjelerPage() {
                 fontWeight: 500,
                 letterSpacing: 'normal',
                 lineHeight: '30px',
-                maxWidth: '720px',
-                width: '720px',
+                maxWidth: '860px',
+                width: '860px',
                 margin: 0,
                 textAlign: 'center',
                 marginLeft: 'auto',
@@ -69,7 +71,8 @@ export default function ProjelerPage() {
                 marginBottom: '220px',
               }}
             >
-              Our startup development services are designed to accelerate your journey from concept to launch, providing you with the technical expertise and strategic guidance needed to succeed.
+              İşlerinizi yapay zekâ destekli projelerle yeni bir boyuta taşıyoruz. İşletmelerin yalnızca bugünkü ihtiyaçlarına değil, yarının gerekliliklerine de hazırlanmasını sağlıyoruz.
+              MCP, RAG ve A2A gibi teknolojilerle; verinizi anlamlandırıyor, süreçlerinizi hızlandırıyor ve dijital dönüşümünüzü sürdürülebilir hâle getiriyoruz.
             </p>
           </div>
         </div>
@@ -137,7 +140,7 @@ export default function ProjelerPage() {
               zIndex: 10,
               position: 'relative'
             }}>
-              Achievements of our startup
+              Akıllı asistanlar, RAG tabanlı bilgi erişimi ve otomatik iş akışları
             </h3>
           </div>
 
@@ -164,7 +167,7 @@ export default function ProjelerPage() {
               paddingLeft: '10px',
               paddingTop: '30px'
             }}>
-              150K
+              50+
             </div>
             <div style={{
               fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
@@ -174,7 +177,7 @@ export default function ProjelerPage() {
               paddingLeft: '10px',
               paddingBottom: '130px'
             }}>
-              Active users every day
+              Paylaşılan emeklerin ve çözümlerin toplamı.
             </div>
           </div>
 
@@ -245,20 +248,20 @@ export default function ProjelerPage() {
           </div>
 
           {/* 5. Panel - Professional Team */}
-          <div style={{
-            background: 'linear-gradient(135deg, #00BCD4 0%, #009688 100%)',
-            borderRadius: '20px',
-            padding: '20px',
-            height: '375px',
-            position: 'relative',
-            overflow: 'hidden',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'flex-end',
-            gridColumn: '3',
-            gridRow: '1',
-            marginTop: '195px'
-          }}>
+                      <div style={{
+              background: 'linear-gradient(135deg, #00BCD4 0%, #009688 100%)',
+              borderRadius: '20px',
+              padding: '20px 20px 74px 20px',
+              height: '375px',
+              position: 'relative',
+              overflow: 'hidden',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-end',
+              gridColumn: '3',
+              gridRow: '1',
+              marginTop: '195px'
+            }}>
             <div style={{
               position: 'absolute',
               top: '20px',
@@ -298,8 +301,7 @@ export default function ProjelerPage() {
               zIndex: 10,
               position: 'relative'
             }}>
-              Professional team<br />
-              & tech
+              RAG • MCP • A2A • Agent orkestrasyonu • Vektör DB • Next.js/TS • Python • Docker/K8s
             </h3>
           </div>
 
@@ -329,7 +331,9 @@ export default function ProjelerPage() {
               zIndex: 10,
               position: 'relative'
             }}>
-              Programming & development
+              Web, Mobil, Masaüstü 
+              ve Hibrit Uygulama
+              Geliştirme
             </h3>
             <div style={{
               position: 'absolute',
@@ -400,7 +404,7 @@ export default function ProjelerPage() {
               zIndex: 10,
               position: 'relative'
             }}>
-              AI Solutions & Innovation
+              Özel AI Çözümleri
             </h3>
           </div>
         </div>
@@ -1566,7 +1570,7 @@ export default function ProjelerPage() {
           background: '#0D0D0C',
           width: 'auto',
           margin: '120px 15px 0 15px',
-          height: '490px',
+          height: '700px',
           borderTopLeftRadius: '40px',
           borderTopRightRadius: '40px',
           borderBottomLeftRadius: '0px',
@@ -1576,17 +1580,18 @@ export default function ProjelerPage() {
           position: 'relative',
         }}
       >
-        <div className="container-custom" style={{ width: '100%', position: 'relative' }}>
+        <div className="container-custom" style={{ width: '100%', position: 'relative', padding: '0 5px' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             {/* Sol: Başlık */}
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1, paddingLeft: '20px', paddingRight: '20px' }}>
               <h2
                 style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '80px',
                   fontStyle: 'normal',
                   fontWeight: 400,
-                  height: '180px',
+                  height: 'auto',
+                  minHeight: '180px',
                   letterSpacing: '-2.4px',
                   lineHeight: '90px',
                   color: 'transparent',
@@ -1594,47 +1599,65 @@ export default function ProjelerPage() {
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
-                  margin: 0,
+                  margin: '0 0 0 -26px',
                   width: '840px',
                   textAlign: 'left',
                   display: 'block',
                 }}
               >
-                Projenizi hayata geçirelim!<br />Hemen teklif alın
+                Fikrinizi görüşmek için şimdi bizimle iletişime geçin.
               </h2>
+              <p
+                style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '18px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  color: 'white',
+                  margin: '100px 0 0 -26px',
+                  padding: 0,
+                  lineHeight: '28px',
+                  maxWidth: '840px',
+                  textAlign: 'left'
+                }}
+              >
+                İşletmenizin dijital dönüşümünü, deneyimleriyle yön veren güvenilir bir ekip ile yeniden şekillendirin.
+              </p>
             </div>
             {/* Sağ: Teklif İste Butonu */}
-            <button
-              className="teklif-iste-btn"
-              style={{
-                border: '2px solid transparent',
-                borderRadius: '15px',
-                background: 'linear-gradient(#0D0D0C, #0D0D0C) padding-box, linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%) border-box',
-                color: '#fff',
-                fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
-                fontSize: '14px',
-                fontStyle: 'normal',
-                fontWeight: 500,
-                height: '55px',
-                minWidth: '70px',
-                letterSpacing: '0.12px',
-                lineHeight: '27px',
-                padding: '0 32px',
-                cursor: 'pointer',
-                transition: 'background 0.3s',
-                position: 'relative',
-                outline: 'none',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '8px',
-              }}
-            >
-              Teklif Al
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{ marginLeft: '4px' }}>
-                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
+            <Link href="/iletisim">
+              <button
+                className="teklif-iste-btn"
+                style={{
+                  border: '2px solid transparent',
+                  borderRadius: '15px',
+                  background: 'linear-gradient(#0D0D0C, #0D0D0C) padding-box, linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%) border-box',
+                  color: '#fff',
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '14px',
+                  fontStyle: 'normal',
+                  fontWeight: 500,
+                  height: '55px',
+                  minWidth: '70px',
+                  letterSpacing: '0.12px',
+                  lineHeight: '27px',
+                  padding: '0 32px',
+                  cursor: 'pointer',
+                  transition: 'background 0.3s',
+                  position: 'relative',
+                  outline: 'none',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                }}
+              >
+                Teklif Al
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{ marginLeft: '4px' }}>
+                  <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </Link>
           </div>
           {/* Yatay çizgi - butonun sonuna kadar uzanan */}
           <div style={{ 
