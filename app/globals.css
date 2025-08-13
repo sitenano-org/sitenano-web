@@ -785,3 +785,93 @@
 		box-sizing: border-box !important;
 	}
 } 
+
+@media (max-width: 768px) {
+	/* Hizmetler sol kolon: menü, Services brochure ve AI Strategy kartlarını ortala */
+	.hizmetler-content-section > div:first-child { width: 100% !important; align-items: center !important; }
+	/* Sol kolondaki 310px genişlikli kutular: ortala ve kenarlardan 20px boşluk bırak */
+	.hizmetler-content-section div[style*="width: '310px'"] {
+		width: calc(100% - 60px) !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* AI Strategy card: outer margins equal (20px each side) and inner paddings reduced */
+	/* Outer width and centering already set for 310px cards; ensure AI Strategy padding is compact */
+	.hizmetler-content-section div[style*="padding: '40px 40px 48px 40px'"] {
+		padding: 10px 20px 10px 20px !important;
+	}
+	/* Reduce large top offset inside AI Strategy content */
+	.hizmetler-content-section div[style*="marginTop: '120px'"] {
+		margin-top: 16px !important;
+	}
+	/* Tighter heading/body spacing inside the card */
+	.hizmetler-content-section div[style*="letterSpacing: '-0.75px'"] { margin-bottom: 10px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* Target by class to ensure reliability */
+	.ai-strategy-card { height: auto !important; min-height: 220px !important; padding: 10px 20px !important; }
+	.ai-strategy-content { margin-top: 12px !important; }
+	.ai-strategy-card p { height: auto !important; margin-bottom: 8px !important; }
+}
+
+@media (max-width: 768px) {
+	/* Right content title: add more top space above heading */
+	.hizmetler-right-content h2 { margin-top: 28px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* AI Strategy card: revert to equal side margins (20px/20px) on mobile */
+	.ai-strategy-card { width: calc(100% - 40px) !important; margin-left: 20px !important; margin-right: 20px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* Ensure both cards are exactly 312px and centered on mobile */
+	.hizmetler-content-section .ai-strategy-card,
+	.hizmetler-content-section .ai-consulting-card {
+		width: 312px !important;
+		max-width: 312px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		align-self: center !important;
+	}
+	.hizmetler-content-section .ai-consulting-card h3,
+	.hizmetler-content-section .ai-consulting-card p {
+		text-align: center !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* Ensure total gutter 28px: parent 20px + card 8px */
+	.hizmetler-content-section .ai-strategy-card,
+	.hizmetler-content-section .ai-consulting-card {
+		margin-left: 8px !important;
+		margin-right: 8px !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* Match spacing of other mobile cards: 100% width, no side margins, uniform padding */
+	.hizmetler-content-section .ai-strategy-card,
+	.hizmetler-content-section .ai-consulting-card {
+		width: 100% !important;
+		max-width: 100% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		padding: 16px !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* Enforce exact 28px outer gutter on mobile for AI cards inside left column
+	   Calculation: parent padding (12px) + card margin (16px) = 28px */
+	.hizmetler-content-section > div:first-child .ai-strategy-card,
+	.hizmetler-content-section > div:first-child .ai-consulting-card {
+		width: calc(100% - 32px) !important;
+		margin-left: 16px !important;
+		margin-right: 16px !important;
+	}
+} 

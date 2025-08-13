@@ -206,6 +206,7 @@ export default function HizmetlerPage() {
             
             {/* AI Strategy Bölümü */}
             <div
+              className="ai-strategy-card"
               style={{
                 width: '310px',
                 height: '388px',
@@ -234,7 +235,7 @@ export default function HizmetlerPage() {
               }} />
               
               {/* Ana içerik */}
-              <div style={{ position: 'relative', zIndex: 1, textAlign: 'left', marginTop: '120px' }}>
+              <div className="ai-strategy-content" style={{ position: 'relative', zIndex: 1, textAlign: 'left', marginTop: '120px' }}>
                 <div style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '25px',
@@ -1135,7 +1136,7 @@ export default function HizmetlerPage() {
           }}>Neural Network Integration</h3>
         </div>
         {/* Card 4 */}
-        <div style={{
+        <div className="ai-consulting-card" style={{
           width: '100%',
           background: '#1F2937',
           borderRadius: '20px',
