@@ -10,14 +10,14 @@ export default function HizmetlerPage() {
     <main className="min-h-screen bg-white">
       {/* HERO BÖLÜMÜ */}
       <section
-        className="relative w-full flex items-center overflow-hidden"
+        className="relative w-full flex items-center overflow-hidden hizmetler-hero-section"
         style={{ minHeight: '520px', height: '520px', background: 'none', position: 'relative', marginTop: '12px' }}
       >
         {/* Arka plan görseli */}
         <img
           src="/images/top-hero-bg.jpg"
           alt="Hizmetler Hero Background"
-          className="object-cover absolute top-0 z-0"
+          className="object-cover absolute top-0 z-0 hizmetler-hero-image"
           style={{ 
             objectFit: 'cover', 
             objectPosition: 'center', 
@@ -32,7 +32,7 @@ export default function HizmetlerPage() {
         />
         <div className="w-full h-full flex items-center justify-center relative z-10">
           <h1
-            className="text-white drop-shadow-lg"
+            className="text-white drop-shadow-lg hizmetler-hero-title"
             style={{
               fontFamily: 'Sora, Arial, Helvetica, sans-serif',
               fontSize: '80px',
@@ -52,10 +52,10 @@ export default function HizmetlerPage() {
 
       {/* HERO ALTINDA YENİ BÖLÜM */}
       <section
-        className="bg-white w-full flex flex-row items-start justify-start"
+        className="bg-white w-full flex flex-row items-start justify-start hizmetler-content-section"
         style={{ marginTop: '180px', marginBottom: '64px' }}
       >
-        <div style={{ marginLeft: '280px', display: 'flex', flexDirection: 'row', width: '100%', alignItems: 'flex-start' }}>
+        <div className="hizmetler-content-wrapper" style={{ marginLeft: '280px', display: 'flex', flexDirection: 'row', width: '100%', alignItems: 'flex-start' }}>
           {/* Sol Bölümler */}
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             {/* Sol Menü */}
@@ -263,7 +263,7 @@ export default function HizmetlerPage() {
           </div>
           
           {/* Sağ İçerik */}
-          <div style={{ marginLeft: '32px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <div className="hizmetler-right-content" style={{ marginLeft: '32px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             {/* Başlık ve Alt Metin */}
             {selected === 0 && (
               <>
@@ -594,8 +594,9 @@ export default function HizmetlerPage() {
 
 
 
-      {/* YENİ BÖLÜM - NEURAL NETWORK KARTLARI */}
+      {/* YENİ BÖLÜM - NEURAL NETWORK KARTLARI (Desktop) */}
       <section
+        className="desktop-cards-section hidden md:flex"
         style={{
           width: 'auto',
           margin: '200px 20px 0 20px',
@@ -1054,11 +1055,119 @@ export default function HizmetlerPage() {
         </div>
       </section>
 
+      {/* Mobil - Kartlar tek sütun */}
+      <section
+        className="md:hidden mobile-cards-section"
+        style={{
+          margin: '40px 20px 0 20px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '12px',
+        }}
+      >
+        {/* Card 1 */}
+        <div style={{
+          width: '100%',
+          background: 'linear-gradient(135deg, #10B981 0%, #06B6D4 50%, #0891B2 100%)',
+          borderRadius: '20px',
+          padding: '16px',
+          boxSizing: 'border-box',
+          overflow: 'hidden'
+        }}>
+          <h3 style={{
+            fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(18px, 5.5vw, 22px)',
+            lineHeight: '1.3',
+            color: '#fff',
+            margin: 0,
+            marginBottom: '8px'
+          }}>Neural Network Development</h3>
+          <p style={{
+            fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(14px, 3.8vw, 16px)',
+            lineHeight: '1.55',
+            color: '#fff',
+            opacity: 0.9,
+            margin: 0
+          }}>Custom design and development of neural network architectures tailored to your specific business needs</p>
+        </div>
+        {/* Card 2 */}
+        <div style={{
+          width: '100%',
+          background: 'linear-gradient(135deg, #059669 0%, #0EA5E9 50%, #0284C7 100%)',
+          borderRadius: '20px',
+          padding: '16px',
+          boxSizing: 'border-box',
+          overflow: 'hidden'
+        }}>
+          <h3 style={{
+            fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(18px, 5.5vw, 22px)',
+            lineHeight: '1.3',
+            color: '#fff',
+            margin: 0,
+            marginBottom: '8px'
+          }}>Training & Optimization</h3>
+          <p style={{
+            fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(14px, 3.8vw, 16px)',
+            lineHeight: '1.55',
+            color: '#fff',
+            opacity: 0.9,
+            margin: 0
+          }}>Fine-tuning neural networks using advanced algorithms to achieve maximum performance and accuracy.</p>
+        </div>
+        {/* Card 3 */}
+        <div style={{
+          width: '100%',
+          background: '#F0F2F4',
+          borderRadius: '20px',
+          padding: '16px',
+          boxSizing: 'border-box',
+          overflow: 'hidden'
+        }}>
+          <h3 style={{
+            fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(18px, 5.5vw, 22px)',
+            lineHeight: '1.3',
+            color: '#000',
+            margin: 0
+          }}>Neural Network Integration</h3>
+        </div>
+        {/* Card 4 */}
+        <div style={{
+          width: '100%',
+          background: '#1F2937',
+          borderRadius: '20px',
+          padding: '16px',
+          boxSizing: 'border-box',
+          overflow: 'hidden'
+        }}>
+          <h3 style={{
+            fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(18px, 5.5vw, 22px)',
+            lineHeight: '1.3',
+            color: '#fff',
+            margin: 0,
+            marginBottom: '8px'
+          }}>AI Consulting Services</h3>
+          <p style={{
+            fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(14px, 3.8vw, 16px)',
+            lineHeight: '1.55',
+            color: '#fff',
+            opacity: 0.9,
+            margin: 0
+          }}>Strategic consulting and implementation services for AI-powered business solutions and digital transformation</p>
+        </div>
+      </section>
+
       {/* ALTINA MARGIN EKLE */}
-      <div style={{ marginBottom: '200px' }} />
+      <div className="hizmetler-spacer" style={{ marginBottom: '200px' }} />
 
       {/* YENİ BÖLÜM - GÖRSELDEKİ GİBİ */}
       <section
+        className="hizmetler-cta-section"
         style={{
           background: '#0D0D0C',
           width: 'auto',
@@ -1097,7 +1206,7 @@ export default function HizmetlerPage() {
                   display: 'block',
                 }}
               >
-                Projenizi hayata geçirelim!<br />Hemen teklif alın
+                Projenizi hayata geçirelim!
               </h2>
             </div>
             {/* Sağ: Teklif İste Butonu */}

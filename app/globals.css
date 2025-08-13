@@ -533,3 +533,255 @@
     }
   }
 } 
+
+/* Hizmetler Sayfası Mobil Responsive Ayarları */
+@media (max-width: 768px) {
+	/* Hizmetler Sayfası Mobil Responsive Ayarları */
+	.hizmetler-hero-section {
+		min-height: 320px !important;
+		height: 320px !important;
+	}
+	.hizmetler-hero-image {
+		min-height: 320px !important;
+		height: 320px !important;
+		width: calc(100% - 40px) !important;
+		left: 20px !important;
+		right: 20px !important;
+		border-radius: 20px !important;
+	}
+	.hizmetler-hero-title {
+		font-size: clamp(36px, 8vw, 64px) !important;
+		height: auto !important;
+		letter-spacing: -1px !important;
+		line-height: 1.2 !important;
+		padding: 0 16px !important;
+	}
+	.hizmetler-content-section {
+		flex-direction: column !important;
+		margin-top: 60px !important;
+		margin-bottom: 40px !important;
+	}
+	/* Sol menü ve kart kolonunu tam genişlik yap */
+	.hizmetler-content-section > div:first-child {
+		margin-left: 0 !important;
+		padding: 0 12px !important;
+	}
+	/* Sol menü kutuları */
+	.hizmetler-content-section div[style*="width: '310px'"] {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+	/* Sağ içerik alanı */
+	.hizmetler-content-section > div[style*="flex: 1"] {
+		margin-left: 0 !important;
+		padding: 0 12px !important;
+	}
+	/* Büyük resim */
+	.hizmetler-content-section img[alt='Hizmetler Görsel'] {
+		width: 100% !important;
+		height: auto !important;
+		border-radius: 16px !important;
+	}
+	/* 4 kartlık bölüm - yan yana yerine alt alta */
+	section[style*="justify-content: 'space-between'"] {
+		flex-direction: column !important;
+		align-items: stretch !important;
+		margin: 40px 20px 0 20px !important;
+		gap: 16px !important;
+	}
+	section[style*="justify-content: 'space-between'"] > div {
+		width: 100% !important;
+		height: auto !important;
+		padding: 24px !important;
+	}
+	section[style*="justify-content: 'space-between'"] h3 {
+		font-size: clamp(20px, 5.5vw, 28px) !important;
+		line-height: 1.3 !important;
+	}
+	section[style*="justify-content: 'space-between'"] p {
+		font-size: clamp(15px, 4vw, 16px) !important;
+		line-height: 1.6 !important;
+		height: auto !important;
+	}
+	/* Alt CTA bölümü */
+	section[style*="background: '#0D0D0C'"] {
+		height: auto !important;
+		margin: 60px 10px 0 10px !important;
+		border-top-left-radius: 20px !important;
+		border-top-right-radius: 20px !important;
+	}
+	section[style*="background: '#0D0D0C'"] h2 {
+		font-size: clamp(32px, 8vw, 48px) !important;
+		min-height: auto !important;
+		line-height: 1.2 !important;
+		width: 100% !important;
+	}
+	section[style*="background: '#0D0D0C'"] .teklif-iste-btn {
+		margin-top: 16px !important;
+	}
+	section[style*="background: '#0D0D0C'"] > .container-custom > div {
+		flex-direction: column !important;
+		gap: 20px !important;
+	}
+	/* Hizmetler: sol kolon üstte, sağ içerik altta */
+	.hizmetler-content-wrapper {
+		margin-left: 0 !important;
+		flex-direction: column !important;
+	}
+	/* Hizmetler sağ içerik: başlık ve metin tipografisi */
+	.hizmetler-right-content {
+		padding-left: 16px !important;
+		padding-right: 16px !important;
+	}
+	/* Başlık boyutu ve boşluklar */
+	.hizmetler-right-content h2 {
+		font-size: clamp(22px, 7vw, 30px) !important;
+		line-height: 1.25 !important;
+		letter-spacing: -0.8px !important;
+		margin-top: 8px !important;
+		margin-bottom: 20px !important;
+		word-break: break-word !important;
+	}
+	/* Paragraflar: boyut, satır yüksekliği ve yükseklik reseti */
+	.hizmetler-right-content div[style*="fontSize: '16px'"] {
+		font-size: clamp(14px, 3.8vw, 16px) !important;
+		line-height: 1.65 !important;
+		height: auto !important;
+		max-width: 100% !important;
+		margin-bottom: 12px !important;
+		word-break: break-word !important;
+	}
+	/* Hizmetler sağ içerik genel padding - mobil güvenli alan */
+	.hizmetler-right-content {
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+	}
+	.hizmetler-right-content h2 {
+		font-size: clamp(22px, 7vw, 28px) !important;
+		margin-top: 6px !important;
+		margin-bottom: 16px !important;
+	}
+	.hizmetler-right-content div[style*="fontSize: '16px'"] {
+		margin-bottom: 10px !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* CTA mobil: yükseklik otomatik, üstten hizala */
+	.hizmetler-cta-section { height: auto !important; min-height: 0 !important; align-items: flex-start !important; padding-top: 4px !important; }
+	/* Sol boşluğu biraz daha artır */
+	.hizmetler-cta-section .container-custom { padding-left: 32px !important; padding-right: 15px !important; }
+	/* Başlık-buton arası boşluğu artır */
+	.hizmetler-cta-section .container-custom > div { flex-direction: column !important; align-items: flex-start !important; gap: 16px !important; }
+	/* Buton alt boşluğu azalt */
+	.hizmetler-cta-section .teklif-iste-btn { margin-bottom: 4px !important; }
+	/* Yatay çizgiyi alta sabitle */
+	.hizmetler-cta-section div[style*="height: '1px'"] { top: auto !important; bottom: 4px !important; left: 15px !important; right: 15px !important; margin-top: 0 !important; }
+}
+
+@media (min-width: 768px) {
+	/* Mobil kart section'u masaüstünde gizle */
+	.mobile-cards-section { display: none !important; }
+}
+
+@media (max-width: 768px) {
+	/* 4 kartlık bölüm: tek sütun ve kompakt padding */
+	section[style*="justify-content: 'space-between'"] > div {
+		padding: 16px !important;
+		margin: 0 !important;
+	}
+	section[style*="justify-content: 'space-between'"] > div h3 {
+		font-size: clamp(18px, 5.5vw, 22px) !important;
+		line-height: 1.3 !important;
+		margin-bottom: 8px !important;
+	}
+	section[style*="justify-content: 'space-between'"] > div p {
+		font-size: clamp(14px, 3.8vw, 16px) !important;
+		line-height: 1.55 !important;
+		height: auto !important;
+		margin-bottom: 6px !important;
+	}
+	/* Kartlar arası dikey boşluk */
+	section[style*="justify-content: 'space-between'"] {
+		gap: 12px !important;
+	}
+	/* Desktop kart section'u mobilde gizle (inline display: flex'i bastır) */
+	.desktop-cards-section { display: none !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA heading font-size lock (mobile only) */
+	.hizmetler-cta-section h2 {
+		font-size: clamp(26px, 7vw, 36px) !important;
+		line-height: 1.2 !important;
+		letter-spacing: -0.8px !important;
+	}
+	/* CTA heading 55px top margin */
+	.hizmetler-cta-section h2 { margin-top: 55px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA mobile: smaller responsive heading and balanced side paddings */
+	.hizmetler-cta-section h2 { font-size: clamp(22px, 6.2vw, 32px) !important; }
+	.hizmetler-cta-section .container-custom { padding-left: 20px !important; padding-right: 20px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA: 55px space below title, no extra gap before button */
+	.hizmetler-cta-section h2 { margin-bottom: 55px !important; }
+	.hizmetler-cta-section .container-custom > div { gap: 0 !important; }
+	.hizmetler-cta-section .teklif-iste-btn { margin-top: 0 !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA mobile: fix heading box height and exact spacing */
+	.hizmetler-cta-section h2 {
+		height: auto !important;
+		width: 100% !important;
+		margin-top: 55px !important;
+		margin-bottom: 55px !important;
+		line-height: 1.25 !important;
+	}
+	.hizmetler-cta-section .container-custom > div { gap: 0 !important; }
+	.hizmetler-cta-section .teklif-iste-btn { margin-top: 0 !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA button: 50px space below (mobile only) */
+	.hizmetler-cta-section .teklif-iste-btn { margin-bottom: 50px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA mobile: center heading and button without changing spacing */
+	.hizmetler-cta-section .container-custom > div { align-items: center !important; }
+	.hizmetler-cta-section h2 { text-align: center !important; }
+	.hizmetler-cta-section .teklif-iste-btn { align-self: center !important; }
+} 
+
+@media (max-width: 768px) {
+	/* Hizmetler: AI Consulting Services bölümünden sonraki büyük boşluğu azalt */
+	div[style*="marginBottom: '200px'"] { margin-bottom: 70px !important; }
+	.hizmetler-cta-section { margin-top: 0 !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA: reduce outer top margin to tighten gap under previous section */
+	.hizmetler-cta-section { margin-top: 20px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* Reliable control of spacer between AI Consulting card and CTA */
+	.hizmetler-spacer { margin-bottom: 70px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* Hizmetler sağ içerik: eşit sol/sağ boşluk (mobil) - güçlendirilmiş */
+	.hizmetler-right-content {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+		width: 100% !important;
+		box-sizing: border-box !important;
+	}
+} 
