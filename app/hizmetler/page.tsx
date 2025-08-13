@@ -120,6 +120,7 @@ export default function HizmetlerPage() {
             
             {/* Sol Alt Bölüm - Services Brochure */}
             <div
+              className="services-brochure-card"
               style={{
                 width: '310px',
                 height: '350px',

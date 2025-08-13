@@ -875,3 +875,13 @@
 		margin-right: 16px !important;
 	}
 } 
+
+@media (max-width: 768px) {
+	/* Services brochure card: fixed 296px width on mobile, centered */
+	.services-brochure-card {
+		width: 296px !important;
+		max-width: 296px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+} 
