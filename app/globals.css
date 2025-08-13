@@ -885,3 +885,13 @@
 		margin-right: auto !important;
 	}
 } 
+
+@media (max-width: 768px) {
+	/* Services brochure card: fixed 296px width on mobile, centered (higher specificity to beat 310px attribute rule) */
+	.hizmetler-content-section > div:first-child .services-brochure-card {
+		width: 296px !important;
+		max-width: 296px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+} 
