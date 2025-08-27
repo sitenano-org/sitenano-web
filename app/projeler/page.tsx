@@ -50,7 +50,7 @@ export default function ProjelerPage() {
             >
               Veriden değere, fikirden sonuca uzanan dönüşümler.
             </h1>
-            <div style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '30px', fontStyle: 'normal', fontWeight: 600, lineHeight: '38px', margin: '-25px 0 30px 0', textAlign: 'center', background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <div style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '30px', fontStyle: 'normal', fontWeight: 600, lineHeight: '38px', margin: '-25px 0 30px 0', textAlign: 'center', color: 'transparent', background: 'linear-gradient(135deg, #000000 0%, #333333 50%, #999999 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Fikirden sonuca tüm süreci uçtan uca kurguluyoruz.
             </div>
             <p
@@ -453,7 +453,7 @@ export default function ProjelerPage() {
               wordWrap: 'break-word',
               overflowWrap: 'break-word'
             }}>
-              we kindly invite you to review the outcomes of our dedicated efforts and see the results of our hard work in delivering top-tier solutions
+              Tasarım, kodlama ve teknoloji ile iş akışını birleştiren, geliştirdiğimiz dijital ürünler - Sitenano Markaları
           </h2>
           </div>
 
@@ -463,7 +463,9 @@ export default function ProjelerPage() {
             flexDirection: 'column',
             gap: '20px',
             position: 'relative',
-            height: '2000px' // Yeterli yükseklik
+            height: '2000px', // Yeterli yükseklik
+            alignItems: 'center', // Kartları merkeze hizala
+            justifyContent: 'flex-start'
           }}>
             {/* Proje 1 */}
             <div style={{
@@ -484,7 +486,7 @@ export default function ProjelerPage() {
                 justifyContent: 'center'
               }}>
                 <div style={{
-                  color: '#606060',
+                  color: 'white',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontWeight: '400',
@@ -499,14 +501,14 @@ export default function ProjelerPage() {
                   width: 'fit-content'
                 }}
                 onMouseEnter={(e) => {
-                  (e.target as HTMLDivElement).style.background = 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)';
+                  (e.target as HTMLDivElement).style.background = '#000000';
                   (e.target as HTMLDivElement).style.color = 'white';
                 }}
                 onMouseLeave={(e) => {
                   (e.target as HTMLDivElement).style.background = 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box';
-                  (e.target as HTMLDivElement).style.color = '#606060';
+                  (e.target as HTMLDivElement).style.color = 'white';
                 }}>
-                  Development
+                  Gıda Sektörü Online Sipariş
                 </div>
                 <div style={{
                   color: 'white',
@@ -519,7 +521,7 @@ export default function ProjelerPage() {
                   lineHeight: '45px',
                   maxWidth: '800px'
                 }}>
-                  DeepVision: Enhancing Image Recognition with Neural Networks
+                  Yeme–içme sektörüne özel online sipariş sistemi, işletmelere aracısız satış imkânı ve tam kontrol sağlar.
                 </div>
               </div>
               <div style={{
@@ -530,16 +532,28 @@ export default function ProjelerPage() {
                 fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                 fontSize: '16px',
                 cursor: 'pointer',
-                position: 'relative'
+                position: 'relative',
+                transition: 'color 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLDivElement).style.color = 'black';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'black';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLDivElement).style.color = 'white';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'white';
               }}>
                 <div style={{ marginBottom: '8px' }}>
-                  Explore more <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
+                  Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
                 </div>
                 <div style={{
                   width: '100%',
                   height: '1px',
                   background: 'white',
-                  marginTop: '4px'
+                  marginTop: '4px',
+                  transition: 'background 0.3s ease'
                 }}></div>
               </div>
             </div>
@@ -563,7 +577,7 @@ export default function ProjelerPage() {
                 justifyContent: 'center'
               }}>
                 <div style={{
-                  color: '#606060',
+                  color: 'white',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontWeight: '400',
@@ -578,14 +592,14 @@ export default function ProjelerPage() {
                   width: 'fit-content'
                 }}
                 onMouseEnter={(e) => {
-                  (e.target as HTMLDivElement).style.background = 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)';
+                  (e.target as HTMLDivElement).style.background = '#000000';
                   (e.target as HTMLDivElement).style.color = 'white';
                 }}
                 onMouseLeave={(e) => {
                   (e.target as HTMLDivElement).style.background = 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box';
-                  (e.target as HTMLDivElement).style.color = '#606060';
+                  (e.target as HTMLDivElement).style.color = 'white';
                 }}>
-                  Integration
+                  Hızlı Yemek Sipariş Çözümleri
                 </div>
                 <div style={{
                   color: 'white',
@@ -598,7 +612,7 @@ export default function ProjelerPage() {
                   lineHeight: '45px',
                   maxWidth: '800px'
                 }}>
-                  NLPGenius: Natural Language Processing Powered by Neural Networks
+                  Siparişten ödemeye tüm süreci hızlı ve düzenli hale getiren Yemek Sipariş Çözümleri - <em>Kasa, Masa, Qr, Masa Paylaş - Kiosk...</em>
                 </div>
               </div>
               <div style={{
@@ -609,16 +623,28 @@ export default function ProjelerPage() {
                 fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                 fontSize: '16px',
                 cursor: 'pointer',
-                position: 'relative'
+                position: 'relative',
+                transition: 'color 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLDivElement).style.color = 'black';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'black';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLDivElement).style.color = 'white';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'white';
               }}>
                 <div style={{ marginBottom: '8px' }}>
-                  Explore more <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
+                  Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
                 </div>
                 <div style={{
                   width: '100%',
                   height: '1px',
                   background: 'white',
-                  marginTop: '4px'
+                  marginTop: '4px',
+                  transition: 'background 0.3s ease'
                 }}></div>
               </div>
             </div>
@@ -642,7 +668,7 @@ export default function ProjelerPage() {
                 justifyContent: 'center'
               }}>
                 <div style={{
-                  color: '#606060',
+                  color: 'white',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontWeight: '400',
@@ -657,14 +683,14 @@ export default function ProjelerPage() {
                   width: 'fit-content'
                 }}
                 onMouseEnter={(e) => {
-                  (e.target as HTMLDivElement).style.background = 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)';
+                  (e.target as HTMLDivElement).style.background = '#000000';
                   (e.target as HTMLDivElement).style.color = 'white';
                 }}
                 onMouseLeave={(e) => {
                   (e.target as HTMLDivElement).style.background = 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box';
-                  (e.target as HTMLDivElement).style.color = '#606060';
+                  (e.target as HTMLDivElement).style.color = 'white';
                 }}>
-                  Development
+                  E-ticaret
                 </div>
                 <div style={{
                   color: 'white',
@@ -677,7 +703,7 @@ export default function ProjelerPage() {
                   lineHeight: '45px',
                   maxWidth: '800px'
                 }}>
-                  SmartAnalytics: Advanced Data Analytics Platform
+                  Ürün yönetiminden sipariş takibine, ödeme sistemlerinden çeşitli entegrasyonlara kadar tüm ihtiyaçları tek bir yapıda toplar.
                 </div>
               </div>
               <div style={{
@@ -688,16 +714,28 @@ export default function ProjelerPage() {
                 fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                 fontSize: '16px',
                 cursor: 'pointer',
-                position: 'relative'
+                position: 'relative',
+                transition: 'color 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLDivElement).style.color = 'black';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'black';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLDivElement).style.color = 'white';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'white';
               }}>
                 <div style={{ marginBottom: '8px' }}>
-                  Explore more <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
+                  Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
                 </div>
                 <div style={{
                   width: '100%',
                   height: '1px',
                   background: 'white',
-                  marginTop: '4px'
+                  marginTop: '4px',
+                  transition: 'background 0.3s ease'
                 }}></div>
               </div>
             </div>
@@ -721,7 +759,7 @@ export default function ProjelerPage() {
                 justifyContent: 'center'
               }}>
                 <div style={{
-                  color: '#606060',
+                  color: 'white',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontWeight: '400',
@@ -736,14 +774,14 @@ export default function ProjelerPage() {
                   width: 'fit-content'
                 }}
                 onMouseEnter={(e) => {
-                  (e.target as HTMLDivElement).style.background = 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)';
+                  (e.target as HTMLDivElement).style.background = '#000000';
                   (e.target as HTMLDivElement).style.color = 'white';
                 }}
                 onMouseLeave={(e) => {
                   (e.target as HTMLDivElement).style.background = 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box';
-                  (e.target as HTMLDivElement).style.color = '#606060';
+                  (e.target as HTMLDivElement).style.color = 'white';
                 }}>
-                  Integration
+                  Web Tasarım
                 </div>
                 <div style={{
                   color: 'white',
@@ -756,7 +794,7 @@ export default function ProjelerPage() {
                   lineHeight: '45px',
                   maxWidth: '800px'
                 }}>
-                  CloudConnect: Seamless Cloud Integration Solutions
+                  Web sitenizin tasarımı ile kalitenizi, içeriği ile sıralamanızı öne çıkarır.
                 </div>
               </div>
               <div style={{
@@ -767,16 +805,28 @@ export default function ProjelerPage() {
                 fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                 fontSize: '16px',
                 cursor: 'pointer',
-                position: 'relative'
+                position: 'relative',
+                transition: 'color 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLDivElement).style.color = 'black';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'black';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLDivElement).style.color = 'white';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'white';
               }}>
                 <div style={{ marginBottom: '8px' }}>
-                  Explore more <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
+                  Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
                 </div>
                 <div style={{
                   width: '100%',
                   height: '1px',
                   background: 'white',
-                  marginTop: '4px'
+                  marginTop: '4px',
+                  transition: 'background 0.3s ease'
                 }}></div>
               </div>
             </div>
@@ -820,7 +870,7 @@ export default function ProjelerPage() {
                   fontWeight: '400',
                   marginBottom: '10px'
                 }}>
-                  Completed Projects
+                  Tamamlanan Projelerimizden Bazıları
                 </div>
                 <div style={{
                   background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
@@ -841,7 +891,7 @@ export default function ProjelerPage() {
                   wordSpacing: '0px',
                   width: 'auto'
                 }}>
-                  200+
+                  50+
                 </div>
               </div>
               <div style={{
@@ -868,7 +918,7 @@ export default function ProjelerPage() {
                   margin: 0,
                   maxWidth: '600px'
                 }}>
-                  The distinctive benefits and competitive advantages that set our service apart
+                  Farklı sektörlerde kazandığımız deneyimin ve sunduğumuz güvenilir çözümlerin göstergesi.
                 </h2>
               </div>
             </div>
@@ -964,20 +1014,20 @@ export default function ProjelerPage() {
                   margin: '0 0 20px 0',
                   color: '#1a1a1a'
                 }}>
-                  Aigency | Building and renovation website develoment
+                  Lojistik | Yük & Yol Optimizasyonları
                 </h3>
                 <p style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: '500',
-                  height: '90px',
+                  height: 'auto',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
                   margin: '0',
                   color: '#606060'
                 }}>
-                  A neural network consists of interconnected nodes called neurons. Neurons are organized into layers.
+                  Lojistik firmalarına özel geliştirilen bu yazılım, rota planlama, araç takibi, zamanlama ve yakıt hesaplama gibi kapsamlı özellikleri bir arada sunar. Araçların konumu, yük durumu, sürücü bilgileri ve zaman çizelgesi her an izlenerek, lojistik süreçlerinizin her aşaması kontrol altında tutulur.
                 </p>
               </div>
 
@@ -999,20 +1049,20 @@ export default function ProjelerPage() {
                   margin: '0 0 20px 0',
                   color: '#1a1a1a'
                 }}>
-                  Aigency | Building and renovation website develoment
+                  Lojistik | Dorse Paylaşımı
                 </h3>
                 <p style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: '500',
-                  height: '90px',
+                  height: 'auto',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
                   margin: '0',
                   color: '#606060'
                 }}>
-                  A neural network consists of interconnected nodes called neurons. Neurons are organized into layers.
+                  Dorse paylaşımı sistemimiz, aynı güzergâh üzerinde yük göndermek isteyen farklı firmaların mallarını verimli şekilde bir araya getirerek lojistik firmalarının araç kullanımını optimize eder. Yazılım, güzergâh uyumlu yükleri eşleştirir, dorse planlamasını yapar ve araçlara görev atamasını kolaylaştırır.
                 </p>
               </div>
 
@@ -1061,26 +1111,26 @@ export default function ProjelerPage() {
                   fontSize: '25px',
                   fontStyle: 'normal',
                   fontWeight: '400',
-                  height: '70px',
+                  height: 'auto',
                   letterSpacing: '-0.75px',
                   lineHeight: '35px',
-                  margin: '0 0 20px 0',
+                  margin: '0 0 10px 0',
                   color: '#1a1a1a'
                 }}>
-                  SmartAnalytics | Advanced Data Analytics Platform
+                  Sağlık | Sağlık Uygulamaları
                 </h3>
                 <p style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: '500',
-                  height: '90px',
+                  height: 'auto',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
-                  margin: '0',
+                  margin: '0 0 40px 0',
                   color: '#606060'
                 }}>
-                  Advanced analytics platform providing real-time insights and predictive modeling capabilities.
+                  Randevu sistemlerinden hasta verilerinin yönetimine kadar pek çok alanda web ve mobil çözümler sunarak, yapay zekâ destekli analiz ve otomasyon araçlarıyla iş yükünü azalttık, karar süreçlerini kolaylaştırdık
                 </p>
               </div>
 
@@ -1092,7 +1142,7 @@ export default function ProjelerPage() {
                 borderRadius: '20px',
                 position: 'absolute',
                 left: '835px',
-                top: '1202px', // 1100px + 102px (sağdaki resim soldakinden 102px aşağıda)
+                top: '1242px', // 1100px + 102px + 40px margin (sağdaki resim soldakinden 102px aşağıda)
                 overflow: 'hidden'
               }}>
                 {/* 8. Ok İkonu */}
@@ -1135,20 +1185,20 @@ export default function ProjelerPage() {
                   margin: '0 0 20px 0',
                   color: '#1a1a1a'
                 }}>
-                  CloudConnect | Seamless Cloud Integration Solutions
+                  Sağlık | Spor Salonu Uygulamaları
                 </h3>
                 <p style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: '500',
-                  height: '90px',
+                  height: 'auto',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
-                  margin: '0',
+                  margin: '0 0 40px 0',
                   color: '#606060'
                 }}>
-                  Comprehensive cloud integration platform for seamless data synchronization and management.
+                  Spor salonları için antrenman takibi, üye yönetimi, rezervasyon ve ödeme süreçlerini kolaylaştıran web ve mobil uygulamalar geliştirdik. İşletmelerin günlük işleyişini dijitale taşımanın ötesinde, yapay zekâ destekli çözümlerle verimliliği artırdık, üyelerin salonla olan etkileşimini güçlendirdik
                 </p>
               </div>
 
@@ -1160,7 +1210,7 @@ export default function ProjelerPage() {
                 borderRadius: '20px',
                 position: 'absolute',
                 left: '0px',
-                top: '2000px', // 1862px (3. görsel sağ metinleri) + 140px (margin)
+                top: '2040px', // 1862px (3. görsel sağ metinleri) + 140px (margin) + 40px extra margin
                 overflow: 'hidden'
               }}>
                 {/* 4. Ok İkonu */}
@@ -1203,20 +1253,20 @@ export default function ProjelerPage() {
                   margin: '0 0 20px 0',
                   color: '#1a1a1a'
                 }}>
-                  DeepVision | AI-Powered Image Recognition System
+                  Baskı Süreç Yönetimi | Prepress, Baskı, Teslimat
                 </h3>
                 <p style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: '500',
-                  height: '90px',
+                  height: 'auto',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
                   margin: '0',
                   color: '#606060'
                 }}>
-                  Advanced computer vision system with neural network-based image processing capabilities.
+                  Baskı süreçlerini uçtan uca yönetmek isteyen matbaalar için geliştirilen yazılımımız, prepress aşamasından başlayarak baskı ve teslimat süreçlerine kadar tüm adımları tek bir platformda toplar. Sipariş alımı, iş takibi, üretim planlaması, malzeme kullanımı, müşteri onayları ve sevkiyat gibi işlemler sistemli ve izlenebilir hale gelir.
                 </p>
               </div>
 
@@ -1271,20 +1321,20 @@ export default function ProjelerPage() {
                   margin: '0 0 20px 0',
                   color: '#1a1a1a'
                 }}>
-                  NLPGenius | Natural Language Processing Platform
+                  Baskı Süreç Yönetimi | Baskı, kokuma veri transferleri
                 </h3>
                 <p style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: '500',
-                  height: '90px',
+                  height: 'auto',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
                   margin: '0',
                   color: '#606060'
                 }}>
-                  Intelligent language processing system with advanced text analysis and generation features.
+                  Üretim süreçlerindeki desen, renk ve teknik bilgiler makinelere doğru ve hızlı biçimde aktarıldı. Manuel aktarımlarda oluşabilecek zaman kaybı ve veri hatalarını ortadan kaldıran sistem, tasarımdan üretime geçiş sürecini dijitalleştirdi.
                 </p>
               </div>
 
@@ -1339,20 +1389,20 @@ export default function ProjelerPage() {
                   margin: '0 0 20px 0',
                   color: '#1a1a1a'
                 }}>
-                  SecureNet | Cybersecurity & Threat Detection
+                  Spor Çözümleri | Bookmaker
                 </h3>
                 <p style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: '500',
-                  height: '90px',
+                  height: 'auto',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
                   margin: '0',
                   color: '#606060'
                 }}>
-                  Comprehensive security platform with real-time threat detection and response capabilities.
+                  Spor ve canlı bahis işlemlerini düzenleyen bu yapı ile oran yönetimi, kullanıcı hesapları, kupon takibi ve ödeme sistemlerinin merkezi bir panel üzerinden güvenli şekilde yönetilmesi sağlandı. Web ve mobil uyumlu altyapısıyla esnek bir yönetim sağlanırken, yüksek erişim trafiğinde dahi stabil çalışacak şekilde tasarlanmıştır.
                 </p>
               </div>
 
@@ -1407,20 +1457,20 @@ export default function ProjelerPage() {
                   margin: '0 0 20px 0',
                   color: '#1a1a1a'
                 }}>
-                  DataFlow | Real-time Data Processing Engine
+                  Spor Çözümleri | Terminal Bilet
                 </h3>
                 <p style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: '500',
-                  height: '90px',
+                  height: 'auto',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
                   margin: '0',
                   color: '#606060'
                 }}>
-                  High-performance data processing engine for real-time analytics and insights.
+                  Fiziksel satış noktalarında kupon basımı, oran yönetimi, kullanıcı erişimi, işlem kayıtları ve ödeme takibi gibi süreçlerin merkezi sistemle entegre şekilde yönetilmesi sağlandı. Her işlem, denetlenebilir kayıtlarla arşivlenerek, sistem yasal düzenlemelere ve lisans koşullarına uygun biçimde çalışacak şekilde tasarlanmıştır.
                 </p>
               </div>
 
@@ -1475,20 +1525,20 @@ export default function ProjelerPage() {
                   margin: '0 0 20px 0',
                   color: '#1a1a1a'
                 }}>
-                  MobileFirst | Cross-Platform App Development
+                  Yolcu Taşıma Uygulamaları | Anlık - Paylaşımlı - Rezervasyonlu
                 </h3>
                 <p style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: '500',
-                  height: '90px',
+                  height: 'auto',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
                   margin: '0',
                   color: '#606060'
                 }}>
-                  Comprehensive mobile development platform for iOS and Android applications.
+                  Anlık transfer, paylaşımlı yolculuk ve rezervasyon seçenekleriyle taksi, minibüs, servis veya otobüs kullanımlarında yolcular için hızlı ve ekonomik, sürücüler için verimli ve ek kazançlı bir ulaşım şekli sağlandı; tüm süreç akıllı bir mobil uygulama teknolojisi ile yönetildi.
                 </p>
               </div>
 
@@ -1543,20 +1593,20 @@ export default function ProjelerPage() {
                   margin: '0 0 20px 0',
                   color: '#1a1a1a'
                 }}>
-                  WebFlow | Modern Web Development Framework
+                  Geçiş Sistemleri | Araç, Personel Giriş-Çıkış Sistemleri
                 </h3>
                 <p style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: '500',
-                  height: '90px',
+                  height: 'auto',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
                   margin: '0',
                   color: '#606060'
                 }}>
-                  Advanced web development framework with modern UI/UX design capabilities.
+                  Araç giriş–çıkış kontrolünü düzenlemek isteyen işletmeler için geliştirilen geçiş sistemi; kapı, bariyer ve sensör entegrasyonlarıyla araç hareketlerini otomatik ve güvenli şekilde yönetilmesini sağladı. Plaka tanıma, RFID veya kartlı geçiş gibi yöntemlerle çalışan sistem; giriş/çıkış kayıtlarını tutar, yetkilendirme yapar ve geçmiş işlemleri detaylı şekilde raporlar.
                 </p>
               </div>
             </div>
