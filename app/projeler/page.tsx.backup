@@ -97,10 +97,7 @@ export default function ProjelerPage() {
           
           {/* 1. Panel - Achievements */}
           <div style={{
-            background: 'url("/images/color-bg-2.jpg")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
+            background: 'linear-gradient(135deg, #E1BEE7 0%, #BBDEFB 100%)',
             borderRadius: '20px',
             padding: '30px',
             height: '570px',
@@ -186,10 +183,7 @@ export default function ProjelerPage() {
 
           {/* 3. Panel - Sitenano */}
           <div style={{
-            background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 100%), url("/images/sitenano-logo-icon.svg")',
-            backgroundSize: 'auto, 150px',
-            backgroundPosition: 'center, 20px 20px',
-            backgroundRepeat: 'no-repeat, no-repeat',
+            background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 100%)',
             borderRadius: '20px',
             padding: '20px 0px 20px 20px',
             height: '498px',
@@ -231,10 +225,7 @@ export default function ProjelerPage() {
 
           {/* 4. Panel - Abstract Cell (yazısız) */}
           <div style={{
-            background: 'url("/images/ai-solutions.jpg")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
+            background: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
             borderRadius: '20px',
             padding: '20px',
             height: '275px',
@@ -316,7 +307,7 @@ export default function ProjelerPage() {
 
           {/* 6. Panel - Programming */}
           <div style={{
-            background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/app-development.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
+            background: 'linear-gradient(135deg, #00BCD4 0%, #009688 100%)',
             borderRadius: '20px',
             padding: '30px',
             height: '742px',
@@ -349,7 +340,7 @@ export default function ProjelerPage() {
 
           {/* 7. Panel - AI Solutions */}
           <div style={{
-            background: 'url("/images/ozel-ai-cozumleri.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
+            background: 'linear-gradient(135deg, #1EBBBC 0%, #00D4AA 100%)',
             borderRadius: '20px',
             padding: '30px',
             height: '564px',

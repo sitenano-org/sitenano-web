@@ -18,15 +18,15 @@ const Header = () => {
   ]
 
   return (
-    <header className="relative z-50" style={{background: 'none', marginTop: '12px'}}>
+    <header className="relative z-50" style={{background: 'none', marginTop: '2px'}}>
       {/* Contact Bar - Responsive */}
       <div
         className="hidden md:flex"
         style={{
           marginLeft: '20px',
           marginRight: '20px',
-          marginBottom: '6px',
-          marginTop: '10px',
+          marginBottom: '3px',
+          marginTop: '5px',
           height: '36px',
           borderRadius: '13px',
           background: '#111',
@@ -61,8 +61,8 @@ const Header = () => {
         style={{
           marginLeft: '20px',
           marginRight: '20px',
-          marginBottom: '6px',
-          marginTop: '10px',
+          marginBottom: '3px',
+          marginTop: '5px',
           height: '40px',
           borderRadius: '13px',
           background: '#111',
@@ -109,7 +109,7 @@ const Header = () => {
           border: '0.3px solid #C8C8C8 !important',
           background: 'none',
           marginTop: '0px',
-          marginBottom: '15px',
+          marginBottom: '2px',
           marginLeft: '20px',
           marginRight: '20px',
           boxSizing: 'border-box',
@@ -214,7 +214,7 @@ const Header = () => {
           border: '0.3px solid #C8C8C8 !important',
           background: 'none',
           marginTop: '0px',
-          marginBottom: '15px',
+          marginBottom: '2px',
           marginLeft: '20px',
           marginRight: '20px',
           boxSizing: 'border-box',

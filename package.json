@@ -1,6 +1,6 @@
 {
-  "name": "sitenano-web-platform",
-  "version": "0.1.0",
+  "name": "sitenano-web-platform-test7-0709",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -24,4 +24,4 @@
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
-} 
+}
