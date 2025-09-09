@@ -878,10 +878,18 @@ export default function HomePage() {
             
             {/* Demo Logos */}
             <div className="flex items-center space-x-12">
-              {/* MINIMIZE INTERIOR */}
-              <div className="flex flex-col items-start" style={{ width: '220px' }}>
-                <div className="font-bold text-2xl tracking-wider" style={{ color: '#B2B2B2' }}>M'N'MIZE</div>
-                <div className="text-base" style={{ color: '#B2B2B2' }}>INTERIOR</div>
+              {/* Next.js Logo */}
+              <div className="flex flex-col items-center" style={{ width: '220px' }}>
+                <div className="mb-2">
+                  <Image 
+                    src="/images/next-js-logo.svg?v=1757412151175741191817574115411757411267" 
+                    alt="Next.js Logo" 
+                    width={80} 
+                    height={80}
+                    style={{ filter: 'brightness(0.7)' }}
+                  />
+                </div>
+                <div className="text-lg font-semibold" style={{ color: '#B2B2B2' }}>Next.js</div>
               </div>
               
               {/* ND2 Nordyne Defense Dynamics */}
@@ -950,11 +958,18 @@ export default function HomePage() {
           </div>
           
           {/* Mobile Demo Logos */}
-          <div className="grid grid-cols-2 gap-6 mt-8">
-            {/* MINIMIZE INTERIOR */}
+          <div className="grid grid-cols-2 gap-6 mt-8">            {/* Next.js Logo */}
             <div className="flex flex-col items-center">
-              <div className="font-bold text-xl tracking-wider mb-4" style={{ color: '#B2B2B2' }}>M'N'MIZE</div>
-              <div className="text-sm" style={{ color: '#B2B2B2' }}>INTERIOR</div>
+              <div className="mb-4">
+                <Image 
+                  src="/images/next-js-logo.svg?v=1757412151175741191817574115411757411267" 
+                  alt="Next.js Logo" 
+                  width={50} 
+                  height={50}
+                  style={{ filter: 'brightness(0.7)' }}
+                />
+              </div>
+              <div className="text-sm font-semibold" style={{ color: '#B2B2B2' }}>Next.js</div>
             </div>
             
             {/* ND2 Nordyne Defense Dynamics */}
