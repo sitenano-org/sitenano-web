@@ -29,6 +29,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Prepare GitHub Pages config
+        run: cp next.config.github.js next.config.js
+
       - name: Build
         run: npm run build
 
