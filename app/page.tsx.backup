@@ -7,45 +7,25 @@ import Image from 'next/image'
 
 // ICON COMPONENTS
 const GearIcon = ({ stroke = '#909090' }) => (
-  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '22px' }}>
-    <path d="M11 10.27 7 3.34"/>
-    <path d="m11 13.73-4 6.93"/>
-    <path d="M12 22v-2"/>
-    <path d="M12 2v2"/>
-    <path d="M14 12h8"/>
-    <path d="m17 20.66-1-1.73"/>
-    <path d="m17 3.34-1 1.73"/>
-    <path d="M2 12h2"/>
-    <path d="m20.66 17-1.73-1"/>
-    <path d="m20.66 7-1.73 1"/>
-    <path d="m3.34 17 1.73-1"/>
-    <path d="m3.34 7 1.73 1"/>
-    <circle cx="12" cy="12" r="2"/>
-    <circle cx="12" cy="12" r="8"/>
+  <svg width="68" height="68" viewBox="0 0 54 54" fill="none" style={{ marginRight: '22px' }}>
+    <circle cx="27" cy="27" r="16" stroke={stroke} strokeWidth="1.5" fill="none" />
+    <path d="M27 15v4M27 35v4M39 27h-4M19 27h-4M34.78 19.22l-2.83 2.83M19.22 34.78l2.83-2.83M34.78 34.78l-2.83-2.83M19.22 19.22l2.83 2.83" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" />
+    <circle cx="27" cy="27" r="5" stroke={stroke} strokeWidth="1.5" fill="none" />
   </svg>
 );
 const BarChartIcon = ({ stroke = '#909090' }) => (
-  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '22px' }}>
-    <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
-    <path d="M9 13a4.5 4.5 0 0 0 3-4"/>
-    <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
-    <path d="M3.477 10.896a4 4 0 0 1 .585-.396"/>
-    <path d="M6 18a4 4 0 0 1-1.967-.516"/>
-    <path d="M12 13h4"/>
-    <path d="M12 18h6a2 2 0 0 1 2 2v1"/>
-    <path d="M12 8h8"/>
-    <path d="M16 8V5a2 2 0 0 1 2-2"/>
-    <circle cx="16" cy="13" r=".5"/>
-    <circle cx="18" cy="3" r=".5"/>
-    <circle cx="20" cy="21" r=".5"/>
-    <circle cx="20" cy="8" r=".5"/>
+  <svg width="68" height="68" viewBox="0 0 54 54" fill="none" style={{ marginRight: '22px' }}>
+    <rect x="12" y="30" width="6" height="12" rx="2" stroke={stroke} strokeWidth="1.5" fill="none" />
+    <rect x="24" y="18" width="6" height="24" rx="2" stroke={stroke} strokeWidth="1.5" fill="none" />
+    <rect x="36" y="24" width="6" height="18" rx="2" stroke={stroke} strokeWidth="1.5" fill="none" />
+    <path d="M10 42h34" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" />
   </svg>
 );
 const ChipIcon = ({ stroke = '#909090' }) => (
-  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke={stroke} strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '22px' }}>
-    <rect width="8" height="8" x="3" y="3" rx="2"/>
-    <path d="M7 11v4a2 2 0 0 0 2 2h4"/>
-    <rect width="8" height="8" x="13" y="13" rx="2"/>
+  <svg width="68" height="68" viewBox="0 0 54 54" fill="none" style={{ marginRight: '22px' }}>
+    <rect x="14" y="14" width="26" height="26" rx="6" stroke={stroke} strokeWidth="1.5" fill="none" />
+    <rect x="22" y="22" width="10" height="10" rx="2" stroke={stroke} strokeWidth="1.5" fill="none" />
+    <path d="M27 6v8M27 40v8M6 27h8M40 27h8M14.93 14.93l-5.66-5.66M39.07 39.07l5.66 5.66M14.93 39.07l-5.66 5.66M39.07 14.93l5.66-5.66" stroke={stroke} strokeWidth="1.5" strokeLinecap="round" />
   </svg>
 );
 
@@ -439,12 +419,10 @@ export default function HomePage() {
       {/* Features Section - Updated 2024 */}
       <section className="bg-white relative overflow-hidden features-section" style={{ height: 'auto', minHeight: '740px' }}>
         <div className="container-custom relative z-10 h-full flex flex-col justify-center" style={{ minHeight: '740px' }}>
-          {/* Desktop Top Spacing */}
-          <div className="hidden lg:block h-24"></div>
           {/* Mobile Top Spacing */}
-          <div className="block lg:hidden h-24"></div>
+          <div className="block lg:hidden h-4"></div>
           <div className="mb-16">
-            <div className="text-sm font-medium text-gray-600 mb-4 uppercase tracking-wider" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3vw, 14px)', paddingLeft: 'clamp(16px, 4vw, 0px)' }}>
+            <div className="text-sm font-medium text-gray-600 mb-4 uppercase tracking-wider" style={{ fontSize: 'clamp(14px, 3vw, 14px)', paddingLeft: 'clamp(16px, 4vw, 0px)' }}>
               [HİZMETLER]
             </div>
             <h2 className="text-gray-900" style={{
@@ -475,11 +453,10 @@ export default function HomePage() {
             {/* Feature 1: AI Technology - Updated */}
             <div className="text-left space-y-4 lg:space-y-8">
               <div className="relative mb-8" style={{ width: 'clamp(40px, 8vw, 48px)', height: 'clamp(40px, 8vw, 48px)' }}>
-                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" style={{ width: '100%', height: '100%' }}>
-                  <path d="M12 22v-9"/>
-                  <path d="M15.17 2.21a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.655 1.655 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z"/>
-                  <path d="M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13"/>
-                  <path d="M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.636 1.636 0 0 0 1.63 0z"/>
+                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" style={{ width: '100%', height: '100%' }}>
+                  <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="1" fill="none"/>
+                  <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="1" fill="none"/>
+                  <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="1" fill="none"/>
                 </svg>
               </div>
               <h3 className="text-gray-900" style={{
@@ -556,8 +533,9 @@ export default function HomePage() {
             {/* Feature 2: Tailored solutions - Updated */}
             <div className="text-left space-y-4 lg:space-y-8">
               <div className="relative mb-8" style={{ width: 'clamp(40px, 8vw, 48px)', height: 'clamp(40px, 8vw, 48px)' }}>
-                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" style={{ width: '100%', height: '100%' }}>
-                  <path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"/>
+                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" style={{ width: '100%', height: '100%' }}>
+                  <path d="M9 12L11 14L15 10" stroke="currentColor" strokeWidth="1" fill="none"/>
+                  <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" strokeWidth="1" fill="none"/>
                 </svg>
               </div>
               <h3 className="text-gray-900" style={{
@@ -634,20 +612,8 @@ export default function HomePage() {
             {/* Feature 3: Cutting-edge technology - Updated */}
             <div className="text-left space-y-4 lg:space-y-8">
               <div className="relative mb-8" style={{ width: 'clamp(40px, 8vw, 48px)', height: 'clamp(40px, 8vw, 48px)' }}>
-                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" style={{ width: '100%', height: '100%' }}>
-                  <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/>
-                  <path d="M9 13a4.5 4.5 0 0 0 3-4"/>
-                  <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/>
-                  <path d="M3.477 10.896a4 4 0 0 1 .585-.396"/>
-                  <path d="M6 18a4 4 0 0 1-1.967-.516"/>
-                  <path d="M12 13h4"/>
-                  <path d="M12 18h6a2 2 0 0 1 2 2v1"/>
-                  <path d="M12 8h8"/>
-                  <path d="M16 8V5a2 2 0 0 1 2-2"/>
-                  <circle cx="16" cy="13" r=".5"/>
-                  <circle cx="18" cy="3" r=".5"/>
-                  <circle cx="20" cy="21" r=".5"/>
-                  <circle cx="20" cy="8" r=".5"/>
+                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" style={{ width: '100%', height: '100%' }}>
+                  <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" strokeWidth="2" fill="none"/>
                 </svg>
               </div>
               <h3 className="text-gray-900" style={{
@@ -724,19 +690,9 @@ export default function HomePage() {
             {/* Feature 4: Modern development - Updated */}
             <div className="text-left space-y-4 lg:space-y-8">
               <div className="relative mb-8" style={{ width: 'clamp(40px, 8vw, 48px)', height: 'clamp(40px, 8vw, 48px)' }}>
-                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" style={{ width: '100%', height: '100%' }}>
-                  <path d="M10.5 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v5.5"/>
-                  <path d="m14.3 19.6 1-.4"/>
-                  <path d="M15 3v7.5"/>
-                  <path d="m15.2 16.9-.9-.3"/>
-                  <path d="m16.6 21.7.3-.9"/>
-                  <path d="m16.8 15.3-.4-1"/>
-                  <path d="m19.1 15.2.3-.9"/>
-                  <path d="m19.6 21.7-.4-1"/>
-                  <path d="m20.7 16.8 1-.4"/>
-                  <path d="m21.7 19.4-.9-.3"/>
-                  <path d="M9 3v18"/>
-                  <circle cx="18" cy="18" r="3"/>
+                <svg className="text-gray-900" viewBox="0 0 24 24" fill="none" style={{ width: '100%', height: '100%' }}>
+                  <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" stroke="currentColor" strokeWidth="2" fill="none"/>
+                  <path d="M12 6V12L16 14" stroke="currentColor" strokeWidth="2" fill="none"/>
                 </svg>
               </div>
               <h3 className="text-gray-900" style={{
@@ -823,7 +779,7 @@ export default function HomePage() {
       </section>
 
       {/* Neural Network Section - Updated 2024 */}
-      <section className="bg-white relative neural-network-section" style={{ height: 'auto', minHeight: '890px', marginTop: '120px', overflow: 'visible' }}>
+      <section className="bg-white relative neural-network-section" style={{ height: 'auto', minHeight: '890px', marginTop: '30px', overflow: 'visible' }}>
         {/* Desktop Layout */}
         <div className="hidden lg:flex h-full" style={{ overflow: 'visible' }}>
           
@@ -999,7 +955,7 @@ export default function HomePage() {
         {/* Header Section - Independent Container */}
         <div className="container-custom relative z-10">
           <div className="mb-4 lg:mb-16">
-            <div className="text-sm font-medium text-gray-600 mb-1 lg:mb-4 uppercase tracking-wider" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3vw, 14px)', paddingLeft: 'clamp(16px, 4vw, 0px)' }}>
+            <div className="text-sm font-medium text-gray-600 mb-1 lg:mb-4 uppercase tracking-wider" style={{ fontSize: 'clamp(14px, 3vw, 14px)', paddingLeft: 'clamp(16px, 4vw, 0px)' }}>
               [Dijital Dönüşüm]
             </div>
             <div className="flex flex-col lg:flex-row justify-between items-start">
@@ -1165,22 +1121,22 @@ export default function HomePage() {
       </section>
 
       {/* Mobile Extra Spacing */}
-      <div className="block lg:hidden h-64"></div>
+      <div className="block lg:hidden h-32"></div>
 
       {/* HİZMETLER BÖLÜMÜNÜN ALTINA YENİ SEKME YAPISI (belirtilen ölçülerle) */}
       <div className="mobile-section-spacing" style={{ width: 'clamp(320px, 95vw, 1865px)', margin: '0 auto', background: '#1F1F1F', borderRadius: '32px', minHeight: 'clamp(150px, 25vh, 1400px)', paddingLeft: 'clamp(16px, 4vw, 28px)', paddingRight: 'clamp(16px, 4vw, 28px)', marginTop: 'clamp(0px, 0vw, 0px)', paddingTop: 'clamp(0px, 0vw, 0px)', paddingBottom: 'clamp(0px, 0vw, 0px)' }}>
-        <div className="block lg:hidden h-48"></div>
+        <div className="block lg:hidden h-32"></div>
         <div className="hidden lg:block" style={{ height: '140px' }} />
         <div className="max-w-7xl mx-auto w-full" style={{ paddingLeft: 'clamp(16px, 4vw, 0px)', paddingRight: 'clamp(16px, 4vw, 0px)' }}>
           <div className="mb-8">
-            <div className="text-sm font-medium text-gray-400 mb-4 uppercase tracking-wider" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(12px, 3vw, 14px)' }}>[ÖZEL AI ÇÖZÜMLERİ]</div>
+            <div className="text-sm font-medium text-gray-400 mb-4 uppercase tracking-wider" style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>[ÖZEL AI ÇÖZÜMLERİ]</div>
             <h2 className="text-4xl md:text-5xl text-white mb-8" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontWeight: 400, letterSpacing: '-1px', lineHeight: '1.2', fontSize: 'clamp(32px, 8vw, 60px)' }}>
               İşlerinizi otomatize ediyoruz.
             </h2>
             <TabsV2 />
           </div>
         </div>
-        <div className="block lg:hidden h-48"></div>
+        <div className="block lg:hidden h-32"></div>
         <div className="hidden lg:block" style={{ height: '160px' }} />
       </div>
 
@@ -1191,7 +1147,7 @@ export default function HomePage() {
       >
         <div className="w-full flex flex-col items-start" style={{ maxWidth: '1310px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: 'clamp(16px, 4vw, 32px)', paddingRight: 'clamp(16px, 4vw, 16px)', paddingTop: 'clamp(40px, 8vw, 0px)' }}>
           <div className="mb-8 lg:mb-16">
-            <div className="text-sm font-medium text-gray-600 mb-2 lg:mb-4 uppercase tracking-wider" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(12px, 3vw, 14px)' }}>[Danışmanlık & Yol Arkadaşlığı – "Üretimden Önce Strateji"]</div>
+            <div className="text-sm font-medium text-gray-600 mb-2 lg:mb-4 uppercase tracking-wider" style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>[Danışmanlık & Yol Arkadaşlığı – "Üretimden Önce Strateji"]</div>
             <h2
               className="text-gray-900"
               style={{
@@ -1224,7 +1180,7 @@ export default function HomePage() {
             {/* 1. Sütun */}
             <div className="flex-1 flex flex-col justify-start items-start px-4 lg:px-8 py-6 lg:py-8" style={{minWidth: '0'}}>
               {/* İKON */}
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#icon-gradient-1)" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
                 <defs>
                   <linearGradient id="icon-gradient-1" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#10B981" />
@@ -1232,7 +1188,8 @@ export default function HomePage() {
                     <stop offset="1" stopColor="#00D4AA" />
                   </linearGradient>
                 </defs>
-                <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                <circle cx="24" cy="24" r="20" stroke="url(#icon-gradient-1)" strokeWidth="1.5" fill="none" />
+                <path d="M24 14v10l7 7" stroke="url(#icon-gradient-1)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none" />
               </svg>
               <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: 'clamp(16px, 4vw, 20px)', fontWeight: 600, lineHeight: '1.3', marginBottom: '12px', textAlign: 'left', width: '100%' }}>Strateji ve Yol Haritası</h3>
               <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3.5vw, 16px)', fontWeight: 400, lineHeight: '1.5', width: '100%', textAlign: 'left' }}>
@@ -1245,7 +1202,7 @@ export default function HomePage() {
             <div className="hidden lg:block" style={{height: '300px', alignSelf: 'center', width: '1px', background: '#E5E7EB'}} />
             {/* 2. Sütun */}
             <div className="flex-1 flex flex-col justify-start items-start px-4 lg:px-8 py-6 lg:py-8" style={{minWidth: '0'}}>
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#icon-gradient-2)" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
                 <defs>
                   <linearGradient id="icon-gradient-2" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#10B981" />
@@ -1253,10 +1210,9 @@ export default function HomePage() {
                     <stop offset="1" stopColor="#00D4AA" />
                   </linearGradient>
                 </defs>
-                <path d="m21 16-4 4-4-4"/>
-                <path d="M17 20V4"/>
-                <path d="m3 8 4-4 4 4"/>
-                <path d="M7 4v16"/>
+                <rect x="8" y="8" width="32" height="32" rx="8" stroke="url(#icon-gradient-2)" strokeWidth="1.5" fill="none" />
+                <path d="M16 24h16" stroke="url(#icon-gradient-2)" strokeWidth="1.5" strokeLinecap="round" />
+                <path d="M24 16v16" stroke="url(#icon-gradient-2)" strokeWidth="1.5" strokeLinecap="round" />
               </svg>
               <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: 'clamp(16px, 4vw, 20px)', fontWeight: 600, lineHeight: '1.3', marginBottom: '12px', textAlign: 'left', width: '100%' }}>Doğru Teknoloji, Doğru Zaman</h3>
               <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3.5vw, 16px)', fontWeight: 400, lineHeight: '1.5', width: '100%', textAlign: 'left' }}>
@@ -1269,7 +1225,7 @@ Yatırımın nereye yapılacağına dair rehberlik.
             <div className="hidden lg:block" style={{height: '300px', alignSelf: 'center', width: '1px', background: '#E5E7EB'}} />
             {/* 3. Sütun */}
             <div className="flex-1 flex flex-col justify-start items-start px-4 lg:px-8 py-6 lg:py-8" style={{minWidth: '0'}}>
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#icon-gradient-3)" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
                 <defs>
                   <linearGradient id="icon-gradient-3" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#10B981" />
@@ -1277,7 +1233,8 @@ Yatırımın nereye yapılacağına dair rehberlik.
                     <stop offset="1" stopColor="#00D4AA" />
                   </linearGradient>
                 </defs>
-                <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/>
+                <polygon points="24,8 40,40 8,40" stroke="url(#icon-gradient-3)" strokeWidth="1.5" fill="none" />
+                <path d="M24 20v8" stroke="url(#icon-gradient-3)" strokeWidth="1.5" strokeLinecap="round" />
               </svg>
               <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: 'clamp(16px, 4vw, 20px)', fontWeight: 600, lineHeight: '1.3', marginBottom: '12px', textAlign: 'left', width: '100%' }}>İlk Adımda Risk Azaltma</h3>
               <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3.5vw, 16px)', fontWeight: 400, lineHeight: '1.5', width: '100%', textAlign: 'left' }}>
@@ -1290,7 +1247,7 @@ MVP'ler, pilot projeler ve testler ile riskinizi azaltıp, ilerlemenizi sağlaml
             <div className="hidden lg:block" style={{height: '300px', alignSelf: 'center', width: '1px', background: '#E5E7EB'}} />
             {/* 4. Sütun */}
             <div className="flex-1 flex flex-col justify-start items-start px-4 lg:px-8 py-6 lg:py-8" style={{minWidth: '0'}}>
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#icon-gradient-4)" strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" style={{marginBottom: '40px', display: 'block'}} className="lg:w-16 lg:h-16">
                 <defs>
                   <linearGradient id="icon-gradient-4" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#10B981" />
@@ -1298,7 +1255,8 @@ MVP'ler, pilot projeler ve testler ile riskinizi azaltıp, ilerlemenizi sağlaml
                     <stop offset="1" stopColor="#00D4AA" />
                   </linearGradient>
                 </defs>
-                <path d="M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762"/>
+                <ellipse cx="24" cy="24" rx="16" ry="10" stroke="url(#icon-gradient-4)" strokeWidth="1.5" fill="none" />
+                <path d="M24 14v20" stroke="url(#icon-gradient-4)" strokeWidth="1.5" strokeLinecap="round" />
               </svg>
               <h3 className="text-gray-900" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: 'clamp(16px, 4vw, 20px)', fontWeight: 600, lineHeight: '1.3', marginBottom: '12px', textAlign: 'left', width: '100%' }}>Süreç Boyunca Destek</h3>
               <p className="text-gray-600" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: 'clamp(14px, 3.5vw, 16px)', fontWeight: 400, lineHeight: '1.5', width: '100%', textAlign: 'left' }}>
@@ -1310,7 +1268,7 @@ MVP'ler, pilot projeler ve testler ile riskinizi azaltıp, ilerlemenizi sağlaml
       </section>
 
       {/* TESTIMONIALS BÖLÜMÜ */}
-      <section className="w-full flex justify-center items-center mobile-section-spacing" style={{paddingLeft: '32px', paddingRight: '16px', marginTop: '60px', paddingTop: '20px', paddingBottom: '20px'}}>
+      <section className="w-full flex justify-center items-center mobile-section-spacing" style={{paddingLeft: '32px', paddingRight: '16px', marginTop: '160px', paddingTop: '60px', paddingBottom: '60px'}}>
         <div className="flex flex-row gap-[20px] w-full" style={{maxWidth: '1865px'}}>
           {/* Sol kutu */}
           <div style={{width: '1112px', height: '720px', background: '#232323', borderRadius: '32px', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative'}}>
@@ -1356,7 +1314,7 @@ MVP'ler, pilot projeler ve testler ile riskinizi azaltıp, ilerlemenizi sağlaml
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
             <div className="text-sm font-medium text-gray-600 mb-4 uppercase tracking-wider" style={{fontFamily: 'Manrope, Arial, Helvetica, sans-serif', textAlign: 'left'}}>[ NELER GELİŞTİRDİK? ]</div>
             <h2 style={{fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '60px', fontWeight: 400, lineHeight: '1.1', color: '#111', textAlign: 'left', maxWidth: '700px',
-                        wordSpacing: '8px', marginTop: 0}}>
+                        marginTop: '60px', wordSpacing: '8px', marginTop: 0}}>
               Tasarım, kodlama ve teknoloji ile iş akışını birleştiren, geliştirdiğimiz dijital ürünler
             </h2>
           </div>
@@ -1367,11 +1325,8 @@ MVP'ler, pilot projeler ve testler ile riskinizi azaltıp, ilerlemenizi sağlaml
         </div>
         <div className="flex flex-row justify-center items-start" style={{gap: '40px', maxWidth: '1400px', margin: '0 auto'}}>
           {/* Kart 1 */}
-          <div style={{width: '420px', height: '555px', background: '#fff', borderRadius: '24px', boxShadow: '0 2px 16px rgba(0,0,0,0.04)', border: '1px solid #F3F4F6', display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative'}}>
-            <div style={{position: 'relative'}}>
-              <img src="/images/online-siparis-sistemleri.jpg" alt="AI Blog 1" style={{width: '420px', height: '310px', objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px'}} />
-              <div style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0, 0, 0, 0.65)', borderTopLeftRadius: '24px', borderTopRightRadius: '24px'}}></div>
-            </div>
+          <div style={{width: '420px', height: '555px', background: '#fff', borderRadius: '24px', boxShadow: '0 2px 16px rgba(0,0,0,0.04)', border: '1px solid #F3F4F6', display: 'flex', flexDirection: 'column', overflow: 'hidden'}}>
+            <img src="/images/online-siparis-sistemleri.jpg" alt="AI Blog 1" style={{width: '420px', height: '310px', objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px'}} />
             <div style={{padding: '28px 28px 0 28px', flex: 1, display: 'flex', flexDirection: 'column'}}>
               <div style={{fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '15px', color: '#888', marginBottom: '18px'}}>Yeme–içme sektörü ile, ürünlerini doğrudan müşterilerine sunmak isteyenler için geliştirilmiş özel online sipariş sistemi.</div>
               <div style={{fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '23px', fontWeight: 500, color: '#111', marginBottom: '18px', lineHeight: '1.3'}}>Online Sipariş Sistemleri</div>
@@ -1379,11 +1334,8 @@ MVP'ler, pilot projeler ve testler ile riskinizi azaltıp, ilerlemenizi sağlaml
             </div>
           </div>
           {/* Kart 2 */}
-          <div style={{width: '420px', height: '555px', background: '#fff', borderRadius: '24px', boxShadow: '0 2px 16px rgba(0,0,0,0.04)', border: '1px solid #F3F4F6', display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative'}}>
-            <div style={{position: 'relative'}}>
-              <img src="/images/baski-surec-yonetimi.jpg" alt="AI Blog 2" style={{width: '420px', height: '310px', objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px'}} />
-              <div style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0, 0, 0, 0.65)', borderTopLeftRadius: '24px', borderTopRightRadius: '24px'}}></div>
-            </div>
+          <div style={{width: '420px', height: '555px', background: '#fff', borderRadius: '24px', boxShadow: '0 2px 16px rgba(0,0,0,0.04)', border: '1px solid #F3F4F6', display: 'flex', flexDirection: 'column', overflow: 'hidden'}}>
+            <img src="/images/baski-surec-yonetimi.jpg" alt="AI Blog 2" style={{width: '420px', height: '310px', objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px'}} />
             <div style={{padding: '28px 28px 0 28px', flex: 1, display: 'flex', flexDirection: 'column'}}>
               <div style={{fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '15px', color: '#888', marginBottom: '18px'}}> Sipariş alımı, iş takibi, üretim planlaması, malzeme kullanımı, müşteri onayları ve sevkiyat gibi işlemler sistemli ve izlenebilir hale gelir.</div>
               <div style={{fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '23px', fontWeight: 500, color: '#111', marginBottom: '18px', lineHeight: '1.3'}}>Baskı Süreç Yönetimi</div>
@@ -1392,11 +1344,8 @@ MVP'ler, pilot projeler ve testler ile riskinizi azaltıp, ilerlemenizi sağlaml
             </div>
           </div>
           {/* Kart 3 */}
-          <div style={{width: '420px', height: '555px', background: '#fff', borderRadius: '24px', boxShadow: '0 2px 16px rgba(0,0,0,0.04)', border: '1px solid #F3F4F6', display: 'flex', flexDirection: 'column', overflow: 'hidden', position: 'relative'}}>
-            <div style={{position: 'relative'}}>
-              <img src="/images/lojistik-yuk-yol-optimizasyonlari.jpg" alt="AI Blog 3" style={{width: '420px', height: '310px', objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px'}} />
-              <div style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0, 0, 0, 0.65)', borderTopLeftRadius: '24px', borderTopRightRadius: '24px'}}></div>
-            </div>
+          <div style={{width: '420px', height: '555px', background: '#fff', borderRadius: '24px', boxShadow: '0 2px 16px rgba(0,0,0,0.04)', border: '1px solid #F3F4F6', display: 'flex', flexDirection: 'column', overflow: 'hidden'}}>
+            <img src="/images/lojistik-yuk-yol-optimizasyonlari.jpg" alt="AI Blog 3" style={{width: '420px', height: '310px', objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px'}} />
             <div style={{padding: '28px 28px 0 28px', flex: 1, display: 'flex', flexDirection: 'column'}}>
               <div style={{fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '15px', color: '#888', marginBottom: '18px'}}>Araçların konumu, yük durumu, sürücü bilgileri ve zaman çizelgesi her an izlenerek, lojistik süreçlerinizin her aşaması kontrol altında tutulur.</div>
               <div style={{fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '23px', fontWeight: 500, color: '#111', marginBottom: '18px', lineHeight: '1.3'}}>Lojistik | Yük & Yol Optimizasyonları</div>
