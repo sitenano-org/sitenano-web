@@ -102,7 +102,7 @@ export default function HizmetlerPage() {
                     width: '100%',
                     transition: 'color 0.2s',
                     display: 'flex',
-                    justifyContent: 'flex-start', // Yazı sola hizalı
+                    justifyContent: 'center', // Yazı sola hizalı
                     alignItems: 'center',
                     paddingLeft: '32px', // Soldan boşluk
                   }}
@@ -216,7 +216,7 @@ export default function HizmetlerPage() {
                 marginTop: '30px',
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'flex-start',
+                justifyContent: 'center',
                 alignItems: 'flex-start',
                 padding: '40px 40px 48px 40px',
                 boxSizing: 'border-box',
@@ -248,7 +248,7 @@ export default function HizmetlerPage() {
                   color: '#fff',
                   marginBottom: '20px',
                 }}>
-                  AI Strategy and<br />Consulting
+                  Web Tasarım
                 </div>
                 <div style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
@@ -258,7 +258,7 @@ export default function HizmetlerPage() {
                   lineHeight: '1.5',
                   opacity: 0.9,
                 }}>
-                  Provide expert guidance on<br />developing an AI strategy
+                  Sadece bir Web Sitesi ya da tam bir Dijital Dönüşüm Aracı. Görünmek, satmak, etkilemek ya da dönüştürmek…
                 </div>
               </div>
             </div>
@@ -608,7 +608,7 @@ export default function HizmetlerPage() {
           gap: '20px',
         }}
       >
-        {/* 1. Kart - Neural Network Development */}
+        {/* 1. Kart - E-Ticaretin Yeni Dönemi */}
         <div
           style={{
             width: '450px',
@@ -649,7 +649,7 @@ export default function HizmetlerPage() {
               color: '#fff',
               marginBottom: '20px',
             }}>
-              Neural Network<br />Development
+              E-Ticaretin Yeni Dönemi
             </h3>
             <p style={{
               fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
@@ -662,7 +662,8 @@ export default function HizmetlerPage() {
               color: '#fff',
               opacity: 0.9,
             }}>
-              Custom design and development of neural network architectures tailored to your specific business needs
+              Kişiselleştirilmiş alışveriş özellikleri, akıllı öneriler.
+Ürün, fiyatlama yönetimi için özel ai çözümleri, satışa yönelik analizler…
             </p>
           </div>
           
@@ -688,7 +689,7 @@ export default function HizmetlerPage() {
           </button>
         </div>
 
-        {/* 2. Kart - Training & Optimization */}
+        {/* 2. Kart - Yapay Zeka Otomasyonu ile Dijital Dönüşüm Zamanı! */}
         <div
           style={{
             width: '450px',
@@ -758,7 +759,7 @@ export default function HizmetlerPage() {
               color: '#fff',
               marginBottom: '20px',
             }}>
-              Training &<br />Optimization
+              Yapay Zeka Otomasyonu ile Dijital Dönüşüm Zamanı!
             </h3>
             <p style={{
               fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
@@ -771,7 +772,7 @@ export default function HizmetlerPage() {
               color: '#fff',
               opacity: 0.9,
             }}>
-              Fine-tuning neural networks using advanced algorithms to achieve maximum performance and accuracy.
+              Yapay Zeka, Dijital Dönüşüm, UX Dönüşümü ve Yazılım Geliştirme alanlarında işinize özel çözümler ile iş verimliliğini ve sürdürülebilir büyümeyi sağlıyoruz.
             </p>
           </div>
           
@@ -798,8 +799,8 @@ export default function HizmetlerPage() {
         </div>
 
         {/* 3. Kart ve altına yeni kartı ekleyeceğimiz column */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', justifyContent: 'flex-start' }}>
-          {/* 3. Kart - Neural Network Integration */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', justifyContent: 'center' }}>
+          {/* 3. Kart - İşinizi Dönüştürün, Geleceğe Güvenle İlerleyin. */}
           <div
             style={{
               width: '412px',
@@ -857,11 +858,11 @@ export default function HizmetlerPage() {
               color: '#000',
               marginBottom: '20px',
             }}>
-              Neural Network Integration
+              İşinizi Dönüştürün, Geleceğe Güvenle İlerleyin.
             </h3>
           </div>
           </div>
-          {/* 3.5. Kart - Neural Network Support (Yeni) */}
+          {/* 3.5. Kart - MVP Geliştirme (Yeni) */}
           <div
             style={{
               width: '412px',
@@ -872,7 +873,7 @@ export default function HizmetlerPage() {
               overflow: 'hidden',
               display: 'flex',
               flexDirection: 'column',
-              justifyContent: 'flex-start',
+              justifyContent: 'center',
               padding: '40px',
               boxSizing: 'border-box',
             }}
@@ -919,7 +920,7 @@ export default function HizmetlerPage() {
               color: '#fff',
               marginBottom: '20px',
             }}>
-              Neural Network Support
+              MVP Geliştirme
             </h3>
             <p style={{
               fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
@@ -932,7 +933,7 @@ export default function HizmetlerPage() {
               color: '#fff',
               opacity: 0.9,
             }}>
-              Expert guidance and strategic advice on integrating neural networks into your existing systems
+              İşletmelerin MVP geliştirmelerini sorunsuz bir şekilde ve endişe duymadan sürdürmelerini sağlıyoruz.
             </p>
             </div>
             
@@ -960,7 +961,7 @@ export default function HizmetlerPage() {
           </div>
         </div>
 
-        {/* 4. Kart - Neural Network Support */}
+        {/* 4. Kart - MVP Geliştirme */}
         <div
           style={{
             width: '490px',
@@ -1017,7 +1018,7 @@ export default function HizmetlerPage() {
               color: '#fff',
               marginBottom: '20px',
             }}>
-              AI Consulting<br />Services
+              Proje Geliştirme
             </h3>
             <p style={{
               fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
@@ -1030,7 +1031,7 @@ export default function HizmetlerPage() {
               color: '#fff',
               opacity: 0.9,
             }}>
-              Strategic consulting and implementation services for AI-powered business solutions and digital transformation
+              PWA geliştirme, özel web ve mobil uygulama geliştirme, içerik yönetimi (cms) uygulamaları konusunda etkili ve de işlevsel projeler oluşturmanıza yardımcı oluyoruz.
             </p>
           </div>
           
@@ -1083,7 +1084,7 @@ export default function HizmetlerPage() {
             color: '#fff',
             margin: 0,
             marginBottom: '8px'
-          }}>Neural Network Development</h3>
+          }}>E-Ticaretin Yeni Dönemi</h3>
           <p style={{
             fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
             fontSize: 'clamp(14px, 3.8vw, 16px)',
@@ -1091,7 +1092,8 @@ export default function HizmetlerPage() {
             color: '#fff',
             opacity: 0.9,
             margin: 0
-          }}>Custom design and development of neural network architectures tailored to your specific business needs</p>
+          }}>Kişiselleştirilmiş alışveriş özellikleri, akıllı öneriler.
+Ürün, fiyatlama yönetimi için özel ai çözümleri, satışa yönelik analizler…</p>
         </div>
         {/* Card 2 */}
         <div style={{
@@ -1109,7 +1111,7 @@ export default function HizmetlerPage() {
             color: '#fff',
             margin: 0,
             marginBottom: '8px'
-          }}>Training & Optimization</h3>
+          }}>Yapay Zeka Otomasyonu ile Dijital Dönüşüm Zamanı!</h3>
           <p style={{
             fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
             fontSize: 'clamp(14px, 3.8vw, 16px)',
@@ -1117,7 +1119,7 @@ export default function HizmetlerPage() {
             color: '#fff',
             opacity: 0.9,
             margin: 0
-          }}>Fine-tuning neural networks using advanced algorithms to achieve maximum performance and accuracy.</p>
+          }}>Yapay Zeka, Dijital Dönüşüm, UX Dönüşümü ve Yazılım Geliştirme alanlarında işinize özel çözümler ile iş verimliliğini ve sürdürülebilir büyümeyi sağlıyoruz.</p>
         </div>
         {/* Card 3 */}
         <div style={{
@@ -1134,7 +1136,7 @@ export default function HizmetlerPage() {
             lineHeight: '1.3',
             color: '#000',
             margin: 0
-          }}>Neural Network Integration</h3>
+          }}>İşinizi Dönüştürün, Geleceğe Güvenle İlerleyin.</h3>
         </div>
         {/* Card 4 */}
         <div className="ai-consulting-card" style={{
@@ -1152,7 +1154,7 @@ export default function HizmetlerPage() {
             color: '#fff',
             margin: 0,
             marginBottom: '8px'
-          }}>AI Consulting Services</h3>
+          }}>Proje Geliştirme</h3>
           <p style={{
             fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
             fontSize: 'clamp(14px, 3.8vw, 16px)',
@@ -1160,7 +1162,7 @@ export default function HizmetlerPage() {
             color: '#fff',
             opacity: 0.9,
             margin: 0
-          }}>Strategic consulting and implementation services for AI-powered business solutions and digital transformation</p>
+          }}>PWA geliştirme, özel web ve mobil uygulama geliştirme, içerik yönetimi (cms) uygulamaları konusunda etkili ve de işlevsel projeler oluşturmanıza yardımcı oluyoruz.</p>
         </div>
       </section>
 
