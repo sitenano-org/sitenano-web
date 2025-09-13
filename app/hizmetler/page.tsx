@@ -68,18 +68,18 @@ export default function HizmetlerPage() {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                alignItems: 'center',
-                padding: '24px 0 24px 0',
+                alignItems: "flex-start",
+                padding: '24px 20px 24px 20px',
                 boxSizing: 'border-box',
                 flexShrink: 0, // Boyutunu sabit tut
               }}
             >
               {[
-                'Web Tasarım',
-                'E-Ticaret Çözümleri',
-                'Yapay Zeka',
+                'Özel Ai Çözümleri',
+                'Proje Geliştirme',
                 'Online Sipariş Sistemi',
-                'Mobil Uygulama',
+                'E-ticaret',
+                'Web Tasarım',
               ].map((item, idx) => (
                 <button
                   key={item}
@@ -102,7 +102,7 @@ export default function HizmetlerPage() {
                     width: '100%',
                     transition: 'color 0.2s',
                     display: 'flex',
-                    justifyContent: 'center', // Yazı sola hizalı
+                    justifyContent: 'flex-start', // Yazı sola hizalı
                     alignItems: 'center',
                     paddingLeft: '32px', // Soldan boşluk
                   }}
@@ -124,7 +124,7 @@ export default function HizmetlerPage() {
               style={{
                 width: '310px',
                 height: '350px',
-                background: 'linear-gradient(135deg, #10B981 0%, #06B6D4 50%, #0891B2 100%)',
+                background: 'linear-gradient(135deg, #FF4D47 0%, #F9A09D 50%, #FF6B6B 100%)',
                 borderRadius: '32px',
                 marginTop: '30px',
                 display: 'flex',
@@ -160,25 +160,25 @@ export default function HizmetlerPage() {
                 color: '#fff',
                 zIndex: 1,
               }}>
-                / download /
+                /Online Sipariş Sistemi/
               </div>
               
               {/* Ana içerik */}
               <div style={{ position: 'relative', zIndex: 1, textAlign: 'left', paddingLeft: '0px' }}>
                 <div style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-                  fontSize: '40px',
+                  fontSize: '26px',
                   fontStyle: 'normal',
                   fontWeight: 400,
                   height: '90px',
                   letterSpacing: '-1.2px',
-                  lineHeight: '45px',
+                  lineHeight: '32px',
                   color: '#fff',
                   marginBottom: '24px',
                   marginTop: '104px',
                   marginLeft: '30px',
                 }}>
-                  Services brochure
+                  Komisyonsuz, kolay, markanıza özel online sipariş altyapısı.
                 </div>
                 <button style={{
                   background: 'transparent',
@@ -217,7 +217,7 @@ export default function HizmetlerPage() {
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                alignItems: 'flex-start',
+                alignItems: 'center',
                 padding: '40px 40px 48px 40px',
                 boxSizing: 'border-box',
                 position: 'relative',
@@ -258,7 +258,8 @@ export default function HizmetlerPage() {
                   lineHeight: '1.5',
                   opacity: 0.9,
                 }}>
-                  Sadece bir Web Sitesi ya da tam bir Dijital Dönüşüm Aracı. Görünmek, satmak, etkilemek ya da dönüştürmek…
+                  <div>Sadece bir Web Sitesi ya da tam bir Dijital Dönüşüm Aracı.</div>
+                  <div style={{ marginTop: '16px' }}>Görünmek, satmak, etkilemek ya da dönüştürmek…</div>
                 </div>
               </div>
             </div>
@@ -604,7 +605,7 @@ export default function HizmetlerPage() {
           margin: '200px 20px 0 20px',
           display: 'flex',
           justifyContent: 'space-between',
-          alignItems: 'flex-start',
+          alignItems: 'center',
           gap: '20px',
         }}
       >
@@ -613,7 +614,7 @@ export default function HizmetlerPage() {
           style={{
             width: '450px',
             height: '570px',
-            background: 'linear-gradient(135deg, #10B981 0%, #06B6D4 50%, #0891B2 100%)',
+            background: "linear-gradient(135deg, #10B981 0%, #06B6D4 50%, #0891B2 100%)",
             borderRadius: '24px',
             position: 'relative',
             overflow: 'hidden',
@@ -680,6 +681,7 @@ export default function HizmetlerPage() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            alignItems: 'center',
             alignSelf: 'flex-end',
             marginBottom: '-10px',
           }}>
@@ -789,6 +791,7 @@ export default function HizmetlerPage() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            alignItems: 'center',
             alignSelf: 'flex-end',
             marginBottom: '-10px',
           }}>
@@ -823,7 +826,7 @@ export default function HizmetlerPage() {
               right: '20px',
               width: '80px',
               height: '80px',
-              border: '2px solid #06B6D4',
+              border: '2px solid #F9A09D',
               borderRadius: '50%',
             }} />
             <div style={{
@@ -832,7 +835,7 @@ export default function HizmetlerPage() {
               right: '30px',
               width: '60px',
               height: '60px',
-              border: '2px solid #06B6D4',
+              border: '2px solid #F9A09D',
               borderRadius: '50%',
             }} />
             <div style={{
@@ -841,7 +844,7 @@ export default function HizmetlerPage() {
               right: '40px',
               width: '40px',
               height: '40px',
-              border: '2px solid #06B6D4',
+              border: '2px solid #F9A09D',
               borderRadius: '50%',
             }} />
             
@@ -885,7 +888,7 @@ export default function HizmetlerPage() {
             left: '40px',
             width: '48px',
             height: '48px',
-            border: '2px solid #06B6D4',
+            border: '2px solid #F9A09D',
             borderRadius: '50%',
             display: 'flex',
             alignItems: 'center',
@@ -894,7 +897,7 @@ export default function HizmetlerPage() {
             <div style={{
               width: '24px',
               height: '24px',
-              background: '#06B6D4',
+              background: '#F9A09D',
               borderRadius: '50%',
               display: 'flex',
               alignItems: 'center',
@@ -948,7 +951,7 @@ export default function HizmetlerPage() {
               border: 'none',
               cursor: 'pointer',
               display: 'flex',
-              alignItems: 'center',
+              alignItems: "center",
               justifyContent: 'center',
               alignSelf: 'flex-end',
               marginTop: 'auto',
@@ -1048,6 +1051,7 @@ export default function HizmetlerPage() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            alignItems: 'center',
             alignSelf: 'flex-end',
             marginBottom: '-10px',
           }}>
@@ -1071,7 +1075,7 @@ export default function HizmetlerPage() {
         {/* Card 1 */}
         <div style={{
           width: '100%',
-          background: 'linear-gradient(135deg, #10B981 0%, #06B6D4 50%, #0891B2 100%)',
+          background: "linear-gradient(135deg, #FF4D47 0%, #F9A09D 50%, #FF6B6B 100%)",
           borderRadius: '20px',
           padding: '16px',
           boxSizing: 'border-box',
