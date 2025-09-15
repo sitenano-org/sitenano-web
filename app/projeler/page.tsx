@@ -1,0 +1,1870 @@
+"use client"
+
+import Link from 'next/link'
+
+export default function ProjelerPage() {
+  return (
+    <main className="min-h-screen bg-white" style={{ 
+      margin: '0', 
+      padding: '0', 
+      width: '100vw', 
+      maxWidth: 'none', 
+      overflowX: 'hidden',
+      position: 'relative',
+      left: '0',
+      right: '0'
+    }}>
+      {/* HERO BÖLÜMÜ */}
+      <section
+        className="relative w-full flex items-center overflow-hidden"
+        style={{ 
+          minHeight: '800px', 
+          height: '800px', 
+          background: 'white', 
+          position: 'relative', 
+          marginTop: '12px' 
+        }}
+      >
+        <div className="w-full h-full flex items-center justify-center relative z-10" style={{ padding: '0 20px' }}>
+          <div className="text-center" style={{ width: '1200px', margin: '0 auto' }}>
+            <h1
+              style={{
+                fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                fontSize: '80px',
+                fontStyle: 'normal',
+                fontWeight: 400,
+                height: 'auto',
+                letterSpacing: '-2.4px',
+                lineHeight: '90px',
+                margin: 0,
+                marginTop: '40px',
+                marginBottom: '60px',
+                textAlign: 'center',
+                display: 'block',
+                width: '100%',
+                background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+            >
+              Veriden değere, fikirden sonuca uzanan dönüşümler.
+            </h1>
+            <div style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '30px', fontStyle: 'normal', fontWeight: 600, lineHeight: '38px', margin: '-25px 0 30px 0', textAlign: 'center', color: 'transparent', background: 'linear-gradient(135deg, #000000 0%, #333333 50%, #999999 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+              Fikirden sonuca tüm süreci uçtan uca kurguluyoruz.
+            </div>
+            <p
+              className="text-gray-600"
+              style={{
+                fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                fontSize: '16px',
+                fontStyle: 'normal',
+                fontWeight: 500,
+                letterSpacing: 'normal',
+                lineHeight: '30px',
+                maxWidth: '860px',
+                width: '860px',
+                margin: 0,
+                textAlign: 'center',
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                marginBottom: '220px',
+              }}
+            >
+              İşlerinizi yapay zekâ destekli projelerle yeni bir boyuta taşıyoruz. İşletmelerin yalnızca bugünkü ihtiyaçlarına değil, yarının gerekliliklerine de hazırlanmasını sağlıyoruz.
+              MCP, RAG ve A2A gibi teknolojilerle; verinizi anlamlandırıyor, süreçlerinizi hızlandırıyor ve dijital dönüşümünüzü sürdürülebilir hâle getiriyoruz.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* MULTI-PANEL SECTION */}
+      <section style={{ 
+        background: 'white', 
+        padding: '0px 0 0px 0',
+        marginTop: '0px',
+        minHeight: 'auto'
+      }}>
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: '360px 360px 360px 360px 360px', 
+          gridTemplateRows: 'auto auto auto auto auto auto auto',
+          columnGap: '15px',
+          rowGap: '15px',
+          margin: '0 20px 0px 20px',
+          justifyContent: 'center'
+        }}>
+          
+          {/* 1. Panel - Achievements */}
+          <div style={{
+            background: 'url("/images/color-bg-2.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            borderRadius: '20px',
+            padding: '30px',
+            height: '570px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-end',
+            position: 'relative',
+            overflow: 'hidden',
+            gridColumn: '1',
+            gridRow: '1'
+          }}>
+            <div style={{
+              position: 'absolute',
+              top: '20px',
+              right: '20px',
+              width: '80px',
+              height: '80px',
+              background: 'rgba(255,255,255,0.2)',
+              borderRadius: '50%',
+              transform: 'translate(20px, -20px)'
+            }}></div>
+            <div style={{
+              position: 'absolute',
+              bottom: '20px',
+              left: '20px',
+              width: '60px',
+              height: '60px',
+              background: 'rgba(255,255,255,0.15)',
+              borderRadius: '50%',
+              transform: 'translate(-15px, 15px)'
+            }}></div>
+            <h3 style={{
+              color: 'white',
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '24px',
+              fontWeight: '400',
+              margin: 0,
+              paddingLeft: '10px',
+              paddingBottom: '40px',
+              zIndex: 10,
+              position: 'relative'
+            }}>
+              Akıllı asistanlar, RAG tabanlı bilgi erişimi ve otomatik iş akışları
+            </h3>
+          </div>
+
+          {/* 2. Panel - Stats */}
+          <div style={{
+            background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 100%)',
+            borderRadius: '20px',
+            padding: '30px',
+            height: '275px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
+            alignItems: 'flex-start',
+            color: 'white',
+            gridColumn: '2',
+            gridRow: '1',
+            marginTop: '295px'
+          }}>
+            <div style={{
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '48px',
+              fontWeight: '700',
+              marginBottom: '5px',
+              paddingLeft: '10px',
+              paddingTop: '30px'
+            }}>
+              50+
+            </div>
+            <div style={{
+              fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+              fontSize: '16px',
+              fontWeight: '400',
+              textAlign: 'left',
+              paddingLeft: '10px',
+              paddingBottom: '130px'
+            }}>
+              Paylaşılan emeklerin ve çözümlerin toplamı.
+            </div>
+          </div>
+
+          {/* 3. Panel - Sitenano */}
+          <div style={{
+            background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 100%), url("/images/sitenano-logo-icon.svg")',
+            backgroundSize: 'auto, 150px',
+            backgroundPosition: 'center, 20px 20px',
+            backgroundRepeat: 'no-repeat, no-repeat',
+            borderRadius: '20px',
+            padding: '20px 0px 20px 20px',
+            height: '498px',
+            position: 'relative',
+            overflow: 'hidden',
+            gridColumn: '2',
+            gridRow: '1',
+            marginTop: '-218px'
+          }}>
+            <div style={{
+              position: 'absolute',
+              bottom: '-20px',
+              right: '-35px',
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '72px',
+              fontWeight: '800',
+              writingMode: 'vertical-rl',
+              textOrientation: 'mixed',
+              transform: 'rotate(180deg)',
+              letterSpacing: '5px',
+              background: 'linear-gradient(135deg, #FFFFFF 0%, #F0F8F0 40%, #00D4AA 80%, #1EBBBC 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              opacity: '0.8'
+            }}>
+              SITENANO
+            </div>
+            <div style={{
+              position: 'absolute',
+              bottom: '20px',
+              left: '20px',
+              width: '60px',
+              height: '60px',
+              background: 'rgba(255,255,255,0.2)',
+              borderRadius: '50%'
+            }}></div>
+          </div>
+
+          {/* 4. Panel - Abstract Cell (yazısız) */}
+          <div style={{
+            background: 'url("/images/ai-solutions.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            borderRadius: '20px',
+            padding: '20px',
+            height: '275px',
+            position: 'relative',
+            overflow: 'hidden',
+            gridColumn: '3',
+            gridRow: '1',
+            marginTop: '-95px'
+          }}>
+            <div style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: '80px',
+              height: '80px',
+              background: 'rgba(255,255,255,0.3)',
+              borderRadius: '50%'
+            }}></div>
+          </div>
+
+          {/* 5. Panel - Professional Team */}
+                      <div style={{
+              background: 'linear-gradient(135deg, #00BCD4 0%, #009688 100%)',
+              borderRadius: '20px',
+              padding: '20px 20px 74px 20px',
+              height: '375px',
+              position: 'relative',
+              overflow: 'hidden',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'flex-end',
+              gridColumn: '3',
+              gridRow: '1',
+              marginTop: '195px'
+            }}>
+            <div style={{
+              position: 'absolute',
+              top: '20px',
+              left: '20px',
+              width: '100px',
+              height: '2px',
+              background: 'rgba(255,255,255,0.3)'
+            }}></div>
+            <div style={{
+              position: 'absolute',
+              top: '40px',
+              left: '20px',
+              width: '80px',
+              height: '2px',
+              background: 'rgba(255,255,255,0.2)'
+            }}></div>
+            <div style={{
+              position: 'absolute',
+              top: '60px',
+              left: '20px',
+              width: '60px',
+              height: '2px',
+              background: 'rgba(255,255,255,0.1)'
+            }}></div>
+            <h3 style={{
+              color: 'white',
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '25px',
+              fontStyle: 'normal',
+              fontWeight: '400',
+              height: '70px',
+              letterSpacing: '-0.75px',
+              lineHeight: '35px',
+              margin: 0,
+              marginBottom: '50px',
+              paddingLeft: '10px',
+              zIndex: 10,
+              position: 'relative'
+            }}>
+              RAG • MCP • A2A • Agent orkestrasyonu • Vektör DB • Next.js/TS • Python • Docker/K8s
+            </h3>
+          </div>
+
+          {/* 6. Panel - Programming */}
+          <div style={{
+            background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/app-development.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
+            borderRadius: '20px',
+            padding: '30px',
+            height: '742px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            position: 'relative',
+            overflow: 'hidden',
+            gridColumn: '4',
+            gridRow: '1',
+            marginTop: '-172px'
+          }}>
+            <h3 style={{
+              color: 'white',
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '24px',
+              fontWeight: '400',
+              margin: 0,
+              paddingLeft: '10px',
+              paddingTop: '50px',
+              zIndex: 10,
+              position: 'relative'
+            }}>
+              Web, Mobil, Masaüstü 
+              ve Hibrit Uygulama
+              Geliştirme
+            </h3>
+
+          </div>
+
+          {/* 7. Panel - AI Solutions */}
+          <div style={{
+            background: 'url("/images/ozel-ai-cozumleri.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
+            borderRadius: '20px',
+            padding: '30px',
+            height: '564px',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-start',
+            alignItems: 'flex-start',
+            position: 'relative',
+            overflow: 'hidden',
+            gridColumn: '5',
+            gridRow: '1 / 3'
+          }}>
+            <div style={{
+              position: 'absolute',
+              top: '20px',
+              left: '20px',
+              width: '60px',
+              height: '60px',
+              background: 'rgba(255,255,255,0.2)',
+              borderRadius: '50%'
+            }}></div>
+            <div style={{
+              position: 'absolute',
+              bottom: '20px',
+              right: '20px',
+              width: '40px',
+              height: '40px',
+              background: 'rgba(255,255,255,0.15)',
+              borderRadius: '50%'
+            }}></div>
+            <h3 style={{
+              color: 'white',
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '24px',
+              fontWeight: '400',
+              margin: 0,
+              paddingLeft: '10px',
+              paddingTop: '50px',
+              textAlign: 'left',
+              zIndex: 10,
+              position: 'relative'
+            }}>
+              Özel AI Çözümleri
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      {/* YENİ PROJELER BÖLÜMÜ */}
+      <section style={{
+        background: '#1a1a1a',
+        height: '2400px',
+        padding: '150px 20px 120px 20px',
+        position: 'relative',
+        borderRadius: '20px',
+        margin: '0px 20px 120px 20px'
+      }}>
+        <div style={{
+          marginLeft: '0px',
+          marginRight: '0px',
+          paddingBottom: '120px' // alt padding artırıldı
+        }}>
+          {/* Başlık Bölümü */}
+          <div style={{
+            marginBottom: '120px'
+          }}>
+            <div style={{
+              color: '#909090',
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '16px',
+              fontWeight: '400',
+              marginBottom: '20px',
+              paddingLeft: '260px'
+            }}>
+              (Ürünlerimiz)
+            </div>
+            <h2 style={{
+              color: 'white',
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '60px',
+              fontStyle: 'normal',
+              fontWeight: '400',
+              height: 'auto',
+              letterSpacing: '-3px',
+              lineHeight: '69.9996px',
+              margin: 0,
+              width: '1288px',
+              paddingLeft: '260px',
+              wordWrap: 'break-word',
+              overflowWrap: 'break-word'
+            }}>
+              Tasarım, kodlama ve teknoloji ile iş akışını birleştiren, geliştirdiğimiz dijital ürünler - Sitenano Markaları
+          </h2>
+          </div>
+
+          {/* Proje Kartları */}
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '20px',
+            position: 'relative',
+            height: '2000px', // Yeterli yükseklik
+            alignItems: 'center', // Kartları merkeze hizala
+            justifyContent: 'flex-start'
+          }}>
+            {/* Proje 1 */}
+            <div style={{
+              width: '1785px',
+              height: '418px',
+              borderRadius: '20px',
+              background: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/online-siparis-sistemi-4.jpg")',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              position: 'relative',
+              overflow: 'hidden',
+              padding: '76px',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center'
+            }}>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center'
+              }}>
+                <div style={{
+                  color: 'white',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontWeight: '400',
+                  marginBottom: '20px',
+                  padding: '8px 20px',
+                  borderRadius: '20px',
+                  background: 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box',
+                  border: '2px solid transparent',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  display: 'inline-block',
+                  width: 'fit-content'
+                }}
+                onMouseEnter={(e) => {
+                  (e.target as HTMLDivElement).style.background = '#000000';
+                  (e.target as HTMLDivElement).style.color = 'white';
+                }}
+                onMouseLeave={(e) => {
+                  (e.target as HTMLDivElement).style.background = 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box';
+                  (e.target as HTMLDivElement).style.color = 'white';
+                }}>
+                  Online Sipariş Sistemi
+                </div>
+                <div style={{
+                  color: 'white',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '40px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: 'auto',
+                  letterSpacing: '1.2px',
+                  lineHeight: '45px',
+                  maxWidth: '800px'
+                }}>
+                  Yeme–içme sektörü ile, ürünlerini doğrudan müşterilerine sunmak isteyenler için geliştirilmiş özel online sipariş sistemi. İşletmelere aracısız satış imkânı ve tam kontrol sağlar.
+                </div>
+              </div>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                color: 'white',
+                fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                fontSize: '16px',
+                cursor: 'pointer',
+                position: 'relative',
+                transition: 'color 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLDivElement).style.color = 'black';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'black';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLDivElement).style.color = 'white';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'white';
+              }}>
+                <div style={{ marginBottom: '8px' }}>
+                  Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
+                </div>
+                <div style={{
+                  width: '100%',
+                  height: '1px',
+                  background: 'white',
+                  marginTop: '4px',
+                  transition: 'background 0.3s ease'
+                }}></div>
+              </div>
+            </div>
+
+            {/* Proje 2 */}
+            <div style={{
+              width: '1785px',
+              height: '418px',
+              borderRadius: '20px',
+              background: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/restoran-kasa-siparis-sistemi.jpg")',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              position: 'relative',
+              overflow: 'hidden',
+              padding: '76px',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center'
+            }}>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center'
+              }}>
+                <div style={{
+                  color: 'white',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontWeight: '400',
+                  marginBottom: '20px',
+                  padding: '8px 20px',
+                  borderRadius: '20px',
+                  background: 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box',
+                  border: '2px solid transparent',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  display: 'inline-block',
+                  width: 'fit-content'
+                }}
+                onMouseEnter={(e) => {
+                  (e.target as HTMLDivElement).style.background = '#000000';
+                  (e.target as HTMLDivElement).style.color = 'white';
+                }}
+                onMouseLeave={(e) => {
+                  (e.target as HTMLDivElement).style.background = 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box';
+                  (e.target as HTMLDivElement).style.color = 'white';
+                }}>
+                  Hızlı Yemek Sipariş Çözümleri
+                </div>
+                <div style={{
+                  color: 'white',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '40px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: 'auto',
+                  letterSpacing: '1.2px',
+                  lineHeight: '45px',
+                  maxWidth: '800px'
+                }}>
+                  Siparişten ödemeye tüm süreci hızlı ve düzenli hale getiren Yemek Sipariş Çözümleri - <em style={{fontSize: '38px'}}>Kasa, Masa, Qr, Masa Paylaş - Kiosk...</em>
+                </div>
+              </div>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                color: 'white',
+                fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                fontSize: '16px',
+                cursor: 'pointer',
+                position: 'relative',
+                transition: 'color 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLDivElement).style.color = 'black';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'black';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLDivElement).style.color = 'white';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'white';
+              }}>
+                <div style={{ marginBottom: '8px' }}>
+                  Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
+                </div>
+                <div style={{
+                  width: '100%',
+                  height: '1px',
+                  background: 'white',
+                  marginTop: '4px',
+                  transition: 'background 0.3s ease'
+                }}></div>
+              </div>
+            </div>
+
+            {/* Proje 3 */}
+            <div style={{
+              width: '1785px',
+              height: '418px',
+              borderRadius: '20px',
+              background: 'url("/images/e-ticaret-siteleri.jpg")',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center -200px',
+              backgroundRepeat: 'no-repeat',
+              position: 'relative',
+              overflow: 'hidden',
+              padding: '76px',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center'
+            }}>
+              {/* Opacity Katmanı */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                background: 'rgba(0, 0, 0, 0.4)',
+                borderRadius: '20px',
+                zIndex: 1
+                             }}></div>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                position: 'relative',
+                zIndex: 2
+              }}>
+                <div style={{
+                  color: 'white',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontWeight: '400',
+                  marginBottom: '20px',
+                  padding: '8px 20px',
+                  borderRadius: '20px',
+                  background: 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box',
+                  border: '2px solid transparent',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  display: 'inline-block',
+                  width: 'fit-content'
+                }}
+                onMouseEnter={(e) => {
+                  (e.target as HTMLDivElement).style.background = '#000000';
+                  (e.target as HTMLDivElement).style.color = 'white';
+                }}
+                onMouseLeave={(e) => {
+                  (e.target as HTMLDivElement).style.background = 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box';
+                  (e.target as HTMLDivElement).style.color = 'white';
+                }}>
+                  E-ticaret
+                </div>
+                <div style={{
+                  color: 'white',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '40px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: 'auto',
+                  letterSpacing: '1.2px',
+                  lineHeight: '45px',
+                  maxWidth: '800px'
+                }}>
+                  Ürün yönetiminden sipariş takibine, ödeme sistemlerinden çeşitli entegrasyonlara kadar tüm ihtiyaçları tek bir yapıda toplar.
+                </div>
+              </div>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                color: 'white',
+                fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                fontSize: '16px',
+                cursor: 'pointer',
+                position: 'relative',
+                transition: 'color 0.3s ease',
+                zIndex: 2
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLDivElement).style.color = 'black';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'black';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLDivElement).style.color = 'white';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'white';
+              }}>
+                <div style={{ marginBottom: '8px' }}>
+                  Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
+                </div>
+                <div style={{
+                  width: '100%',
+                  height: '1px',
+                  background: 'white',
+                  marginTop: '4px',
+                  transition: 'background 0.3s ease'
+                }}></div>
+              </div>
+            </div>
+
+            {/* Proje 4 */}
+            <div style={{
+              width: '1785px',
+              height: '418px',
+              borderRadius: '20px',
+              background: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/web-tasarim.jpg")',
+              backgroundSize: '110%',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              position: 'relative',
+              overflow: 'hidden',
+              padding: '76px',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center'
+            }}>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center'
+              }}>
+                <div style={{
+                  color: 'white',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontWeight: '400',
+                  marginBottom: '20px',
+                  padding: '8px 20px',
+                  borderRadius: '20px',
+                  background: 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box',
+                  border: '2px solid transparent',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  display: 'inline-block',
+                  width: 'fit-content'
+                }}
+                onMouseEnter={(e) => {
+                  (e.target as HTMLDivElement).style.background = '#000000';
+                  (e.target as HTMLDivElement).style.color = 'white';
+                }}
+                onMouseLeave={(e) => {
+                  (e.target as HTMLDivElement).style.background = 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box';
+                  (e.target as HTMLDivElement).style.color = 'white';
+                }}>
+                  Web Tasarım
+                </div>
+                <div style={{
+                  color: 'white',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '40px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: 'auto',
+                  letterSpacing: '1.2px',
+                  lineHeight: '45px',
+                  maxWidth: '800px'
+                }}>
+                  Web sitenizin tasarımı ile kalitenizi, içeriği ile sıralamanızı öne çıkarır.
+                </div>
+              </div>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                color: 'white',
+                fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                fontSize: '16px',
+                cursor: 'pointer',
+                position: 'relative',
+                transition: 'color 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                (e.target as HTMLDivElement).style.color = 'black';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'black';
+              }}
+              onMouseLeave={(e) => {
+                (e.target as HTMLDivElement).style.color = 'white';
+                const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
+                if (line) line.style.background = 'white';
+              }}>
+                <div style={{ marginBottom: '8px' }}>
+                  Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
+                </div>
+                <div style={{
+                  width: '100%',
+                  height: '1px',
+                  background: 'white',
+                  marginTop: '4px',
+                  transition: 'background 0.3s ease'
+                }}></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* YENİ BÖLÜM - 200+ BAŞLIKLI PROJE KARTLARI */}
+      <section style={{
+        background: '#F0F2F4',
+        height: '5830px', // Extended height
+        padding: '60px 20px 0px 20px',
+        position: 'relative',
+        borderRadius: '20px',
+        margin: '0px 20px 40px 20px'
+      }}>
+        <div style={{
+          marginLeft: '0px',
+          marginRight: '0px'
+        }}>
+          {/* Başlık Bölümü */}
+          <div style={{
+            marginBottom: '72px',
+            paddingLeft: '190px',
+            paddingTop: '96px'
+          }}>
+            <div style={{
+              display: 'flex',
+              alignItems: 'flex-start',
+              gap: '270px'
+            }}>
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-start'
+              }}>
+                <div style={{
+                  color: '#1a1a1a',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontWeight: '400',
+                  marginBottom: '10px'
+                }}>
+                  Tamamlanan Projelerimizden Bazıları
+                </div>
+                <div style={{
+                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '150px',
+                  fontStyle: 'normal',
+                  fontWeight: '700',
+                  letterSpacing: '-7.5px',
+                  lineHeight: '150px',
+                  height: '150px',
+                  margin: 0,
+                  display: 'block',
+                  textAlign: 'start',
+                  textTransform: 'none',
+                  wordSpacing: '0px',
+                  width: 'auto'
+                }}>
+                  50+
+                </div>
+              </div>
+              <div style={{
+                flex: 1,
+                paddingTop: '0px'
+              }}>
+                <div style={{
+                  color: '#909090',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontWeight: '400',
+                  marginBottom: '20px'
+                }}>
+                  (Projelerimiz)
+                </div>
+                <h2 style={{
+                  color: '#1a1a1a',
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '48px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  letterSpacing: '-2px',
+                  lineHeight: '56px',
+                  margin: 0,
+                  maxWidth: '600px'
+                }}>
+                  Farklı sektörlerde kazandığımız deneyimler...
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          {/* Proje Kartları */}
+          <div style={{
+            paddingLeft: '190px',
+            marginTop: '120px'
+          }}>
+            {/* Görseller Yan Yana */}
+            <div style={{
+              position: 'relative',
+              marginBottom: '60px'
+            }}>
+              {/* Kart 1 Wrapper */}
+              <div style={{
+                position: 'relative',
+                width: '650px',
+                height: '600px'
+              }}>
+              {/* Kart 1 */}
+              <div style={{
+                width: '650px',
+                height: '600px',
+                background: 'url("/images/lojistik-yuk-yol-optimizasyon.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'right center',
+                backgroundRepeat: 'no-repeat',
+                borderRadius: '20px',
+                position: 'relative',
+                overflow: 'hidden',
+                filter: 'grayscale(100%)'
+              }}>
+                </div>
+                
+                {/* 1. Ok İkonu - Wrapper içinde ama görsel dışında */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  right: '20px',
+                  width: '50px',
+                  height: '50px',
+                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  zIndex: 10
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              
+              {/* Kart 2 Wrapper */}
+              <div style={{
+                position: 'absolute',
+                left: '835px', // 650px (1. görsel genişliği) + 185px (boşluk)
+                top: '102px', // 1. görselin başladığı yerden 102px aşağı
+                width: '650px',
+                height: '600px'
+              }}>
+              {/* Kart 2 - 1. görselin yanında */}
+              <div style={{
+                width: '650px',
+                height: '600px',
+                background: 'url("/images/lojistik-dorse-paylasimi.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                borderRadius: '20px',
+                  position: 'relative',
+                overflow: 'hidden',
+                filter: 'grayscale(100%)'
+              }}>
+                </div>
+                
+                {/* 2. Ok İkonu - Wrapper içinde ama görsel dışında */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  right: '20px',
+                  width: '50px',
+                  height: '50px',
+                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  zIndex: 10
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              
+              {/* 1. Görsel Altındaki Metinler */}
+              <div style={{
+                marginTop: '60px',
+                width: '402px'
+              }}>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '25px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: '70px',
+                  letterSpacing: '-0.75px',
+                  lineHeight: '35px',
+                  margin: '0 0 20px 0',
+                  color: '#1a1a1a'
+                }}>
+                  Lojistik | Yük & Yol Optimizasyonları
+                </h3>
+                <p style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: '500',
+                  height: 'auto',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  margin: '0',
+                  color: '#606060'
+                }}>
+                  Lojistik firmalarına özel geliştirilen bu yazılım, rota planlama, araç takibi, zamanlama ve yakıt hesaplama gibi kapsamlı özellikleri bir arada sunar. Araçların konumu, yük durumu, sürücü bilgileri ve zaman çizelgesi her an izlenerek, lojistik süreçlerinizin her aşaması kontrol altında tutulur.
+                </p>
+              </div>
+
+              {/* 2. Görsel Altındaki Metinler */}
+              <div style={{
+                position: 'absolute',
+                left: '835px',
+                top: '762px', // 102px (görsel başlangıcı) + 600px (görsel yüksekliği) + 60px (boşluk)
+                width: '402px'
+              }}>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '25px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: '70px',
+                  letterSpacing: '-0.75px',
+                  lineHeight: '35px',
+                  margin: '0 0 10px 0',
+                  color: '#1a1a1a'
+                }}>
+                  Lojistik | Dorse Paylaşımı
+                </h3>
+                <p style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: '500',
+                  height: 'auto',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  margin: '0',
+                  color: '#606060'
+                }}>
+                  Dorse paylaşımı sistemimiz, aynı güzergâh üzerinde yük göndermek isteyen farklı firmaların mallarını verimli şekilde bir araya getirerek lojistik firmalarının araç kullanımını optimize eder. Yazılım, güzergâh uyumlu yükleri eşleştirir, dorse planlamasını yapar ve araçlara görev atamasını kolaylaştırır.
+                </p>
+              </div>
+
+              {/* 3. Görsel Wrapper - Sol */}
+              <div style={{
+                position: 'absolute',
+                left: '0px',
+                top: '1100px', // 762px (2. görsel metinleri) + 70px (başlık) + 90px (metin) + 180px (margin)
+                width: '650px',
+                height: '600px'
+              }}>
+              {/* 3. Görsel - Sol */}
+              <div style={{
+                width: '650px',
+                height: '600px',
+                background: 'url("/images/saglik-uygulamalari.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                borderRadius: '20px',
+                  position: 'relative',
+                overflow: 'hidden',
+                filter: 'grayscale(100%)'
+              }}>
+                </div>
+                
+                {/* 3. Ok İkonu - Wrapper içinde ama görsel dışında */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  right: '20px',
+                  width: '50px',
+                  height: '50px',
+                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  zIndex: 10
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              {/* 3. Görsel Altındaki Metinler - Sol */}
+              <div style={{
+                position: 'absolute',
+                left: '0px',
+                top: '1760px', // 1100px + 600px + 60px
+                width: '402px'
+              }}>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '25px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: 'auto',
+                  letterSpacing: '-0.75px',
+                  lineHeight: '35px',
+                  margin: '0 0 10px 0',
+                  color: '#1a1a1a'
+                }}>
+                  Sağlık | Sağlık Uygulamaları
+                </h3>
+                <p style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: '500',
+                  height: 'auto',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  margin: '0 0 20px 0',
+                  color: '#606060'
+                }}>
+                  Randevu sistemlerinden hasta verilerinin yönetimine kadar pek çok alanda web ve mobil çözümler sunarak, yapay zekâ destekli analiz ve otomasyon araçlarıyla iş yükünü azalttık, karar süreçlerini kolaylaştırdık
+                </p>
+              </div>
+
+              {/* 3. Görsel Wrapper - Sağ */}
+              <div style={{
+                position: 'absolute',
+                left: '835px',
+                top: '1230px', // 1100px + 102px + 28px margin (reduced by 12px)
+                width: '650px',
+                height: '600px'
+              }}>
+              {/* 3. Görsel - Sağ */}
+              <div style={{
+                width: '650px',
+                height: '600px',
+                background: 'url("/images/spor-salonu-uygulamalari.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                borderRadius: '20px',
+                  position: 'relative',
+                overflow: 'hidden',
+                filter: 'grayscale(100%)'
+              }}>
+                </div>
+                
+                {/* 8. Ok İkonu - Wrapper içinde ama görsel dışında */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  right: '20px',
+                  width: '50px',
+                  height: '50px',
+                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  zIndex: 10
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              {/* 3. Görsel Altındaki Metinler - Sağ */}
+              <div style={{
+                position: 'absolute',
+                left: '835px',
+                top: '1890px', // 1230px + 600px + 60px
+                width: '402px'
+              }}>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '25px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: 'auto',
+                  letterSpacing: '-0.75px',
+                  lineHeight: '35px',
+                  margin: '0 0 12px 0',
+                  color: '#1a1a1a'
+                }}>
+                  Sağlık | Spor Salonu Uygulamaları
+                </h3>
+                <p style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: '500',
+                  height: 'auto',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  margin: '0 0 40px 0',
+                  color: '#606060'
+                }}>
+                  Spor salonları için antrenman takibi, üye yönetimi, rezervasyon ve ödeme süreçlerini kolaylaştıran web ve mobil uygulamalar geliştirdik. İşletmelerin günlük işleyişini dijitale taşımanın ötesinde, yapay zekâ destekli çözümlerle verimliliği artırdık, üyelerin salonla olan etkileşimini güçlendirdik
+                </p>
+              </div>
+
+              {/* 4. Görsel Wrapper - Sol */}
+              <div style={{
+                position: 'absolute',
+                left: '0px',
+                top: '2102px', // 1850px (3. görsel sağ metinleri) + 140px (margin) + 112px extra margin
+                width: '650px',
+                height: '600px'
+              }}>
+              {/* 4. Görsel - Sol */}
+              <div style={{
+                width: '650px',
+                height: '600px',
+                background: 'url("/images/prepress-baski-teslimat.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                borderRadius: '20px',
+                  position: 'relative',
+                overflow: 'hidden',
+                filter: 'grayscale(100%)'
+              }}>
+                </div>
+                
+                {/* 4. Ok İkonu - Wrapper içinde ama görsel dışında */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  right: '20px',
+                  width: '50px',
+                  height: '50px',
+                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  zIndex: 10
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              {/* 4. Görsel Altındaki Metinler - Sol */}
+              <div style={{
+                position: 'absolute',
+                left: '0px',
+                top: '2762px', // 2102px + 600px + 60px
+                width: '402px'
+              }}>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '25px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: '70px',
+                  letterSpacing: '-0.75px',
+                  lineHeight: '35px',
+                  margin: '0 0 20px 0',
+                  color: '#1a1a1a'
+                }}>
+                  Baskı Süreç Yönetimi | Prepress, Baskı, Teslimat
+                </h3>
+                <p style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: '500',
+                  height: 'auto',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  margin: '0',
+                  color: '#606060'
+                }}>
+                  Baskı süreçlerini uçtan uca yönetmek isteyen matbaalar için geliştirilen yazılımımız, prepress aşamasından başlayarak baskı ve teslimat süreçlerine kadar tüm adımları tek bir platformda toplar. Sipariş alımı, iş takibi, üretim planlaması, malzeme kullanımı, müşteri onayları ve sevkiyat gibi işlemler sistemli ve izlenebilir hale gelir.
+                </p>
+              </div>
+
+              {/* 4. Görsel Wrapper - Sağ */}
+              <div style={{
+                position: 'absolute',
+                left: '835px',
+                top: '2214px', // 2102px + 112px (increased margin to 50px total)
+                width: '650px',
+                height: '600px'
+              }}>
+              {/* 4. Görsel - Sağ */}
+              <div style={{
+                width: '650px',
+                height: '600px',
+                background: 'url("/images/baski-dokuma-ver- transferleri.webp")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                borderRadius: '20px',
+                  position: 'relative',
+                overflow: 'hidden',
+                filter: 'grayscale(100%)'
+              }}>
+                </div>
+                
+                {/* 5. Ok İkonu - Wrapper içinde ama görsel dışında */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  right: '20px',
+                  width: '50px',
+                  height: '50px',
+                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  zIndex: 10
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              {/* 4. Görsel Altındaki Metinler - Sağ */}
+              <div style={{
+                position: 'absolute',
+                left: '835px',
+                top: '2874px', // 2214px + 600px + 60px
+                width: '402px'
+              }}>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '25px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: '70px',
+                  letterSpacing: '-0.75px',
+                  lineHeight: '35px',
+                  margin: '0 0 20px 0',
+                  color: '#1a1a1a'
+                }}>
+                  Baskı Süreç Yönetimi | Baskı, dokuma veri transferleri
+                </h3>
+                <p style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: '500',
+                  height: 'auto',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  margin: '0',
+                  color: '#606060'
+                }}>
+                  Üretim süreçlerindeki desen, renk ve teknik bilgiler makinelere doğru ve hızlı biçimde aktarıldı. Manuel aktarımlarda oluşabilecek zaman kaybı ve veri hatalarını ortadan kaldıran sistem, tasarımdan üretime geçiş sürecini dijitalleştirdi.
+                </p>
+              </div>
+
+              {/* 5. Görsel Wrapper - Sol */}
+              <div style={{
+                position: 'absolute',
+                left: '0px',
+                top: '3134px', // 2834px (4. görsel sağ metinleri) + 300px (increased margin)
+                width: '650px',
+                height: '600px'
+              }}>
+              {/* 5. Görsel - Sol */}
+              <div style={{
+                width: '650px',
+                height: '600px',
+                background: 'url("/images/spor-cozumleri-bookmaker.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                borderRadius: '20px',
+                  position: 'relative',
+                overflow: 'hidden',
+                filter: 'grayscale(100%)'
+              }}>
+                </div>
+                
+                {/* 9. Ok İkonu - Wrapper içinde ama görsel dışında */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  right: '20px',
+                  width: '50px',
+                  height: '50px',
+                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  zIndex: 10
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              {/* 5. Görsel Altındaki Metinler - Sol */}
+              <div style={{
+                position: 'absolute',
+                left: '0px',
+                top: '3794px', // 3134px + 600px + 60px
+                width: '402px'
+              }}>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '25px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: 'auto',
+                  letterSpacing: '-0.75px',
+                  lineHeight: '35px',
+                  margin: '0 0 16px 0',
+                  color: '#1a1a1a'
+                }}>
+                  Spor Çözümleri | Bookmaker
+                </h3>
+                <p style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: '500',
+                  height: 'auto',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  margin: '0',
+                  color: '#606060'
+                }}>
+                  Spor ve canlı bahis işlemlerini düzenleyen bu yapı ile oran yönetimi, kullanıcı hesapları, kupon takibi ve ödeme sistemlerinin merkezi bir panel üzerinden güvenli şekilde yönetilmesi sağlandı. Web ve mobil uyumlu altyapısıyla esnek bir yönetim sağlanırken, yüksek erişim trafiğinde dahi stabil çalışacak şekilde tasarlanmıştır.
+                </p>
+              </div>
+
+              {/* 5. Görsel Wrapper - Sağ */}
+              <div style={{
+                position: 'absolute',
+                left: '835px',
+                top: '3224px', // 3134px (sol görsel) + 90px (increased margin)
+                width: '650px',
+                height: '600px'
+              }}>
+              {/* 5. Görsel - Sağ */}
+              <div style={{
+                width: '650px',
+                height: '600px',
+                background: 'url("/images/spor-cozumleri-terminal-bilet.webp")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                borderRadius: '20px',
+                  position: 'relative',
+                overflow: 'hidden',
+                filter: 'grayscale(100%)'
+              }}>
+                </div>
+                
+                {/* 10. Ok İkonu - Wrapper içinde ama görsel dışında */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  right: '20px',
+                  width: '50px',
+                  height: '50px',
+                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  zIndex: 10
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              {/* 5. Görsel Altındaki Metinler - Sağ */}
+              <div style={{
+                position: 'absolute',
+                left: '835px',
+                top: '3884px', // 3224px + 600px + 60px
+                width: '402px'
+              }}>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '25px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: 'auto',
+                  letterSpacing: '-0.75px',
+                  lineHeight: '35px',
+                  margin: '0 0 16px 0',
+                  color: '#1a1a1a'
+                }}>
+                  Spor Çözümleri | Terminal Bilet
+                </h3>
+                <p style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: '500',
+                  height: 'auto',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  margin: '0',
+                  color: '#606060'
+                }}>
+                  Fiziksel satış noktalarında kupon basımı, oran yönetimi, kullanıcı erişimi, işlem kayıtları ve ödeme takibi gibi süreçlerin merkezi sistemle entegre şekilde yönetilmesi sağlandı. Her işlem, denetlenebilir kayıtlarla arşivlenerek, sistem yasal düzenlemelere ve lisans koşullarına uygun biçimde çalışacak şekilde tasarlanmıştır.
+                </p>
+              </div>
+
+              {/* 6. Görsel Wrapper - Sol */}
+              <div style={{
+                position: 'absolute',
+                left: '0px',
+                top: '4174px', // 3844px (5. görsel sağ metinleri) + 330px (increased margin by 190px total)
+                width: '650px',
+                height: '600px'
+              }}>
+              {/* 6. Görsel - Sol */}
+              <div style={{
+                width: '650px',
+                height: '600px',
+                background: 'url("/images/yolcu-tasima-uygulamalari.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                borderRadius: '20px',
+                  position: 'relative',
+                overflow: 'hidden',
+                filter: 'grayscale(100%)'
+              }}>
+                </div>
+                
+                {/* 6. Ok İkonu - Wrapper içinde ama görsel dışında */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  right: '20px',
+                  width: '50px',
+                  height: '50px',
+                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  zIndex: 10
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              {/* 6. Görsel Altındaki Metinler - Sol */}
+              <div style={{
+                position: 'absolute',
+                left: '0px',
+                top: '4834px', // 4174px + 600px + 60px
+                width: '402px'
+              }}>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '25px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: '70px',
+                  letterSpacing: '-0.75px',
+                  lineHeight: '35px',
+                  margin: '0 0 20px 0',
+                  color: '#1a1a1a'
+                }}>
+                  Yolcu Taşıma Uygulamaları | Anlık - Paylaşımlı - Rezervasyonlu
+                </h3>
+                <p style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: '500',
+                  height: 'auto',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  margin: '0',
+                  color: '#606060'
+                }}>
+                  Anlık transfer, paylaşımlı yolculuk ve rezervasyon seçenekleriyle taksi, minibüs, servis veya otobüs kullanımlarında yolcular için hızlı ve ekonomik, sürücüler için verimli ve ek kazançlı bir ulaşım şekli sağlandı; tüm süreç akıllı bir mobil uygulama teknolojisi ile yönetildi.
+                </p>
+              </div>
+
+              {/* 6. Görsel Wrapper - Sağ */}
+              <div style={{
+                position: 'absolute',
+                left: '835px',
+                top: '4276px', // 4174px + 102px
+                width: '650px',
+                height: '600px'
+              }}>
+              {/* 6. Görsel - Sağ */}
+              <div style={{
+                width: '650px',
+                height: '600px',
+                background: 'url("/images/arac-personel-gecis-sistemeri.jpg")',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                borderRadius: '20px',
+                  position: 'relative',
+                overflow: 'hidden',
+                filter: 'grayscale(100%)'
+              }}>
+                </div>
+                
+                {/* 7. Ok İkonu - Wrapper içinde ama görsel dışında */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '20px',
+                  right: '20px',
+                  width: '50px',
+                  height: '50px',
+                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                  borderRadius: '50%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                  zIndex: 10
+                }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+
+              {/* 6. Görsel Altındaki Metinler - Sağ */}
+              <div style={{
+                position: 'absolute',
+                left: '835px',
+                top: '4936px', // 4276px + 600px + 60px
+                width: '402px'
+              }}>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '25px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  height: '70px',
+                  letterSpacing: '-0.75px',
+                  lineHeight: '35px',
+                  margin: '0 0 20px 0',
+                  color: '#1a1a1a'
+                }}>
+                  Geçiş Sistemleri | Araç, Personel Giriş-Çıkış Sistemleri
+                </h3>
+                <p style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: '500',
+                  height: 'auto',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  margin: '0',
+                  color: '#606060'
+                }}>
+                  Araç giriş–çıkış kontrolünü düzenlemek isteyen işletmeler için geliştirilen geçiş sistemi; kapı, bariyer ve sensör entegrasyonlarıyla araç hareketlerini otomatik ve güvenli şekilde yönetilmesini sağladı. Plaka tanıma, RFID veya kartlı geçiş gibi yöntemlerle çalışan sistem; giriş/çıkış kayıtlarını tutar, yetkilendirme yapar ve geçmiş işlemleri detaylı şekilde raporlar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* YENİ BÖLÜM - GÖRSELDEKİ GİBİ */}
+      <section
+        style={{
+          background: '#0D0D0C',
+          width: 'auto',
+          margin: '120px 15px 0 15px',
+          height: '700px',
+          borderTopLeftRadius: '40px',
+          borderTopRightRadius: '40px',
+          borderBottomLeftRadius: '0px',
+          borderBottomRightRadius: '0px',
+          display: 'flex',
+          alignItems: 'center',
+          position: 'relative',
+        }}
+      >
+        <div className="container-custom" style={{ width: '100%', position: 'relative', padding: '0 5px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+            {/* Sol: Başlık */}
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1, paddingLeft: '20px', paddingRight: '20px' }}>
+              <h2
+                style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '80px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  height: 'auto',
+                  minHeight: '180px',
+                  letterSpacing: '-2.4px',
+                  lineHeight: '90px',
+                  color: 'transparent',
+                  background: 'linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  margin: '0 0 0 -26px',
+                  width: '840px',
+                  textAlign: 'left',
+                  display: 'block',
+                }}
+              >
+                Fikrinizi görüşmek için şimdi bizimle iletişime geçin.
+              </h2>
+              <p
+                style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '18px',
+                  fontStyle: 'normal',
+                  fontWeight: '400',
+                  color: 'white',
+                  margin: '100px 0 0 -26px',
+                  padding: 0,
+                  lineHeight: '28px',
+                  maxWidth: '840px',
+                  textAlign: 'left'
+                }}
+              >
+                İşletmenizin dijital dönüşümünü, deneyimleriyle yön veren güvenilir bir ekip ile yeniden şekillendirin.
+              </p>
+            </div>
+            {/* Sağ: Teklif İste Butonu */}
+            <Link href="/iletisim">
+              <button
+                className="teklif-iste-btn"
+                style={{
+                  border: '2px solid transparent',
+                  borderRadius: '15px',
+                  background: 'linear-gradient(#0D0D0C, #0D0D0C) padding-box, linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%) border-box',
+                  color: '#fff',
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '14px',
+                  fontStyle: 'normal',
+                  fontWeight: 500,
+                  height: '55px',
+                  minWidth: '70px',
+                  letterSpacing: '0.12px',
+                  lineHeight: '27px',
+                  padding: '0 32px',
+                  cursor: 'pointer',
+                  transition: 'background 0.3s',
+                  position: 'relative',
+                  outline: 'none',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                }}
+              >
+                Teklif Al
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{ marginLeft: '4px' }}>
+                  <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </Link>
+          </div>
+          {/* Yatay çizgi - butonun sonuna kadar uzanan */}
+          <div style={{ 
+            position: 'absolute', 
+            left: 0, 
+            right: 0, 
+            height: '1px', 
+            background: 'rgba(255,255,255,0.7)', 
+            top: 'calc(50% + 90px)', 
+            marginTop: '48px' 
+          }} />
+        </div>
+      </section>
+    </main>
+  )
+} 

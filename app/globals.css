@@ -1,0 +1,906 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:wght@300;400;500;700&family=Sora:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  h1:not(.font-sora), h2:not(.font-sora), h3:not(.font-sora), h4:not(.font-sora), h5:not(.font-sora), h6:not(.font-sora) {
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary-light text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-2 sm:px-4 lg:px-1;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(135deg, #0a9f97 0%, #077a73 100%);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, #0a9f97 0%, #077a73 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} 
+
+/* İletişim Sayfası Mobil Responsive Ayarları */
+@media (max-width: 1024px) {
+  /* Hero bölümü mobil ayarları */
+  .hero-section {
+    min-height: 300px !important;
+    height: 300px !important;
+  }
+  .hero-image {
+    min-height: 300px !important;
+    height: 300px !important;
+    width: calc(100% - 20px) !important;
+    left: 10px !important;
+    right: 10px !important;
+    border-radius: 15px !important;
+  }
+  .hero-title {
+    font-size: clamp(32px, 8vw, 80px) !important;
+    height: auto !important;
+    letter-spacing: -1px !important;
+    line-height: 1.2 !important;
+    padding: 0 20px !important;
+  }
+  
+  /* Contact form mobil ayarları */
+  .contact-section {
+    margin-top: 30px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    border-radius: 15px !important;
+    padding: 40px 20px !important;
+  }
+  .contact-container {
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+  }
+  .contact-grid {
+    gap: 32px !important;
+  }
+  
+  /* Başlık mobil ayarları */
+  .contact-title {
+    font-size: clamp(40px, 10vw, 80px) !important;
+    letter-spacing: clamp(2px, 2vw, 8px) !important;
+    line-height: clamp(1.2, 1.3, 1.375) !important;
+    text-align: center !important;
+  }
+  
+  /* Paragraflar mobil ayarları */
+  .contact-text {
+    font-size: clamp(16px, 4vw, 20px) !important;
+    text-align: center !important;
+  }
+  
+  /* Adres bilgileri mobil ayarları */
+  .address-text {
+    font-size: clamp(14px, 3.5vw, 20px) !important;
+    text-align: center !important;
+  }
+  
+  /* İletişim linkleri mobil ayarları */
+  .contact-link {
+    font-size: clamp(18px, 4.5vw, 28px) !important;
+    letter-spacing: clamp(0.5px, 1vw, 1px) !important;
+    line-height: clamp(1.2, 1.3, 1.5) !important;
+    justify-content: center !important;
+  }
+  
+  /* Form alanları mobil ayarları */
+  .form-label {
+    font-size: clamp(16px, 4vw, 20px) !important;
+  }
+  .form-input {
+    font-size: clamp(16px, 4vw, 20px) !important;
+  }
+  .form-checkbox-text {
+    font-size: clamp(14px, 3.5vw, 20px) !important;
+  }
+  .submit-button {
+    font-size: clamp(16px, 4vw, 20px) !important;
+    width: 100% !important;
+    min-height: 44px !important;
+  }
+  
+  /* Son bölüm mobil ayarları */
+  .quote-section {
+    height: clamp(300px, 50vh, 490px) !important;
+  }
+  .quote-title {
+    font-size: clamp(32px, 8vw, 80px) !important;
+    height: auto !important;
+    letter-spacing: clamp(-1px, -1vw, -2.4px) !important;
+    line-height: clamp(1.2, 1.3, 1.125) !important;
+    width: 100% !important;
+    max-width: 840px !important;
+    text-align: center !important;
+    padding: 0 20px !important;
+  }
+  .quote-button {
+    font-size: clamp(12px, 3vw, 14px) !important;
+    height: clamp(44px, 10vh, 55px) !important;
+    min-width: clamp(120px, 25vw, 200px) !important;
+    line-height: clamp(1.2, 1.3, 1.5) !important;
+    padding: 0 clamp(16px, 4vw, 32px) !important;
+  }
+  .quote-container {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  .quote-title-container {
+    width: 100% !important;
+  }
+  .quote-button-container {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  
+  /* Footer mobil responsive ayarları */
+  footer {
+    height: auto !important;
+    min-height: auto !important;
+  }
+  
+  /* Hakkımızda Sayfası Mobil Responsive Ayarları */
+  /* HERO ALTINDA YENİ BÖLÜM - Sol boşluğu mobilde gizleme */
+  .hakkimizda-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  /* MISSION & AI PRODUCT BÖLÜMÜ - Mobil responsive */
+  .mission-section {
+    height: auto !important;
+    min-height: 600px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    margin-top: 100px !important;
+    margin-bottom: 30px !important;
+  }
+  
+  .mission-left {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 400px !important;
+    padding: 60px 40px 24px 40px !important;
+    margin-right: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .mission-right {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 400px !important;
+  }
+  
+  /* MISSION & AI PRODUCT BÖLÜMÜ - Detaylı Responsive Ayarları */
+  /* Sol bölüm başlık */
+  .mission-left h2 {
+    font-size: clamp(36px, 9vw, 64px) !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+  }
+  
+  /* Sol bölüm paragraflar */
+  .mission-left p {
+    font-size: clamp(16px, 4vw, 16px) !important;
+    line-height: 1.6 !important;
+    text-align: center !important;
+    height: auto !important;
+    margin-bottom: 15px !important;
+  }
+  
+  /* Sol bölüm logo */
+  .mission-left img {
+    height: 60px !important;
+    right: 20px !important;
+    bottom: 20px !important;
+  }
+  
+  /* Sağ bölüm başlık */
+  .mission-right h3 {
+    font-size: clamp(24px, 6vw, 40px) !important;
+    text-align: center !important;
+    padding: 0 20px !important;
+    bottom: 40px !important;
+    left: 0 !important;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  /* Sağ bölüm sayı */
+  .mission-right span {
+    font-size: clamp(56px, 14vw, 120px) !important;
+    text-align: center !important;
+  }
+  
+  /* Sağ bölüm alt metin */
+  .mission-right div[style*="fontSize: '20px'"] {
+    font-size: clamp(16px, 4vw, 20px) !important;
+    text-align: center !important;
+    margin-top: 5px !important;
+  }
+  
+  /* Sağ bölüm yazılarını dikey ve yatay ortalama */
+  .mission-right div[style*="position: 'absolute'"] {
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    transform: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    text-align: center !important;
+    padding: 20px !important;
+  }
+  
+  /* 500+ öncesindeki dikey boşluğu artırma */
+  .mission-right span {
+    margin-bottom: 20px !important;
+  }
+  
+  /* Sağ bölüm başlık container'ını ortalama */
+  .mission-right div[style*="left: 0, bottom: '66px'"] {
+    position: relative !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0 20px !important;
+    margin-bottom: 30px !important;
+  }
+  
+  /* Sağ bölüm sayı container'ını ortalama */
+  .mission-right div[style*="right: '60px', top: '50%'"] {
+    position: relative !important;
+    right: 0 !important;
+    top: 0 !important;
+    transform: none !important;
+    text-align: center !important;
+    margin-top: 20px !important;
+  }
+  
+  /* ABOUT - GRADIENT TEXT BÖLÜMÜ - Mobil responsive */
+  .about-section {
+    height: auto !important;
+    min-height: 550px !important;
+    margin: 100px 10px 40px 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  
+  .about-image {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 0 !important;
+  }
+  
+  .about-text {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 400px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 20px !important;
+  }
+  
+  /* SON BÖLÜM - Mobil responsive */
+  .quote-section-hakkimizda {
+    height: auto !important;
+    min-height: 400px !important;
+    margin: 60px 10px 0 10px !important;
+  }
+  
+  .quote-container-hakkimizda {
+    padding: 20px !important;
+  }
+  
+  .quote-content-hakkimizda {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  
+  .quote-title-hakkimizda {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  .quote-button-hakkimizda {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  /* Hakkımızda HERO BÖLÜMÜ - Mobil Responsive Ayarları */
+  .hakkimizda-hero-section {
+    min-height: 300px !important;
+    height: 300px !important;
+    margin-top: 6px !important;
+  }
+  
+  .hakkimizda-hero-image {
+    min-height: 300px !important;
+    height: 300px !important;
+    width: calc(100% - 20px) !important;
+    left: 10px !important;
+    right: 10px !important;
+    border-radius: 15px !important;
+  }
+  
+  .hakkimizda-hero-content {
+    padding: 0 20px !important;
+  }
+  
+  .hakkimizda-hero-title {
+    font-size: clamp(32px, 8vw, 80px) !important;
+    height: auto !important;
+    letter-spacing: -1px !important;
+    line-height: 1.2 !important;
+    padding: 0 10px !important;
+  }
+  
+  /* Hakkımızda HERO ALTINDA YENİ BÖLÜM - Mobil Responsive Ayarları */
+  .hakkimizda-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  
+  /* Başlık mobil ayarları */
+  .hakkimizda-section h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: left !important;
+    font-size: clamp(24px, 6vw, 60px) !important;
+    line-height: 1.2 !important;
+    height: auto !important;
+    margin-bottom: 20px !important;
+    padding-left: 20px !important;
+  }
+  
+  /* [ hakkımızda ] yazısını başlık ile aynı hizada yapma */
+  .hakkimizda-section div:first-child {
+    padding-left: 20px !important;
+    margin-left: 0 !important;
+  }
+  
+  /* Daha spesifik selector ile [ hakkımızda ] yazısını hizalama */
+  .hakkimizda-section .mb-4.text-sm.font-medium.text-gray-600.uppercase.tracking-wider.text-left {
+    padding-left: 20px !important;
+    margin-left: 0 !important;
+  }
+  
+  /* Alt metinler mobil ayarları */
+  .hakkimizda-text-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    padding: 0 20px !important;
+    margin-left: 0 !important;
+  }
+  
+  .hakkimizda-section p {
+    font-size: clamp(16px, 4vw, 17px) !important;
+    line-height: 1.7 !important;
+    margin-bottom: 15px !important;
+    max-width: 100% !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    text-align: left !important;
+    padding: 0 5px !important;
+  }
+  
+  /* Mobilde daha küçük ekranlar için ek ayarlar */
+  @media (max-width: 768px) {
+    .hakkimizda-text-container {
+      padding: 0 15px !important;
+    }
+    
+    .hakkimizda-section p {
+      font-size: clamp(15px, 3.5vw, 16px) !important;
+      line-height: 1.6 !important;
+      margin-bottom: 12px !important;
+    }
+    
+    /* 768px altında [ hakkımızda ] yazısını hizalama */
+    .hakkimizda-section .mb-4.text-sm.font-medium.text-gray-600.uppercase.tracking-wider.text-left {
+      padding-left: 15px !important;
+    }
+    
+    /* MISSION & AI PRODUCT - 768px altı */
+    .mission-left {
+      padding: 40px 30px 20px 30px !important;
+    }
+    
+    .mission-left h2 {
+      font-size: clamp(32px, 8vw, 64px) !important;
+    }
+    
+    .mission-left p {
+      font-size: clamp(15px, 3.8vw, 16px) !important;
+    }
+    
+    .mission-right h3 {
+      font-size: clamp(22px, 5.5vw, 40px) !important;
+      padding: 0 15px !important;
+    }
+    
+    .mission-right span {
+      font-size: clamp(48px, 12vw, 120px) !important;
+      margin-bottom: 15px !important;
+    }
+    
+    /* 768px altında sağ bölüm ortalama */
+    .mission-right div[style*="left: 0, bottom: '66px'"] {
+      margin-bottom: 25px !important;
+      padding: 0 15px !important;
+    }
+    
+    .mission-right div[style*="right: '60px', top: '50%'"] {
+      margin-top: 15px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hakkimizda-text-container {
+      padding: 0 12px !important;
+    }
+    
+    .hakkimizda-section p {
+      font-size: clamp(14px, 3.2vw, 15px) !important;
+      line-height: 1.5 !important;
+      margin-bottom: 10px !important;
+    }
+    
+    /* 480px altında [ hakkımızda ] yazısını hizalama */
+    .hakkimizda-section .mb-4.text-sm.font-medium.text-gray-600.uppercase.tracking-wider.text-left {
+      padding-left: 12px !important;
+    }
+    
+    /* MISSION & AI PRODUCT - 480px altı */
+    .mission-left {
+      padding: 30px 20px 15px 20px !important;
+    }
+    
+    .mission-left h2 {
+      font-size: clamp(28px, 7vw, 64px) !important;
+    }
+    
+    .mission-left p {
+      font-size: clamp(14px, 3.5vw, 16px) !important;
+    }
+    
+    .mission-right h3 {
+      font-size: clamp(20px, 5vw, 40px) !important;
+      padding: 0 10px !important;
+    }
+    
+    .mission-right span {
+      font-size: clamp(44px, 11vw, 120px) !important;
+      margin-bottom: 12px !important;
+    }
+    
+    /* 480px altında sağ bölüm ortalama */
+    .mission-right div[style*="left: 0, bottom: '66px'"] {
+      margin-bottom: 20px !important;
+      padding: 0 10px !important;
+    }
+    
+    .mission-right div[style*="right: '60px', top: '50%'"] {
+      margin-top: 12px !important;
+    }
+  }
+} 
+
+/* Hizmetler Sayfası Mobil Responsive Ayarları */
+@media (max-width: 768px) {
+	/* Hizmetler Sayfası Mobil Responsive Ayarları */
+	.hizmetler-hero-section {
+		min-height: 320px !important;
+		height: 320px !important;
+	}
+	.hizmetler-hero-image {
+		min-height: 320px !important;
+		height: 320px !important;
+		width: calc(100% - 40px) !important;
+		left: 20px !important;
+		right: 20px !important;
+		border-radius: 20px !important;
+	}
+	.hizmetler-hero-title {
+		font-size: clamp(36px, 8vw, 64px) !important;
+		height: auto !important;
+		letter-spacing: -1px !important;
+		line-height: 1.2 !important;
+		padding: 0 16px !important;
+	}
+	.hizmetler-content-section {
+		flex-direction: column !important;
+		margin-top: 60px !important;
+		margin-bottom: 40px !important;
+	}
+	/* Sol menü ve kart kolonunu tam genişlik yap */
+	.hizmetler-content-section > div:first-child {
+		margin-left: 0 !important;
+		padding: 0 12px !important;
+	}
+	/* Sol menü kutuları */
+	.hizmetler-content-section div[style*="width: '310px'"] {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+	/* Sağ içerik alanı */
+	.hizmetler-content-section > div[style*="flex: 1"] {
+		margin-left: 0 !important;
+		padding: 0 12px !important;
+	}
+	/* Büyük resim */
+	.hizmetler-content-section img[alt='Hizmetler Görsel'] {
+		width: 100% !important;
+		height: auto !important;
+		border-radius: 16px !important;
+	}
+	/* 4 kartlık bölüm - yan yana yerine alt alta */
+	section[style*="justify-content: 'space-between'"] {
+		flex-direction: column !important;
+		align-items: stretch !important;
+		margin: 40px 20px 0 20px !important;
+		gap: 16px !important;
+	}
+	section[style*="justify-content: 'space-between'"] > div {
+		width: 100% !important;
+		height: auto !important;
+		padding: 24px !important;
+	}
+	section[style*="justify-content: 'space-between'"] h3 {
+		font-size: clamp(20px, 5.5vw, 28px) !important;
+		line-height: 1.3 !important;
+	}
+	section[style*="justify-content: 'space-between'"] p {
+		font-size: clamp(15px, 4vw, 16px) !important;
+		line-height: 1.6 !important;
+		height: auto !important;
+	}
+	/* Alt CTA bölümü */
+	section[style*="background: '#0D0D0C'"] {
+		height: auto !important;
+		margin: 60px 10px 0 10px !important;
+		border-top-left-radius: 20px !important;
+		border-top-right-radius: 20px !important;
+	}
+	section[style*="background: '#0D0D0C'"] h2 {
+		font-size: clamp(32px, 8vw, 48px) !important;
+		min-height: auto !important;
+		line-height: 1.2 !important;
+		width: 100% !important;
+	}
+	section[style*="background: '#0D0D0C'"] .teklif-iste-btn {
+		margin-top: 16px !important;
+	}
+	section[style*="background: '#0D0D0C'"] > .container-custom > div {
+		flex-direction: column !important;
+		gap: 20px !important;
+	}
+	/* Hizmetler: sol kolon üstte, sağ içerik altta */
+	.hizmetler-content-wrapper {
+		margin-left: 0 !important;
+		flex-direction: column !important;
+	}
+	/* Hizmetler sağ içerik: başlık ve metin tipografisi */
+	.hizmetler-right-content {
+		padding-left: 16px !important;
+		padding-right: 16px !important;
+	}
+	/* Başlık boyutu ve boşluklar */
+	.hizmetler-right-content h2 {
+		font-size: clamp(22px, 7vw, 30px) !important;
+		line-height: 1.25 !important;
+		letter-spacing: -0.8px !important;
+		margin-top: 8px !important;
+		margin-bottom: 20px !important;
+		word-break: break-word !important;
+	}
+	/* Paragraflar: boyut, satır yüksekliği ve yükseklik reseti */
+	.hizmetler-right-content div[style*="fontSize: '16px'"] {
+		font-size: clamp(14px, 3.8vw, 16px) !important;
+		line-height: 1.65 !important;
+		height: auto !important;
+		max-width: 100% !important;
+		margin-bottom: 12px !important;
+		word-break: break-word !important;
+	}
+	/* Hizmetler sağ içerik genel padding - mobil güvenli alan */
+	.hizmetler-right-content {
+		padding-left: 12px !important;
+		padding-right: 12px !important;
+	}
+	.hizmetler-right-content h2 {
+		font-size: clamp(22px, 7vw, 28px) !important;
+		margin-top: 6px !important;
+		margin-bottom: 16px !important;
+	}
+	.hizmetler-right-content div[style*="fontSize: '16px'"] {
+		margin-bottom: 10px !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* CTA mobil: yükseklik otomatik, üstten hizala */
+	.hizmetler-cta-section { height: auto !important; min-height: 0 !important; align-items: flex-start !important; padding-top: 4px !important; }
+	/* Sol boşluğu biraz daha artır */
+	.hizmetler-cta-section .container-custom { padding-left: 32px !important; padding-right: 15px !important; }
+	/* Başlık-buton arası boşluğu artır */
+	.hizmetler-cta-section .container-custom > div { flex-direction: column !important; align-items: flex-start !important; gap: 16px !important; }
+	/* Buton alt boşluğu azalt */
+	.hizmetler-cta-section .teklif-iste-btn { margin-bottom: 4px !important; }
+	/* Yatay çizgiyi alta sabitle */
+	.hizmetler-cta-section div[style*="height: '1px'"] { top: auto !important; bottom: 4px !important; left: 15px !important; right: 15px !important; margin-top: 0 !important; }
+}
+
+@media (min-width: 768px) {
+	/* Mobil kart section'u masaüstünde gizle */
+	.mobile-cards-section { display: none !important; }
+}
+
+@media (max-width: 768px) {
+	/* 4 kartlık bölüm: tek sütun ve kompakt padding */
+	section[style*="justify-content: 'space-between'"] > div {
+		padding: 16px !important;
+		margin: 0 !important;
+	}
+	section[style*="justify-content: 'space-between'"] > div h3 {
+		font-size: clamp(18px, 5.5vw, 22px) !important;
+		line-height: 1.3 !important;
+		margin-bottom: 8px !important;
+	}
+	section[style*="justify-content: 'space-between'"] > div p {
+		font-size: clamp(14px, 3.8vw, 16px) !important;
+		line-height: 1.55 !important;
+		height: auto !important;
+		margin-bottom: 6px !important;
+	}
+	/* Kartlar arası dikey boşluk */
+	section[style*="justify-content: 'space-between'"] {
+		gap: 12px !important;
+	}
+	/* Desktop kart section'u mobilde gizle (inline display: flex'i bastır) */
+	.desktop-cards-section { display: none !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA heading font-size lock (mobile only) */
+	.hizmetler-cta-section h2 {
+		font-size: clamp(26px, 7vw, 36px) !important;
+		line-height: 1.2 !important;
+		letter-spacing: -0.8px !important;
+	}
+	/* CTA heading 55px top margin */
+	.hizmetler-cta-section h2 { margin-top: 55px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA mobile: smaller responsive heading and balanced side paddings */
+	.hizmetler-cta-section h2 { font-size: clamp(22px, 6.2vw, 32px) !important; }
+	.hizmetler-cta-section .container-custom { padding-left: 20px !important; padding-right: 20px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA: 55px space below title, no extra gap before button */
+	.hizmetler-cta-section h2 { margin-bottom: 55px !important; }
+	.hizmetler-cta-section .container-custom > div { gap: 0 !important; }
+	.hizmetler-cta-section .teklif-iste-btn { margin-top: 0 !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA mobile: fix heading box height and exact spacing */
+	.hizmetler-cta-section h2 {
+		height: auto !important;
+		width: 100% !important;
+		margin-top: 55px !important;
+		margin-bottom: 55px !important;
+		line-height: 1.25 !important;
+	}
+	.hizmetler-cta-section .container-custom > div { gap: 0 !important; }
+	.hizmetler-cta-section .teklif-iste-btn { margin-top: 0 !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA button: 50px space below (mobile only) */
+	.hizmetler-cta-section .teklif-iste-btn { margin-bottom: 50px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA mobile: center heading and button without changing spacing */
+	.hizmetler-cta-section .container-custom > div { align-items: center !important; }
+	.hizmetler-cta-section h2 { text-align: center !important; }
+	.hizmetler-cta-section .teklif-iste-btn { align-self: center !important; }
+} 
+
+@media (max-width: 768px) {
+	/* Hizmetler: AI Consulting Services bölümünden sonraki büyük boşluğu azalt */
+	div[style*="marginBottom: '200px'"] { margin-bottom: 70px !important; }
+	.hizmetler-cta-section { margin-top: 0 !important; }
+} 
+
+@media (max-width: 768px) {
+	/* CTA: reduce outer top margin to tighten gap under previous section */
+	.hizmetler-cta-section { margin-top: 20px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* Reliable control of spacer between AI Consulting card and CTA */
+	.hizmetler-spacer { margin-bottom: 70px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* Hizmetler sağ içerik: eşit sol/sağ boşluk (mobil) - güçlendirilmiş */
+	.hizmetler-right-content {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+		width: 100% !important;
+		box-sizing: border-box !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* Hizmetler sol kolon: menü, Services brochure ve AI Strategy kartlarını ortala */
+	.hizmetler-content-section > div:first-child { width: 100% !important; align-items: center !important; }
+	/* Sol kolondaki 310px genişlikli kutular: ortala ve kenarlardan 20px boşluk bırak */
+	.hizmetler-content-section div[style*="width: '310px'"] {
+		width: calc(100% - 60px) !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* AI Strategy card: outer margins equal (20px each side) and inner paddings reduced */
+	/* Outer width and centering already set for 310px cards; ensure AI Strategy padding is compact */
+	.hizmetler-content-section div[style*="padding: '40px 40px 48px 40px'"] {
+		padding: 10px 20px 10px 20px !important;
+	}
+	/* Reduce large top offset inside AI Strategy content */
+	.hizmetler-content-section div[style*="marginTop: '120px'"] {
+		margin-top: 16px !important;
+	}
+	/* Tighter heading/body spacing inside the card */
+	.hizmetler-content-section div[style*="letterSpacing: '-0.75px'"] { margin-bottom: 10px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* Target by class to ensure reliability */
+	.ai-strategy-card { height: auto !important; min-height: 220px !important; padding: 10px 20px !important; }
+	.ai-strategy-content { margin-top: 12px !important; }
+	.ai-strategy-card p { height: auto !important; margin-bottom: 8px !important; }
+}
+
+@media (max-width: 768px) {
+	/* Right content title: add more top space above heading */
+	.hizmetler-right-content h2 { margin-top: 28px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* AI Strategy card: revert to equal side margins (20px/20px) on mobile */
+	.ai-strategy-card { width: calc(100% - 40px) !important; margin-left: 20px !important; margin-right: 20px !important; }
+} 
+
+@media (max-width: 768px) {
+	/* Ensure both cards are exactly 312px and centered on mobile */
+	.hizmetler-content-section .ai-strategy-card,
+	.hizmetler-content-section .ai-consulting-card {
+		width: 312px !important;
+		max-width: 312px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		align-self: center !important;
+	}
+	.hizmetler-content-section .ai-consulting-card h3,
+	.hizmetler-content-section .ai-consulting-card p {
+		text-align: center !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* Ensure total gutter 28px: parent 20px + card 8px */
+	.hizmetler-content-section .ai-strategy-card,
+	.hizmetler-content-section .ai-consulting-card {
+		margin-left: 8px !important;
+		margin-right: 8px !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* Match spacing of other mobile cards: 100% width, no side margins, uniform padding */
+	.hizmetler-content-section .ai-strategy-card,
+	.hizmetler-content-section .ai-consulting-card {
+		width: 100% !important;
+		max-width: 100% !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+		padding: 16px !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* Enforce exact 28px outer gutter on mobile for AI cards inside left column
+	   Calculation: parent padding (12px) + card margin (16px) = 28px */
+	.hizmetler-content-section > div:first-child .ai-strategy-card,
+	.hizmetler-content-section > div:first-child .ai-consulting-card {
+		width: calc(100% - 32px) !important;
+		margin-left: 16px !important;
+		margin-right: 16px !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* Services brochure card: fixed 296px width on mobile, centered */
+	.services-brochure-card {
+		width: 296px !important;
+		max-width: 296px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* Services brochure card: fixed 296px width on mobile, centered (higher specificity to beat 310px attribute rule) */
+	.hizmetler-content-section > div:first-child .services-brochure-card {
+		width: 296px !important;
+		max-width: 296px !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+} 
+
+@media (max-width: 768px) {
+	/* Services brochure card: match hero side gutters (20px per side). Parent has 12px padding; add 8px margins */
+	.hizmetler-content-section > div:first-child .services-brochure-card {
+		width: calc(100% - 16px) !important;
+		margin-left: 8px !important;
+		margin-right: 8px !important;
+	}
+} 
