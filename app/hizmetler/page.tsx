@@ -375,6 +375,84 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                 }}>
                   • Dijital dönüşüm süreçlerinizi AI destekli hale getirerek uzun vadeli sürdürülebilirlik sağlıyoruz.
                 </div>
+                
+                {/* AI Çözümleri Bölümü */}
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Peki, AI Çözümleri Ne Sunar?
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Biz yapay zekayı sadece bir "teknolojik eklenti" olarak değil, <strong style={{color: "#000000"}}>iş modellerinin yeniden tasarlanma fırsatı</strong> olarak görüyoruz.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Sunduğumuz özel AI çözümleriyle;
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Minimum Viable Product (MVP) seviyesinde AI tabanlı ürün fikirlerini hayata geçiriyoruz.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; İş süreçlerinizi analiz ediyor, manuel adımları otomasyona dönüştürüyoruz.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Süreç takibi, veri analizi, tahminleme, öneri sistemleri gibi alanlarda çözümler geliştiriyoruz.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Dijital dönüşüm süreçlerinizi AI destekli hale getirerek uzun vadeli sürdürülebilirlik sağlıyoruz.
+                </div>
+                
                 {/* Alt Resim */}
                 <div style={{ marginTop: '40px' }}>
                   <img
