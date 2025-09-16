@@ -453,6 +453,115 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   &bull; Dijital dönüşüm süreçlerinizi AI destekli hale getirerek uzun vadeli sürdürülebilirlik sağlıyoruz.
                 </div>
                 
+                {/* Kim, Nereden ve Neden Başlamalı? Bölümü */}
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Kim, Nereden ve Neden Başlamalı?
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Yapay zekaya geçişin sihirli bir formülü yok, ama yanlış başlamak zaman ve kaynak kaybına yol açabilir. İşte bu yüzden;
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Başlangıç, problemin kendisidir. İşletmenizde en çok zaman kaybettiren, en sık hata yapılan, en manuel işleyen süreç ne?
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Başlangıç noktası işte orasıdır.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Yapay zekaya geçmek için bir vizyonunuz varsa ama nereden başlayacağınızı bilmiyorsanız;<br />
+                  ilk adımı birlikte atıyoruz:
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Süreç analizi
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Potansiyel otomasyon noktalarının tespiti
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; En yalın haliyle MVP geliştirme
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Test &amp; geri bildirim süreçleri
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Genişletilmiş entegrasyon ve yapay zeka modelleriyle olgunlaşma
+                </div>
+                
                 {/* Alt Resim */}
                 <div style={{ marginTop: '40px' }}>
                   <img
