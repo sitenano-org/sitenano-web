@@ -272,7 +272,7 @@ export default function HizmetlerPage() {
               <>
                 <h2 style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-                  fontSize: '46px',
+                  fontSize: '60px',
                   fontStyle: 'normal',
                   fontWeight: 400,
                   letterSpacing: '-3px',
@@ -281,7 +281,7 @@ export default function HizmetlerPage() {
                   marginBottom: '60px', // Boşluğu artır
                   textAlign: 'left',
                 }}>
-                  Özel Ai Çözümleri - Fikirden Üretime
+                  Dijital dünyada başarı için<br />ihtiyacınız olan tüm çözümler
                 </h2>
                 <div style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
@@ -295,10 +295,7 @@ export default function HizmetlerPage() {
                   marginBottom: '8px', // 1. ve 2. paragraf arasındaki boşluğu azalt
                   maxWidth: '1000px', // Genişlik 1000px
                 }}>
-                  "Yapay Zeka" Sadece Teknoloji Değil, Yeni Bir Düşünme Biçimidir.
-Yapay zeka artık bir seçenek değil, iş dünyası için kaçınılmaz bir gerçek.
-Fakat bu alan çoğu işletme için hâlâ karmaşık, belirsiz ve "büyük oyuncuların alanı" gibi görünüyor. Biz bu algıyı değiştirmek için çalışıyoruz.
-Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her ölçekten işletmenin dönüşüm aracıdır.
+                  Sitenano olarak, işletmenizi dijital dünyada öne çıkaracak kapsamlı çözümler sunuyoruz. Modern teknolojiler ve yaratıcı tasarım anlayışımızla projelerinizi hayata geçiriyoruz.
                 </div>
                 {/* AI Çözümleri Bölümü */}
                 <div style={{ 
@@ -444,7 +441,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
               <>
                 <h2 style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-                  fontSize: '46px',
+                  fontSize: '60px',
                   fontStyle: 'normal',
                   fontWeight: 400,
                   letterSpacing: '-3px',
@@ -486,7 +483,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
               <>
                 <h2 style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-                  fontSize: '46px',
+                  fontSize: '60px',
                   fontStyle: 'normal',
                   fontWeight: 400,
                   letterSpacing: '-3px',
@@ -528,7 +525,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
               <>
                 <h2 style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-                  fontSize: '46px',
+                  fontSize: '60px',
                   fontStyle: 'normal',
                   fontWeight: 400,
                   letterSpacing: '-3px',
@@ -570,7 +567,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
               <>
                 <h2 style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
-                  fontSize: '46px',
+                  fontSize: '60px',
                   fontStyle: 'normal',
                   fontWeight: 400,
                   letterSpacing: '-3px',
