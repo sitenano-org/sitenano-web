@@ -569,6 +569,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                     alt="Hizmetler Görsel"
                     style={{
                       width: '994px',
+                  borderRadius: '15px',
                       height: '640px',
                       borderRadius: '32px',
                       objectFit: 'cover',
@@ -734,45 +735,66 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   </div>
                 </div>
                 
-                {/* Sonuç Mesajı */}
-                <div style={{ marginTop: '60px' }}>
+                {/* Ayrı Sonuç Bölümü */}
+                <div style={{ 
+                  marginTop: '80px',
+                  marginBottom: '40px',
+                  marginLeft: '0',
+                  marginRight: '0',
+                  padding: '60px 55px',
+                  backgroundColor: '#e9ecef',
+                  width: '994px',
+                  borderRadius: '15px',
+                  textAlign: 'left'
+                }}>
                   <div style={{ 
-                    fontFamily: 'Sora, Arial, Helvetica, sans-serif', 
-                    fontSize: '46px', 
-                    fontWeight: 600,
-                    color: '#000', 
                     maxWidth: '1000px',
-                    marginBottom: '24px',
-                    lineHeight: '1.2'
+                    margin: '0 auto',
+                    paddingRight: '20px',
+                    textAlign: 'left'
                   }}>
-                    Yapay zeka bir lüks değil, işletmenin devamlılığı için gerekli bir evrimdir.
+                    {/* Ana Başlık */}
+                    <div style={{ 
+                      fontFamily: 'Sora, Arial, Helvetica, sans-serif', 
+                      fontSize: '46px', 
+                      fontWeight: 600,
+                      color: '#000', 
+                      marginBottom: '32px',
+                      lineHeight: '1.2',
+                      textAlign: 'left'
+                    }}>
+                      Yapay zeka bir lüks değil, işletmenizin devamlılığı için gerekli bir evrimdir.
+                    </div>
+                    
+                    {/* Alt Mesajlar */}
+                    <div style={{ 
+                      fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                      fontSize: '18px', 
+                      fontWeight: 400,
+                      fontStyle: 'italic',
+                      color: '#000', 
+                      marginBottom: '16px',
+                      lineHeight: '1.6',
+                      textAlign: 'left'
+                    }}>
+                      Bugün küçük bir adımla başlanabilir. Ama hiç başlamamak, en büyük risktir. Eğer "nereden başlayacağınızı" bilmiyorsanız, zaten tam olarak başlamanız gereken yerdesiniz.
+                    </div>
+                    
+                    <div style={{ 
+                      fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                      fontSize: '18px', 
+                      fontWeight: 400,
+                      fontStyle: 'italic',
+                      color: '#000', 
+                      lineHeight: '1.6',
+                      textAlign: 'left'
+                    }}>
+                      Biz, bu yolculuğun sadece teknoloji tarafında değil, yol rehberliğinde de yanınızdayız.
+                    </div>
                   </div>
                 </div>
                 
-                {/* Son Çağrı Mesajı */}
-                <div style={{ marginTop: '40px' }}>
-                  <div style={{ 
-                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
-                    fontSize: '18px', 
-                    fontWeight: 400,
-                    color: '#333', 
-                    maxWidth: '1000px',
-                    marginBottom: '16px',
-                    lineHeight: '1.6'
-                  }}>
-                    Bugün küçük bir adımla başlanabilir. Ama hiç başlamamak, en büyük risktir. Eğer "nereden başlayacağınızı" bilmiyorsanız, zaten tam olarak başlamanız gereken yerdesiniz.
-                  </div>
-                  <div style={{ 
-                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
-                    fontSize: '18px', 
-                    fontWeight: 500,
-                    color: '#000', 
-                    maxWidth: '1000px',
-                    lineHeight: '1.6'
-                  }}>
-                    Biz, bu yolculuğun sadece teknoloji tarafında değil, yol rehberliğinde de yanınızdayız.
-                  </div>
-                </div>
+
               </>
             )}
             {selected === 1 && (
@@ -961,7 +983,9 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
           gap: '20px',
         }}
       >
-        {/* 1. Kart - E-Ticaretin Yeni Dönemi */}
+
+        
+{/* 1. Kart - E-Ticaretin Yeni Dönemi */}
         <div
           style={{
             width: '450px',
