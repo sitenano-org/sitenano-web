@@ -577,52 +577,200 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   />
                 </div>
                 
-                {/* Resmin Altındaki Yazılar */}
+                {/* Bu Dönüşüm Olmazsa Ne Olur? Bölümü */}
+                <div style={{ marginTop: '40px' }}>
+                  <div style={{ 
+                    fontFamily: 'Sora, Arial, Helvetica, sans-serif', 
+                    fontSize: '28px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '24px'
+                  }}>
+                    Bu Dönüşüm Olmazsa Ne Olur?
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px'
+                  }}>
+                    Yapay zeka teknolojisine geçiş yapmayan işletmeler, birkaç yıl içinde:
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px',
+                    paddingLeft: '8px'
+                  }}>
+                    &bull; Verimsizlik nedeniyle maliyetleri kontrol edememeye,
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px',
+                    paddingLeft: '8px'
+                  }}>
+                    &bull; Müşteri deneyimi açısından geride kalmaya,
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px',
+                    paddingLeft: '8px'
+                  }}>
+                    &bull; Rekabetten kopmaya,
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px',
+                    paddingLeft: '8px'
+                  }}>
+                    &bull; Ve daha da kötüsü, veri üretip bundan faydalanamayan işletmelere dönüşmeye başlar.
+                  </div>
+                </div>
+                
+                {/* AI Yolculuğunda Size Nasıl Rehberlik Ediyoruz? Bölümü */}
+                <div style={{ marginTop: '40px' }}>
+                  <div style={{ 
+                    fontFamily: 'Sora, Arial, Helvetica, sans-serif', 
+                    fontSize: '28px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '24px'
+                  }}>
+                    AI Yolculuğunda Size Nasıl Rehberlik Ediyoruz?
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px'
+                  }}>
+                    İş Hedeflerinizi Anlıyoruz:
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px',
+                    
+                  }}>
+                    Her AI çözüm, işin doğasına uygun olmalı. Önce sizi ve sürecinizi anlamadan satılacak bir teknoloji değil bu.
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px'
+                  }}>
+                    Kritik Noktaları Tespit Ediyoruz:
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px',
+                    
+                  }}>
+                    AI nerede katma değer sağlar? Nerede gereksiz olur? Gereksiz teknolojiye yatırım yaptırmıyoruz.
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px'
+                  }}>
+                    Adım Adım Uyguluyoruz:
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px',
+                    
+                  }}>
+                    Tek adımda büyük bir sistem kurmak yerine, esnek ve ölçeklenebilir çözümler geliştiriyoruz.
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px'
+                  }}>
+                    Veriden Öğrenen Sistemler Kuruyoruz:
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px',
+                    
+                  }}>
+                    Yapay zeka çözümleri yalnızca otomasyon değil; öğrenen, gelişen ve tahmin eden sistemlerdir. Bu yapıları sizin için inşa ediyoruz.
+                  </div>
+                </div>
+                
+                {/* Sonuç Mesajı */}
+                <div style={{ marginTop: '60px' }}>
+                  <div style={{ 
+                    fontFamily: 'Sora, Arial, Helvetica, sans-serif', 
+                    fontSize: '46px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '24px',
+                    lineHeight: '1.2'
+                  }}>
+                    Yapay zeka bir lüks değil, işletmenin devamlılığı için gerekli bir evrimdir.
+                  </div>
+                </div>
+                
+                {/* Son Çağrı Mesajı */}
                 <div style={{ marginTop: '40px' }}>
                   <div style={{ 
                     fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
-                    fontSize: '16px', 
-                    color: '#444', 
+                    fontSize: '18px', 
+                    fontWeight: 400,
+                    color: '#333', 
                     maxWidth: '1000px',
-                    marginBottom: '16px'
+                    marginBottom: '16px',
+                    lineHeight: '1.6'
                   }}>
-                    Mobil uygulama geliştirme süreçlerimizde kullanıcı deneyimini ön planda tutuyoruz. iOS ve Android platformları için native uygulamalar geliştirerek performans ve güvenilirlik sağlıyoruz.
+                    Bugün küçük bir adımla başlanabilir. Ama hiç başlamamak, en büyük risktir. Eğer "nereden başlayacağınızı" bilmiyorsanız, zaten tam olarak başlamanız gereken yerdesiniz.
                   </div>
                   <div style={{ 
                     fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
-                    fontSize: '16px', 
-                    color: '#444', 
+                    fontSize: '18px', 
+                    fontWeight: 500,
+                    color: '#000', 
                     maxWidth: '1000px',
-                    marginBottom: '16px'
+                    lineHeight: '1.6'
                   }}>
-                    Dijital pazarlama stratejileri ile markanızın online varlığını güçlendiriyoruz. SEO optimizasyonu, sosyal medya yönetimi ve içerik pazarlama çözümleri sunuyoruz.
-                  </div>
-                  <div style={{ 
-                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
-                    fontSize: '16px', 
-                    color: '#444', 
-                    maxWidth: '1000px',
-                    marginBottom: '16px'
-                  }}>
-                    Veri analizi ve raporlama araçları ile işletmenizin performansını takip ediyoruz. Anlamlı içgörüler elde ederek stratejik kararlar almanıza yardımcı oluyoruz.
-                  </div>
-                  <div style={{ 
-                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
-                    fontSize: '16px', 
-                    color: '#444', 
-                    maxWidth: '1000px',
-                    marginBottom: '16px'
-                  }}>
-                    Teknik destek ve bakım hizmetleri ile projelerinizin sürekli güncel kalmasını sağlıyoruz. 7/24 destek ekibimiz ile her zaman yanınızdayız.
-                  </div>
-                  <div style={{ 
-                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
-                    fontSize: '16px', 
-                    color: '#444', 
-                    maxWidth: '1000px',
-                    marginBottom: '16px'
-                  }}>
-                    Bulut tabanlı çözümler ile işletmenizin ölçeklenebilirliğini artırıyoruz. Güvenli ve hızlı altyapı hizmetleri ile dijital dönüşümünüzü destekliyoruz.
+                    Biz, bu yolculuğun sadece teknoloji tarafında değil, yol rehberliğinde de yanınızdayız.
                   </div>
                 </div>
               </>
