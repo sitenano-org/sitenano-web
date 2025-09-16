@@ -569,7 +569,6 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                     alt="Hizmetler Görsel"
                     style={{
                       width: '994px',
-                  borderRadius: '15px',
                       height: '640px',
                       borderRadius: '32px',
                       objectFit: 'cover',
