@@ -923,13 +923,52 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                 <div style={{ 
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                   fontSize: '16px', 
-                  color: '#444', 
-                  maxWidth: '1000px' 
+                  lineHeight: '28px',
+                  color: '#000', 
+                  maxWidth: '1000px',
+                  marginTop: '24px'
                 }}>
-                  • Güvenli Ödeme<br />
-                  • Stok Yönetimi<br />
-                  • Müşteri Paneli<br />
-                  • Analitik Raporlar
+                  <h3 style={{
+                    fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                    fontSize: '28px',
+                    fontStyle: 'normal',
+                    fontWeight: 600,
+                    letterSpacing: 'normal',
+                    lineHeight: 'normal',
+                    margin: 0,
+                    marginBottom: '16px',
+                    textAlign: 'left',
+                    color: '#000',
+                    maxWidth: '1000px'
+                  }}>
+                    Projeyi Geliştirmek Yetmez, Yaşatmak Gerekir
+                  </h3>
+                  <div style={{
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                    fontSize: '16px',
+                    lineHeight: '28px',
+                    color: '#000',
+                    maxWidth: '1000px',
+                    marginBottom: '16px'
+                  }}>
+                    Birçok proje lansman aşamasına kadar çok iyi ilerler ama yayına girdikten sonra ilgisizlikten, yönsüzlükten, güncellenememekten yavaş yavaş canlılığını yitirir.<br />
+                    Biz bu nedenle sadece proje geliştirici değil, proje sürdürülebilirliği üzerine de çalışıyoruz.
+                  </div>
+                  <div style={{
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                    fontSize: '16px',
+                    lineHeight: '28px',
+                    color: '#000',
+                    maxWidth: '1000px',
+                    marginBottom: '16px'
+                  }}>
+                    • Teknik dökümantasyon<br />
+                    • Geliştirici bağımsızlığı<br />
+                    • Geleceğe hazırlık<br />
+                    • Bütçeye göre ölçeklenebilirlik<br />
+                    • Uzun vadeli destek ve yönlendirme<br />
+                    Hepsi bu bakış açısının bir parçası.
+                  </div>
                 </div>
               </>
             )}
