@@ -1041,7 +1041,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   marginBottom: '24px',
                   maxWidth: '1000px',
                 }}>
-                  Restoran ve kafeler için özel online sipariş sistemleri. Müşteri memnuniyeti odaklı çözümler.
+                  Modern restoran ve kafeler için kapsamlı online sipariş çözümleri sunuyoruz. Müşteri deneyimini ön planda tutarak, işletmenizin dijital dönüşümünü hızlandırıyoruz. Sipariş sürecinden teslimat takibine kadar tüm aşamaları optimize eden sistemlerimizle müşteri memnuniyetini artırıyor, işletmenizin gelirlerini büyütüyorsunuz.
                 </div>
                 <div style={{ 
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
