@@ -77,7 +77,7 @@ export default function HizmetlerPage() {
               {[
                 'Özel Ai Çözümleri',
                 'Proje Geliştirme',
-                'Online Sipariş Sistemi',
+                'Online Sipariş Sistemleri',
                 'E-ticaret',
                 'Web Tasarım',
               ].map((item, idx) => (
@@ -160,7 +160,7 @@ export default function HizmetlerPage() {
                 color: '#fff',
                 zIndex: 1,
               }}>
-                /Online Sipariş Sistemi/
+                /Online Sipariş Sistemleri/
               </div>
               
               {/* Ana içerik */}
@@ -970,6 +970,583 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                     Hepsi bu bakış açısının bir parçası.
                   </div>
                 </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Tasarımın Geleceğinde Sizi Nereye Taşıyoruz?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Web siteniz ile ne anlatmak istediğinizi, kime hitap ettiğinizi ve kullanıcıların sitenizle ne tür bir beklentini olduğunuzu anlamaya çalışırız. 
+Bugünün web tasarımı artık "tasarımcı gözü" ile sınırlı değil. İşin içinde veri var, etkileşim var, kullanıcı alışkanlıkları var, AI var.
+Biz size yalnızca bugünü değil, geleceği de taşıyan bir altyapı sunuyoruz.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Web siteniz kullanıcılarınızın neye ihtiyaç duyduğunu anlamalı.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İçerikleriniz dinamik yapıda olmalı.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Görsellik işlevsellikle birleşmeli.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Ve en önemlisi: Site, sizin yerinize konuşabilmeli.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Tasarımı Nereye Evriliyor?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Eski tip "şablon mantığıyla" üretilmiş siteler, ai dönüşümünün çok gerisinde kaldı.
+Dijital dünya artık hızla "reaktif" olmaktan çıkıp "öngörücü" hale geliyor. Yapay zeka ile desteklenen kullanıcı deneyimleri, kişiselleştirilmiş içerik sunumu, etkileşimli arayüzler ve hatta sesli arayüzler — artık web tasarımının parçası.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Klasik SEO Yeterli mi? SEO'nun Geleceği
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Web sitelerinin sadece klasik tarayıcı tabanlı SEO sistemlerine göre değil, artık AI destekli arama sistemlerine göre optimize edilmesi gereken bir döneme giriyoruz.
+Web siteniz sadece görünür değil, ulaşılabilir de olmalı. Şimdi değilse, yakın gelecekte hiç olmayabilir.
+AI arama motorları (ChatGPT, Claude, Perplexity, Google SGE vb.) klasik indeks mantığıyla değil, içerik yapısı, anlamsal ilişkiler, veri doğruluğu, yetkinlik ve bağlamla çalışıyor.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bu da, klasik SEO kurallarına göre hazırlanmış birçok sitenin AI sistemlerinde görünmez olabileceği anlamına geliyor.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Şu andan itibaren web sitelerinin yapısı, dili, sunum şekli, veri akışı ve bütünlüğü yeniden ele alınmak zorunda.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Siteniz Tarayıcılarda Var, Peki Yapay Zekâ Sistemlerinde de Var mı?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bugüne kadar web siteleri, Google gibi tarayıcılara dayalı arama motorlarının algoritmalarına göre inşa edildi:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • SEO uyumu
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Mobil uyumluluk
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Sayfa hızı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İç link yapısı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Meta etiketler
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bu hâlâ geçerli. Ama artık tek başına yeterli değil.
+Çünkü internet kullanıcıları hızla klasik arama motorlarından, AI tabanlı arama sistemlerine geçiyor. Bu sistemlerde sitenizin bulunabilmesi için, SEO'nun sınırlarını aşmanız gerekiyor.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  AI Çağında Web Siteleri Neye Dönüşmeli?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yapay zekâ destekli arama sistemleri (ChatGPT, Google SGE, Perplexity, Bing AI vb.), artık sadece kelime eşleşmesine değil, içeriğinizin anlam bütünlüğüne, güvenilirliğine ve yapısal okunabilirliğine bakıyor.
+Bu Yeni Dönemde Web Siteleri:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Anlamsal olarak tutarlı içeriklere sahip olmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Makine tarafından kolay analiz edilebilir yapıda kurgulanmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yalnızca anahtar kelimeye değil, niyete cevap verebilmeli
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yapısal veriler (schema), veri akışları, bilgi mimarisi ile desteklenmeli
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Dinamik ve güncellenebilir yapıda olmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI botlarının rahat tarayabileceği formatlarda geliştirilmeli
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Neden Web Sitenizi Dönüştürmelisiniz?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Eğer mevcut siteniz bu dönüşüme uygun değilse:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI sistemleri sizi göremeyebilir
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İçerikleriniz fark edilmez
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Rekabet ettiğiniz firmalar yapay zekâ dostu hale geldikçe siz geride kalırsınız
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Ziyaretçiler, sizi değil, AI'ın önerdiği rakiplerinizi bulur
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Dijital görünürlüğünüz giderek silikleşir.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Dijital dünya değişti. Web siteleri artık "görünmek için" değil, "seçilebilmek için" kurgulanmalı.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Yeni Başlıyorsanız Ne Yapmalısınız?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yeni bir site yaptırmak üzeresiniz ve neye ihtiyacınız olduğunu bilmiyorsanız, işte yol haritanız:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI arama motorlarına uyumlu bir yapı:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Sadece SEO değil, AIO (Artificial Intelligence Optimization) uyumluluk şart.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Veri odaklı içerik modeli:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Ziyaretçiyi bilgilendiren değil, yönlendiren içerik yapısı kurmalısınız.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Sürdürülebilir teknik altyapı:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Geliştirmeye açık, eklentiye boğulmamış, yalın ama güçlü sistemler seçin.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yapay zekâ entegrasyonu:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Otomatik içerik üretimi, ziyaretçi analizi, öneri sistemleri gibi AI destekli özellikler mutlaka düşünülmeli.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Web sadece site değildir:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '24px'
+                }}>
+                  API, entegrasyon, veri merkezi yapısı gibi detaylar da sitenizi güçlü kılar.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  AI Web Site Özellikleri Herkes İçin Gerekli mi?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Evet, eğer ulaşılabilir olmak istiyorsanız.
+Bu dönüşüm sadece büyük şirketler için değil, küçük işletmeler ve bireysel projeler için de geçerli. Çünkü AI sistemleri, filtrelemeden herkese açık cevap verir — "küçük ya da büyük" bakmaz. Kimin doğru içerikle, doğru yapıda karşısına çıktığına bakar.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Siteniz Geleceğe Hazır mı?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bugünün web siteleri, yarının dijital dünyasında yetersiz kalabilir. Görünür olmak artık yeterli değil. Erişilebilir ve tercih edilir olmak gerekiyor.
+Eğer siz de web sitenizin AI çağına uygun hale gelmesini istiyorsanız, bizimle çalışabilirsiniz. Sadece sitenizi değil, dijital görünürlüğünüzü de yeniden tasarlıyoruz.
+                </div>
               </>
             )}
             {selected === 2 && (
@@ -985,32 +1562,739 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   marginBottom: '60px',
                   textAlign: 'left',
                 }}>
-                  Yapay Zeka
+                  Online Sipariş Sistemleri
                 </h2>
                 <div style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: 500,
-                  height: '120px',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
                   color: '#222',
                   marginBottom: '24px',
                   maxWidth: '1000px',
                 }}>
-                  AI teknolojileri ile işletmenizi geleceğe taşıyoruz. Otomasyon ve akıllı çözümler.
+                  Basit Görünür, Ama Güçlüdür: Doğrudan, Hızlı ve Sonuç Odaklı Çözümler.
                 </div>
                 <div style={{ 
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                   fontSize: '16px', 
                   color: '#444', 
-                  maxWidth: '1000px' 
+                  maxWidth: '1000px',
+                  lineHeight: '24px'
                 }}>
-                  • Chatbot Geliştirme<br />
-                  • Veri Analizi<br />
-                  • Otomasyon<br />
-                  • Makine Öğrenmesi
+                  Her satış yapmak isteyen için e-ticaret uygun olmayabilir. Daha doğrusu: herkes, klasik anlamda e-ticarete ihtiyaç duymayabilir.<br /><br />
+                  Ama müşterilerine hızlı, kolay ve kontrollü bir şekilde sipariş imkânı sunmak istiyorsa, online sipariş sistemleri tam da bu noktada devreye girer.<br /><br />
+                  Bizim için bu sistemler, sadece restoranlar için geliştirilen bir çözüm değil. Yıllardır farklı sektörlerde uyguladığımız online sipariş sistemleriyle şunu gördük: Bu sistemler, satışa giden yolun en kısa, en sade ve en etkili halidir.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  E-Ticaretle Arasındaki Fark Nedir?
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  E-ticaret altyapıları, genellikle geniş ürün yelpazesi, kategori yönetimi, kampanya modülleri, kargo sistemleri, pazaryeri entegrasyonları gibi birçok detay içerir.<br /><br />
+                  Bu sistemler büyümeye yönelik esneklik sağlasa da, her işletmenin bu kadar katmanlı bir yapıya ihtiyaç olmayabilir.<br /><br />
+                  Online sipariş sistemleri,<br /><br />
+                  <div style={{ paddingLeft: '20px' }}>
+                    • Daha hızlı kurulur,<br />
+                    • Daha sade bir kullanıcı deneyimi sunar,<br />
+                    • Daha düşük operasyonel yük getirir,<br />
+                    • Ve genellikle doğrudan, hızlı sonuçlara odaklanır.
+                  </div><br /><br />
+                  Yani, "satış yapmak istiyorum ama büyük bir sistem kurmaya değil, kolay bir çözüme ihtiyacım var" diyorsanız, e-ticaret değil, online sipariş sistemi sizin için daha doğru bir tercih olabilir.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Kimler İçin Uygun?
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  <div style={{ paddingLeft: '20px' }}>
+                    • Kendi ürünlerini doğrudan satmak isteyen küçük işletmeler<br />
+                    • Restoranlar, kafeler, catering firmaları<br />
+                    • Yerel dağıtım yapan üreticiler<br />
+                    • Kozmetik, butik üretim yapan girişimler<br />
+                    • Tek tip ürün/hizmet sunan ama telefonla sipariş süreciyle uğraşmak istemeyen işletmeler
+                  </div><br /><br />
+                  Bu sistemler sayesinde; müşteriniz mobil cihazdan sipariş verir, ödeme yapar, size bildirim gelir ve süreç otomatik işler.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Neden Tercih Edilir?
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  <strong style={{ color: '#000' }}>Hızlı Kurulum – Hızlı Sonuç:</strong><br />
+                  Saatler içinde yayına alınabilecek kadar hızlı kurulur.<br /><br />
+                  
+                  <strong style={{ color: '#000' }}>Düşük Maliyet – Düşük Operasyonel Yük:</strong><br />
+                  Geniş e-ticaret altyapılarındaki maliyet ve zaman yükünü ortadan kaldırır.<br /><br />
+                  
+                  <strong style={{ color: '#000' }}>Kişiselleştirme İmkanı:</strong><br />
+                  Sadece size özel, marka kimliğinizi yansıtan, reklamsız ve bağımsız sistemler kuruyoruz.<br /><br />
+                  
+                  <strong style={{ color: '#000' }}>Tam Kontrol Sende:</strong><br />
+                  Komisyon alan 3. taraf uygulamalar yerine, kendi sisteminizde tüm kontrol sizde olur.<br /><br />
+                  
+                  <strong style={{ color: '#000' }}>Yapay Zeka ile Güçlenebilir:</strong><br />
+                  Sipariş alışkanlıkları, lokasyon bazlı öneriler, yoğun saatlerde dinamik fiyatlama gibi özelliklerle sisteminize AI entegrasyonları yapabiliriz.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Bu Sistemlerin Geleceği Ne Yönde?
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  <div style={{ paddingLeft: '20px' }}>
+                    • Mobil uyumluluk artık bir tercih değil, zorunluluk.<br />
+                    • Konuşarak sipariş verme (voice UI), tekrar eden siparişlerde otomasyon,<br />
+                    • Entegre ödeme sistemleri ve hızlı bildirim altyapıları
+                  </div><br />
+                  bu sistemleri her geçen gün daha da akıllı hale getiriyor.<br /><br />
+                  
+                  Online sipariş sistemleri, sade yapısıyla büyümenizi engellemez.<br />
+                  Tam tersine, "küçük başla, kontrollü büyü" stratejisini uygulamak isteyen işletmeler için en doğru başlangıçtır.<br /><br />
+                  
+                  Her işletme bir e-ticaret devine dönüşmek zorunda değil. Ama her işletme, müşterisiyle doğrudan, hızlı ve dijital bir bağ kurmalı. Online sipariş sistemleri, bunun için en yalın ve etkili yoldur. Üstelik kontrol sizde, sistem sizde, müşteriniz sizde kalır.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Tasarımın Geleceğinde Sizi Nereye Taşıyoruz?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Web siteniz ile ne anlatmak istediğinizi, kime hitap ettiğinizi ve kullanıcıların sitenizle ne tür bir beklentini olduğunuzu anlamaya çalışırız. 
+Bugünün web tasarımı artık "tasarımcı gözü" ile sınırlı değil. İşin içinde veri var, etkileşim var, kullanıcı alışkanlıkları var, AI var.
+Biz size yalnızca bugünü değil, geleceği de taşıyan bir altyapı sunuyoruz.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Web siteniz kullanıcılarınızın neye ihtiyaç duyduğunu anlamalı.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İçerikleriniz dinamik yapıda olmalı.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Görsellik işlevsellikle birleşmeli.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Ve en önemlisi: Site, sizin yerinize konuşabilmeli.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Tasarımı Nereye Evriliyor?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Eski tip "şablon mantığıyla" üretilmiş siteler, ai dönüşümünün çok gerisinde kaldı.
+Dijital dünya artık hızla "reaktif" olmaktan çıkıp "öngörücü" hale geliyor. Yapay zeka ile desteklenen kullanıcı deneyimleri, kişiselleştirilmiş içerik sunumu, etkileşimli arayüzler ve hatta sesli arayüzler — artık web tasarımının parçası.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Klasik SEO Yeterli mi? SEO'nun Geleceği
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Web sitelerinin sadece klasik tarayıcı tabanlı SEO sistemlerine göre değil, artık AI destekli arama sistemlerine göre optimize edilmesi gereken bir döneme giriyoruz.
+Web siteniz sadece görünür değil, ulaşılabilir de olmalı. Şimdi değilse, yakın gelecekte hiç olmayabilir.
+AI arama motorları (ChatGPT, Claude, Perplexity, Google SGE vb.) klasik indeks mantığıyla değil, içerik yapısı, anlamsal ilişkiler, veri doğruluğu, yetkinlik ve bağlamla çalışıyor.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bu da, klasik SEO kurallarına göre hazırlanmış birçok sitenin AI sistemlerinde görünmez olabileceği anlamına geliyor.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Şu andan itibaren web sitelerinin yapısı, dili, sunum şekli, veri akışı ve bütünlüğü yeniden ele alınmak zorunda.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Siteniz Tarayıcılarda Var, Peki Yapay Zekâ Sistemlerinde de Var mı?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bugüne kadar web siteleri, Google gibi tarayıcılara dayalı arama motorlarının algoritmalarına göre inşa edildi:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • SEO uyumu
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Mobil uyumluluk
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Sayfa hızı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İç link yapısı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Meta etiketler
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bu hâlâ geçerli. Ama artık tek başına yeterli değil.
+Çünkü internet kullanıcıları hızla klasik arama motorlarından, AI tabanlı arama sistemlerine geçiyor. Bu sistemlerde sitenizin bulunabilmesi için, SEO'nun sınırlarını aşmanız gerekiyor.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  AI Çağında Web Siteleri Neye Dönüşmeli?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yapay zekâ destekli arama sistemleri (ChatGPT, Google SGE, Perplexity, Bing AI vb.), artık sadece kelime eşleşmesine değil, içeriğinizin anlam bütünlüğüne, güvenilirliğine ve yapısal okunabilirliğine bakıyor.
+Bu Yeni Dönemde Web Siteleri:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Anlamsal olarak tutarlı içeriklere sahip olmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Makine tarafından kolay analiz edilebilir yapıda kurgulanmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yalnızca anahtar kelimeye değil, niyete cevap verebilmeli
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yapısal veriler (schema), veri akışları, bilgi mimarisi ile desteklenmeli
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Dinamik ve güncellenebilir yapıda olmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI botlarının rahat tarayabileceği formatlarda geliştirilmeli
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Neden Web Sitenizi Dönüştürmelisiniz?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Eğer mevcut siteniz bu dönüşüme uygun değilse:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI sistemleri sizi göremeyebilir
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İçerikleriniz fark edilmez
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Rekabet ettiğiniz firmalar yapay zekâ dostu hale geldikçe siz geride kalırsınız
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Ziyaretçiler, sizi değil, AI'ın önerdiği rakiplerinizi bulur
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Dijital görünürlüğünüz giderek silikleşir.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Dijital dünya değişti. Web siteleri artık "görünmek için" değil, "seçilebilmek için" kurgulanmalı.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Yeni Başlıyorsanız Ne Yapmalısınız?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yeni bir site yaptırmak üzeresiniz ve neye ihtiyacınız olduğunu bilmiyorsanız, işte yol haritanız:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI arama motorlarına uyumlu bir yapı:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Sadece SEO değil, AIO (Artificial Intelligence Optimization) uyumluluk şart.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Veri odaklı içerik modeli:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Ziyaretçiyi bilgilendiren değil, yönlendiren içerik yapısı kurmalısınız.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Sürdürülebilir teknik altyapı:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Geliştirmeye açık, eklentiye boğulmamış, yalın ama güçlü sistemler seçin.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yapay zekâ entegrasyonu:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Otomatik içerik üretimi, ziyaretçi analizi, öneri sistemleri gibi AI destekli özellikler mutlaka düşünülmeli.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Web sadece site değildir:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '24px'
+                }}>
+                  API, entegrasyon, veri merkezi yapısı gibi detaylar da sitenizi güçlü kılar.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  AI Web Site Özellikleri Herkes İçin Gerekli mi?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Evet, eğer ulaşılabilir olmak istiyorsanız.
+Bu dönüşüm sadece büyük şirketler için değil, küçük işletmeler ve bireysel projeler için de geçerli. Çünkü AI sistemleri, filtrelemeden herkese açık cevap verir — "küçük ya da büyük" bakmaz. Kimin doğru içerikle, doğru yapıda karşısına çıktığına bakar.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Siteniz Geleceğe Hazır mı?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bugünün web siteleri, yarının dijital dünyasında yetersiz kalabilir. Görünür olmak artık yeterli değil. Erişilebilir ve tercih edilir olmak gerekiyor.
+Eğer siz de web sitenizin AI çağına uygun hale gelmesini istiyorsanız, bizimle çalışabilirsiniz. Sadece sitenizi değil, dijital görünürlüğünüzü de yeniden tasarlıyoruz.
                 </div>
               </>
             )}
@@ -1027,32 +2311,812 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   marginBottom: '60px',
                   textAlign: 'left',
                 }}>
-                  Online Sipariş Sistemi
+                  E-ticaret
                 </h2>
-                <div style={{
-                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
-                  fontSize: '16px',
-                  fontStyle: 'normal',
-                  fontWeight: 500,
-                  height: '120px',
-                  letterSpacing: 'normal',
-                  lineHeight: '30px',
-                  color: '#222',
-                  marginBottom: '24px',
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
                   maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
                 }}>
-                  Modern restoran ve kafeler için kapsamlı online sipariş çözümleri sunuyoruz. Müşteri deneyimini ön planda tutarak, işletmenizin dijital dönüşümünü hızlandırıyoruz. Sipariş sürecinden teslimat takibine kadar tüm aşamaları optimize eden sistemlerimizle müşteri memnuniyetini artırıyor, işletmenizin gelirlerini büyütüyorsunuz.
+                  E-ticaret artık sadece bir "site kurmak" değil. Bir satış kanalı açmaktan çok daha fazlası. Bugünün rekabetçi ortamında dijital mağazalar; yalnızca ürün sunmuyor, deneyim yaşatıyor, veri topluyor ve geleceği kurguluyor. Buna göre bir e-ticaret altyapısı sadece bugünün ihtiyaçlarını değil, yarının beklentilerini de karşılayabilmeli.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  E-Ticaretin Değişen Dinamikleri
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Son yıllarda e-ticaret dünyasında bir dönüşüm yaşanıyor. Artık mesele sadece "bir ürün sepete eklendi mi?" sorusu değil. Asıl soru:<br />
+                  "Bu kullanıcı neden sepeti terk etti? Neye ihtiyaç duydu? Nasıl kalıcı bir müşteri olur?"<br />
+                  Yapay zeka, bu sorulara yanıt verebilen en önemli aktörlerden biri haline geldi ve tam da bu nedenle, bugünün e-ticaret sistemleri
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  • Kişiselleştirme,<br />
+                  • Otomatik öneri sistemleri,<br />
+                  • Stok optimizasyonu,<br />
+                  • Dinamik fiyatlama,<br />
+                  • Ve kullanıcı davranışı analizleri
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  gibi yeteneklerle "akıllı sistemler" haline dönüşmek zorunda.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Artık Her E-Ticaret Sistemi Bir Dönüşüm Yolculuğudur
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yalnızca altyapı kurmak yetmez. Doğru stratejiyle uyumlu altyapılar, sizi rekabette farklı kılar.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px'
+                }}>
+                  <strong>İş Modelinizi Anlıyoruz.</strong><br />
+                  Her e-ticaret veya sipariş sistemi aynı değildir. Sektörünüze özel, operasyonel ihtiyaçlarınıza uygun çözümler geliştiriyoruz.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px'
+                }}>
+                  <strong>Yapay Zeka Destekli Çözümler Sunuyoruz.</strong><br />
+                  Kolay ürün yönetimi, akıllı fiyat önerileri, müşteri segmentasyonu, alışveriş alışkanlıkları analizi, ürün önerileri, kampanya optimizasyonları gibi alanlarda AI entegrasyonları sağlıyoruz.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px'
+                }}>
+                  <strong>Sadece Mağaza Değil, Süreç Tasarlıyoruz.</strong><br />
+                  Siparişten teslimata, müşteri destek süreçlerinden sadakat programlarına kadar tüm yapıyı uçtan uca düşünüyoruz.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  <strong>Geleceğe Hazır Altyapılar Kuruyoruz.</strong><br />
+                  Sisteminizi büyümeye, pazaryeri entegrasyonlarına, yurt dışı satışlaral uygun hale getiriyoruz.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  E-Ticaret Artık Sadece Altyapı Meselesi Değil
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bir zamanlar bir e-ticaret sitesi kurmak, markanızı dijitalde var etmek için yeterliydi. Bugünse bu işin dinamikleri tamamen değişti. Yapay zeka ve veri odaklı sistemler, artık e-ticaretin geleceğini şekillendiriyor.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  • Müşteri davranışları analiz ediliyor,<br />
+                  • Kişiselleştirilmiş ürün önerileri sunuluyor,<br />
+                  • Dinamik fiyatlandırma ile rekabet avantajı sağlanıyor,<br />
+                  • Lojistik ve stok sistemleri optimize ediliyor.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Tüm bunlar, e-ticareti basit bir satış kanalından çıkarıp, karar alma süreçlerine etki eden bir sistem haline getiriyor.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  E-Ticaretin Geleceğinde Sizi Nereye Taşıyoruz?
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yapay zekayla güçlenen sistemler artık sadece yöneticilere değil, müşterilere de karar desteği sağlıyor.<br />
+                  Hangi ürünün hangi müşteriye, ne zaman, ne fiyatla önerileceği; satışları tahmin etmeden önce tasarlamak mümkün.<br />
+                  Ayrıca mobil kullanıcı deneyimi, hız optimizasyonu, mikro animasyonlarla zenginleştirilmiş arayüzler ve gelişmiş analitik araçlarla:
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  • Daha fazla ziyaretçiyi müşteriye dönüştüren,<br />
+                  • Daha fazla müşteriyi markaya sadık hale getiren sistemler kuruyoruz.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Eğer e-ticaret sisteminizin sadece çalışmasını değil, gelişmesini ve sizi ileri taşımasını istiyorsanız; sizin için sadece teknik değil, stratejik bir partner olabiliriz.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Tasarımın Geleceğinde Sizi Nereye Taşıyoruz?
                 </div>
                 <div style={{ 
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                   fontSize: '16px', 
                   color: '#444', 
-                  maxWidth: '1000px' 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
                 }}>
-                  • Mobil Uygulama<br />
-                  • Sipariş Takibi<br />
-                  • Ödeme Entegrasyonu<br />
-                  • Yönetim Paneli
+                  Web siteniz ile ne anlatmak istediğinizi, kime hitap ettiğinizi ve kullanıcıların sitenizle ne tür bir beklentini olduğunuzu anlamaya çalışırız. 
+Bugünün web tasarımı artık "tasarımcı gözü" ile sınırlı değil. İşin içinde veri var, etkileşim var, kullanıcı alışkanlıkları var, AI var.
+Biz size yalnızca bugünü değil, geleceği de taşıyan bir altyapı sunuyoruz.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Web siteniz kullanıcılarınızın neye ihtiyaç duyduğunu anlamalı.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İçerikleriniz dinamik yapıda olmalı.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Görsellik işlevsellikle birleşmeli.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Ve en önemlisi: Site, sizin yerinize konuşabilmeli.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Tasarımı Nereye Evriliyor?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Eski tip "şablon mantığıyla" üretilmiş siteler, ai dönüşümünün çok gerisinde kaldı.
+Dijital dünya artık hızla "reaktif" olmaktan çıkıp "öngörücü" hale geliyor. Yapay zeka ile desteklenen kullanıcı deneyimleri, kişiselleştirilmiş içerik sunumu, etkileşimli arayüzler ve hatta sesli arayüzler — artık web tasarımının parçası.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Klasik SEO Yeterli mi? SEO'nun Geleceği
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Web sitelerinin sadece klasik tarayıcı tabanlı SEO sistemlerine göre değil, artık AI destekli arama sistemlerine göre optimize edilmesi gereken bir döneme giriyoruz.
+Web siteniz sadece görünür değil, ulaşılabilir de olmalı. Şimdi değilse, yakın gelecekte hiç olmayabilir.
+AI arama motorları (ChatGPT, Claude, Perplexity, Google SGE vb.) klasik indeks mantığıyla değil, içerik yapısı, anlamsal ilişkiler, veri doğruluğu, yetkinlik ve bağlamla çalışıyor.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bu da, klasik SEO kurallarına göre hazırlanmış birçok sitenin AI sistemlerinde görünmez olabileceği anlamına geliyor.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Şu andan itibaren web sitelerinin yapısı, dili, sunum şekli, veri akışı ve bütünlüğü yeniden ele alınmak zorunda.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Siteniz Tarayıcılarda Var, Peki Yapay Zekâ Sistemlerinde de Var mı?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bugüne kadar web siteleri, Google gibi tarayıcılara dayalı arama motorlarının algoritmalarına göre inşa edildi:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • SEO uyumu
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Mobil uyumluluk
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Sayfa hızı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İç link yapısı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Meta etiketler
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bu hâlâ geçerli. Ama artık tek başına yeterli değil.
+Çünkü internet kullanıcıları hızla klasik arama motorlarından, AI tabanlı arama sistemlerine geçiyor. Bu sistemlerde sitenizin bulunabilmesi için, SEO'nun sınırlarını aşmanız gerekiyor.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  AI Çağında Web Siteleri Neye Dönüşmeli?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yapay zekâ destekli arama sistemleri (ChatGPT, Google SGE, Perplexity, Bing AI vb.), artık sadece kelime eşleşmesine değil, içeriğinizin anlam bütünlüğüne, güvenilirliğine ve yapısal okunabilirliğine bakıyor.
+Bu Yeni Dönemde Web Siteleri:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Anlamsal olarak tutarlı içeriklere sahip olmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Makine tarafından kolay analiz edilebilir yapıda kurgulanmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yalnızca anahtar kelimeye değil, niyete cevap verebilmeli
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yapısal veriler (schema), veri akışları, bilgi mimarisi ile desteklenmeli
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Dinamik ve güncellenebilir yapıda olmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI botlarının rahat tarayabileceği formatlarda geliştirilmeli
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Neden Web Sitenizi Dönüştürmelisiniz?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Eğer mevcut siteniz bu dönüşüme uygun değilse:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI sistemleri sizi göremeyebilir
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İçerikleriniz fark edilmez
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Rekabet ettiğiniz firmalar yapay zekâ dostu hale geldikçe siz geride kalırsınız
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Ziyaretçiler, sizi değil, AI'ın önerdiği rakiplerinizi bulur
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Dijital görünürlüğünüz giderek silikleşir.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Dijital dünya değişti. Web siteleri artık "görünmek için" değil, "seçilebilmek için" kurgulanmalı.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Yeni Başlıyorsanız Ne Yapmalısınız?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yeni bir site yaptırmak üzeresiniz ve neye ihtiyacınız olduğunu bilmiyorsanız, işte yol haritanız:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI arama motorlarına uyumlu bir yapı:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Sadece SEO değil, AIO (Artificial Intelligence Optimization) uyumluluk şart.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Veri odaklı içerik modeli:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Ziyaretçiyi bilgilendiren değil, yönlendiren içerik yapısı kurmalısınız.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Sürdürülebilir teknik altyapı:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Geliştirmeye açık, eklentiye boğulmamış, yalın ama güçlü sistemler seçin.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yapay zekâ entegrasyonu:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Otomatik içerik üretimi, ziyaretçi analizi, öneri sistemleri gibi AI destekli özellikler mutlaka düşünülmeli.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Web sadece site değildir:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '24px'
+                }}>
+                  API, entegrasyon, veri merkezi yapısı gibi detaylar da sitenizi güçlü kılar.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  AI Web Site Özellikleri Herkes İçin Gerekli mi?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Evet, eğer ulaşılabilir olmak istiyorsanız.
+Bu dönüşüm sadece büyük şirketler için değil, küçük işletmeler ve bireysel projeler için de geçerli. Çünkü AI sistemleri, filtrelemeden herkese açık cevap verir — "küçük ya da büyük" bakmaz. Kimin doğru içerikle, doğru yapıda karşısına çıktığına bakar.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Siteniz Geleceğe Hazır mı?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bugünün web siteleri, yarının dijital dünyasında yetersiz kalabilir. Görünür olmak artık yeterli değil. Erişilebilir ve tercih edilir olmak gerekiyor.
+Eğer siz de web sitenizin AI çağına uygun hale gelmesini istiyorsanız, bizimle çalışabilirsiniz. Sadece sitenizi değil, dijital görünürlüğünüzü de yeniden tasarlıyoruz.
                 </div>
               </>
             )}
@@ -1069,32 +3133,645 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   marginBottom: '60px',
                   textAlign: 'left',
                 }}>
-                  Mobil Uygulama
+                  Web Tasarım
                 </h2>
                 <div style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
                   fontWeight: 500,
-                  height: '120px',
                   letterSpacing: 'normal',
                   lineHeight: '30px',
                   color: '#222',
                   marginBottom: '24px',
                   maxWidth: '1000px',
                 }}>
-                  iOS ve Android platformları için native mobil uygulamalar geliştiriyoruz.
+                  Bugünün web siteleri, yarının dijital dünyasında yetersiz kalabilir. Görünür olmak artık yeterli değil. Erişilebilir ve tercih edilir olmak gerekiyor.
+Eğer siz de web sitenizin AI çağına uygun hale gelmesini istiyorsanız, sadece sitenizi değil, dijital görünürlüğünüzü de yeniden tasarlıyoruz.
+                </div>
+
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Ne Yapıyoruz?
                 </div>
                 <div style={{ 
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                   fontSize: '16px', 
                   color: '#444', 
-                  maxWidth: '1000px' 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
                 }}>
-                  • iOS & Android<br />
-                  • Native Geliştirme<br />
-                  • Push Bildirimler<br />
-                  • App Store Optimizasyonu
+                  - AI ve SEO uyumlu web siteleri geliştiriyoruz
+- Kendi altyapımız olan SITENANO CMS ile esnek ve ölçeklenebilir sistemler kuruyoruz
+- WordPress, Webflow, Wix gibi platformlarda da uzmanız. 
+- Yapay zekâ modüllerini entegre ediyoruz (chatbot, içerik öneri, kullanıcı analizi vs.)
+-İçeriğinizi hem insanlara hem AI motorlarına uygun hâle getiriyoruz
+- Uygun bütçelerle, adım adım büyüyebilen bir yapı sunuyoruz
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Tasarımın Geleceğinde Sizi Nereye Taşıyoruz?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Web siteniz ile ne anlatmak istediğinizi, kime hitap ettiğinizi ve kullanıcıların sitenizle ne tür bir beklentini olduğunuzu anlamaya çalışırız. 
+Bugünün web tasarımı artık "tasarımcı gözü" ile sınırlı değil. İşin içinde veri var, etkileşim var, kullanıcı alışkanlıkları var, AI var.
+Biz size yalnızca bugünü değil, geleceği de taşıyan bir altyapı sunuyoruz.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Web siteniz kullanıcılarınızın neye ihtiyaç duyduğunu anlamalı.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İçerikleriniz dinamik yapıda olmalı.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Görsellik işlevsellikle birleşmeli.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Ve en önemlisi: Site, sizin yerinize konuşabilmeli.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Tasarımı Nereye Evriliyor?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Eski tip "şablon mantığıyla" üretilmiş siteler, ai dönüşümünün çok gerisinde kaldı.
+Dijital dünya artık hızla "reaktif" olmaktan çıkıp "öngörücü" hale geliyor. Yapay zeka ile desteklenen kullanıcı deneyimleri, kişiselleştirilmiş içerik sunumu, etkileşimli arayüzler ve hatta sesli arayüzler — artık web tasarımının parçası.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Klasik SEO Yeterli mi? SEO'nun Geleceği
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Web sitelerinin sadece klasik tarayıcı tabanlı SEO sistemlerine göre değil, artık AI destekli arama sistemlerine göre optimize edilmesi gereken bir döneme giriyoruz.
+Web siteniz sadece görünür değil, ulaşılabilir de olmalı. Şimdi değilse, yakın gelecekte hiç olmayabilir.
+AI arama motorları (ChatGPT, Claude, Perplexity, Google SGE vb.) klasik indeks mantığıyla değil, içerik yapısı, anlamsal ilişkiler, veri doğruluğu, yetkinlik ve bağlamla çalışıyor.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bu da, klasik SEO kurallarına göre hazırlanmış birçok sitenin AI sistemlerinde görünmez olabileceği anlamına geliyor.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Şu andan itibaren web sitelerinin yapısı, dili, sunum şekli, veri akışı ve bütünlüğü yeniden ele alınmak zorunda.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Siteniz Tarayıcılarda Var, Peki Yapay Zekâ Sistemlerinde de Var mı?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bugüne kadar web siteleri, Google gibi tarayıcılara dayalı arama motorlarının algoritmalarına göre inşa edildi:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • SEO uyumu
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Mobil uyumluluk
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Sayfa hızı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İç link yapısı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Meta etiketler
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bu hâlâ geçerli. Ama artık tek başına yeterli değil.
+Çünkü internet kullanıcıları hızla klasik arama motorlarından, AI tabanlı arama sistemlerine geçiyor. Bu sistemlerde sitenizin bulunabilmesi için, SEO'nun sınırlarını aşmanız gerekiyor.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  AI Çağında Web Siteleri Neye Dönüşmeli?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yapay zekâ destekli arama sistemleri (ChatGPT, Google SGE, Perplexity, Bing AI vb.), artık sadece kelime eşleşmesine değil, içeriğinizin anlam bütünlüğüne, güvenilirliğine ve yapısal okunabilirliğine bakıyor.
+Bu Yeni Dönemde Web Siteleri:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Anlamsal olarak tutarlı içeriklere sahip olmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Makine tarafından kolay analiz edilebilir yapıda kurgulanmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yalnızca anahtar kelimeye değil, niyete cevap verebilmeli
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yapısal veriler (schema), veri akışları, bilgi mimarisi ile desteklenmeli
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Dinamik ve güncellenebilir yapıda olmalı
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI botlarının rahat tarayabileceği formatlarda geliştirilmeli
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Neden Web Sitenizi Dönüştürmelisiniz?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Eğer mevcut siteniz bu dönüşüme uygun değilse:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI sistemleri sizi göremeyebilir
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İçerikleriniz fark edilmez
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Rekabet ettiğiniz firmalar yapay zekâ dostu hale geldikçe siz geride kalırsınız
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Ziyaretçiler, sizi değil, AI'ın önerdiği rakiplerinizi bulur
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Dijital görünürlüğünüz giderek silikleşir.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Dijital dünya değişti. Web siteleri artık "görünmek için" değil, "seçilebilmek için" kurgulanmalı.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Yeni Başlıyorsanız Ne Yapmalısınız?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yeni bir site yaptırmak üzeresiniz ve neye ihtiyacınız olduğunu bilmiyorsanız, işte yol haritanız:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • AI arama motorlarına uyumlu bir yapı:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Sadece SEO değil, AIO (Artificial Intelligence Optimization) uyumluluk şart.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Veri odaklı içerik modeli:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Ziyaretçiyi bilgilendiren değil, yönlendiren içerik yapısı kurmalısınız.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Sürdürülebilir teknik altyapı:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Geliştirmeye açık, eklentiye boğulmamış, yalın ama güçlü sistemler seçin.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yapay zekâ entegrasyonu:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '24px'
+                }}>
+                  Otomatik içerik üretimi, ziyaretçi analizi, öneri sistemleri gibi AI destekli özellikler mutlaka düşünülmeli.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Web sadece site değildir:
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '24px'
+                }}>
+                  API, entegrasyon, veri merkezi yapısı gibi detaylar da sitenizi güçlü kılar.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  AI Web Site Özellikleri Herkes İçin Gerekli mi?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Evet, eğer ulaşılabilir olmak istiyorsanız.
+Bu dönüşüm sadece büyük şirketler için değil, küçük işletmeler ve bireysel projeler için de geçerli. Çünkü AI sistemleri, filtrelemeden herkese açık cevap verir — "küçük ya da büyük" bakmaz. Kimin doğru içerikle, doğru yapıda karşısına çıktığına bakar.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Web Siteniz Geleceğe Hazır mı?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bugünün web siteleri, yarının dijital dünyasında yetersiz kalabilir. Görünür olmak artık yeterli değil. Erişilebilir ve tercih edilir olmak gerekiyor.
+Eğer siz de web sitenizin AI çağına uygun hale gelmesini istiyorsanız, bizimle çalışabilirsiniz. Sadece sitenizi değil, dijital görünürlüğünüzü de yeniden tasarlıyoruz.
                 </div>
               </>
             )}
