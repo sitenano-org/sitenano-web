@@ -3167,14 +3167,65 @@ Eğer siz de web sitenizin AI çağına uygun hale gelmesini istiyorsanız, sade
                   color: '#444', 
                   maxWidth: '1000px',
                   lineHeight: '24px',
-                  marginBottom: '24px'
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
                 }}>
-                  - AI ve SEO uyumlu web siteleri geliştiriyoruz
-- Kendi altyapımız olan SITENANO CMS ile esnek ve ölçeklenebilir sistemler kuruyoruz
-- WordPress, Webflow, Wix gibi platformlarda da uzmanız. 
-- Yapay zekâ modüllerini entegre ediyoruz (chatbot, içerik öneri, kullanıcı analizi vs.)
--İçeriğinizi hem insanlara hem AI motorlarına uygun hâle getiriyoruz
-- Uygun bütçelerle, adım adım büyüyebilen bir yapı sunuyoruz
+                  • AI ve SEO uyumlu web siteleri geliştiriyoruz
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Kendi altyapımız olan SITENANO CMS ile esnek ve ölçeklenebilir sistemler kuruyoruz
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • WordPress, Webflow, Wix gibi platformlarda da uzmanız.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Yapay zekâ modüllerini entegre ediyoruz (chatbot, içerik öneri, kullanıcı analizi vs.)
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İçeriğinizi hem insanlara hem AI motorlarına uygun hâle getiriyoruz
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px',
+                  paddingLeft: '8px'
+                }}>
+                  • Uygun bütçelerle, adım adım büyüyebilen bir yapı sunuyoruz
                 </div>
                 <div style={{ 
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
