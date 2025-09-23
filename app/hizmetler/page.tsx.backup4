@@ -1,0 +1,2104 @@
+'use client'
+
+import React from 'react';
+import Image from 'next/image';
+
+export default function HizmetlerPage() {
+  const [selected, setSelected] = React.useState(0);
+
+  return (
+    <main className="min-h-screen bg-white">
+      {/* HERO BÖLÜMÜ */}
+      <section
+        className="relative w-full flex items-center overflow-hidden hizmetler-hero-section"
+        style={{ minHeight: '520px', height: '520px', background: 'none', position: 'relative', marginTop: '12px' }}
+      >
+        {/* Arka plan görseli */}
+        <img
+          src="/images/top-hero-bg.jpg"
+          alt="Hizmetler Hero Background"
+          className="object-cover absolute top-0 z-0 hizmetler-hero-image"
+          style={{ 
+            objectFit: 'cover', 
+            objectPosition: 'center', 
+            opacity: 0.85, 
+            minHeight: '520px', 
+            height: '520px',
+            width: 'calc(100% - 40px)',
+            left: '20px',
+            right: '20px',
+            borderRadius: '20px'
+          }}
+        />
+        <div className="w-full h-full flex items-center justify-center relative z-10">
+          <h1
+            className="text-white drop-shadow-lg hizmetler-hero-title"
+            style={{
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '80px',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              height: '90px',
+              letterSpacing: '-2.4px',
+              lineHeight: '90px',
+              textAlign: 'center',
+              textShadow: '0 2px 16px rgba(0,0,0,0.25)'
+            }}
+          >
+            / Hizmetlerimiz /
+          </h1>
+        </div>
+      </section>
+
+      {/* HERO ALTINDA YENİ BÖLÜM */}
+      <section
+        className="bg-white w-full flex flex-row items-start justify-start hizmetler-content-section"
+        style={{ marginTop: '180px', marginBottom: '64px' }}
+      >
+        <div className="hizmetler-content-wrapper" style={{ marginLeft: '280px', display: 'flex', flexDirection: 'row', width: '100%', alignItems: 'flex-start' }}>
+          {/* Sol Bölümler */}
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            {/* Sol Menü */}
+            <div
+              style={{
+                width: '310px',
+                height: '280px', // Sabit yükseklik
+                background: '#F0F2F4',
+                borderRadius: '32px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: "flex-start",
+                padding: '24px 20px 24px 20px',
+                boxSizing: 'border-box',
+                flexShrink: 0, // Boyutunu sabit tut
+              }}
+            >
+              {[
+                'Özel Ai Çözümleri',
+                'Proje Geliştirme',
+                'Online Sipariş Sistemleri',
+                'E-ticaret',
+                'Web Tasarım',
+              ].map((item, idx) => (
+                <button
+                  key={item}
+                  onClick={() => setSelected(idx)}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    outline: 'none',
+                    color: selected === idx ? '#111' : '#888',
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                    fontSize: '18px',
+                    fontStyle: 'normal',
+                    fontWeight: 600,
+                    height: 'auto',
+                    letterSpacing: '-0.6px',
+                    lineHeight: '30px',
+                    marginBottom: '16px', // Butonlar arası boşluğu azalt
+                    cursor: 'pointer',
+                    textAlign: 'left', // Yazı sola hizalı
+                    width: '100%',
+                    transition: 'color 0.2s',
+                    display: 'flex',
+                    justifyContent: 'flex-start', // Yazı sola hizalı
+                    alignItems: 'center',
+                    paddingLeft: '32px', // Soldan boşluk
+                  }}
+                  onMouseEnter={(e) => {
+                    (e.target as HTMLButtonElement).style.color = '#000';
+                  }}
+                  onMouseLeave={(e) => {
+                    (e.target as HTMLButtonElement).style.color = selected === idx ? '#111' : '#888';
+                  }}
+                >
+                  {item}
+                </button>
+              ))}
+            </div>
+            
+            {/* Sol Alt Bölüm - Services Brochure */}
+            <div
+              className="services-brochure-card"
+              style={{
+                width: '310px',
+                height: '350px',
+                background: 'linear-gradient(135deg, #FF4D47 0%, #F9A09D 50%, #FF6B6B 100%)',
+                borderRadius: '32px',
+                marginTop: '30px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                padding: '0px',
+                boxSizing: 'border-box',
+                position: 'relative',
+                overflow: 'hidden',
+              }}
+            >
+              {/* Nokta deseni */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
+                backgroundSize: '20px 20px',
+                opacity: 0.3,
+              }} />
+              
+              {/* Üst etiket */}
+              <div style={{
+                position: 'absolute',
+                top: '80px',
+                left: '30px',
+                fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                fontSize: '14px',
+                fontWeight: 600,
+                color: '#fff',
+                zIndex: 1,
+              }}>
+                /Online Sipariş Sistemleri/
+              </div>
+              
+              {/* Ana içerik */}
+              <div style={{ position: 'relative', zIndex: 1, textAlign: 'left', paddingLeft: '0px' }}>
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '26px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  height: '90px',
+                  letterSpacing: '-1.2px',
+                  lineHeight: '32px',
+                  color: '#fff',
+                  marginBottom: '24px',
+                  marginTop: '104px',
+                  marginLeft: '30px',
+                }}>
+                  Komisyonsuz, kolay, markanıza özel online sipariş altyapısı.
+                </div>
+                <button style={{
+                  background: 'transparent',
+                  border: '2px solid #fff',
+                  borderRadius: '8px',
+                  color: '#fff',
+                  padding: '12px 24px',
+                  fontSize: '16px',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  transition: 'all 0.3s ease',
+                  marginLeft: '30px',
+                  marginBottom: '62px',
+                }}>
+                  Detaylı İncele
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
+            {/* AI Strategy Bölümü */}
+            <div
+              className="ai-strategy-card"
+              style={{
+                width: '310px',
+                height: '388px',
+                background: 'linear-gradient(135deg, #059669 0%, #0EA5E9 50%, #0284C7 100%)',
+                borderRadius: '32px',
+                marginTop: '30px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                padding: '40px 40px 48px 40px',
+                boxSizing: 'border-box',
+                position: 'relative',
+                overflow: 'hidden',
+              }}
+            >
+              {/* Dalga deseni */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                background: 'repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255,255,255,0.1) 20px, rgba(255,255,255,0.1) 22px)',
+                opacity: 0.3,
+              }} />
+              
+              {/* Ana içerik */}
+              <div className="ai-strategy-content" style={{ position: 'relative', zIndex: 1, textAlign: 'left', marginTop: '120px' }}>
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '25px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  height: '70px',
+                  letterSpacing: '-0.75px',
+                  lineHeight: '35px',
+                  color: '#fff',
+                  marginBottom: '20px',
+                }}>
+                  Web Tasarım
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontWeight: 500,
+                  color: '#fff',
+                  lineHeight: '1.5',
+                  opacity: 0.9,
+                }}>
+                  <div>Sadece bir Web Sitesi ya da tam bir Dijital Dönüşüm Aracı.</div>
+                  <div style={{ marginTop: '16px' }}>Görünmek, satmak, etkilemek ya da dönüştürmek…</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Sağ İçerik */}
+          <div className="hizmetler-right-content" style={{ marginLeft: '32px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+            {/* Başlık ve Alt Metin */}
+            {selected === 0 && (
+              <>
+                <h2 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '46px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  letterSpacing: '-3px',
+                  lineHeight: '1.1',
+                  margin: 0,
+                  marginBottom: '60px', // Boşluğu artır
+                  textAlign: 'left',
+                }}>
+                  Özel Ai Çözümleri - Fikirden Üretime
+                </h2>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: 500,
+                  height: '120px',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  color: '#222',
+                  marginBottom: '8px', // 1. ve 2. paragraf arasındaki boşluğu azalt
+                  maxWidth: '1000px', // Genişlik 1000px
+                }}>
+                  "Yapay Zeka" Sadece Teknoloji Değil, Yeni Bir Düşünme Biçimidir.
+Yapay zeka artık bir seçenek değil, iş dünyası için kaçınılmaz bir gerçek.
+Fakat bu alan çoğu işletme için hâlâ karmaşık, belirsiz ve "büyük oyuncuların alanı" gibi görünüyor. Biz bu algıyı değiştirmek için çalışıyoruz.
+Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her ölçekten işletmenin dönüşüm aracıdır.
+                </div>
+                {/* AI Çözümleri Bölümü */}
+                <div style={{ 
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif', 
+                  fontSize: '28px', 
+                  fontWeight: 600,
+                  color: '#000', 
+                  maxWidth: '1000px',
+                  marginBottom: '24px'
+                }}>
+                  Peki, AI Çözümleri Ne Sunar?
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  lineHeight: '24px',
+                  color: '#000', 
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Biz yapay zekayı sadece bir "teknolojik eklenti" olarak değil, <strong style={{color: "#000000"}}>iş modellerinin yeniden tasarlanma fırsatı</strong> olarak görüyoruz.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  lineHeight: '24px',
+                  color: '#000', 
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Sunduğumuz özel AI çözümleriyle;
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  lineHeight: '24px',
+                  color: '#000', 
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Minimum Viable Product (MVP) seviyesinde AI tabanlı ürün fikirlerini hayata geçiriyoruz.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  lineHeight: '24px',
+                  color: '#000', 
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • İş süreçlerinizi analiz ediyor, manuel adımları otomasyona dönüştürüyoruz.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  lineHeight: '24px',
+                  color: '#000', 
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Süreç takibi, veri analizi, tahminleme, öneri sistemleri gibi alanlarda çözümler geliştiriyoruz.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  lineHeight: '24px',
+                  color: '#000', 
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  • Dijital dönüşüm süreçlerinizi AI destekli hale getirerek uzun vadeli sürdürülebilirlik sağlıyoruz.
+                </div>
+                
+                {/* AI Çözümleri Bölümü */}
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Peki, AI Çözümleri Ne Sunar?
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Biz yapay zekayı sadece bir "teknolojik eklenti" olarak değil, <strong style={{color: "#000000"}}>iş modellerinin yeniden tasarlanma fırsatı</strong> olarak görüyoruz.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Sunduğumuz özel AI çözümleriyle;
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Minimum Viable Product (MVP) seviyesinde AI tabanlı ürün fikirlerini hayata geçiriyoruz.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; İş süreçlerinizi analiz ediyor, manuel adımları otomasyona dönüştürüyoruz.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Süreç takibi, veri analizi, tahminleme, öneri sistemleri gibi alanlarda çözümler geliştiriyoruz.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Dijital dönüşüm süreçlerinizi AI destekli hale getirerek uzun vadeli sürdürülebilirlik sağlıyoruz.
+                </div>
+                
+                {/* Kim, Nereden ve Neden Başlamalı? Bölümü */}
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Kim, Nereden ve Neden Başlamalı?
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Yapay zekaya geçişin sihirli bir formülü yok, ama yanlış başlamak zaman ve kaynak kaybına yol açabilir. İşte bu yüzden;
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Başlangıç, problemin kendisidir. İşletmenizde en çok zaman kaybettiren, en sık hata yapılan, en manuel işleyen süreç ne?
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Başlangıç noktası işte orasıdır.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px'
+                }}>
+                  Yapay zekaya geçmek için bir vizyonunuz varsa ama nereden başlayacağınızı bilmiyorsanız;<br />
+                  ilk adımı birlikte atıyoruz:
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Süreç analizi
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Potansiyel otomasyon noktalarının tespiti
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; En yalın haliyle MVP geliştirme
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Test &amp; geri bildirim süreçleri
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '16px',
+                  paddingLeft: '8px'
+                }}>
+                  &bull; Genişletilmiş entegrasyon ve yapay zeka modelleriyle olgunlaşma
+                </div>
+                
+                {/* Alt Resim */}
+                <div style={{ marginTop: '40px' }}>
+                  <img
+                    src="/images/top-hero-bg.jpg"
+                    alt="Hizmetler Görsel"
+                    style={{
+                      width: '994px',
+                      height: '640px',
+                      borderRadius: '32px',
+                      objectFit: 'cover',
+                      objectPosition: 'center',
+                    }}
+                  />
+                </div>
+                
+                {/* Bu Dönüşüm Olmazsa Ne Olur? Bölümü */}
+                <div style={{ marginTop: '40px' }}>
+                  <div style={{ 
+                    fontFamily: 'Sora, Arial, Helvetica, sans-serif', 
+                    fontSize: '28px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '24px'
+                  }}>
+                    Bu Dönüşüm Olmazsa Ne Olur?
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px'
+                  }}>
+                    Yapay zeka teknolojisine geçiş yapmayan işletmeler, birkaç yıl içinde:
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px',
+                    paddingLeft: '8px'
+                  }}>
+                    &bull; Verimsizlik nedeniyle maliyetleri kontrol edememeye,
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px',
+                    paddingLeft: '8px'
+                  }}>
+                    &bull; Müşteri deneyimi açısından geride kalmaya,
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px',
+                    paddingLeft: '8px'
+                  }}>
+                    &bull; Rekabetten kopmaya,
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px',
+                    paddingLeft: '8px'
+                  }}>
+                    &bull; Ve daha da kötüsü, veri üretip bundan faydalanamayan işletmelere dönüşmeye başlar.
+                  </div>
+                </div>
+                
+                {/* AI Yolculuğunda Size Nasıl Rehberlik Ediyoruz? Bölümü */}
+                <div style={{ marginTop: '40px' }}>
+                  <div style={{ 
+                    fontFamily: 'Sora, Arial, Helvetica, sans-serif', 
+                    fontSize: '28px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '24px'
+                  }}>
+                    AI Yolculuğunda Size Nasıl Rehberlik Ediyoruz?
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px'
+                  }}>
+                    İş Hedeflerinizi Anlıyoruz:
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px',
+                    
+                  }}>
+                    Her AI çözüm, işin doğasına uygun olmalı. Önce sizi ve sürecinizi anlamadan satılacak bir teknoloji değil bu.
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px'
+                  }}>
+                    Kritik Noktaları Tespit Ediyoruz:
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px',
+                    
+                  }}>
+                    AI nerede katma değer sağlar? Nerede gereksiz olur? Gereksiz teknolojiye yatırım yaptırmıyoruz.
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px'
+                  }}>
+                    Adım Adım Uyguluyoruz:
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px',
+                    
+                  }}>
+                    Tek adımda büyük bir sistem kurmak yerine, esnek ve ölçeklenebilir çözümler geliştiriyoruz.
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    fontWeight: 600,
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '8px'
+                  }}>
+                    Veriden Öğrenen Sistemler Kuruyoruz:
+                  </div>
+                  <div style={{ 
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                    fontSize: '16px', 
+                    color: '#000', 
+                    maxWidth: '1000px',
+                    marginBottom: '16px',
+                    
+                  }}>
+                    Yapay zeka çözümleri yalnızca otomasyon değil; öğrenen, gelişen ve tahmin eden sistemlerdir. Bu yapıları sizin için inşa ediyoruz.
+                  </div>
+                </div>
+                
+                {/* Ayrı Sonuç Bölümü */}
+                <div style={{ 
+                  marginTop: '80px',
+                  marginBottom: '40px',
+                  marginLeft: '0',
+                  marginRight: '0',
+                  padding: '60px 55px',
+                  backgroundColor: '#e9ecef',
+                  width: '994px',
+                  borderRadius: '15px',
+                  textAlign: 'left'
+                }}>
+                  <div style={{ 
+                    maxWidth: '1000px',
+                    margin: '0 auto',
+                    paddingRight: '20px',
+                    textAlign: 'left'
+                  }}>
+                    {/* Ana Başlık */}
+                    <div style={{ 
+                      fontFamily: 'Sora, Arial, Helvetica, sans-serif', 
+                      fontSize: '46px', 
+                      fontWeight: 600,
+                      color: '#000', 
+                      marginBottom: '32px',
+                      lineHeight: '1.2',
+                      textAlign: 'left'
+                    }}>
+                      Yapay zeka bir lüks değil, işletmenizin devamlılığı için gerekli bir evrimdir.
+                    </div>
+                    
+                    {/* Alt Mesajlar */}
+                    <div style={{ 
+                      fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                      fontSize: '18px', 
+                      fontWeight: 400,
+                      fontStyle: 'italic',
+                      color: '#000', 
+                      marginBottom: '16px',
+                      lineHeight: '1.6',
+                      textAlign: 'left'
+                    }}>
+                      Bugün küçük bir adımla başlanabilir. Ama hiç başlamamak, en büyük risktir. Eğer "nereden başlayacağınızı" bilmiyorsanız, zaten tam olarak başlamanız gereken yerdesiniz.
+                    </div>
+                    
+                    <div style={{ 
+                      fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                      fontSize: '18px', 
+                      fontWeight: 400,
+                      fontStyle: 'italic',
+                      color: '#000', 
+                      lineHeight: '1.6',
+                      textAlign: 'left'
+                    }}>
+                      Biz, bu yolculuğun sadece teknoloji tarafında değil, yol rehberliğinde de yanınızdayız.
+                    </div>
+                  </div>
+                </div>
+                
+
+              </>
+            )}
+            {selected === 1 && (
+              <>
+                <h2 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '46px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  letterSpacing: '-3px',
+                  lineHeight: '1.1',
+                  margin: 0,
+                  marginBottom: '60px',
+                  textAlign: 'left',
+                }}>
+                  Web & Mobil Proje Geliştirme
+                </h2>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '24px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  height: '120px',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  color: '#222',
+                  marginBottom: '2px',
+                  maxWidth: '1000px',
+                }}>
+                  Sadece Kod Yazmak Değil, Başından Sonuna Bir Yol Haritası Belirlemek.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '28px',
+                  color: '#000',
+                  maxWidth: '1000px'
+                }}>
+                  Bugüne kadar farklı sektörlere birçok web ve mobil proje oluşturduk. Kimisi başarıyla yayına alındı, kimisi farklı sebeplerle durdu. Ama hepsinden kazanılan net bir şey var:<br />Her proje, ya hayata geçer ya da bir sonraki projeye bilgi bırakır ve biz bu bilgiyle büyüdük, geliştik, yön değiştirdik.<br /><br />
+                </div>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontStyle: 'normal',
+                  fontWeight: 600,
+                  letterSpacing: 'normal',
+                  lineHeight: 'normal',
+                  margin: 0,
+                  marginBottom: '16px',
+                  textAlign: 'left',
+                  color: '#000',
+                  maxWidth: '1000px'
+                }}>
+                  Geçmişte Kalan Teknolojilerle Geleceği Kuramayız
+                </h3>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '28px',
+                  color: '#000',
+                  maxWidth: '1000px'
+                }}>
+                  Teknoloji dünyasında bazı şeyler çok hızlı eskir:<br />Kod yapıları, mimari modeller, kullanıcı alışkanlıkları ve iş akışları…<br />Bugünün projeleri artık sadece "çalışıyor olması" ile değerlendirilmiyor.<br />Artık sorular şunlar:<br /><br />• Ne kadar hızlı geliştirilebiliyor?<br />• Ne kadar ölçeklenebilir?<br />• Kullanıcı geri bildirimlerine ne kadar hızlı yanıt verebiliyor?<br />• Sistemin sürdürülebilirliği ne kadar mümkün?<br />• Yapay zekâ ile ne kadar entegre?<br />• Yarın başka bir teknolojiye evrildiğinde adapte olabilecek mi?<br /><br />İşte biz bu soruları merkeze alarak çalışıyoruz.<br /><br />
+                </div>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontStyle: 'normal',
+                  fontWeight: 600,
+                  letterSpacing: 'normal',
+                  lineHeight: 'normal',
+                  margin: 0,
+                  marginBottom: '16px',
+                  textAlign: 'left',
+                  color: '#000',
+                  maxWidth: '1000px'
+                }}>
+                  Proje Geliştirme Sürecinde Nasıl İlerliyoruz?
+                </h3>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '28px',
+                  color: '#000',
+                  maxWidth: '1000px'
+                }}>
+                  • Fikri Korumakla Başlıyoruz:<br />Her proje bir fikirdir. Koddan önce o fikir üzerine düşünür, nereye evrilebileceğini konuşuruz.<br />• Teknolojiyi Amaç Değil, Araç Görürüz:<br />İlla şu framework, bu yazılım dili, şu kütüphane olsun diye değil; projeye en uygun, sürdürülebilir teknolojiyle ilerleriz.<br />• MVP Mantığıyla Geliştiririz:<br />Hızlı deneyip, hızlı öğrenmek gerekir. Projenizi tüm detaylarıyla sıfırdan inşa etmek yerine, önce çekirdeği çalıştırırız.<br />• Adaptasyon Planları Oluştururuz:<br />Bir proje yayına girdikten sonra asıl iş başlar. Güncellenebilirlik, kullanıcı geri bildirimlerine göre evrimleşme ve olası pivot senaryolarını planlarız.<br /><br />
+                </div>
+                <h3 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontStyle: 'normal',
+                  fontWeight: 600,
+                  letterSpacing: 'normal',
+                  lineHeight: 'normal',
+                  margin: 0,
+                  marginBottom: '16px',
+                  textAlign: 'left',
+                  color: '#000',
+                  maxWidth: '1000px'
+                }}>
+                  Web & Mobil Projelerin Geleceği Nereye Gidiyor?
+                </h3>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  lineHeight: '28px',
+                  color: '#000',
+                  maxWidth: '1000px'
+                }}>
+                  Eskiden masaüstüyle başlanan projeler, sonra mobile uyarlanırdı.<br />Şimdi süreç tersine döndü:<br /><br />Mobil öncelikli, API merkezli, entegrasyona açık ve modüler yapılar artık standart haline geldi.<br />Yeni nesil projelerde dikkat ettiğimiz bazı temel noktalar:<br /><br />• Mobil öncelikli düşünme: Mobilde çalışmayan hiçbir fikir artık ölçeklenebilir değil.<br />• Modüler yazılım mimarileri: Projeler artık tek bir platformda sabit kalmıyor.<br />• Gerçek zamanlı veri akışı: Kullanıcılar beklemiyor, her şey anlık olmalı.<br />• AI ve veri entegrasyonu: Proje ne kadar veriyle konuşuyorsa, o kadar uzun ömürlü.<br />• Sürekli güncellenebilirlik: Kodun kendisi kadar, güncellenme kültürü de önemli.
+                </div>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: 500,
+                  height: '120px',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  color: '#222',
+                  marginBottom: '24px',
+                  maxWidth: '1000px',
+                }}>
+                  Online satış yapmanız için gerekli tüm araçları sağlıyoruz. Güvenli ödeme sistemleri ve stok yönetimi.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  lineHeight: '28px',
+                  color: '#000', 
+                  maxWidth: '1000px',
+                  marginTop: '24px'
+                }}>
+                  <h3 style={{
+                    fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                    fontSize: '28px',
+                    fontStyle: 'normal',
+                    fontWeight: 600,
+                    letterSpacing: 'normal',
+                    lineHeight: 'normal',
+                    margin: 0,
+                    marginBottom: '16px',
+                    textAlign: 'left',
+                    color: '#000',
+                    maxWidth: '1000px'
+                  }}>
+                    Projeyi Geliştirmek Yetmez, Yaşatmak Gerekir
+                  </h3>
+                  <div style={{
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                    fontSize: '16px',
+                    lineHeight: '28px',
+                    color: '#000',
+                    maxWidth: '1000px',
+                    marginBottom: '16px'
+                  }}>
+                    Birçok proje lansman aşamasına kadar çok iyi ilerler ama yayına girdikten sonra ilgisizlikten, yönsüzlükten, güncellenememekten yavaş yavaş canlılığını yitirir.<br />
+                    Biz bu nedenle sadece proje geliştirici değil, proje sürdürülebilirliği üzerine de çalışıyoruz.
+                  </div>
+                  <div style={{
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                    fontSize: '16px',
+                    lineHeight: '28px',
+                    color: '#000',
+                    maxWidth: '1000px',
+                    marginBottom: '16px'
+                  }}>
+                    • Teknik dökümantasyon<br />
+                    • Geliştirici bağımsızlığı<br />
+                    • Geleceğe hazırlık<br />
+                    • Bütçeye göre ölçeklenebilirlik<br />
+                    • Uzun vadeli destek ve yönlendirme<br />
+                    Hepsi bu bakış açısının bir parçası.
+                  </div>
+                </div>
+              </>
+            )}
+            {selected === 2 && (
+              <>
+                <h2 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '46px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  letterSpacing: '-3px',
+                  lineHeight: '1.1',
+                  margin: 0,
+                  marginBottom: '60px',
+                  textAlign: 'left',
+                }}>
+                  Online Sipariş Sistemleri
+                </h2>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: 500,
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  color: '#222',
+                  marginBottom: '24px',
+                  maxWidth: '1000px',
+                }}>
+                  Basit Görünür, Ama Güçlüdür: Doğrudan, Hızlı ve Sonuç Odaklı Çözümler.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px'
+                }}>
+                  Her satış yapmak isteyen için e-ticaret uygun olmayabilir. Daha doğrusu: herkes, klasik anlamda e-ticarete ihtiyaç duymayabilir.<br /><br />
+                  Ama müşterilerine hızlı, kolay ve kontrollü bir şekilde sipariş imkânı sunmak istiyorsa, online sipariş sistemleri tam da bu noktada devreye girer.<br /><br />
+                  Bizim için bu sistemler, sadece restoranlar için geliştirilen bir çözüm değil. Yıllardır farklı sektörlerde uyguladığımız online sipariş sistemleriyle şunu gördük: Bu sistemler, satışa giden yolun en kısa, en sade ve en etkili halidir.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  E-Ticaretle Arasındaki Fark Nedir?
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  E-ticaret altyapıları, genellikle geniş ürün yelpazesi, kategori yönetimi, kampanya modülleri, kargo sistemleri, pazaryeri entegrasyonları gibi birçok detay içerir.<br /><br />
+                  Bu sistemler büyümeye yönelik esneklik sağlasa da, her işletmenin bu kadar katmanlı bir yapıya ihtiyaç olmayabilir.<br /><br />
+                  Online sipariş sistemleri,<br /><br />
+                  <div style={{ paddingLeft: '20px' }}>
+                    • Daha hızlı kurulur,<br />
+                    • Daha sade bir kullanıcı deneyimi sunar,<br />
+                    • Daha düşük operasyonel yük getirir,<br />
+                    • Ve genellikle doğrudan, hızlı sonuçlara odaklanır.
+                  </div><br /><br />
+                  Yani, "satış yapmak istiyorum ama büyük bir sistem kurmaya değil, kolay bir çözüme ihtiyacım var" diyorsanız, e-ticaret değil, online sipariş sistemi sizin için daha doğru bir tercih olabilir.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Kimler İçin Uygun?
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  <div style={{ paddingLeft: '20px' }}>
+                    • Kendi ürünlerini doğrudan satmak isteyen küçük işletmeler<br />
+                    • Restoranlar, kafeler, catering firmaları<br />
+                    • Yerel dağıtım yapan üreticiler<br />
+                    • Kozmetik, butik üretim yapan girişimler<br />
+                    • Tek tip ürün/hizmet sunan ama telefonla sipariş süreciyle uğraşmak istemeyen işletmeler
+                  </div><br /><br />
+                  Bu sistemler sayesinde; müşteriniz mobil cihazdan sipariş verir, ödeme yapar, size bildirim gelir ve süreç otomatik işler.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Neden Tercih Edilir?
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  <strong style={{ color: '#000' }}>Hızlı Kurulum – Hızlı Sonuç:</strong><br />
+                  Saatler içinde yayına alınabilecek kadar hızlı kurulur.<br /><br />
+                  
+                  <strong style={{ color: '#000' }}>Düşük Maliyet – Düşük Operasyonel Yük:</strong><br />
+                  Geniş e-ticaret altyapılarındaki maliyet ve zaman yükünü ortadan kaldırır.<br /><br />
+                  
+                  <strong style={{ color: '#000' }}>Kişiselleştirme İmkanı:</strong><br />
+                  Sadece size özel, marka kimliğinizi yansıtan, reklamsız ve bağımsız sistemler kuruyoruz.<br /><br />
+                  
+                  <strong style={{ color: '#000' }}>Tam Kontrol Sende:</strong><br />
+                  Komisyon alan 3. taraf uygulamalar yerine, kendi sisteminizde tüm kontrol sizde olur.<br /><br />
+                  
+                  <strong style={{ color: '#000' }}>Yapay Zeka ile Güçlenebilir:</strong><br />
+                  Sipariş alışkanlıkları, lokasyon bazlı öneriler, yoğun saatlerde dinamik fiyatlama gibi özelliklerle sisteminize AI entegrasyonları yapabiliriz.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Bu Sistemlerin Geleceği Ne Yönde?
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  <div style={{ paddingLeft: '20px' }}>
+                    • Mobil uyumluluk artık bir tercih değil, zorunluluk.<br />
+                    • Konuşarak sipariş verme (voice UI), tekrar eden siparişlerde otomasyon,<br />
+                    • Entegre ödeme sistemleri ve hızlı bildirim altyapıları
+                  </div><br />
+                  bu sistemleri her geçen gün daha da akıllı hale getiriyor.<br /><br />
+                  
+                  Online sipariş sistemleri, sade yapısıyla büyümenizi engellemez.<br />
+                  Tam tersine, "küçük başla, kontrollü büyü" stratejisini uygulamak isteyen işletmeler için en doğru başlangıçtır.<br /><br />
+                  
+                  Her işletme bir e-ticaret devine dönüşmek zorunda değil. Ama her işletme, müşterisiyle doğrudan, hızlı ve dijital bir bağ kurmalı. Online sipariş sistemleri, bunun için en yalın ve etkili yoldur. Üstelik kontrol sizde, sistem sizde, müşteriniz sizde kalır.
+                </div>
+              </>
+            )}
+            {selected === 3 && (
+              <>
+                <h2 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '46px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  letterSpacing: '-3px',
+                  lineHeight: '1.1',
+                  margin: 0,
+                  marginBottom: '60px',
+                  textAlign: 'left',
+                }}>
+                  E-ticaret
+                </h2>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  E-ticaret artık sadece bir "site kurmak" değil. Bir satış kanalı açmaktan çok daha fazlası. Bugünün rekabetçi ortamında dijital mağazalar; yalnızca ürün sunmuyor, deneyim yaşatıyor, veri topluyor ve geleceği kurguluyor. Buna göre bir e-ticaret altyapısı sadece bugünün ihtiyaçlarını değil, yarının beklentilerini de karşılayabilmeli.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  E-Ticaretin Değişen Dinamikleri
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Son yıllarda e-ticaret dünyasında bir dönüşüm yaşanıyor. Artık mesele sadece "bir ürün sepete eklendi mi?" sorusu değil. Asıl soru:<br />
+                  "Bu kullanıcı neden sepeti terk etti? Neye ihtiyaç duydu? Nasıl kalıcı bir müşteri olur?"<br />
+                  Yapay zeka, bu sorulara yanıt verebilen en önemli aktörlerden biri haline geldi ve tam da bu nedenle, bugünün e-ticaret sistemleri
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  • Kişiselleştirme,<br />
+                  • Otomatik öneri sistemleri,<br />
+                  • Stok optimizasyonu,<br />
+                  • Dinamik fiyatlama,<br />
+                  • Ve kullanıcı davranışı analizleri
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  gibi yeteneklerle "akıllı sistemler" haline dönüşmek zorunda.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  Artık Her E-Ticaret Sistemi Bir Dönüşüm Yolculuğudur
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yalnızca altyapı kurmak yetmez. Doğru stratejiyle uyumlu altyapılar, sizi rekabette farklı kılar.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px'
+                }}>
+                  <strong>İş Modelinizi Anlıyoruz.</strong><br />
+                  Her e-ticaret veya sipariş sistemi aynı değildir. Sektörünüze özel, operasyonel ihtiyaçlarınıza uygun çözümler geliştiriyoruz.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px'
+                }}>
+                  <strong>Yapay Zeka Destekli Çözümler Sunuyoruz.</strong><br />
+                  Kolay ürün yönetimi, akıllı fiyat önerileri, müşteri segmentasyonu, alışveriş alışkanlıkları analizi, ürün önerileri, kampanya optimizasyonları gibi alanlarda AI entegrasyonları sağlıyoruz.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '16px'
+                }}>
+                  <strong>Sadece Mağaza Değil, Süreç Tasarlıyoruz.</strong><br />
+                  Siparişten teslimata, müşteri destek süreçlerinden sadakat programlarına kadar tüm yapıyı uçtan uca düşünüyoruz.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  <strong>Geleceğe Hazır Altyapılar Kuruyoruz.</strong><br />
+                  Sisteminizi büyümeye, pazaryeri entegrasyonlarına, yurt dışı satışlaral uygun hale getiriyoruz.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  E-Ticaret Artık Sadece Altyapı Meselesi Değil
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Bir zamanlar bir e-ticaret sitesi kurmak, markanızı dijitalde var etmek için yeterliydi. Bugünse bu işin dinamikleri tamamen değişti. Yapay zeka ve veri odaklı sistemler, artık e-ticaretin geleceğini şekillendiriyor.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  • Müşteri davranışları analiz ediliyor,<br />
+                  • Kişiselleştirilmiş ürün önerileri sunuluyor,<br />
+                  • Dinamik fiyatlandırma ile rekabet avantajı sağlanıyor,<br />
+                  • Lojistik ve stok sistemleri optimize ediliyor.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Tüm bunlar, e-ticareti basit bir satış kanalından çıkarıp, karar alma süreçlerine etki eden bir sistem haline getiriyor.
+                </div>
+                
+                <div style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '28px',
+                  fontWeight: 600,
+                  color: '#000',
+                  maxWidth: '1000px',
+                  marginBottom: '24px',
+                  marginTop: '40px'
+                }}>
+                  E-Ticaretin Geleceğinde Sizi Nereye Taşıyoruz?
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Yapay zekayla güçlenen sistemler artık sadece yöneticilere değil, müşterilere de karar desteği sağlıyor.<br />
+                  Hangi ürünün hangi müşteriye, ne zaman, ne fiyatla önerileceği; satışları tahmin etmeden önce tasarlamak mümkün.<br />
+                  Ayrıca mobil kullanıcı deneyimi, hız optimizasyonu, mikro animasyonlarla zenginleştirilmiş arayüzler ve gelişmiş analitik araçlarla:
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  • Daha fazla ziyaretçiyi müşteriye dönüştüren,<br />
+                  • Daha fazla müşteriyi markaya sadık hale getiren sistemler kuruyoruz.
+                </div>
+                
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px',
+                  lineHeight: '24px',
+                  marginBottom: '24px'
+                }}>
+                  Eğer e-ticaret sisteminizin sadece çalışmasını değil, gelişmesini ve sizi ileri taşımasını istiyorsanız; sizin için sadece teknik değil, stratejik bir partner olabiliriz.
+                </div>
+              </>
+            )}
+            {selected === 4 && (
+              <>
+                <h2 style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '46px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  letterSpacing: '-3px',
+                  lineHeight: '1.1',
+                  margin: 0,
+                  marginBottom: '60px',
+                  textAlign: 'left',
+                }}>
+                  Mobil Uygulama
+                </h2>
+                <div style={{
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                  fontSize: '16px',
+                  fontStyle: 'normal',
+                  fontWeight: 500,
+                  height: '120px',
+                  letterSpacing: 'normal',
+                  lineHeight: '30px',
+                  color: '#222',
+                  marginBottom: '24px',
+                  maxWidth: '1000px',
+                }}>
+                  iOS ve Android platformları için native mobil uygulamalar geliştiriyoruz.
+                </div>
+                <div style={{ 
+                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
+                  fontSize: '16px', 
+                  color: '#444', 
+                  maxWidth: '1000px' 
+                }}>
+                  • iOS & Android<br />
+                  • Native Geliştirme<br />
+                  • Push Bildirimler<br />
+                  • App Store Optimizasyonu
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* YENİ BÖLÜM - NEURAL NETWORK KARTLARI (Desktop) */}
+      <section
+        className="desktop-cards-section hidden md:flex"
+        style={{
+          width: 'auto',
+          margin: '200px 20px 0 20px',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          gap: '20px',
+        }}
+      >
+
+        
+{/* 1. Kart - E-Ticaretin Yeni Dönemi */}
+        <div
+          style={{
+            width: '450px',
+            height: '570px',
+            background: "linear-gradient(135deg, #10B981 0%, #06B6D4 50%, #0891B2 100%)",
+            borderRadius: '24px',
+            position: 'relative',
+            overflow: 'hidden',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-end', // yazıları alta yasla
+            padding: '40px 40px 50px 40px', // sol padding aynı, alt 50px
+            boxSizing: 'border-box',
+          }}
+        >
+          {/* Dalga deseni */}
+          <div style={{
+            position: 'absolute',
+            top: '-50px',
+            right: '-50px',
+            width: '200px',
+            height: '200px',
+            background: 'linear-gradient(45deg, rgba(139, 92, 246, 0.3), rgba(59, 130, 246, 0.3))',
+            borderRadius: '50%',
+            transform: 'rotate(45deg)',
+          }} />
+          
+          {/* İçerik */}
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            <h3 style={{
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '25px',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              height: 'auto',
+              letterSpacing: '-0.75px',
+              lineHeight: '35px',
+              color: '#fff',
+              marginBottom: '20px',
+            }}>
+              E-Ticaretin Yeni Dönemi
+            </h3>
+            <p style={{
+              fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+              fontSize: '16px',
+              fontStyle: 'normal',
+              fontWeight: 500,
+              height: '120px',
+              letterSpacing: 'normal',
+              lineHeight: '30px',
+              color: '#fff',
+              opacity: 0.9,
+            }}>
+              Kişiselleştirilmiş alışveriş özellikleri, akıllı öneriler.
+Ürün, fiyatlama yönetimi için özel ai çözümleri, satışa yönelik analizler…
+            </p>
+          </div>
+          
+          {/* Buton */}
+          <button style={{
+            position: 'relative',
+            zIndex: 1,
+            width: '50px',
+            height: '50px',
+            borderRadius: '50%',
+            background: '#000',
+            border: 'none',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            alignSelf: 'flex-end',
+            marginBottom: '-10px',
+          }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+        {/* 2. Kart - Yapay Zeka Otomasyonu ile Dijital Dönüşüm Zamanı! */}
+        <div
+          style={{
+            width: '450px',
+            height: '570px',
+            background: 'linear-gradient(135deg, #059669 0%, #0EA5E9 50%, #0284C7 100%)',
+            borderRadius: '24px',
+            position: 'relative',
+            overflow: 'hidden',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            padding: '40px',
+            boxSizing: 'border-box',
+          }}
+        >
+          {/* Sol alt resim */}
+          <img
+            src="/images/Training-Optimization.png"
+            alt="Training Optimization"
+            style={{
+              position: 'absolute',
+              bottom: '0px',
+              left: '0px',
+              width: '276px',
+              height: '298px',
+              objectFit: 'cover',
+              objectPosition: 'center',
+              opacity: 0.3,
+              zIndex: 0,
+            }}
+          />
+          
+          {/* Nokta deseni */}
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
+            backgroundSize: '20px 20px',
+            opacity: 0.3,
+            zIndex: 1,
+          }} />
+          
+          {/* X deseni */}
+          <div style={{
+            position: 'absolute',
+            bottom: '20px',
+            left: '20px',
+            width: '100px',
+            height: '100px',
+            background: 'repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(34, 197, 94, 0.3) 10px, rgba(34, 197, 94, 0.3) 20px)',
+            zIndex: 1,
+          }} />
+          
+          {/* İçerik */}
+          <div style={{ position: 'relative', zIndex: 2, paddingTop: '22px' }}>
+            <h3 style={{
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '25px',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              height: 'auto',
+              letterSpacing: '-0.75px',
+              lineHeight: '35px',
+              color: '#fff',
+              marginBottom: '20px',
+            }}>
+              Yapay Zeka Otomasyonu ile Dijital Dönüşüm Zamanı!
+            </h3>
+            <p style={{
+              fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+              fontSize: '16px',
+              fontStyle: 'normal',
+              fontWeight: 500,
+              height: '120px',
+              letterSpacing: 'normal',
+              lineHeight: '30px',
+              color: '#fff',
+              opacity: 0.9,
+            }}>
+              Yapay Zeka, Dijital Dönüşüm, UX Dönüşümü ve Yazılım Geliştirme alanlarında işinize özel çözümler ile iş verimliliğini ve sürdürülebilir büyümeyi sağlıyoruz.
+            </p>
+          </div>
+          
+          {/* Buton */}
+          <button style={{
+            position: 'relative',
+            zIndex: 2,
+            width: '50px',
+            height: '50px',
+            borderRadius: '50%',
+            background: '#000',
+            border: 'none',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginBottom: '-10px',
+          }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+          </button>
+        </div>
+
+        {/* 3. Kart ve altına yeni kartı ekleyeceğimiz column */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', justifyContent: 'center' }}>
+          {/* 3. Kart - İşinizi Dönüştürün, Geleceğe Güvenle İlerleyin. */}
+          <div
+            style={{
+              width: '412px',
+              height: '192px',
+              background: '#F0F2F4',
+              borderRadius: '24px',
+              position: 'relative',
+              overflow: 'hidden',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              padding: '40px',
+              boxSizing: 'border-box',
+            }}
+          >
+            {/* Radar deseni */}
+            <div style={{
+              position: 'absolute',
+              top: '20px',
+              right: '20px',
+              width: '80px',
+              height: '80px',
+              border: '2px solid #F9A09D',
+              borderRadius: '50%',
+            }} />
+            <div style={{
+              position: 'absolute',
+              top: '30px',
+              right: '30px',
+              width: '60px',
+              height: '60px',
+              border: '2px solid #F9A09D',
+              borderRadius: '50%',
+            }} />
+            <div style={{
+              position: 'absolute',
+              top: '40px',
+              right: '40px',
+              width: '40px',
+              height: '40px',
+              border: '2px solid #F9A09D',
+              borderRadius: '50%',
+            }} />
+            
+                      {/* İçerik */}
+          <div style={{ position: 'relative', zIndex: 1, marginBottom: '32px' }}>
+            <h3 style={{
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '25px',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              height: 'auto',
+              letterSpacing: 'normal',
+              lineHeight: '35px',
+              color: '#000',
+              marginBottom: '20px',
+            }}>
+              İşinizi Dönüştürün, Geleceğe Güvenle İlerleyin.
+            </h3>
+          </div>
+          </div>
+          {/* 3.5. Kart - MVP Geliştirme (Yeni) */}
+          <div
+            style={{
+              width: '412px',
+              height: '358px',
+              background: '#1F2937',
+              borderRadius: '24px',
+              position: 'relative',
+              overflow: 'hidden',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              padding: '40px',
+              boxSizing: 'border-box',
+            }}
+          >
+                      {/* 24/7 ikonu */}
+          <div style={{
+            position: 'absolute',
+            top: '40px',
+            left: '40px',
+            width: '48px',
+            height: '48px',
+            border: '2px solid #F9A09D',
+            borderRadius: '50%',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+            <div style={{
+              width: '24px',
+              height: '24px',
+              background: '#F9A09D',
+              borderRadius: '50%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '12px',
+              fontWeight: 'bold',
+              color: '#fff',
+            }}>
+              24
+            </div>
+          </div>
+          
+          {/* İçerik */}
+          <div style={{ position: 'relative', zIndex: 1, marginTop: '70px' }}>
+                          <h3 style={{
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '25px',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              height: 'auto',
+              letterSpacing: '-0.75px',
+              lineHeight: '35px',
+              color: '#fff',
+              marginBottom: '20px',
+            }}>
+              MVP Geliştirme
+            </h3>
+            <p style={{
+              fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+              fontSize: '16px',
+              fontStyle: 'normal',
+              fontWeight: 500,
+              height: '120px',
+              letterSpacing: 'normal',
+              lineHeight: '30px',
+              color: '#fff',
+              opacity: 0.9,
+            }}>
+              İşletmelerin MVP geliştirmelerini sorunsuz bir şekilde ve endişe duymadan sürdürmelerini sağlıyoruz.
+            </p>
+            </div>
+            
+            {/* Buton */}
+            <button style={{
+              position: 'relative',
+              zIndex: 1,
+              width: '50px',
+              height: '50px',
+              borderRadius: '50%',
+              background: '#000',
+              border: 'none',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: "center",
+              justifyContent: 'center',
+              alignSelf: 'flex-end',
+              marginTop: 'auto',
+              marginBottom: '-10px',
+            }}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/* 4. Kart - MVP Geliştirme */}
+        <div
+          style={{
+            width: '490px',
+            height: '570px',
+            background: '#1F2937',
+            borderRadius: '24px',
+            position: 'relative',
+            overflow: 'hidden',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            padding: '40px',
+            boxSizing: 'border-box',
+          }}
+        >
+          {/* Arka plan resmi */}
+          <img
+            src="/images/top-hero-bg.jpg"
+            alt="AI Background"
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center',
+              opacity: 0.3,
+              zIndex: 0,
+            }}
+          />
+          
+          {/* Overlay - yazıların okunabilmesi için */}
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'rgba(31, 41, 55, 0.7)',
+            zIndex: 1,
+          }} />
+          
+          {/* İçerik */}
+          <div style={{ position: 'relative', zIndex: 2, marginTop: '40px' }}>
+            <h3 style={{
+              fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+              fontSize: '25px',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              height: 'auto',
+              letterSpacing: '-0.75px',
+              lineHeight: '35px',
+              color: '#fff',
+              marginBottom: '20px',
+            }}>
+              Proje Geliştirme
+            </h3>
+            <p style={{
+              fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+              fontSize: '16px',
+              fontStyle: 'normal',
+              fontWeight: 500,
+              height: '120px',
+              letterSpacing: 'normal',
+              lineHeight: '30px',
+              color: '#fff',
+              opacity: 0.9,
+            }}>
+              PWA geliştirme, özel web ve mobil uygulama geliştirme, içerik yönetimi (cms) uygulamaları konusunda etkili ve de işlevsel projeler oluşturmanıza yardımcı oluyoruz.
+            </p>
+          </div>
+          
+          {/* Buton */}
+          <button style={{
+            position: 'relative',
+            zIndex: 2,
+            width: '50px',
+            height: '50px',
+            borderRadius: '50%',
+            background: '#000',
+            border: 'none',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            alignSelf: 'flex-end',
+          }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      {/* Mobil - Kartlar tek sütun */}
+      <section
+        className="md:hidden mobile-cards-section"
+        style={{
+          margin: '40px 20px 0 20px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '12px',
+        }}
+      >
+        {/* Card 1 */}
+        <div style={{
+          width: '100%',
+          background: "linear-gradient(135deg, #FF4D47 0%, #F9A09D 50%, #FF6B6B 100%)",
+          borderRadius: '20px',
+          padding: '16px',
+          boxSizing: 'border-box',
+          overflow: 'hidden'
+        }}>
+          <h3 style={{
+            fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(18px, 5.5vw, 22px)',
+            lineHeight: '1.3',
+            color: '#fff',
+            margin: 0,
+            marginBottom: '8px'
+          }}>E-Ticaretin Yeni Dönemi</h3>
+          <p style={{
+            fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(14px, 3.8vw, 16px)',
+            lineHeight: '1.55',
+            color: '#fff',
+            opacity: 0.9,
+            margin: 0
+          }}>Kişiselleştirilmiş alışveriş özellikleri, akıllı öneriler.
+Ürün, fiyatlama yönetimi için özel ai çözümleri, satışa yönelik analizler…</p>
+        </div>
+        {/* Card 2 */}
+        <div style={{
+          width: '100%',
+          background: 'linear-gradient(135deg, #059669 0%, #0EA5E9 50%, #0284C7 100%)',
+          borderRadius: '20px',
+          padding: '16px',
+          boxSizing: 'border-box',
+          overflow: 'hidden'
+        }}>
+          <h3 style={{
+            fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(18px, 5.5vw, 22px)',
+            lineHeight: '1.3',
+            color: '#fff',
+            margin: 0,
+            marginBottom: '8px'
+          }}>Yapay Zeka Otomasyonu ile Dijital Dönüşüm Zamanı!</h3>
+          <p style={{
+            fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(14px, 3.8vw, 16px)',
+            lineHeight: '1.55',
+            color: '#fff',
+            opacity: 0.9,
+            margin: 0
+          }}>Yapay Zeka, Dijital Dönüşüm, UX Dönüşümü ve Yazılım Geliştirme alanlarında işinize özel çözümler ile iş verimliliğini ve sürdürülebilir büyümeyi sağlıyoruz.</p>
+        </div>
+        {/* Card 3 */}
+        <div style={{
+          width: '100%',
+          background: '#F0F2F4',
+          borderRadius: '20px',
+          padding: '16px',
+          boxSizing: 'border-box',
+          overflow: 'hidden'
+        }}>
+          <h3 style={{
+            fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(18px, 5.5vw, 22px)',
+            lineHeight: '1.3',
+            color: '#000',
+            margin: 0
+          }}>İşinizi Dönüştürün, Geleceğe Güvenle İlerleyin.</h3>
+        </div>
+        {/* Card 4 */}
+        <div className="ai-consulting-card" style={{
+          width: '100%',
+          background: '#1F2937',
+          borderRadius: '20px',
+          padding: '16px',
+          boxSizing: 'border-box',
+          overflow: 'hidden'
+        }}>
+          <h3 style={{
+            fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(18px, 5.5vw, 22px)',
+            lineHeight: '1.3',
+            color: '#fff',
+            margin: 0,
+            marginBottom: '8px'
+          }}>Proje Geliştirme</h3>
+          <p style={{
+            fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+            fontSize: 'clamp(14px, 3.8vw, 16px)',
+            lineHeight: '1.55',
+            color: '#fff',
+            opacity: 0.9,
+            margin: 0
+          }}>PWA geliştirme, özel web ve mobil uygulama geliştirme, içerik yönetimi (cms) uygulamaları konusunda etkili ve de işlevsel projeler oluşturmanıza yardımcı oluyoruz.</p>
+        </div>
+      </section>
+
+      {/* ALTINA MARGIN EKLE */}
+      <div className="hizmetler-spacer" style={{ marginBottom: '200px' }} />
+
+      {/* YENİ BÖLÜM - GÖRSELDEKİ GİBİ */}
+      <section
+        className="hizmetler-cta-section"
+        style={{
+          background: '#0D0D0C',
+          width: 'auto',
+          margin: '120px 15px 0 15px',
+          height: '490px',
+          borderTopLeftRadius: '40px',
+          borderTopRightRadius: '40px',
+          borderBottomLeftRadius: '0px',
+          borderBottomRightRadius: '0px',
+          display: 'flex',
+          alignItems: 'center',
+          position: 'relative',
+        }}
+      >
+        <div className="container-custom" style={{ width: '100%', position: 'relative' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+            {/* Sol: Başlık */}
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1 }}>
+              <h2
+                style={{
+                  fontFamily: 'Sora, Arial, Helvetica, sans-serif',
+                  fontSize: '80px',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  height: '180px',
+                  letterSpacing: '-2.4px',
+                  lineHeight: '90px',
+                  color: 'transparent',
+                  background: 'linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  margin: 0,
+                  width: '840px',
+                  textAlign: 'left',
+                  display: 'block',
+                }}
+              >
+                Projenizi hayata geçirelim!
+              </h2>
+            </div>
+            {/* Sağ: Teklif İste Butonu */}
+            <button
+              className="teklif-iste-btn"
+              style={{
+                border: '2px solid transparent',
+                borderRadius: '15px',
+                background: 'linear-gradient(#0D0D0C, #0D0D0C) padding-box, linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%) border-box',
+                color: '#fff',
+                fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                fontSize: '14px',
+                fontStyle: 'normal',
+                fontWeight: 500,
+                height: '55px',
+                minWidth: '70px',
+                letterSpacing: '0.12px',
+                lineHeight: '27px',
+                padding: '0 32px',
+                cursor: 'pointer',
+                transition: 'background 0.3s',
+                position: 'relative',
+                outline: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
+              }}
+            >
+              Teklif Al
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{ marginLeft: '4px' }}>
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          {/* Yatay çizgi - butonun sonuna kadar uzanan */}
+          <div style={{ 
+            position: 'absolute', 
+            left: 0, 
+            right: 0, 
+            height: '1px', 
+            background: 'rgba(255,255,255,0.7)', 
+            top: 'calc(50% + 90px)', 
+            marginTop: '48px' 
+          }} />
+        </div>
+      </section>
+    </main>
+  );
+} 
