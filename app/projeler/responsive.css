@@ -570,7 +570,7 @@
   
   /* Hero title için üst boşluk eklenmesi - sadece mobil */
   .projeler-hero-title {
-    margin-top: 80px !important; /* 60px'den 80px'e */
+    margin-top: 100px !important; /* 80px'den 100px'e */
   }
 }
 
