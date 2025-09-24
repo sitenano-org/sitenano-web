@@ -1,6 +1,7 @@
 "use client"
 
 import Link from 'next/link'
+import './responsive.css'
 
 export default function ProjelerPage() {
   return (
@@ -16,7 +17,7 @@ export default function ProjelerPage() {
     }}>
       {/* HERO BÖLÜMÜ */}
       <section
-        className="relative w-full flex items-center overflow-hidden"
+        className="relative w-full flex items-center overflow-hidden projeler-hero-section"
         style={{ 
           minHeight: '800px', 
           height: '800px', 
@@ -26,8 +27,9 @@ export default function ProjelerPage() {
         }}
       >
         <div className="w-full h-full flex items-center justify-center relative z-10" style={{ padding: '0 20px' }}>
-          <div className="text-center" style={{ width: '1200px', margin: '0 auto' }}>
+          <div className="text-center projeler-hero-container" style={{ width: '1200px', margin: '0 auto' }}>
             <h1
+              className="projeler-hero-title"
               style={{
                 fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                 fontSize: '80px',
@@ -50,11 +52,11 @@ export default function ProjelerPage() {
             >
               Veriden değere, fikirden sonuca uzanan dönüşümler.
             </h1>
-            <div style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '30px', fontStyle: 'normal', fontWeight: 600, lineHeight: '38px', margin: '-25px 0 30px 0', textAlign: 'center', color: 'transparent', background: 'linear-gradient(135deg, #000000 0%, #333333 50%, #999999 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <div className="projeler-hero-subtitle" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontSize: '30px', fontStyle: 'normal', fontWeight: 600, lineHeight: '38px', margin: '-25px 0 30px 0', textAlign: 'center', color: 'transparent', background: 'linear-gradient(135deg, #000000 0%, #333333 50%, #999999 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               Fikirden sonuca tüm süreci uçtan uca kurguluyoruz.
             </div>
             <p
-              className="text-gray-600"
+              className="text-gray-600 projeler-hero-description"
               style={{
                 fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                 fontSize: '16px',
@@ -85,7 +87,7 @@ export default function ProjelerPage() {
         marginTop: '0px',
         minHeight: 'auto'
       }}>
-        <div style={{ 
+        <div className="projeler-grid-container" style={{ 
           display: 'grid', 
           gridTemplateColumns: '360px 360px 360px 360px 360px', 
           gridTemplateRows: 'auto auto auto auto auto auto auto',
@@ -96,7 +98,7 @@ export default function ProjelerPage() {
         }}>
           
           {/* 1. Panel - Achievements */}
-          <div style={{
+          <div className="projeler-grid-item" style={{
             background: 'url("/images/color-bg-2.jpg")',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -399,7 +401,7 @@ export default function ProjelerPage() {
       </section>
 
       {/* YENİ PROJELER BÖLÜMÜ */}
-      <section style={{
+      <section className="projeler-section" style={{
         background: '#1a1a1a',
         height: '2400px',
         padding: '150px 20px 120px 20px',
@@ -416,7 +418,7 @@ export default function ProjelerPage() {
           <div style={{
             marginBottom: '120px'
           }}>
-            <div style={{
+            <div className="projeler-subtitle" style={{
               color: '#909090',
               fontFamily: 'Sora, Arial, Helvetica, sans-serif',
               fontSize: '16px',
@@ -426,7 +428,7 @@ export default function ProjelerPage() {
             }}>
               (Ürünlerimiz)
             </div>
-            <h2 style={{
+            <h2 className="projeler-title" style={{
               color: 'white',
               fontFamily: 'Sora, Arial, Helvetica, sans-serif',
               fontSize: '60px',
@@ -456,7 +458,7 @@ export default function ProjelerPage() {
             justifyContent: 'flex-start'
           }}>
             {/* Proje 1 */}
-            <div style={{
+            <div className="projeler-card-bg" style={{
               width: '1785px',
               height: '418px',
               borderRadius: '20px',
@@ -476,7 +478,7 @@ export default function ProjelerPage() {
                 flexDirection: 'column',
                 justifyContent: 'center'
               }}>
-                <div style={{
+                <div className="projeler-card-badge" style={{
                   color: 'white',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
@@ -501,7 +503,7 @@ export default function ProjelerPage() {
                 }}>
                   Online Sipariş Sistemi
                 </div>
-                <div style={{
+                <div className="projeler-card-description" style={{
                   color: 'white',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '40px',
@@ -515,7 +517,7 @@ export default function ProjelerPage() {
                   Yeme–içme sektörü ile, ürünlerini doğrudan müşterilerine sunmak isteyenler için geliştirilmiş özel online sipariş sistemi. İşletmelere aracısız satış imkânı ve tam kontrol sağlar.
                 </div>
               </div>
-              <div style={{
+              <div className="projeler-detayli-incele-btn" style={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-start',
@@ -536,10 +538,10 @@ export default function ProjelerPage() {
                 const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
                 if (line) line.style.background = 'white';
               }}>
-                <div style={{ marginBottom: '8px' }}>
+                <div className="projeler-detayli-incele-text" style={{ marginBottom: '8px' }}>
                   Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
                 </div>
-                <div style={{
+                <div className="projeler-detayli-incele-line" style={{
                   width: '100%',
                   height: '1px',
                   background: 'white',
@@ -550,7 +552,7 @@ export default function ProjelerPage() {
             </div>
 
             {/* Proje 2 */}
-            <div style={{
+            <div className="projeler-card-bg" style={{
               width: '1785px',
               height: '418px',
               borderRadius: '20px',
@@ -585,6 +587,7 @@ export default function ProjelerPage() {
                   display: 'inline-block',
                   width: 'fit-content'
                 }}
+                className="projeler-card-badge"
                 onMouseEnter={(e) => {
                   (e.target as HTMLDivElement).style.background = '#000000';
                   (e.target as HTMLDivElement).style.color = 'white';
@@ -595,7 +598,7 @@ export default function ProjelerPage() {
                 }}>
                   Hızlı Yemek Sipariş Çözümleri
                 </div>
-                <div style={{
+                <div className="projeler-card-description" style={{
                   color: 'white',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '40px',
@@ -606,10 +609,10 @@ export default function ProjelerPage() {
                   lineHeight: '45px',
                   maxWidth: '800px'
                 }}>
-                  Siparişten ödemeye tüm süreci hızlı ve düzenli hale getiren Yemek Sipariş Çözümleri - <em style={{fontSize: '38px'}}>Kasa, Masa, Qr, Masa Paylaş - Kiosk...</em>
+                  Siparişten ödemeye tüm süreci hızlı ve düzenli hale getiren Yemek Sipariş Çözümleri - <em className="projeler-card-em" style={{fontSize: '38px'}}>Kasa, Masa, Qr, Masa Paylaş - Kiosk...</em>
                 </div>
               </div>
-              <div style={{
+              <div className="projeler-detayli-incele-btn" style={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-start',
@@ -630,10 +633,10 @@ export default function ProjelerPage() {
                 const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
                 if (line) line.style.background = 'white';
               }}>
-                <div style={{ marginBottom: '8px' }}>
+                <div className="projeler-detayli-incele-text" style={{ marginBottom: '8px' }}>
                   Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
                 </div>
-                <div style={{
+                <div className="projeler-detayli-incele-line" style={{
                   width: '100%',
                   height: '1px',
                   background: 'white',
@@ -644,7 +647,7 @@ export default function ProjelerPage() {
             </div>
 
             {/* Proje 3 */}
-            <div style={{
+            <div className="projeler-card-bg" style={{
               width: '1785px',
               height: '418px',
               borderRadius: '20px',
@@ -699,10 +702,11 @@ export default function ProjelerPage() {
                 onMouseLeave={(e) => {
                   (e.target as HTMLDivElement).style.background = 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box';
                   (e.target as HTMLDivElement).style.color = 'white';
-                }}>
+                }}
+                className="projeler-card-badge">
                   E-ticaret
                 </div>
-                <div style={{
+                <div className="projeler-card-description" style={{
                   color: 'white',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '40px',
@@ -716,7 +720,7 @@ export default function ProjelerPage() {
                   Ürün yönetiminden sipariş takibine, ödeme sistemlerinden çeşitli entegrasyonlara kadar tüm ihtiyaçları tek bir yapıda toplar.
                 </div>
               </div>
-              <div style={{
+              <div className="projeler-detayli-incele-btn" style={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-start',
@@ -738,10 +742,10 @@ export default function ProjelerPage() {
                 const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
                 if (line) line.style.background = 'white';
               }}>
-                <div style={{ marginBottom: '8px' }}>
+                <div className="projeler-detayli-incele-text" style={{ marginBottom: '8px' }}>
                   Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
                 </div>
-                <div style={{
+                <div className="projeler-detayli-incele-line" style={{
                   width: '100%',
                   height: '1px',
                   background: 'white',
@@ -752,7 +756,7 @@ export default function ProjelerPage() {
             </div>
 
             {/* Proje 4 */}
-            <div style={{
+            <div className="projeler-card-bg" style={{
               width: '1785px',
               height: '418px',
               borderRadius: '20px',
@@ -794,10 +798,11 @@ export default function ProjelerPage() {
                 onMouseLeave={(e) => {
                   (e.target as HTMLDivElement).style.background = 'linear-gradient(transparent, transparent) padding-box, linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%) border-box';
                   (e.target as HTMLDivElement).style.color = 'white';
-                }}>
+                }}
+                className="projeler-card-badge">
                   Web Tasarım
                 </div>
-                <div style={{
+                <div className="projeler-card-description" style={{
                   color: 'white',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '40px',
@@ -811,7 +816,7 @@ export default function ProjelerPage() {
                   Web sitenizin tasarımı ile kalitenizi, içeriği ile sıralamanızı öne çıkarır.
                 </div>
               </div>
-              <div style={{
+              <div className="projeler-detayli-incele-btn" style={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-start',
@@ -832,10 +837,10 @@ export default function ProjelerPage() {
                 const line = (e.target as HTMLDivElement).querySelector('div:last-child') as HTMLDivElement;
                 if (line) line.style.background = 'white';
               }}>
-                <div style={{ marginBottom: '8px' }}>
+                <div className="projeler-detayli-incele-text" style={{ marginBottom: '8px' }}>
                   Detaylı İncele <span style={{ fontSize: '20px', marginLeft: '5px' }}>↗</span>
                 </div>
-                <div style={{
+                <div className="projeler-detayli-incele-line" style={{
                   width: '100%',
                   height: '1px',
                   background: 'white',
