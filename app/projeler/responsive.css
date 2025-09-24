@@ -569,6 +569,17 @@
   }
 }
 
+/* Masaüstü Footer CTA spacing düzeltmesi */
+@media (min-width: 769px) {
+  .footer-cta-section {
+    margin: 120px 60px 0 60px !important; /* 15px'den 60px'e */
+  }
+  
+  .footer-cta-container {
+    padding: 0 40px !important; /* 0 5px'den 0 40px'e */
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .projeler-section {
     height: auto !important;
