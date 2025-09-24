@@ -503,6 +503,70 @@
     text-align: center !important;
     padding: 0 10px !important;
   }
+  
+  /* Footer CTA bölümü mobil responsive */
+  .footer-cta-section {
+    height: auto !important; /* 700px'den auto'ya */
+    margin: 60px 15px 0 15px !important; /* 120px'den 60px'e */
+    padding: 40px 0 !important; /* Ek padding */
+    border-radius: 20px 20px 0 0 !important; /* 40px'den 20px'e */
+  }
+  
+  .footer-cta-container {
+    padding: 0 15px !important; /* 0 5px'den 0 15px'e */
+  }
+  
+  .footer-cta-content {
+    flex-direction: column !important; /* Yan yana değil alt alta */
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 40px !important;
+    text-align: center !important;
+  }
+  
+  .footer-cta-text-area {
+    padding: 0 !important; /* 20px padding'i kaldır */
+    flex: none !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  .footer-cta-title {
+    font-size: 32px !important; /* 80px'den 32px'e */
+    line-height: 38px !important; /* 90px'den 38px'e */
+    letter-spacing: -1px !important; /* -2.4px'den -1px'e */
+    margin: 0 0 20px 0 !important; /* Margin sıfırlandı */
+    width: 100% !important; /* 840px'den 100%'e */
+    min-height: auto !important; /* 180px'den auto'ya */
+    text-align: center !important;
+    padding: 0 10px !important;
+  }
+  
+  .footer-cta-description {
+    font-size: 16px !important; /* 18px'den 16px'e */
+    line-height: 24px !important; /* 28px'den 24px'e */
+    margin: 0 !important; /* 100px margin'i kaldır */
+    max-width: 100% !important; /* 840px'den 100%'e */
+    text-align: center !important;
+    padding: 0 15px !important;
+  }
+  
+  .footer-cta-button-area {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  .footer-cta-button {
+    font-size: 16px !important; /* 14px'den 16px'e */
+    height: 50px !important; /* 55px'den 50px'e */
+    padding: 0 24px !important; /* 0 32px'den 0 24px'e */
+    min-width: 200px !important; /* 70px'den 200px'e */
+  }
+  
+  .footer-cta-line {
+    display: none !important; /* Mobilde çizgiyi gizle */
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

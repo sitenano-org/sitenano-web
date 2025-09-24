@@ -1765,6 +1765,7 @@ export default function ProjelerPage() {
 
       {/* YENİ BÖLÜM - GÖRSELDEKİ GİBİ */}
       <section
+        className="footer-cta-section"
         style={{
           background: '#0D0D0C',
           width: 'auto',
@@ -1779,11 +1780,12 @@ export default function ProjelerPage() {
           position: 'relative',
         }}
       >
-        <div className="container-custom" style={{ width: '100%', position: 'relative', padding: '0 5px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+        <div className="footer-cta-container" style={{ width: '100%', position: 'relative', padding: '0 5px' }}>
+          <div className="footer-cta-content" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             {/* Sol: Başlık */}
-            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1, paddingLeft: '20px', paddingRight: '20px' }}>
+            <div className="footer-cta-text-area" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1, paddingLeft: '20px', paddingRight: '20px' }}>
               <h2
+                className="footer-cta-title"
                 style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '80px',
@@ -1807,6 +1809,7 @@ export default function ProjelerPage() {
                 Fikrinizi görüşmek için şimdi bizimle iletişime geçin.
               </h2>
               <p
+                className="footer-cta-description"
                 style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '18px',
@@ -1824,42 +1827,44 @@ export default function ProjelerPage() {
               </p>
             </div>
             {/* Sağ: Teklif İste Butonu */}
-            <Link href="/iletisim">
-              <button
-                className="teklif-iste-btn"
-                style={{
-                  border: '2px solid transparent',
-                  borderRadius: '15px',
-                  background: 'linear-gradient(#0D0D0C, #0D0D0C) padding-box, linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%) border-box',
-                  color: '#fff',
-                  fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
-                  fontSize: '14px',
-                  fontStyle: 'normal',
-                  fontWeight: 500,
-                  height: '55px',
-                  minWidth: '70px',
-                  letterSpacing: '0.12px',
-                  lineHeight: '27px',
-                  padding: '0 32px',
-                  cursor: 'pointer',
-                  transition: 'background 0.3s',
-                  position: 'relative',
-                  outline: 'none',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '8px',
-                }}
-              >
-                Teklif Al
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{ marginLeft: '4px' }}>
-                  <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-            </Link>
+            <div className="footer-cta-button-area">
+              <Link href="/iletisim">
+                <button
+                  className="footer-cta-button"
+                  style={{
+                    border: '2px solid transparent',
+                    borderRadius: '15px',
+                    background: 'linear-gradient(#0D0D0C, #0D0D0C) padding-box, linear-gradient(90deg, #1EBBBC 0%, #38BDF8 100%) border-box',
+                    color: '#fff',
+                    fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
+                    fontSize: '14px',
+                    fontStyle: 'normal',
+                    fontWeight: 500,
+                    height: '55px',
+                    minWidth: '70px',
+                    letterSpacing: '0.12px',
+                    lineHeight: '27px',
+                    padding: '0 32px',
+                    cursor: 'pointer',
+                    transition: 'background 0.3s',
+                    position: 'relative',
+                    outline: 'none',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '8px',
+                  }}
+                >
+                  Teklif Al
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style={{ marginLeft: '4px' }}>
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </button>
+              </Link>
+            </div>
           </div>
           {/* Yatay çizgi - butonun sonuna kadar uzanan */}
-          <div style={{ 
+          <div className="footer-cta-line" style={{ 
             position: 'absolute', 
             left: 0, 
             right: 0, 
