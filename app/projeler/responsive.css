@@ -122,9 +122,21 @@
 /* Yeni Projeler Section Responsive */
 @media (max-width: 768px) {
   .projeler-section {
-    height: auto !important;
+    height: auto !important; /* Sabit 2400px height'ı override ediyor */
+    min-height: auto !important; /* Min-height'ı da override ediyor */
     padding: 80px 15px 20px 15px !important; /* Alt padding 60px'den 20px'e azaltıldı */
     margin: 0px 15px 20px 15px !important; /* Alt margin 60px'den 20px'e azaltıldı */
+  }
+  
+  /* İç div'lerin paddingBottom'unu azaltma */
+  .projeler-section > div:first-child {
+    padding-bottom: 20px !important; /* 120px'den 20px'e azaltıldı */
+  }
+  
+  /* Proje kartları container'ının height'ını düzeltme */
+  .projeler-section .projeler-cards-container,
+  .projeler-section > div > div:last-child {
+    height: auto !important; /* 2000px sabit height'ı kaldır */
   }
   
   .projeler-section-header {
