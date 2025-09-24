@@ -124,7 +124,7 @@
   .projeler-section {
     height: auto !important; /* Sabit 2400px height'ı override ediyor */
     min-height: auto !important; /* Min-height'ı da override ediyor */
-    padding: 80px 15px 0px 15px !important; /* Alt padding tamamen 0 */
+    padding: 80px 15px 40px 15px !important; /* Alt padding geri getirildi - gri bölüm üstü için boşluk */
     margin: 0px 15px 0px 15px !important; /* Alt margin tamamen 0 */
   }
   
