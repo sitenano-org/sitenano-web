@@ -567,6 +567,11 @@
   .footer-cta-line {
     display: none !important; /* Mobilde çizgiyi gizle */
   }
+  
+  /* Hero title için üst boşluk eklenmesi - sadece mobil */
+  .projeler-hero-title {
+    margin-top: 80px !important; /* 40px'den 80px'e */
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
