@@ -124,13 +124,13 @@
   .projeler-section {
     height: auto !important; /* Sabit 2400px height'ı override ediyor */
     min-height: auto !important; /* Min-height'ı da override ediyor */
-    padding: 80px 15px 5px 15px !important; /* Alt padding 10px'den 5px'e azaltıldı */
-    margin: 0px 15px 5px 15px !important; /* Alt margin 10px'den 5px'e azaltıldı */
+    padding: 80px 15px 0px 15px !important; /* Alt padding tamamen 0 */
+    margin: 0px 15px 0px 15px !important; /* Alt margin tamamen 0 */
   }
   
   /* İç div'lerin paddingBottom'unu azaltma */
   .projeler-section > div:first-child {
-    padding-bottom: 5px !important; /* 10px'den 5px'e azaltıldı */
+    padding-bottom: 0px !important; /* Tamamen 0 */
   }
   
   /* Proje kartları container'ının height'ını düzeltme */
@@ -140,7 +140,20 @@
   }
   
   .projeler-section-header {
-    margin-bottom: 60px !important;
+    margin-bottom: 20px !important; /* 60px'den 20px'e azaltıldı */
+  }
+
+  /* Gri bölümün tüm alt boşluklarını 0 yapma */
+  .projeler-section * {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Son kart sonrasındaki boşlukları tamamen kaldır */
+  .projeler-section > div:last-child,
+  .projeler-section .proje-metin-9 {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
   
   .projeler-section-tag {
