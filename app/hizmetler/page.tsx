@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import './responsive.css';
 
 export default function HizmetlerPage() {
   const [selected, setSelected] = React.useState(0);
