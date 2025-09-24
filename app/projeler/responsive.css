@@ -284,6 +284,214 @@
     width: 110px !important; /* Çizgiyi yazıya göre ayarladık */
     max-width: 110px !important;
   }
+  
+  /* Gri section başlık bölümü mobil responsive */
+  .gri-section-header {
+    padding-left: 15px !important; /* 190px'den 15px'e */
+    padding-right: 15px !important;
+    padding-top: 40px !important; /* 96px'den 40px'e */
+    margin-bottom: 40px !important; /* 72px'den 40px'e */
+    text-align: center !important;
+  }
+  
+  .gri-section-flex-container {
+    flex-direction: column !important; /* Yandan yana değil alt alta */
+    gap: 30px !important; /* 270px'den 30px'e */
+    align-items: center !important;
+  }
+  
+  .gri-section-left-column {
+    align-items: center !important; /* Metinleri ortala */
+    text-align: center !important;
+    width: 100% !important;
+  }
+  
+  .gri-section-right-column {
+    flex: none !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding-top: 0px !important;
+  }
+  
+  .gri-section-small-title {
+    font-size: 14px !important; /* 16px'den 14px'e */
+    margin-bottom: 15px !important; /* 10px'den 15px'e */
+  }
+  
+  .gri-section-big-number {
+    font-size: 80px !important; /* 150px'den 80px'e */
+    line-height: 80px !important; /* 150px'den 80px'e */
+    height: 80px !important; /* 150px'den 80px'e */
+    letter-spacing: -3px !important; /* -7.5px'den -3px'e */
+    text-align: center !important;
+  }
+  
+  .gri-section-subtitle {
+    font-size: 14px !important; /* 16px'den 14px'e */
+    margin-bottom: 15px !important; /* 20px'den 15px'e */
+  }
+  
+  .gri-section-main-title {
+    font-size: 28px !important; /* 48px'den 28px'e */
+    line-height: 34px !important; /* 56px'den 34px'e */
+    letter-spacing: -1px !important; /* -2px'den -1px'e */
+    max-width: 100% !important; /* 600px'den 100%'e */
+    text-align: center !important;
+    padding: 0 10px !important;
+  }
+  
+  /* Proje kartları mobil responsive */
+  .proje-kartlari-container {
+    padding-left: 15px !important; /* 190px'den 15px'e */
+    padding-right: 15px !important;
+    margin-top: 40px !important; /* 120px'den 40px'e */
+  }
+  
+  .proje-kartlari-grid {
+    position: static !important; /* relative'den static'e */
+    margin-bottom: 0px !important; /* 60px'den 0px'e */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important; /* 40px'den 20px'e azaltıldı */
+  }
+  
+  /* Her proje wrapper'ını normal akışa al */
+  .proje-kart-wrapper,
+  .proje-kartlari-grid > div[style*="position: absolute"] {
+    position: static !important; /* absolute'den static'e */
+    width: 100% !important; /* 650px'den 100%'e */
+    height: auto !important; /* 600px'den auto'ya */
+    left: auto !important;
+    top: auto !important;
+    margin: 0 auto !important;
+    max-width: 350px !important;
+  }
+  
+  /* Doğru sıralama için order kullan */
+  .proje-kart-1 {
+    order: 1 !important;
+  }
+  
+  .proje-metin-1 {
+    order: 2 !important;
+  }
+  
+  .proje-kart-2 {
+    order: 3 !important;
+  }
+  
+  .proje-metin-2 {
+    order: 4 !important;
+  }
+  
+  .proje-kart-3 {
+    order: 5 !important;
+  }
+  
+  .proje-metin-3 {
+    order: 6 !important;
+  }
+  
+  .proje-kart-4 {
+    order: 7 !important;
+  }
+  
+  .proje-metin-4 {
+    order: 8 !important;
+  }
+  
+  .proje-kart-5 {
+    order: 9 !important;
+  }
+  
+  .proje-metin-5 {
+    order: 10 !important;
+  }
+  
+  .proje-kart-6 {
+    order: 11 !important;
+  }
+  
+  .proje-metin-6 {
+    order: 12 !important;
+  }
+  
+  .proje-kart-7 {
+    order: 13 !important;
+  }
+  
+  .proje-metin-7 {
+    order: 14 !important;
+  }
+  
+  .proje-kart-8 {
+    order: 15 !important;
+  }
+  
+  .proje-metin-8 {
+    order: 16 !important;
+  }
+  
+  .proje-kart-9 {
+    order: 17 !important;
+  }
+  
+  .proje-metin-9 {
+    order: 18 !important;
+  }
+  
+  /* Proje resimleri */
+  .proje-kart-image,
+  .proje-kartlari-grid div[style*="background: url"] {
+    width: 100% !important; /* 650px'den 100%'e */
+    height: 250px !important; /* 600px'den 250px'e */
+    border-radius: 15px !important; /* 20px'den 15px'e */
+  }
+  
+  /* Ok butonları */
+  .proje-ok-button,
+  .proje-kartlari-grid div[style*="background: linear-gradient"][style*="border-radius: 50%"] {
+    width: 40px !important; /* 50px'den 40px'e */
+    height: 40px !important; /* 50px'den 40px'e */
+    bottom: 15px !important; /* 20px'den 15px'e */
+    right: 15px !important; /* 20px'den 15px'e */
+  }
+  
+  .proje-ok-button svg,
+  .proje-kartlari-grid div[style*="background: linear-gradient"][style*="border-radius: 50%"] svg {
+    width: 16px !important; /* 20px'den 16px'e */
+    height: 16px !important; /* 20px'den 16px'e */
+  }
+  
+  /* Proje metinleri */
+  .proje-metin-container,
+  .proje-kartlari-grid > div[style*="position: absolute"][style*="width: 402px"] {
+    position: static !important; /* absolute'den static'e */
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important; /* 402px'den 100%'e */
+    max-width: 350px !important;
+    margin: 15px auto 30px auto !important; /* Üstten 15px, alttan 30px margin */
+    text-align: center !important;
+  }
+  
+  .proje-metin-baslik,
+  .proje-kartlari-grid h3 {
+    font-size: 20px !important; /* 25px'den 20px'e */
+    line-height: 26px !important; /* 35px'den 26px'e */
+    height: auto !important; /* 70px'den auto'ya */
+    letter-spacing: -0.5px !important; /* -0.75px'den -0.5px'e */
+    margin: 0 0 15px 0 !important; /* 20px'den 15px'e */
+    text-align: center !important;
+  }
+  
+  .proje-metin-aciklama,
+  .proje-kartlari-grid p {
+    font-size: 14px !important; /* 16px'den 14px'e */
+    line-height: 22px !important; /* 30px'den 22px'e */
+    text-align: center !important;
+    padding: 0 10px !important;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

@@ -867,22 +867,22 @@ export default function ProjelerPage() {
           marginRight: '0px'
         }}>
           {/* Başlık Bölümü */}
-          <div style={{
+          <div className="gri-section-header" style={{
             marginBottom: '72px',
             paddingLeft: '190px',
             paddingTop: '96px'
           }}>
-            <div style={{
+            <div className="gri-section-flex-container" style={{
               display: 'flex',
               alignItems: 'flex-start',
               gap: '270px'
             }}>
-              <div style={{
+              <div className="gri-section-left-column" style={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-start'
               }}>
-                <div style={{
+                <div className="gri-section-small-title" style={{
                   color: '#1a1a1a',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
@@ -891,7 +891,7 @@ export default function ProjelerPage() {
                 }}>
                   Tamamlanan Projelerimizden Bazıları
                 </div>
-                <div style={{
+                <div className="gri-section-big-number" style={{
                   background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
@@ -913,11 +913,11 @@ export default function ProjelerPage() {
                   50+
                 </div>
               </div>
-              <div style={{
+              <div className="gri-section-right-column" style={{
                 flex: 1,
                 paddingTop: '0px'
               }}>
-                <div style={{
+                <div className="gri-section-subtitle" style={{
                   color: '#909090',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
@@ -926,7 +926,7 @@ export default function ProjelerPage() {
                 }}>
                   (Projelerimiz)
                 </div>
-                <h2 style={{
+                <h2 className="gri-section-main-title" style={{
                   color: '#1a1a1a',
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '48px',
@@ -944,23 +944,23 @@ export default function ProjelerPage() {
           </div>
 
           {/* Proje Kartları */}
-          <div style={{
+          <div className="proje-kartlari-container" style={{
             paddingLeft: '190px',
             marginTop: '120px'
           }}>
             {/* Görseller Yan Yana */}
-            <div style={{
+            <div className="proje-kartlari-grid" style={{
               position: 'relative',
               marginBottom: '60px'
             }}>
               {/* Kart 1 Wrapper */}
-              <div style={{
+              <div className="proje-kart-wrapper proje-kart-1" style={{
                 position: 'relative',
                 width: '650px',
                 height: '600px'
               }}>
               {/* Kart 1 */}
-              <div style={{
+              <div className="proje-kart-image" style={{
                 width: '650px',
                 height: '600px',
                 background: 'url("/images/lojistik-yuk-yol-optimizasyon.jpg")',
@@ -975,7 +975,7 @@ export default function ProjelerPage() {
                 </div>
                 
                 {/* 1. Ok İkonu - Wrapper içinde ama görsel dışında */}
-                <div style={{
+                <div className="proje-ok-button" style={{
                   position: 'absolute',
                   bottom: '20px',
                   right: '20px',
@@ -998,7 +998,7 @@ export default function ProjelerPage() {
               </div>
               
               {/* Kart 2 Wrapper */}
-              <div style={{
+              <div className="proje-kart-wrapper proje-kart-2" style={{
                 position: 'absolute',
                 left: '835px', // 650px (1. görsel genişliği) + 185px (boşluk)
                 top: '102px', // 1. görselin başladığı yerden 102px aşağı
@@ -1006,7 +1006,7 @@ export default function ProjelerPage() {
                 height: '600px'
               }}>
               {/* Kart 2 - 1. görselin yanında */}
-              <div style={{
+              <div className="proje-kart-image" style={{
                 width: '650px',
                 height: '600px',
                 background: 'url("/images/lojistik-dorse-paylasimi.jpg")',
@@ -1021,7 +1021,7 @@ export default function ProjelerPage() {
                 </div>
                 
                 {/* 2. Ok İkonu - Wrapper içinde ama görsel dışında */}
-                <div style={{
+                <div className="proje-ok-button" style={{
                   position: 'absolute',
                   bottom: '20px',
                   right: '20px',
@@ -1044,11 +1044,11 @@ export default function ProjelerPage() {
               </div>
               
               {/* 1. Görsel Altındaki Metinler */}
-              <div style={{
+              <div className="proje-metin-container proje-metin-1" style={{
                 marginTop: '60px',
                 width: '402px'
               }}>
-                <h3 style={{
+                <h3 className="proje-metin-baslik" style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '25px',
                   fontStyle: 'normal',
@@ -1061,7 +1061,7 @@ export default function ProjelerPage() {
                 }}>
                   Lojistik | Yük & Yol Optimizasyonları
                 </h3>
-                <p style={{
+                <p className="proje-metin-aciklama" style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
@@ -1077,13 +1077,13 @@ export default function ProjelerPage() {
               </div>
 
               {/* 2. Görsel Altındaki Metinler */}
-              <div style={{
+              <div className="proje-metin-container proje-metin-2" style={{
                 position: 'absolute',
                 left: '835px',
                 top: '762px', // 102px (görsel başlangıcı) + 600px (görsel yüksekliği) + 60px (boşluk)
                 width: '402px'
               }}>
-                <h3 style={{
+                <h3 className="proje-metin-baslik" style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '25px',
                   fontStyle: 'normal',
@@ -1096,7 +1096,7 @@ export default function ProjelerPage() {
                 }}>
                   Lojistik | Dorse Paylaşımı
                 </h3>
-                <p style={{
+                <p className="proje-metin-aciklama" style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
@@ -1112,7 +1112,7 @@ export default function ProjelerPage() {
               </div>
 
               {/* 3. Görsel Wrapper - Sol */}
-              <div style={{
+              <div className="proje-kart-wrapper proje-kart-3" style={{
                 position: 'absolute',
                 left: '0px',
                 top: '1100px', // 762px (2. görsel metinleri) + 70px (başlık) + 90px (metin) + 180px (margin)
@@ -1120,7 +1120,7 @@ export default function ProjelerPage() {
                 height: '600px'
               }}>
               {/* 3. Görsel - Sol */}
-              <div style={{
+              <div className="proje-kart-image" style={{
                 width: '650px',
                 height: '600px',
                 background: 'url("/images/saglik-uygulamalari.jpg")',
@@ -1135,7 +1135,7 @@ export default function ProjelerPage() {
                 </div>
                 
                 {/* 3. Ok İkonu - Wrapper içinde ama görsel dışında */}
-                <div style={{
+                <div className="proje-ok-button" style={{
                   position: 'absolute',
                   bottom: '20px',
                   right: '20px',
@@ -1158,13 +1158,13 @@ export default function ProjelerPage() {
               </div>
 
               {/* 3. Görsel Altındaki Metinler - Sol */}
-              <div style={{
+              <div className="proje-metin-container proje-metin-3" style={{
                 position: 'absolute',
                 left: '0px',
                 top: '1760px', // 1100px + 600px + 60px
                 width: '402px'
               }}>
-                <h3 style={{
+                <h3 className="proje-metin-baslik" style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '25px',
                   fontStyle: 'normal',
@@ -1177,7 +1177,7 @@ export default function ProjelerPage() {
                 }}>
                   Sağlık | Sağlık Uygulamaları
                 </h3>
-                <p style={{
+                <p className="proje-metin-aciklama" style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
@@ -1193,7 +1193,7 @@ export default function ProjelerPage() {
               </div>
 
               {/* 3. Görsel Wrapper - Sağ */}
-              <div style={{
+              <div className="proje-kart-wrapper proje-kart-4" style={{
                 position: 'absolute',
                 left: '835px',
                 top: '1230px', // 1100px + 102px + 28px margin (reduced by 12px)
@@ -1201,7 +1201,7 @@ export default function ProjelerPage() {
                 height: '600px'
               }}>
               {/* 3. Görsel - Sağ */}
-              <div style={{
+              <div className="proje-kart-image" style={{
                 width: '650px',
                 height: '600px',
                 background: 'url("/images/spor-salonu-uygulamalari.jpg")',
@@ -1216,7 +1216,7 @@ export default function ProjelerPage() {
                 </div>
                 
                 {/* 8. Ok İkonu - Wrapper içinde ama görsel dışında */}
-                <div style={{
+                <div className="proje-ok-button" style={{
                   position: 'absolute',
                   bottom: '20px',
                   right: '20px',
@@ -1239,13 +1239,13 @@ export default function ProjelerPage() {
               </div>
 
               {/* 3. Görsel Altındaki Metinler - Sağ */}
-              <div style={{
+              <div className="proje-metin-container proje-metin-4" style={{
                 position: 'absolute',
                 left: '835px',
                 top: '1890px', // 1230px + 600px + 60px
                 width: '402px'
               }}>
-                <h3 style={{
+                <h3 className="proje-metin-baslik" style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '25px',
                   fontStyle: 'normal',
@@ -1258,7 +1258,7 @@ export default function ProjelerPage() {
                 }}>
                   Sağlık | Spor Salonu Uygulamaları
                 </h3>
-                <p style={{
+                <p className="proje-metin-aciklama" style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
@@ -1274,7 +1274,7 @@ export default function ProjelerPage() {
               </div>
 
               {/* 4. Görsel Wrapper - Sol */}
-              <div style={{
+              <div className="proje-kart-wrapper proje-kart-5" style={{
                 position: 'absolute',
                 left: '0px',
                 top: '2102px', // 1850px (3. görsel sağ metinleri) + 140px (margin) + 112px extra margin
@@ -1282,7 +1282,7 @@ export default function ProjelerPage() {
                 height: '600px'
               }}>
               {/* 4. Görsel - Sol */}
-              <div style={{
+              <div className="proje-kart-image" style={{
                 width: '650px',
                 height: '600px',
                 background: 'url("/images/prepress-baski-teslimat.jpg")',
@@ -1297,7 +1297,7 @@ export default function ProjelerPage() {
                 </div>
                 
                 {/* 4. Ok İkonu - Wrapper içinde ama görsel dışında */}
-                <div style={{
+                <div className="proje-ok-button" style={{
                   position: 'absolute',
                   bottom: '20px',
                   right: '20px',
@@ -1320,13 +1320,13 @@ export default function ProjelerPage() {
               </div>
 
               {/* 4. Görsel Altındaki Metinler - Sol */}
-              <div style={{
+              <div className="proje-metin-container proje-metin-5" style={{
                 position: 'absolute',
                 left: '0px',
                 top: '2762px', // 2102px + 600px + 60px
                 width: '402px'
               }}>
-                <h3 style={{
+                <h3 className="proje-metin-baslik" style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '25px',
                   fontStyle: 'normal',
@@ -1339,7 +1339,7 @@ export default function ProjelerPage() {
                 }}>
                   Baskı Süreç Yönetimi | Prepress, Baskı, Teslimat
                 </h3>
-                <p style={{
+                <p className="proje-metin-aciklama" style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
@@ -1436,7 +1436,7 @@ export default function ProjelerPage() {
               </div>
 
               {/* 5. Görsel Wrapper - Sol */}
-              <div style={{
+              <div className="proje-kart-wrapper proje-kart-6" style={{
                 position: 'absolute',
                 left: '0px',
                 top: '3134px', // 2834px (4. görsel sağ metinleri) + 300px (increased margin)
@@ -1444,7 +1444,7 @@ export default function ProjelerPage() {
                 height: '600px'
               }}>
               {/* 5. Görsel - Sol */}
-              <div style={{
+              <div className="proje-kart-image" style={{
                 width: '650px',
                 height: '600px',
                 background: 'url("/images/spor-cozumleri-bookmaker.jpg")',
@@ -1459,7 +1459,7 @@ export default function ProjelerPage() {
                 </div>
                 
                 {/* 9. Ok İkonu - Wrapper içinde ama görsel dışında */}
-                <div style={{
+                <div className="proje-ok-button" style={{
                   position: 'absolute',
                   bottom: '20px',
                   right: '20px',
@@ -1482,13 +1482,13 @@ export default function ProjelerPage() {
               </div>
 
               {/* 5. Görsel Altındaki Metinler - Sol */}
-              <div style={{
+              <div className="proje-metin-container proje-metin-6" style={{
                 position: 'absolute',
                 left: '0px',
                 top: '3794px', // 3134px + 600px + 60px
                 width: '402px'
               }}>
-                <h3 style={{
+                <h3 className="proje-metin-baslik" style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '25px',
                   fontStyle: 'normal',
@@ -1501,7 +1501,7 @@ export default function ProjelerPage() {
                 }}>
                   Spor Çözümleri | Bookmaker
                 </h3>
-                <p style={{
+                <p className="proje-metin-aciklama" style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
@@ -1517,7 +1517,7 @@ export default function ProjelerPage() {
               </div>
 
               {/* 5. Görsel Wrapper - Sağ */}
-              <div style={{
+              <div className="proje-kart-wrapper proje-kart-7" style={{
                 position: 'absolute',
                 left: '835px',
                 top: '3224px', // 3134px (sol görsel) + 90px (increased margin)
@@ -1525,7 +1525,7 @@ export default function ProjelerPage() {
                 height: '600px'
               }}>
               {/* 5. Görsel - Sağ */}
-              <div style={{
+              <div className="proje-kart-image" style={{
                 width: '650px',
                 height: '600px',
                 background: 'url("/images/spor-cozumleri-terminal-bilet.webp")',
@@ -1540,7 +1540,7 @@ export default function ProjelerPage() {
                 </div>
                 
                 {/* 10. Ok İkonu - Wrapper içinde ama görsel dışında */}
-                <div style={{
+                <div className="proje-ok-button" style={{
                   position: 'absolute',
                   bottom: '20px',
                   right: '20px',
@@ -1563,13 +1563,13 @@ export default function ProjelerPage() {
               </div>
 
               {/* 5. Görsel Altındaki Metinler - Sağ */}
-              <div style={{
+              <div className="proje-metin-container proje-metin-7" style={{
                 position: 'absolute',
                 left: '835px',
                 top: '3884px', // 3224px + 600px + 60px
                 width: '402px'
               }}>
-                <h3 style={{
+                <h3 className="proje-metin-baslik" style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '25px',
                   fontStyle: 'normal',
@@ -1582,7 +1582,7 @@ export default function ProjelerPage() {
                 }}>
                   Spor Çözümleri | Terminal Bilet
                 </h3>
-                <p style={{
+                <p className="proje-metin-aciklama" style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
@@ -1598,7 +1598,7 @@ export default function ProjelerPage() {
               </div>
 
               {/* 6. Görsel Wrapper - Sol */}
-              <div style={{
+              <div className="proje-kart-wrapper proje-kart-8" style={{
                 position: 'absolute',
                 left: '0px',
                 top: '4174px', // 3844px (5. görsel sağ metinleri) + 330px (increased margin by 190px total)
@@ -1606,7 +1606,7 @@ export default function ProjelerPage() {
                 height: '600px'
               }}>
               {/* 6. Görsel - Sol */}
-              <div style={{
+              <div className="proje-kart-image" style={{
                 width: '650px',
                 height: '600px',
                 background: 'url("/images/yolcu-tasima-uygulamalari.jpg")',
@@ -1621,7 +1621,7 @@ export default function ProjelerPage() {
                 </div>
                 
                 {/* 6. Ok İkonu - Wrapper içinde ama görsel dışında */}
-                <div style={{
+                <div className="proje-ok-button" style={{
                   position: 'absolute',
                   bottom: '20px',
                   right: '20px',
@@ -1644,13 +1644,13 @@ export default function ProjelerPage() {
               </div>
 
               {/* 6. Görsel Altındaki Metinler - Sol */}
-              <div style={{
+              <div className="proje-metin-container proje-metin-8" style={{
                 position: 'absolute',
                 left: '0px',
                 top: '4834px', // 4174px + 600px + 60px
                 width: '402px'
               }}>
-                <h3 style={{
+                <h3 className="proje-metin-baslik" style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '25px',
                   fontStyle: 'normal',
@@ -1663,7 +1663,7 @@ export default function ProjelerPage() {
                 }}>
                   Yolcu Taşıma Uygulamaları | Anlık - Paylaşımlı - Rezervasyonlu
                 </h3>
-                <p style={{
+                <p className="proje-metin-aciklama" style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
@@ -1679,7 +1679,7 @@ export default function ProjelerPage() {
               </div>
 
               {/* 6. Görsel Wrapper - Sağ */}
-              <div style={{
+              <div className="proje-kart-wrapper proje-kart-9" style={{
                 position: 'absolute',
                 left: '835px',
                 top: '4276px', // 4174px + 102px
@@ -1687,7 +1687,7 @@ export default function ProjelerPage() {
                 height: '600px'
               }}>
               {/* 6. Görsel - Sağ */}
-              <div style={{
+              <div className="proje-kart-image" style={{
                 width: '650px',
                 height: '600px',
                 background: 'url("/images/arac-personel-gecis-sistemeri.jpg")',
@@ -1702,7 +1702,7 @@ export default function ProjelerPage() {
                 </div>
                 
                 {/* 7. Ok İkonu - Wrapper içinde ama görsel dışında */}
-                <div style={{
+                <div className="proje-ok-button" style={{
                   position: 'absolute',
                   bottom: '20px',
                   right: '20px',
@@ -1725,13 +1725,13 @@ export default function ProjelerPage() {
               </div>
 
               {/* 6. Görsel Altındaki Metinler - Sağ */}
-              <div style={{
+              <div className="proje-metin-container proje-metin-9" style={{
                 position: 'absolute',
                 left: '835px',
                 top: '4936px', // 4276px + 600px + 60px
                 width: '402px'
               }}>
-                <h3 style={{
+                <h3 className="proje-metin-baslik" style={{
                   fontFamily: 'Sora, Arial, Helvetica, sans-serif',
                   fontSize: '25px',
                   fontStyle: 'normal',
@@ -1744,7 +1744,7 @@ export default function ProjelerPage() {
                 }}>
                   Geçiş Sistemleri | Araç, Personel Giriş-Çıkış Sistemleri
                 </h3>
-                <p style={{
+                <p className="proje-metin-aciklama" style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '16px',
                   fontStyle: 'normal',
