@@ -119,8 +119,16 @@
   }
 }
 
-/* Gri Section Responsive */
+/* Projeler Section (Ürünlerimiz bölümü) Responsive */
 @media (max-width: 768px) {
+  .projeler-section {
+    height: auto !important; /* Sabit 2400px height'ı override ediyor */
+    min-height: auto !important; /* Min-height'ı da override ediyor */
+    padding: 80px 15px 60px 15px !important; /* Üst 80px, alt 60px - original ayarlar */
+    margin: 60px 15px 60px 15px !important; /* Önceki dengeli ayarlar */
+  }
+
+  /* Gri Section (Tamamlanan Projeler bölümü) Responsive */
   .gri-section-main {
     height: auto !important; /* Sabit 5830px height'ı override ediyor */
     min-height: auto !important; /* Min-height'ı da override ediyor */
@@ -128,12 +136,23 @@
     margin: 40px 15px 20px 15px !important; /* Üst 40px, alt 20px - dengeli boşluk */
   }
   
-  /* İç div'lerin paddingBottom'unu azaltma */
+  /* Projeler Section iç div ayarları */
+  .projeler-section > div:first-child {
+    padding-bottom: 60px !important; /* Ürünlerimiz bölümü için boşluk */
+  }
+
+  /* Gri Section iç div ayarları */
   .gri-section-main > div:first-child {
     padding-bottom: 0px !important; /* Gereksiz boşluk */
   }
   
-  /* Proje kartları container'ının height'ını düzeltme */
+  /* Projeler Section container ayarları */
+  .projeler-section .projeler-cards-container,
+  .projeler-section > div > div:last-child {
+    height: auto !important; /* Sabit height'ı kaldır */
+  }
+
+  /* Gri Section container ayarları */
   .gri-section-main .projeler-cards-container,
   .gri-section-main > div > div:last-child {
     height: auto !important; /* Sabit height'ı kaldır */
@@ -590,6 +609,12 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+  .projeler-section {
+    height: auto !important;
+    padding: 100px 20px 80px 20px !important;
+    margin: 80px 20px 80px 20px !important;
+  }
+  
   .gri-section-main {
     height: auto !important;
     padding: 100px 20px 80px 20px !important;
