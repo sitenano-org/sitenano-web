@@ -854,7 +854,7 @@ export default function ProjelerPage() {
       </section>
 
       {/* YENİ BÖLÜM - 200+ BAŞLIKLI PROJE KARTLARI */}
-      <section style={{
+      <section className="gri-section-main" style={{
         background: '#F0F2F4',
         height: '5830px', // Extended height
         padding: '60px 20px 0px 20px',
