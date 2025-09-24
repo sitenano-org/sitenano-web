@@ -358,7 +358,7 @@
   /* Her proje wrapper'ını normal akışa al */
   .proje-kart-wrapper,
   .proje-kartlari-grid > div[style*="position: absolute"] {
-    position: static !important; /* absolute'den static'e */
+    position: relative !important; /* Ok butonları için relative position */
     width: 100% !important; /* 650px'den 100%'e */
     height: auto !important; /* 600px'den auto'ya */
     left: auto !important;
@@ -443,24 +443,35 @@
   /* Proje resimleri */
   .proje-kart-image,
   .proje-kartlari-grid div[style*="background: url"] {
+    position: relative !important; /* Ok butonları için relative position */
     width: 100% !important; /* 650px'den 100%'e */
     height: 250px !important; /* 600px'den 250px'e */
     border-radius: 15px !important; /* 20px'den 15px'e */
+    overflow: hidden !important; /* Taşan içeriği gizle */
   }
   
   /* Ok butonları */
   .proje-ok-button,
   .proje-kartlari-grid div[style*="background: linear-gradient"][style*="border-radius: 50%"] {
+    position: absolute !important; /* Position'ı garanti et */
     width: 40px !important; /* 50px'den 40px'e */
     height: 40px !important; /* 50px'den 40px'e */
     bottom: 15px !important; /* 20px'den 15px'e */
     right: 15px !important; /* 20px'den 15px'e */
+    z-index: 15 !important; /* Z-index artırıldı */
+    display: flex !important; /* Display'i garanti et */
+    align-items: center !important;
+    justify-content: center !important;
   }
   
   .proje-ok-button svg,
   .proje-kartlari-grid div[style*="background: linear-gradient"][style*="border-radius: 50%"] svg {
     width: 16px !important; /* 20px'den 16px'e */
     height: 16px !important; /* 20px'den 16px'e */
+    fill: none !important; /* Fill'i temizle */
+    stroke: white !important; /* Stroke rengini garanti et */
+    stroke-width: 2 !important; /* Stroke kalınlığını garanti et */
+    pointer-events: none !important; /* SVG'nin click olaylarını engelle */
   }
   
   /* Proje metinleri */
