@@ -1780,7 +1780,7 @@ export default function ProjelerPage() {
           position: 'relative',
         }}
       >
-        <div className="footer-cta-container" style={{ width: '100%', position: 'relative', padding: '0 5px' }}>
+        <div className="container-custom" style={{ width: '100%', position: 'relative' }}>
           <div className="footer-cta-content" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             {/* Sol: Başlık */}
             <div className="footer-cta-text-area" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', flex: 1, paddingLeft: '20px', paddingRight: '20px' }}>

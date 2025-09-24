@@ -512,8 +512,8 @@
     border-radius: 20px 20px 0 0 !important; /* 40px'den 20px'e */
   }
   
-  .footer-cta-container {
-    padding: 0 15px !important; /* 0 5px'den 0 15px'e */
+  .footer-cta-section .container-custom {
+    padding: 0 15px !important; /* Mobil için özel padding */
   }
   
   .footer-cta-content {
@@ -566,17 +566,6 @@
   
   .footer-cta-line {
     display: none !important; /* Mobilde çizgiyi gizle */
-  }
-}
-
-/* Masaüstü Footer CTA spacing düzeltmesi */
-@media (min-width: 769px) {
-  .footer-cta-section {
-    margin: 120px 60px 0 60px !important; /* 15px'den 60px'e */
-  }
-  
-  .footer-cta-container {
-    padding: 0 40px !important; /* 0 5px'den 0 40px'e */
   }
 }
 
