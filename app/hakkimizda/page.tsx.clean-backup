@@ -1,8 +1,5 @@
-"use client";
-
 import React from 'react';
 import Image from 'next/image';
-import './responsive.css';
 
 export default function HakkimizdaPage() {
   return (
@@ -91,7 +88,7 @@ export default function HakkimizdaPage() {
             İyi Tasarlanmış Her Sistem,<br />Sessizce İşini Yapar.
           </h2>
           {/* Sitenano Logo Background - Başlık altında */}
-          <div className="sitenano-bg-logo" style={{
+          <div style={{
             position: 'absolute',
             left: '150px',
             top: '50%',
@@ -231,10 +228,10 @@ export default function HakkimizdaPage() {
               <p className="text-center" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontSize: '18px', fontWeight: 400, color: '#fff', lineHeight: '1.4', margin: '10px 0 0 0' }}>
                 Yapay Zekâ Çözümleri, Özel Yazılım Sistemleri,<br />Otomasyonlar, Eticaret, Online Sipariş Sistemleri,<br />Web Tasarımları...
               </p>
-              <div className="flex flex-col items-center">
-                <span className="text-6xl text-center" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontWeight: 700, color: '#fff', opacity: 0.9, letterSpacing: '-4px', lineHeight: '1', fontSize: '60px' }}>50+</span>
-                <div className="text-lg text-left" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', color: '#fff', opacity: 0.8, marginTop: '8px', fontSize: '18px' }}>Tamamlanmış<br />Proje</div>
-              </div>
+                              <div className="flex flex-col items-center">
+                  <span className="text-6xl text-center" style={{ fontFamily: 'Sora, Arial, Helvetica, sans-serif', fontWeight: 700, color: '#fff', opacity: 0.9, letterSpacing: '-4px', lineHeight: '1', fontSize: '60px' }}>50+</span>
+                  <div className="text-lg text-left" style={{ fontFamily: 'Manrope, Arial, Helvetica, sans-serif', color: '#fff', opacity: 0.8, marginTop: '8px', fontSize: '18px' }}>Tamamlanmış<br />Proje</div>
+                </div>
             </div>
           </div>
         </div>
