@@ -143,8 +143,11 @@
     margin-bottom: 20px !important; /* 60px'den 20px'e azaltıldı */
   }
 
-  /* Gri bölümün tüm alt boşluklarını 0 yapma */
-  .projeler-section * {
+  /* Gri bölümün kartlar ve metin elementlerinin alt boşluklarını 0 yapma - ama ana section'ı etkileme */
+  .projeler-section .proje-kart-wrapper,
+  .projeler-section .proje-metin-container,
+  .projeler-section h3,
+  .projeler-section p {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
