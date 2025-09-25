@@ -55,40 +55,42 @@ const Header = () => {
         </span>
       </div>
 
-      {/* Mobile Contact Bar */}
+      {/* Mobile Contact Bar - Improved for mobile usability */}
       <div
-        className="flex md:hidden"
+        className="flex md:hidden mobile-contact-bar"
         style={{
           marginLeft: '20px',
           marginRight: '20px',
           marginBottom: '3px',
           marginTop: '5px',
-          height: '40px',
+          height: 'auto',
+          minHeight: '50px',
           borderRadius: '13px',
           background: '#111',
-          flexDirection: 'row',
+          flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '0 10px',
+          padding: '8px 16px',
           zIndex: 100,
           width: 'calc(100% - 40px)',
           boxSizing: 'border-box',
+          gap: '4px',
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', marginRight: '25px' }}>
-          <span style={{ color: '#bbb', fontSize: '13px', marginRight: '6px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif' }}>Tel:</span>
+        <div className="mobile-contact-item" style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
+          <span style={{ color: '#bbb', fontSize: '12px', marginRight: '6px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif' }}>Tel:</span>
           <span
-            style={{ color: '#fff', fontSize: '13px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontWeight: 500, cursor: 'pointer' }}
+            style={{ color: '#fff', fontSize: '12px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontWeight: 500, cursor: 'pointer' }}
             onMouseEnter={e => (e.currentTarget.style.color = '#1EBBBC')}
             onMouseLeave={e => (e.currentTarget.style.color = '#fff')}
           >
             +90 212 2129990
           </span>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
-          <span style={{ color: '#bbb', fontSize: '13px', marginRight: '6px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif' }}>E-posta:</span>
+        <div className="mobile-contact-item" style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
+          <span style={{ color: '#bbb', fontSize: '12px', marginRight: '6px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif' }}>E-posta:</span>
           <span
-            style={{ color: '#fff', fontSize: '13px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontWeight: 500, cursor: 'pointer' }}
+            style={{ color: '#fff', fontSize: '12px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontWeight: 500, cursor: 'pointer' }}
             onMouseEnter={e => (e.currentTarget.style.color = '#1EBBBC')}
             onMouseLeave={e => (e.currentTarget.style.color = '#fff')}
           >
@@ -291,12 +293,12 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="transition-all duration-200 uppercase"
+                className="transition-all duration-200 uppercase mobile-nav-link"
                 style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
-                  fontSize: '16px',
+                  fontSize: '18px',
                   fontWeight: 600,
-                  lineHeight: '48px',
+                  lineHeight: '1.2',
                   letterSpacing: '-0.5px',
                   wordSpacing: '2px',
                   textTransform: 'uppercase',
@@ -306,7 +308,9 @@ const Header = () => {
                   textAlign: 'left',
                   color: '#111',
                   borderBottom: index === navigation.length - 1 ? 'none' : '1px solid #f0f0f0',
-                  padding: '8px 0',
+                  padding: '16px 0',
+                  minHeight: '48px',
+                  minWidth: '44px',
                 }}
                 onClick={() => setIsMenuOpen(false)}
               >

@@ -6,9 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:claude": "node scripts/test-claude.js"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.63.1",
+    "dotenv": "^17.2.2",
     "next": "14.0.0",
     "react": "^18",
     "react-dom": "^18"
