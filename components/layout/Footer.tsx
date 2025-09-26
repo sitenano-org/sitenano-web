@@ -1,8 +1,23 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { useState, useEffect } from 'react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
 
   const footerLinks = {
     hizmetler: [
@@ -26,13 +41,13 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-secondary text-white relative overflow-hidden" style={{ height: '760px', margin: '0 15px 20px 15px', borderRadius: '0 0 32px 32px' }}>
+    <footer className="bg-secondary text-white relative overflow-hidden footer-bottom-spacing" style={{ height: isMobile ? '760px' : '650px', margin: `0 15px ${isMobile ? '20px' : '5px'} 15px`, borderRadius: '0 0 32px 32px' }}>
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/footer-bg.jpg)' }}></div>
       {/* Black Overlay */}
       <div className="absolute inset-0 bg-black opacity-10"></div>
       
-      <div className="container-custom py-4 md:py-16 relative z-10">
+      <div className="container-custom py-4 md:py-16 relative z-10 footer-container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1 text-center md:text-left">
@@ -106,7 +121,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 mt-4 md:mt-12 pt-4 md:pt-8">
+        <div className="border-t border-gray-700 mt-4 md:mt-12 pt-4 md:pt-8 footer-bottom-bar">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div style={{display: 'flex', alignItems: 'center', width: '100%'}}>
               <p className="text-gray-300 text-xs md:text-sm text-center md:text-left pl-4 md:pl-0" style={{fontFamily: 'Manrope, Arial, Helvetica, sans-serif'}}>

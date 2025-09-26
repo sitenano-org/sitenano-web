@@ -64,20 +64,20 @@ const Header = () => {
           marginBottom: '3px',
           marginTop: '5px',
           height: 'auto',
-          minHeight: '50px',
+          minHeight: '36px',
           borderRadius: '13px',
           background: '#111',
-          flexDirection: 'column',
+          flexDirection: 'row',
           alignItems: 'center',
           justifyContent: 'center',
-          padding: '8px 16px',
+          padding: '6px 12px',
           zIndex: 100,
           width: 'calc(100% - 40px)',
           boxSizing: 'border-box',
-          gap: '4px',
+          gap: '15px',
         }}
       >
-        <div className="mobile-contact-item" style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
+        <div className="mobile-contact-item" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <span style={{ color: '#bbb', fontSize: '12px', marginRight: '6px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif' }}>Tel:</span>
           <span
             style={{ color: '#fff', fontSize: '12px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontWeight: 500, cursor: 'pointer' }}
@@ -87,7 +87,7 @@ const Header = () => {
             +90 212 2129990
           </span>
         </div>
-        <div className="mobile-contact-item" style={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'center' }}>
+        <div className="mobile-contact-item" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <span style={{ color: '#bbb', fontSize: '12px', marginRight: '6px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif' }}>E-posta:</span>
           <span
             style={{ color: '#fff', fontSize: '12px', fontFamily: 'Manrope, Arial, Helvetica, sans-serif', fontWeight: 500, cursor: 'pointer' }}
@@ -138,7 +138,7 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={styles['header-nav-link']}
+                className={`${styles['header-nav-link']} desktop-nav-link`}
                 style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
                   fontSize: '15px',
@@ -296,8 +296,8 @@ const Header = () => {
                 className="transition-all duration-200 uppercase mobile-nav-link"
                 style={{
                   fontFamily: 'Manrope, Arial, Helvetica, sans-serif',
-                  fontSize: '18px',
-                  fontWeight: 600,
+                  fontSize: '14px',
+                  fontWeight: 500,
                   lineHeight: '1.2',
                   letterSpacing: '-0.5px',
                   wordSpacing: '2px',

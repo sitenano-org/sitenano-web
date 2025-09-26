@@ -920,11 +920,78 @@
     padding: 12px !important;
   }
 
-  /* Mobile navigation touch targets */
+    /* Mobile navigation touch targets */
   .mobile-nav-link {
     min-height: 48px !important;
     padding: 16px 0 !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .mobile-nav-link:hover {
+    color: #1EBBBC !important;
+    transform: translateX(8px) !important;
+    font-weight: 600 !important;
+  }
+
+  /* Desktop navigation font size */
+  @media (min-width: 768px) {
+    .desktop-nav-link {
+      font-size: 16px !important;
+    }
+    
+    /* Footer bottom bar spacing for desktop only */
+    footer .footer-bottom-bar {
+      padding-bottom: 5px !important;
+      padding-top: 10px !important;
+    }
+    
+    /* Footer container bottom padding for desktop only */
+    footer .footer-container {
+      padding-bottom: 15px !important; /* md:py-16 (64px) → 15px */
+    }
+    
+    /* Quote section line spacing for desktop only */
+    section .quote-section-line {
+      margin-top: 120px !important; /* 48px → 120px (+72px boşluk) */
+    }
+    
+    /* Quote title bottom spacing for desktop only */
+    section .quote-title-spacing {
+      margin-bottom: 80px !important; /* Yazının altına daha fazla boşluk */
+      padding-bottom: 40px !important; /* Ek padding de ekle */
+    }
+    
+    /* Direct h2 element margin for quote title - desktop only */
+    .quote-title-margin,
+    h2.quote-title-margin {
+      margin-bottom: 80px !important; /* H2 elementine çok güçlü margin */
+      display: block !important;
+    }
+  }
+  
+  /* Mobile override - remove bottom margin */
+  @media (max-width: 767px) {
+    .quote-title-margin,
+    h2.quote-title-margin {
+      margin-bottom: 0 !important; /* Mobilde margin kaldır */
+    }
+    
+    /* Mobile quote section height - reduce space after line */
+    section.quote-section {
+      min-height: 420px !important; /* 350px → 420px (buton ile çizgi arası için yükseklik arttır) */
+      height: auto !important; /* Sabit yüksekliği kaldır */
+      padding-bottom: 80px !important; /* 30px → 80px (buton ile çizgi arası için alt padding arttır) */
+    }
+    
+    /* Mobile quote section line position */
+    .quote-section-line {
+      position: absolute !important;
+      bottom: -30px !important; /* Alttan -30px - çizgiyi section dışına taşı */
+      top: auto !important; /* Top hesaplamalarını kaldır */
+      margin-top: 0 !important; /* Margin temizle */
+    }
   }
 
   /* Mobile menu button */
@@ -1086,5 +1153,155 @@
   .mobile-image-container {
     will-change: auto !important;
     transform: none !important;
+  }
+}
+
+/* Contact Page Responsive Font Sizes */
+@media (min-width: 768px) {
+  .contact-title-responsive {
+    font-size: 80px !important;
+    line-height: 90px !important;
+  }
+  .contact-subtitle-responsive {
+    font-size: 32px !important;
+  }
+  .contact-text-responsive {
+    font-size: 20px !important;
+  }
+}
+
+/* Contact Page Responsive Spacing */
+
+/* Mobil için çok küçük boşluklar (0-767px) */
+@media (max-width: 767px) {
+  .contact-info-spacing {
+    gap: 0.5rem !important;
+  }
+  
+  .contact-links-spacing {
+    gap: 0.25rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .contact-links-spacing a {
+    margin-bottom: 0.25rem !important;
+  }
+  
+  .contact-address-spacing {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .contact-address-spacing p {
+    margin-bottom: 0.125rem !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Mobilde space-y-2 çok küçük */
+  .space-y-2 > * + * {
+    margin-top: 0.4rem !important;
+  }
+}
+
+/* Masaüstü için büyük boşluklar (768px+) */
+@media (min-width: 768px) {
+  .contact-info-spacing {
+    gap: 3rem !important;
+  }
+  
+  .contact-address-spacing {
+    margin-bottom: 2rem !important;
+  }
+  
+  .contact-links-spacing {
+    gap: 2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .contact-links-spacing a {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Masaüstünde space-y-12 büyük */
+  .space-y-12 > * + * {
+    margin-top: 3rem !important;
+  }
+}
+
+/* Teklif Al Butonu Responsive */
+@media (max-width: 767px) {
+  .quote-button {
+    padding: 0 16px !important;
+    min-width: auto !important;
+    width: auto !important;
+    font-size: 12px !important;
+    height: 48px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .quote-button {
+    padding: 0 32px !important;
+    min-width: 70px !important;
+    font-size: 14px !important;
+    height: 55px !important;
+  }
+}
+
+/* Gönder Butonu Responsive */
+@media (max-width: 767px) {
+  .submit-button {
+    padding: 12px 24px !important;
+    font-size: 14px !important;
+    width: auto !important;
+    margin: 20px auto 0 auto !important;
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .submit-button {
+    padding: 12px 32px !important;
+    width: auto !important;
+  }
+}
+
+/* Contact Form Top Margin Responsive */
+@media (max-width: 767px) {
+  .contact-form-container {
+    margin-top: 30px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-form-container {
+    margin-top: 150px !important;
+  }
+}
+
+/* Mobile Contact Bar Responsive Override */
+@media screen and (max-width: 767px) {
+  .mobile-contact-bar {
+    flex-direction: row !important;
+    gap: 15px !important;
+    min-height: 36px !important;
+    padding: 6px 12px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .mobile-contact-item {
+    flex: none !important;
+    white-space: nowrap !important;
+    width: auto !important;
+  }
+}
+
+/* Contact Section Desktop Margin Override */
+@media screen and (min-width: 768px) {
+  .contact-section {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
   }
 } 
