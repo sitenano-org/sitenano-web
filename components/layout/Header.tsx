@@ -18,7 +18,7 @@ const Header = () => {
   ]
 
   return (
-    <header className="relative z-50" style={{background: 'none', marginTop: '2px'}}>
+    <header className="relative z-50" style={{background: 'none', marginTop: '2px', position: 'relative'}}>
       {/* Contact Bar - Responsive */}
       <div
         className="hidden md:flex"
@@ -220,6 +220,7 @@ const Header = () => {
           marginLeft: '20px',
           marginRight: '20px',
           boxSizing: 'border-box',
+          position: 'relative',
         }}
       >
         <div className="flex flex-row items-center w-full relative h-full" style={{height: '102px', paddingLeft: '20px'}}>
@@ -236,11 +237,14 @@ const Header = () => {
           </Link>
           {/* Mobile menu button */}
           <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => {
+              console.log('Mobile menu button clicked, current state:', isMenuOpen);
+              setIsMenuOpen(!isMenuOpen);
+            }}
             aria-label="Toggle menu"
             style={{
               border: 'none',
-              background: 'none',
+              background: 'transparent',
               cursor: 'pointer',
               padding: '12px',
               borderRadius: '8px',
@@ -253,7 +257,9 @@ const Header = () => {
               right: '20px',
               top: '50%',
               transform: 'translateY(-50%)',
-              zIndex: 20,
+              zIndex: 30,
+              touchAction: 'manipulation',
+              WebkitTapHighlightColor: 'transparent',
             }}
           >
             <svg
@@ -287,7 +293,21 @@ const Header = () => {
 
               {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden py-6 border-t border-gray-200" style={{background: 'white', borderRadius: '0 0 20px 20px'}}>
+          <div 
+            className="lg:hidden py-6 border-t border-gray-200" 
+            style={{
+              background: 'white', 
+              borderRadius: '0 0 20px 20px',
+              position: 'absolute',
+              top: '100%',
+              left: '20px',
+              right: '20px',
+              zIndex: 50,
+              marginTop: '2px',
+              width: 'calc(100% - 40px)',
+              boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+            }}
+          >
           <nav className="flex flex-col px-6">
             {navigation.map((item, index) => (
               <Link

@@ -7,6 +7,8 @@ import './responsive.css';
 export default function HizmetlerPage() {
   const [selected, setSelected] = React.useState(0);
 
+  
+
   return (
     <main className="min-h-screen bg-white">
       {/* HERO BÖLÜMÜ */}
@@ -599,8 +601,8 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                 </div>
                 
                 {/* AI Yolculuğunda Size Nasıl Rehberlik Ediyoruz? Bölümü */}
-                <div style={{ marginTop: '40px' }}>
-                  <div style={{ 
+                <div className="gri-kutu-ust-yazilar" style={{ marginTop: '40px' }}>
+                  <div className="ust-yazilar-ana-baslik" style={{ 
                     fontFamily: 'Sora, Arial, Helvetica, sans-serif', 
                     fontSize: '28px', 
                     fontWeight: 600,
@@ -610,7 +612,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   }}>
                     AI Yolculuğunda Size Nasıl Rehberlik Ediyoruz?
                   </div>
-                  <div style={{ 
+                  <div className="ust-yazilar-alt-baslik" style={{ 
                     fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                     fontSize: '16px', 
                     fontWeight: 600,
@@ -620,7 +622,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   }}>
                     İş Hedeflerinizi Anlıyoruz:
                   </div>
-                  <div style={{ 
+                  <div className="ust-yazilar-aciklama" style={{ 
                     fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                     fontSize: '16px', 
                     color: '#000', 
@@ -630,7 +632,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   }}>
                     Her AI çözüm, işin doğasına uygun olmalı. Önce sizi ve sürecinizi anlamadan satılacak bir teknoloji değil bu.
                   </div>
-                  <div style={{ 
+                  <div className="ust-yazilar-alt-baslik" style={{ 
                     fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                     fontSize: '16px', 
                     fontWeight: 600,
@@ -640,7 +642,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   }}>
                     Kritik Noktaları Tespit Ediyoruz:
                   </div>
-                  <div style={{ 
+                  <div className="ust-yazilar-aciklama" style={{ 
                     fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                     fontSize: '16px', 
                     color: '#000', 
@@ -650,7 +652,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   }}>
                     AI nerede katma değer sağlar? Nerede gereksiz olur? Gereksiz teknolojiye yatırım yaptırmıyoruz.
                   </div>
-                  <div style={{ 
+                  <div className="ust-yazilar-alt-baslik" style={{ 
                     fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                     fontSize: '16px', 
                     fontWeight: 600,
@@ -660,7 +662,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   }}>
                     Adım Adım Uyguluyoruz:
                   </div>
-                  <div style={{ 
+                  <div className="ust-yazilar-aciklama" style={{ 
                     fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                     fontSize: '16px', 
                     color: '#000', 
@@ -670,7 +672,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   }}>
                     Tek adımda büyük bir sistem kurmak yerine, esnek ve ölçeklenebilir çözümler geliştiriyoruz.
                   </div>
-                  <div style={{ 
+                  <div className="ust-yazilar-alt-baslik" style={{ 
                     fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                     fontSize: '16px', 
                     fontWeight: 600,
@@ -680,7 +682,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                   }}>
                     Veriden Öğrenen Sistemler Kuruyoruz:
                   </div>
-                  <div style={{ 
+                  <div className="ust-yazilar-aciklama" style={{ 
                     fontFamily: 'Manrope, Arial, Helvetica, sans-serif', 
                     fontSize: '16px', 
                     color: '#000', 
@@ -693,7 +695,7 @@ Yapay zeka, sadece dev şirketlerin değil; doğru adımlarla başlayan her öl�
                 </div>
                 
                 {/* Ayrı Sonuç Bölümü */}
-                <div style={{ 
+                <div className="gri-kutu-mobil" style={{ 
                   marginTop: '80px',
                   marginBottom: '40px',
                   marginLeft: '0',

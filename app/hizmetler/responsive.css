@@ -1,5 +1,69 @@
 /* Hizmetler Sayfası Mobil Responsive CSS */
 
+/* GRİ KUTU MOBİL RESPONSIVE - CLASSNAME BAZLI */
+@media (max-width: 768px) {
+  /* Gri kutu boyutları */
+  .gri-kutu-mobil {
+    width: 100% !important;
+    max-width: 350px !important;
+    padding: 20px 15px !important;
+    margin: 15px auto !important;
+    border-radius: 12px !important;
+  }
+  
+  /* GRİ KUTU YAZILARI - MAKSIMUM GÜÇ SEÇİCİLER */
+  
+  /* Ana başlık 46px -> 20px */
+  div.gri-kutu-mobil[style] div[style*="46px"] * {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    text-align: center !important;
+  }
+  
+  div.gri-kutu-mobil[style] div[style*="46px"] {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+    margin-top: 0px !important;
+    padding: 0 5px !important;
+  }
+  
+  /* Alt metinler 18px -> 13px */
+  div.gri-kutu-mobil[style] div[style*="18px"] * {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    text-align: center !important;
+  }
+  
+  div.gri-kutu-mobil[style] div[style*="18px"] {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    text-align: center !important;
+    margin-top: 5px !important;
+    margin-bottom: 8px !important;
+    padding: 0 5px !important;
+  }
+  
+  /* İç container */
+  .gri-kutu-mobil div[style*="maxWidth: '1000px'"] {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  /* GRİ KUTU ÜZERİNDEKİ YAZILAR - ORİJİNAL FORMATLARINDA KALACAK */
+  
+  /* Bu yazıların orijinal formatlari korunacak, sadece gri kutudaki yazılar mobilde küçülecek */
+}
+
+
+
+
+
+
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   /* Hero Section */
@@ -58,12 +122,15 @@
     margin-bottom: 20px !important;
   }
 
-  /* Sol menü butonları */
-  .hizmetler-content-wrapper > div:first-child > div:first-child button {
+  /* Sol menü butonları - DAHA GÜÇLÜ SEÇİCİ */
+  .hizmetler-content-wrapper > div:first-child > div:first-child button[style] {
     font-size: 16px !important;
     text-align: center !important;
     width: 100% !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 6px !important; /* Daha da azalttım */
+    line-height: 28px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
   }
 
   /* Tüm sol kartlar (Web Tasarım, Online Sipariş vs.) */
@@ -75,6 +142,89 @@
     margin-top: 20px !important;
     padding: 30px 25px !important;
   }
+
+  /* ONLİNE SİPARİŞ KARTI - TAMAMEN YENİ YAKLAŞIM */
+  .services-brochure-card[style] {
+    width: 100% !important;
+    max-width: 350px !important;
+    height: auto !important;
+    min-height: 300px !important;
+    margin-top: 20px !important;
+    padding: 30px 25px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  /* MAKSIMUM SPESİFİKLİK - ÜST ETİKET */
+  div.services-brochure-card[style] > div:nth-child(2)[style] {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    margin: 0 auto 20px auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+    color: #fff !important;
+    z-index: auto !important;
+    order: 1 !important;
+    width: 100% !important;
+  }
+
+  /* MAKSIMUM SPESİFİKLİK - ANA İÇERİK CONTAINER */
+  div.services-brochure-card[style] > div:nth-child(3)[style] {
+    position: static !important;
+    z-index: auto !important;
+    text-align: center !important;
+    padding: 0 !important;
+    order: 2 !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* MAKSIMUM SPESİFİKLİK - ANA YAZI */
+  div.services-brochure-card[style] > div:nth-child(3)[style] > div:first-child[style] {
+    height: auto !important;
+    color: #fff !important;
+    margin: 0 auto 25px auto !important;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    text-align: center !important;
+    padding: 0 15px !important;
+    width: 100% !important;
+    order: 1 !important;
+  }
+
+  /* MAKSIMUM SPESİFİKLİK - BUTON */
+  div.services-brochure-card[style] > div:nth-child(3)[style] > button[style] {
+    background: transparent !important;
+    border: 2px solid #fff !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+    padding: 12px 24px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    transition: all 0.3s ease !important;
+    margin: 0 auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    width: auto !important;
+    max-width: fit-content !important;
+    align-self: center !important;
+    order: 2 !important;
+  }
+
+  /* SADECE POZİSYON AYARLARI - FONTLARA DOKUNMA */
 
   .ai-strategy-content {
     margin-top: 0px !important;
@@ -93,7 +243,7 @@
     margin-left: 0px !important;
   }
 
-  /* Kart açıklamaları */
+  /* Kart açıklamaları - Web Tasarım kartı için */
   .ai-strategy-card .ai-strategy-content > div:nth-child(2) {
     font-size: 14px !important;
     line-height: 20px !important;
@@ -101,25 +251,28 @@
     margin-bottom: 20px !important;
   }
 
-  /* Online Sipariş kartı üst etiketi */
-  .services-brochure-card > div:first-child {
-    position: static !important;
-    text-align: center !important;
-    top: auto !important;
-    left: auto !important;
-    margin-bottom: 15px !important;
-    font-size: 12px !important;
+  /* WEB TASARIM BÖLÜMÜ - Buton ortalama */
+  .ai-strategy-card .ai-strategy-content button[style] {
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    margin: 20px auto 0px auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: auto !important;
+    align-self: center !important;
   }
 
-  /* Kart butonları */
+  /* Genel kart butonları - backup */
   .ai-strategy-card button,
   .services-brochure-card button {
     padding: 10px 20px !important;
     font-size: 14px !important;
     align-self: center !important;
-    margin: 0 auto !important;
-    margin-left: 0px !important;
-    margin-bottom: 0px !important;
+    margin: 15px auto 0px auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   /* Sağ içerik */
@@ -129,40 +282,124 @@
     padding: 0 15px !important;
   }
 
-  /* Ana başlıklar */
+  /* ULTRA GÜÇLÜ - Özel AI Çözümleri başlığı (46px olan) */
+  div[class="hizmetler-right-content"] h2[style*="fontSize: '46px'"][style*="marginBottom: '60px'"] {
+    font-size: 28px !important;
+    line-height: 32px !important;
+    letter-spacing: -1px !important;
+    margin-bottom: 20px !important;
+    margin-top: 0px !important;
+    text-align: center !important;
+    padding: 0 15px !important;
+  }
+
+  /* ULTRA GÜÇLÜ - Yapay Zeka açıklama metni (height: 120px olan) */
+  div[class="hizmetler-right-content"] > div[style*="height: '120px'"][style*="marginBottom: '8px'"] {
+    height: auto !important;
+    min-height: auto !important;
+    font-size: 14px !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+    margin-top: 5px !important;
+    padding: 0 15px !important;
+    max-width: 100% !important;
+  }
+
+  /* BACKUP ULTIMATE POWER */
   .hizmetler-right-content h2 {
     font-size: 28px !important;
-    line-height: 34px !important;
-    letter-spacing: -1px !important;
-    margin-bottom: 30px !important;
+    line-height: 32px !important;
     text-align: center !important;
-    padding: 0 10px !important;
+    margin-bottom: 20px !important;
+    padding: 0 15px !important;
+  }
+  
+  .hizmetler-right-content > div[style*="height"] {
+    height: auto !important;
+    min-height: auto !important;
   }
 
-  /* Gri kutu (Yapay zeka metni) */
+  /* ULTRA GÜÇLÜ - Gri kutu (Yapay zeka metni) - BOYUTLAR */
+  div[style*="backgroundColor: #e9ecef"][style*="width: '994px'"][style*="padding: '60px 55px'"] {
+    width: 100% !important;
+    max-width: 350px !important;
+    padding: 20px 15px !important;
+    border-radius: 12px !important;
+    margin: 15px auto !important;
+    height: auto !important;
+  }
+
+  /* BACKUP - Gri kutu boyutları (alternatif seçici) */
+  div[class="hizmetler-right-content"] > div[style*="backgroundColor: #e9ecef"][style*="width: '994px'"] {
+    width: 100% !important;
+    max-width: 350px !important;
+    padding: 20px 15px !important;
+    border-radius: 12px !important;
+    margin: 15px auto !important;
+  }
+
+  /* İÇ CONTAINER - Gri kutu içindeki maxWidth wrapper */
+  div[style*="backgroundColor: #e9ecef"] div[style*="maxWidth: '1000px'"][style*="paddingRight: '20px'"] {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+
+  /* MEGA GÜÇLÜ - Gri kutu ana başlığı (46px Sora, 600 weight) */
+  div[style*="backgroundColor: #e9ecef"] div[style*="fontSize: '46px'"][style*="fontWeight: 600"][style*="marginBottom: '32px'"] {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    margin-bottom: 15px !important;
+    margin-top: 0px !important;
+    text-align: center !important;
+    padding: 0 5px !important;
+  }
+
+  /* MEGA GÜÇLÜ - Gri kutu alt metinleri 1 (18px Manrope italic, marginBottom 16px) */
+  div[style*="backgroundColor: #e9ecef"] div[style*="fontSize: '18px'"][style*="fontStyle: 'italic'"][style*="marginBottom: '16px'"] {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    text-align: center !important;
+    margin-bottom: 8px !important;
+    margin-top: 3px !important;
+    padding: 0 5px !important;
+  }
+
+  /* MEGA GÜÇLÜ - Gri kutu alt metinleri 2 (18px Manrope italic, son metin) */
+  div[style*="backgroundColor: #e9ecef"] div[style*="fontSize: '18px'"][style*="fontStyle: 'italic'"]:last-child {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    text-align: center !important;
+    margin-bottom: 0px !important;
+    margin-top: 3px !important;
+    padding: 0 5px !important;
+  }
+
+  /* BACKUP - Gri kutu genel kurallar */
   .hizmetler-right-content > div[style*="backgroundColor: #e9ecef"] {
     width: 100% !important;
-    padding: 30px 20px !important;
+    padding: 25px 20px !important;
     border-radius: 12px !important;
-    margin: 20px 0 !important;
+    margin: 15px 0 !important;
   }
 
-  /* Gri kutu ana başlığı */
-  .hizmetler-right-content > div[style*="backgroundColor: #e9ecef"] > div > div:first-child {
-    font-size: 24px !important;
-    line-height: 30px !important;
-    margin-bottom: 20px !important;
+  .hizmetler-right-content > div[style*="backgroundColor: #e9ecef"] > div > div {
+    font-size: 14px !important;
+    line-height: 20px !important;
     text-align: center !important;
+    margin-bottom: 10px !important;
     padding: 0 10px !important;
   }
 
-  /* Gri kutu alt metinleri */
-  .hizmetler-right-content > div[style*="backgroundColor: #e9ecef"] > div > div:not(:first-child) {
-    font-size: 16px !important;
-    line-height: 24px !important;
+  /* BACKUP - Gri kutu ana başlığı */
+  .hizmetler-right-content > div[style*="backgroundColor: #e9ecef"] > div > div:first-child {
+    font-size: 22px !important;
+    line-height: 28px !important;
+    margin-bottom: 15px !important;
     text-align: center !important;
-    margin-bottom: 12px !important;
-    padding: 0 5px !important;
+    padding: 0 10px !important;
   }
 
   /* Diğer açıklama metinleri */
@@ -172,9 +409,61 @@
     text-align: center !important;
   }
 
-  /* Alt başlıklar */
-  .hizmetler-right-content h3,
+  /* ULTRA GÜÇLÜ - "Peki, AI Çözümleri Ne Sunar?" (28px Sora) */
+  div[class="hizmetler-right-content"] > div[style*="fontSize: '28px'"][style*="marginBottom: '24px'"] {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    padding: 0 15px !important;
+    margin-bottom: 15px !important;
+    margin-top: 25px !important;
+    max-width: 100% !important;
+  }
+
+  /* ULTRA GÜÇLÜ - AI açıklama metinleri (16px Manrope, 1000px maxWidth) */
+  div[class="hizmetler-right-content"] > div[style*="fontSize: '16px'"][style*="maxWidth: '1000px'"][style*="marginBottom: '16px'"] {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    text-align: center !important;
+    margin-bottom: 10px !important;
+    margin-top: 5px !important;
+    padding: 0 15px !important;
+    max-width: 100% !important;
+  }
+
+  /* ULTRA GÜÇLÜ - Liste öğeleri (paddingLeft: 8px olan) */
+  div[class="hizmetler-right-content"] > div[style*="paddingLeft: '8px'"][style*="marginBottom: '16px'"] {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    padding-left: 25px !important;
+    padding-right: 15px !important;
+    text-align: left !important;
+    margin-bottom: 8px !important;
+    margin-top: 5px !important;
+    max-width: 100% !important;
+  }
+
+  /* ULTIMATE BACKUP - Tüm 16px metinler */
+  .hizmetler-right-content > div[style*="fontSize: '16px'"] {
+    font-size: 13px !important;
+    line-height: 18px !important;
+    margin-bottom: 8px !important;
+    margin-top: 5px !important;
+    padding: 0 15px !important;
+    max-width: 100% !important;
+  }
+
+  /* ULTIMATE BACKUP - Tüm 28px başlıklar */
   .hizmetler-right-content > div[style*="fontSize: '28px'"] {
+    font-size: 18px !important;
+    line-height: 24px !important;
+    text-align: center !important;
+    margin-bottom: 15px !important;
+    margin-top: 20px !important;
+  }
+
+  /* BACKUP - Genel h3 başlıklar */
+  .hizmetler-right-content h3 {
     font-size: 20px !important;
     line-height: 26px !important;
     text-align: center !important;
@@ -200,6 +489,16 @@
     line-height: 22px !important;
     text-align: center !important;
     padding: 0 10px !important;
+  }
+
+  /* EKSTRA GÜÇLÜ SEÇİCİLER - Son çare */
+  div[style*="background: #F0F2F4"] button {
+    margin-bottom: 6px !important;
+  }
+  
+  div[style*="background: linear-gradient(135deg, #059669)"] button {
+    margin: 20px auto !important;
+    display: block !important;
   }
 }
 
