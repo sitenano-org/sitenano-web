@@ -975,26 +975,28 @@ export default function ProjelerPage() {
                 </div>
                 
                 {/* 1. Ok İkonu - Wrapper içinde ama görsel dışında */}
-                <div className="proje-ok-button" style={{
-                  position: 'absolute',
-                  bottom: '20px',
-                  right: '20px',
-                  width: '50px',
-                  height: '50px',
-                  background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
-                  borderRadius: '50%',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease',
-                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
-                  zIndex: 10
-                }}>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                </div>
+                <Link href="/projeler/lojistik-yuk-yol-optimizasyonlari">
+                  <div className="proje-ok-button" style={{
+                    position: 'absolute',
+                    bottom: '20px',
+                    right: '20px',
+                    width: '50px',
+                    height: '50px',
+                    background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 50%, #00D4AA 100%)',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                    zIndex: 10
+                  }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                      <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                </Link>
               </div>
               
               {/* Kart 2 Wrapper */}
