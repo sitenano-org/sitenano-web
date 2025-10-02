@@ -1,0 +1,195 @@
+/* Mobile Responsive Styles for Project Detail Page */
+@media (max-width: 768px) {
+  .project-hero {
+    min-height: 250px !important;
+    height: 250px !important;
+    margin: 0 10px !important;
+    border-radius: 12px !important;
+    margin-top: 10px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: scroll !important;
+  }
+
+  .project-hero-badge {
+    font-size: 10px !important;
+    padding: 4px 12px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .project-hero-title {
+    font-size: 20px !important;
+    line-height: 28px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .project-overview-container {
+    flex-direction: column !important;
+    gap: 30px !important;
+    align-items: stretch !important;
+  }
+  
+  .project-overview-image {
+    width: 100% !important;
+    height: 250px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .project-overview-content {
+    flex: none !important;
+  }
+  
+  .project-overview-title {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .project-overview-text {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .project-section-title {
+    font-size: 14px !important;
+    line-height: 40px !important;
+    letter-spacing: -1px !important;
+    margin: 40px 0 15px 0 !important;
+  }
+
+  .project-section-subtitle {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    margin: 0 0 20px 0 !important;
+  }
+
+  .project-process-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    gap: 16px !important;
+    margin-top: 30px !important;
+  }
+  
+  .project-process-card {
+    padding: 24px !important;
+    min-height: auto !important;
+  }
+  
+  .project-process-number {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 12px !important;
+    top: -8px !important;
+    left: 20px !important;
+  }
+  
+  .project-process-title {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .project-process-text {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+
+  .project-subsection-title {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    margin: 0 0 12px 0 !important;
+  }
+  
+  .project-subsection-content {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+
+  /* Öne Çıkan Fonksiyonlar - Grid Container */
+  .project-process-grid[style*="gridTemplateColumns: '1fr 1fr'"] {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    gap: 16px !important;
+  }
+  
+  /* Öne Çıkan Fonksiyonlar - Kartlar */
+  .project-process-card[style*="minHeight: '220px'"] {
+    min-height: 160px !important;
+    padding: 20px !important;
+    margin-bottom: 16px !important;
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+  
+  /* Öne Çıkan Fonksiyonlar - Başlıklar */
+  .project-process-title[style*="fontSize: '26px'"] {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  /* Öne Çıkan Fonksiyonlar - Metinler */
+  .project-process-text[style*="fontSize: '15px'"] {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+  
+  /* Öne Çıkan Fonksiyonlar - Üst Çizgi */
+  .project-overview-image[style*="width: '60px'"][style*="height: '4px'"] {
+    width: 50px !important;
+    height: 3px !important;
+    margin-bottom: 16px !important;
+  }
+  
+  /* Öne Çıkan Fonksiyonlar - Büyük Dekoratif Daire */
+  .project-overview-image[style*="width: '80px'"][style*="height: '80px'"] {
+    width: 60px !important;
+    height: 60px !important;
+    top: -15px !important;
+    right: -15px !important;
+  }
+  
+  /* Öne Çıkan Fonksiyonlar - Küçük Dekoratif Nokta */
+  .project-overview-image[style*="width: '8px'"][style*="height: '8px'"] {
+    width: 6px !important;
+    height: 6px !important;
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+}
+
+/* Daha güçlü kurallar - Öne Çıkan Fonksiyonlar */
+@media (max-width: 768px) {
+  /* Tüm grid container'ları tek sütun yap */
+  div[style*="gridTemplateColumns: '1fr 1fr'"] {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    gap: 16px !important;
+  }
+  
+  /* Tüm kartları tek sütun yap */
+  div[style*="minHeight: '220px'"] {
+    min-height: 160px !important;
+    padding: 20px !important;
+    margin-bottom: 16px !important;
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+  
+  /* Başlık boyutlarını küçült */
+  h3[style*="fontSize: '26px'"] {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  /* Metin boyutlarını küçült */
+  p[style*="fontSize: '15px'"] {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+}

@@ -5,123 +5,6 @@ import { notFound } from 'next/navigation'
 
 // Proje verilerini burada tanımlayacağız
 const projectData = {
-  'lojistik-dorse-paylasimi': {
-    title: 'Dorse Paylaşımı',
-    category: 'Lojistik',
-    heroImage: '/images/lojistik-dorse-paylasimi.jpg',
-    mainImage: '/images/lojistik-dorse-paylasimi.jpg',
-    sections: [
-      {
-        title: 'Projeye Genel Bakış',
-        content: 'Aynı güzergâh üzerinde yük göndermek isteyen firmaları tek bir sistem altında bir araya getirerek lojistik kaynakların daha verimli kullanılmasını sağlar. Yazılım, yükleri otomatik olarak eşleştirir, dorse planlamasını yapar ve lojistik firmalarının taşıma operasyonlarını optimize eder.',
-        subsections: [
-          {
-            title: 'Kimler İçin Tasarlandı?',
-            content: 'Proje; güzergâh benzerliği, yük türü, zamanlama uyumu gibi parametreleri değerlendirerek yükleri eşleştiren algoritmalar üzerine kuruldu. Operasyonel kararları kolaylaştıran bir yönetim paneli ve şoför dostu mobil arayüzlerle sistemin her kullanıcı düzeyine hitap etmesi sağlandı.'
-          },
-          {
-            title: 'Projenin Amacı:',
-            content: 'Güzergâh bazlı yük paylaşımını mümkün kılarak araç kapasitesini en verimli şekilde kullanmak, boş taşıma oranını en aza indirmek ve operasyonel kaynakları ortaklaştırmak. Bu sayede hem firmalar arası iş birliği hem de sürdürülebilir lojistik çözümler desteklenir.'
-          }
-        ]
-      },
-      {
-        title: 'Planlamadan Uygulamaya',
-        subtitle: 'Her başarılı proje, planlı ve öngörülebilir bir süreçle şekillenir.',
-        subsections: [
-          {
-            title: 'İhtiyaç Analizi & Süreç Haritalama',
-            content: 'Firmaların dorse kullanım, yük yoğunluğu ve güzergâh alışkanlıkları incelendi.'
-          },
-          {
-            title: 'Veri Entegrasyonu & Modelleme',
-            content: 'Harici sistemlerden gelen veriler normalize edilerek algoritmalara uygun hale getirildi.'
-          },
-          {
-            title: 'Optimizasyon Modüllerinin Geliştirilmesi',
-            content: 'Güzergâh, zamanlama ve yük tipi bazlı eşleştirme algoritmaları geliştirildi.'
-          },
-          {
-            title: 'Arayüz ve Mobil Uygulama Geliştirme',
-            content: 'Yönetim ve saha ekiplerine özel kullanıcı dostu ekranlar hazırlandı.'
-          },
-          {
-            title: 'Test & Canlıya Geçiş',
-            content: 'Uygulama senaryoları üzerinden kapsamlı testler gerçekleştirildi, ardından kullanıcı eğitimi tamamlanarak sistem canlı kullanıma alındı.'
-          },
-          {
-            title: 'İzleme ve İyileştirme',
-            content: 'Gerçek zamanlı verilerle sistem performansı izlenir, geri bildirimlere göre geliştirmeler uygulanır.'
-          }
-        ]
-      },
-      {
-        title: 'Öne Çıkan Fonksiyonlar',
-        subsections: [
-          {
-            title: 'Güzergâh Uyumlu Yük Eşleştirme',
-            content: 'Aynı rotadaki yükler otomatik olarak eşleştirilir.',
-            icon: '🚛'
-          },
-          {
-            title: 'Dorse & Görev Planlama',
-            content: 'Boş kapasiteler tespit edilir, dorse planlaması yapılır.',
-            icon: '📋'
-          },
-          {
-            title: 'Canlı Takip',
-            content: 'Yük durumu, teslimat süreci ve dorse konumu anlık olarak izlenir.',
-            icon: '📍'
-          },
-          {
-            title: 'Çoklu Firma Destekli Yapı',
-            content: 'Farklı firmalardan gelen yükler sistemde güvenli şekilde ayrıştırılır.',
-            icon: '🏢'
-          },
-          {
-            title: 'Mobil Uyum',
-            content: 'Şoför uygulamaları üzerinden görev bildirimi ve rota paylaşımı yapılır.',
-            icon: '📱'
-          },
-          {
-            title: 'Raporlama & Analiz',
-            content: 'Yük paylaşım oranları, boş kilometre verileri ve performans istatistikleri sunulur.',
-            icon: '📊'
-          }
-        ]
-      },
-      {
-        title: 'Sağladığı Faydalar',
-        content: 'Veriye dayalı karar alma, kaynak planlaması ve operasyonel verimlilik alanlarında somut kazanımlar sağlandı. Sistem canlıya alındıktan sonra elde edilen veriler, hem taşıyıcı firmalar hem de yük sahipleri için ölçülebilir faydalar sağladı.',
-        results: [
-          {
-            metric: 'Gerçek Zamanlı Takip ve Yönetim',
-            description: 'Dorse ve yük durumları sistem üzerinden anlık olarak izlenebildi. Bu da kontrol merkezlerinin operasyonel müdahalelerini hızlandırdı ve hata oranlarını azalttı.'
-          },
-          {
-            metric: 'Boş Kapasite Kullanımının Azaltılması',
-            description: 'Aynı güzergâhta ilerleyen yüklerin eşleştirilmesi sayesinde araçların boş seyir oranı %20\'ye varan oranda düşürüldü. Filo kapasitesi daha verimli kullanıldı.'
-          },
-          {
-            metric: 'Yakıt ve Zaman Tasarrufu Sağlandı',
-            description: 'Rota planlamasının optimizasyonu sayesinde araç başına düşen yakıt tüketimi azaldı; teslimat süreleri ortalama %15 oranında kısaldı.'
-          },
-          {
-            metric: 'Planlama Süreçleri Daha Esnek Hale Geldi',
-            description: 'Sistem, değişken güzergâh ve yük durumlarını analiz ederek alternatif senaryolar oluşturdu. Bu sayede saha operasyonlarına yönelik kararlar daha hızlı ve etkili şekilde alındı.'
-          },
-          {
-            metric: 'Karar Destek Sistemleri Güçlendirildi',
-            description: 'Toplanan operasyon verileri, özelleştirilmiş raporlarla yöneticilere sunuldu, bu sayede karar süreçlerinde doğrudan destek sağlandı.'
-          },
-          {
-            metric: 'Taşıma Maliyetleri Azaldı',
-            description: 'Aynı araçla birden fazla yükün taşınması sayesinde müşterilerin birim taşıma maliyetlerinde belirgin düşüşler gözlendi.'
-          }
-        ]
-      }
-    ]
-  },
   'lojistik-yuk-yol-optimizasyonlari': {
     title: 'Yük & Yol Optimizasyon Yazılımı',
     category: 'Lojistik',
@@ -145,6 +28,7 @@ const projectData = {
       {
         title: 'Planlamadan Uygulamaya',
         subtitle: 'Her başarılı proje, planlı ve öngörülebilir bir süreçle şekillenir.',
+        hasImage: true,
         subsections: [
           {
             title: 'İhtiyaç Analizi & Veri Toplama',
@@ -422,7 +306,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             )}
 
             {/* Ek Görsel (varsa) */}
-            {(section as any).hasImage && (
+            {section.hasImage && (
               <div style={{
                 width: '100%',
                 height: '300px',
@@ -533,7 +417,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 section.title === 'Öne Çıkan Fonksiyonlar' ? (
                    <div style={{
                      display: 'grid',
-                     gridTemplateColumns: '1fr 1fr 1fr',
+                     gridTemplateColumns: '1fr 1fr',
                      gridTemplateRows: 'auto auto',
                      gap: '20px'
                    }}>
@@ -542,32 +426,31 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                          // Kart 1 - Sol üst
                          {
                            background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 100%)',
-                           color: 'white'
+                           color: 'white',
+                           gridColumn: '1',
+                           gridRow: '1'
                          },
-                         // Kart 2 - Orta üst
+                         // Kart 2 - Sağ üst
                          {
-                           background: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
-                           color: 'white'
+                           background: '#f8f9fa',
+                           color: '#1a1a1a',
+                           border: '2px solid #e9ecef',
+                           gridColumn: '2',
+                           gridRow: '1'
                          },
-                         // Kart 3 - Sağ üst
+                         // Kart 3 - Sol alt
                          {
                            background: 'linear-gradient(135deg, #00D4AA 0%, #1EBBBC 100%)',
-                           color: 'white'
+                           color: 'white',
+                           gridColumn: '1',
+                           gridRow: '2'
                          },
-                         // Kart 4 - Sol alt
+                         // Kart 4 - Sağ alt
                          {
                            background: 'linear-gradient(135deg, #38BDF8 0%, #0EA5E9 100%)',
-                           color: 'white'
-                         },
-                         // Kart 5 - Orta alt
-                         {
-                           background: 'linear-gradient(135deg, #00D4AA 0%, #1EBBBC 100%)',
-                           color: 'white'
-                         },
-                         // Kart 6 - Sağ alt
-                         {
-                           background: 'linear-gradient(135deg, #1EBBBC 0%, #00BCD4 100%)',
-                           color: 'white'
+                           color: 'white',
+                           gridColumn: '2',
+                           gridRow: '2'
                          }
                        ];
 
@@ -589,7 +472,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                              <div style={{
                                width: '60px',
                                height: '4px',
-                               background: 'rgba(255,255,255,0.4)',
+                               background: subIndex === 1 ? '#00BCD4' : 'rgba(255,255,255,0.4)',
                                borderRadius: '2px',
                                marginBottom: '24px'
                              }}></div>
@@ -608,7 +491,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                                fontSize: '15px',
                                lineHeight: '24px',
                                margin: '0',
-                               color: 'rgba(255,255,255,0.9)'
+                               color: subIndex === 1 ? '#606060' : 'rgba(255,255,255,0.9)'
                              }}>
                                {subsection.content}
                              </p>
@@ -621,7 +504,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                              right: '-20px',
                              width: '80px',
                              height: '80px',
-                             background: 'rgba(255,255,255,0.15)',
+                             background: subIndex === 1 ? 'rgba(30, 187, 188, 0.1)' : 'rgba(255,255,255,0.15)',
                              borderRadius: '50%'
                            }}></div>
                            <div style={{
@@ -630,7 +513,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                              right: '20px',
                              width: '8px',
                              height: '8px',
-                             background: 'rgba(255,255,255,0.5)',
+                             background: subIndex === 1 ? 'rgba(30, 187, 188, 0.3)' : 'rgba(255,255,255,0.5)',
                              borderRadius: '50%'
                            }}></div>
                          </div>

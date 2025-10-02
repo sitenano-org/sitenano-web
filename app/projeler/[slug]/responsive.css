@@ -1,0 +1,228 @@
+/* Mobile Responsive Styles for Project Detail Page */
+@media (max-width: 768px) {
+  .project-hero {
+    min-height: 250px !important;
+    height: 250px !important;
+    margin: 0 10px !important;
+    border-radius: 12px !important;
+    margin-top: 10px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: scroll !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .project-hero-content {
+    padding: 0 10px !important;
+  }
+
+  .project-hero-container {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .project-hero-badge {
+    font-size: 10px !important;
+    padding: 4px 12px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .project-hero-title {
+    font-size: 20px !important;
+    line-height: 26px !important;
+    letter-spacing: -0.3px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .project-main-content {
+    padding: 40px 15px !important;
+  }
+
+  .project-overview-container {
+    flex-direction: column !important;
+    gap: 30px !important;
+    align-items: stretch !important;
+  }
+
+  .project-overview-image {
+    width: 100% !important;
+    height: 250px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .project-overview-content {
+    flex: none !important;
+  }
+
+  .project-overview-title {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .project-overview-text {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .project-section-title {
+    font-size: 14px !important;
+    line-height: 40px !important;
+    letter-spacing: -1px !important;
+    margin: 40px 0 15px 0 !important;
+  }
+
+  .project-section-subtitle {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    margin: 0 0 20px 0 !important;
+  }
+
+  .project-section-content {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    margin: 0 0 30px 0 !important;
+  }
+
+  .project-process-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin-top: 30px !important;
+  }
+
+  .project-process-card {
+    padding: 24px !important;
+    min-height: auto !important;
+  }
+
+  .project-process-number {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 12px !important;
+    top: -8px !important;
+    left: 20px !important;
+  }
+
+  .project-process-title {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .project-process-text {
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+
+  /* Öne Çıkan Fonksiyonlar Grid Responsive */
+  div[style*="gridTemplateColumns: '1fr 1fr'"] {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    gap: 16px !important;
+  }
+
+  /* Öne Çıkan Fonksiyonlar Kart Responsive */
+  div[style*="minHeight: '220px'"] {
+    min-height: 160px !important;
+    padding: 20px !important;
+    margin-bottom: 16px !important;
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+
+  /* Öne Çıkan Fonksiyonlar Başlık Responsive */
+  .project-process-title[style*="fontSize: 26px"] {
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Öne Çıkan Fonksiyonlar Metin Responsive */
+  .project-process-text[style*="fontSize: 15px"] {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  /* Öne Çıkan Fonksiyonlar Dekoratif Elementler Responsive */
+  .project-overview-image[style*="width: 80px"] {
+    width: 60px !important;
+    height: 60px !important;
+    top: -15px !important;
+    right: -15px !important;
+  }
+
+  .project-overview-image[style*="width: 8px"] {
+    width: 6px !important;
+    height: 6px !important;
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  /* Öne Çıkan Fonksiyonlar Üst Çizgi Responsive */
+  .project-overview-image[style*="width: 60px"][style*="height: 4px"] {
+    width: 50px !important;
+    height: 3px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .project-features-grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    gap: 16px !important;
+  }
+
+  .project-feature-card {
+    min-height: 180px !important;
+    padding: 24px !important;
+  }
+
+  .project-feature-line {
+    width: 50px !important;
+    height: 3px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .project-feature-title {
+    font-size: 20px !important;
+    line-height: 28px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .project-feature-text {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+
+  .project-results-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .project-result-card {
+    padding: 24px !important;
+  }
+
+  .project-result-title {
+    font-size: 18px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .project-result-description {
+    font-size: 13px !important;
+    line-height: 22px !important;
+  }
+
+  /* Subsection Title and Content for Projeye Genel Bakış */
+  .project-subsection-title {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    margin: 0 0 12px 0 !important;
+  }
+
+  .project-subsection-content {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    margin: 0 !important;
+  }
+}

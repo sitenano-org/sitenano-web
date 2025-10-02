@@ -462,7 +462,7 @@ export default function ProjelerPage() {
               width: '1785px',
               height: '418px',
               borderRadius: '20px',
-              background: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/online-siparis-sistemi-4.jpg")',
+              background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/online-siparis-sistemi-4.jpg")',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
@@ -556,7 +556,7 @@ export default function ProjelerPage() {
               width: '1785px',
               height: '418px',
               borderRadius: '20px',
-              background: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/restoran-kasa-siparis-sistemi.jpg")',
+              background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/restoran-kasa-siparis-sistemi.jpg")',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
@@ -669,7 +669,7 @@ export default function ProjelerPage() {
                 left: 0,
                 width: '100%',
                 height: '100%',
-                background: 'rgba(0, 0, 0, 0.4)',
+                background: 'rgba(0, 0, 0, 0.6)',
                 borderRadius: '20px',
                 zIndex: 1
                              }}></div>
@@ -760,7 +760,7 @@ export default function ProjelerPage() {
               width: '1785px',
               height: '418px',
               borderRadius: '20px',
-              background: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/web-tasarim.jpg")',
+              background: 'linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/web-tasarim.jpg")',
               backgroundSize: '110%',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
@@ -1019,11 +1019,11 @@ export default function ProjelerPage() {
                   position: 'relative',
                 overflow: 'hidden',
                 filter: 'grayscale(100%)'
-              }}>
-                </div>
+              }}></div>
                 
                 {/* 2. Ok İkonu - Wrapper içinde ama görsel dışında */}
-                <div className="proje-ok-button" style={{
+                <Link href="/projeler/lojistik-dorse-paylasimi">
+                  <div className="proje-ok-button" style={{
                   position: 'absolute',
                   bottom: '20px',
                   right: '20px',
@@ -1042,7 +1042,8 @@ export default function ProjelerPage() {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                     <path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                </div>
+                  </div>
+                </Link>
               </div>
               
               {/* 1. Görsel Altındaki Metinler */}
